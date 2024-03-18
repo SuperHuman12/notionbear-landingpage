@@ -3,7 +3,7 @@
     {
       "id": "remote-jobs",
       "product": {
-        "logo": "https://",
+        "logo": "https://via.placeholder.com/400",
         "name": "Remote Jobs",
         "provider": "NotionBear",
         "description": "Create a website for listing remote jobs for job applicants.",
@@ -33,7 +33,7 @@
     {
       "id": "vetted-talent",
       "product": {
-        "logo": "https://",
+        "logo": "https://via.placeholder.com/400",
         "name": "Vetted Talent",
         "provider": "NotionBear",
         "description": "Website for showing vetted talent for companies to hire.",

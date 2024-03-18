@@ -1,22 +1,19 @@
 import React from 'react';
-import { readFile } from 'fs/promises';
 import Link from 'next/link';
-
-const loadIntegrations = async () => {
-  try {
-    const file = await readFile(process.cwd() + '/public/data/integrations.json', 'utf8');
-    const data = JSON.parse(file);
-    return data.integrations;
-  } catch (error) {
-    console.error("Failed to load integrations", error);
-    return [];
-  }
-};
+import { _loadFromJson } from '@/app/utils/helper';
 
 
+
+export const metadata = {
+  title: 'Notion Bear Integrations',
+  description: 'Integrate with your stack and extend functionality with powerful integrations built by us and our amazing community.',
+}
 
 const Integration = async () => {
-  const integrations = await loadIntegrations();
+  const integrations = await _loadFromJson(false);
+
+  
+  
 
   return (
     <section className="bg-gradient-to-b from-gray-100 to-white">
@@ -28,15 +25,17 @@ const Integration = async () => {
           </div>
           <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
             {integrations.map((integration:any, index:number) => (
-              <Link key={index} href={integration.href} passHref>
-                <div className="cursor-pointer relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
+              <Link key={index} href={"integration/"+integration.id} >
+              <div className="cursor-pointer relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
                   <div>
                     <div className="flex items-center space-x-2 mb-4">
-                      <img className="w-10 h-10" src={integration.imageSrc} alt={integration.altText} />
-                      <span className="text-dark font-bold">{integration.name}</span>
+                      <img className="w-10 h-10" src={integration?.product?.logo} alt={integration?.product?.name} />
+                      <span className="text-dark font-bold">{integration?.product?.name}  </span>
                     </div>
-                    <p className="text-gray-600 text-center">{integration.description}</p>
-                    <button className="text-white bg-gray-900 rounded w-full p-2 mt-4">Install</button>
+                    <p className="text-gray-600 text-center">{integration?.product?.description}</p>
+                    <button className="text-white bg-gray-900 rounded w-full p-2 mt-4">
+                      {integration?.callToCopy?.text || "Integrate"}
+                    </button>
                   </div>
                 </div>
               </Link>

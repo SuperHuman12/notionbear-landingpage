@@ -1,27 +1,18 @@
 import Link from 'next/link';
-import { readFile } from 'fs/promises';
+import Image from 'next/image';
+import { _loadFromJson } from '@/app/utils/helper';
+
 
 export const metadata = {
-  title: 'Reset Password - Simple',
-  description: 'Page description',
-}
-
-
-const loadTemplate = async () => {
-  try {
-    const file = await readFile(process.cwd() + '/public/data/TemplatesFile/templatelist.json', 'utf8');
-    const data = JSON.parse(file);
-    return data.templates;
-  } catch (error) {
-    console.error("Failed to load templates", error);
-    return [];
-  }
+  title: 'Notion Bear Templates',
+  description: 'Jumpstart your SaaS business with pre-built solutions from NotionBear and our community',
 }
 
 
 export default async function Template() {
 
-  const templates = await loadTemplate();
+  const templates = await _loadFromJson();
+
 
 
   return (
@@ -34,35 +25,33 @@ export default async function Template() {
             <h1 className="h1 mb-4">Find your Template</h1>
             <p className="text-xl text-gray-600">Jumpstart your SaaS business with pre-built solutions from NotionBear and our community.</p>
           </div>
-
-
-
-          {/* Templates grid */}
+        
           <div className="flex ">
-
-
           {templates.map((template:any, index:number) => (
-              <Link key={index} href={template.href} passHref>
+              <Link key={index} href={"template/"+template.id} >
                 <div
                 style={{width: '400px'}}
                 className="cursor-pointer   m-2 relative flex items-center p-6 bg-white rounded shadow-xl h-full border">
                   <div>
                     <div className="items-start space-x-2">
-                      <img className="w-full rounded" src={template.imageSrc} alt={template.altText} />
-                      <span className="text-dark font-bold">{template.name}</span>
+                      <Image className="w-full rounded"
+                        width={100}
+                        height={100}
+                        src={template?.product?.logo} 
+                        alt={template?.product?.name} />
+
+                      <span className="text-dark font-bold">{template?.product?.name}</span>
                     </div>
-                    <p className="text-gray-600">{template.description}</p>
-                    <button className="text-white bg-gray-900 rounded w-full p-2 mt-4">Clone Template</button>
+                    <p className="text-gray-600">{template?.product?.description}</p>
+                    <button className="text-white bg-gray-900 rounded w-full p-2 mt-4">
+                      {template?.callToCopy?.text || "Clone Template" }
+                    </button>
                   </div>
                 </div>
               </Link>
             ))}
 
             </div>
-
-
-        
-
         </div>
       </div>
     </section>

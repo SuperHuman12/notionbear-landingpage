@@ -1,26 +1,14 @@
 import React from 'react';
-import { readFile } from 'fs/promises';
-import {renderContent} from '../../../utils/helper';
-
-const loadContent = async (slug: string) => {
-  try {
-    const file = await readFile(process.cwd() + `/public/data/TemplatesFile/${slug}.json`, 'utf8');
-    const data = JSON.parse(file);
-    return data;
-  } catch (error) {
-    console.error("Failed to load content", error);
-    return null;
-  }
-};
-
-
-
+import {_loadFromJson, _transformDataToPostPageView, renderContent} from '../../../utils/helper';
 
 const Page = async ({ params }: { params: { slug: string } }) => {
   const { slug } = params;
-  const content = await loadContent(slug);
+  const content = await _loadFromJson();
+  const filterBySlug = content.filter((item: any) => item.id === slug)[0];
+  const _postPageView =  _transformDataToPostPageView(filterBySlug);
 
-  if (!content) {
+
+  if (!filterBySlug) {
     return <div>Loading...</div>;
   }
 
@@ -30,29 +18,33 @@ const Page = async ({ params }: { params: { slug: string } }) => {
         <div className="space-y-4">
           <div className="flex items-center space-x-4">
             <div className="w-20 h-20 rounded-full overflow-hidden">
-              <img src={content.image} alt="" className="w-full h-full object-contain" />
+              <img src={filterBySlug.product?.logo} alt="" className="w-full h-full object-contain" />
             </div>
             <div className="space-y-2">
-              <h1 className="text-2xl font-bold text-gray-800">{content.title}</h1>
-              <p className="text-md text-gray-600">{content.subtitle}</p>
+              <h1 className="text-2xl font-bold text-gray-800">{filterBySlug?.product?.name}</h1>
+              <p className="text-md text-gray-600">{filterBySlug?.product?.provider}</p>
             </div>
           </div>
           <div className="text-gray-800">
-            <p>{content.description}</p>
+            <p>{filterBySlug?.product?.description}</p>
           </div>
-          <div className="flex space-x-2 items-center">
-            <a href={content.link} className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank">
-              <span>Install</span>
+          <div className="flex">
+          <div className="flex mr-1 space-x-2 items-center">
+            <a href={filterBySlug?.product?.callToCopy?.link} className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank">
+              <span>{filterBySlug?.product?.callToCopy?.text}</span>
             </a>
           </div>
-        </div>
-        <div className="relative w-full">
-          <img src={content.secondaryImage} alt="" className="w-full h-full object-contain" />
+          <div className="flex space-x-2 items-center">
+            <a href={filterBySlug?.product?.ViewDemo?.link} className="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank">
+              <span>{filterBySlug?.product?.ViewDemo?.text}</span>
+            </a>
+          </div>
+          </div>
         </div>
       </div>
 
       <div>
-        {content.sections.map((item: any, index: number) => renderContent(item, index))}
+        {_postPageView.map((item: any, index: number) => renderContent(item, index))}
       </div>
     </div>
   );

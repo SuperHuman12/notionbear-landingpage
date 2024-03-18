@@ -3,7 +3,7 @@
     {
       "id": "arcade",
       "product": {
-        "logo": "https://",
+        "logo": "https://via.placeholder.com/100",
         "name": "Arcade",
         "provider": "GitBook",
         "description": "Embed interactive product demos in your documentation and turn all users into power users.",
@@ -29,7 +29,7 @@
     {
       "id": "slack",
       "product": {
-        "logo": "https://",
+        "logo": "https://via.placeholder.com/100",
         "name": "Slack",
         "provider": "Slack",
         "description": "Integrate interactive product demos directly into your Slack channels to enhance team collaboration and product understanding.",
