@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import notionfooterImage from "@/public/images/freedesigner.png";
+import MigrateFrom from "@/public/images/migratefrom.png";
 import Testimonials from "@/components/testimonials";
 import Rating from "../compare-against/Rating";
 
@@ -1192,7 +1193,7 @@ export default function Pricing() {
                         NotionBear is an indie software company
                         <a href="/run-by-a-human" className="font-medium underline">run by a human</a>
                         named
-                        <a href="https://twitter.com/sobedominik" target="_blank" className="font-medium text-purple-500">Dominik</a>.
+                        <a href="https://twitter.com/absurdfounder" target="_blank" className="font-medium text-purple-500"> Vaibhav</a>.
                     </dd>
                 </div>
             </dl>
@@ -1208,7 +1209,7 @@ export default function Pricing() {
                     alt="Logo"
                     width={220}
                     className="block"
-                    src={notionfooterImage}
+                    src={MigrateFrom}
                   />
                 </div>
 

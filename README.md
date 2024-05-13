@@ -84,4 +84,4 @@ We're an Italian developer/designer duo creating high-quality design/code resour
 
 ## Stay in the loop
 
-If you would like to know when we release new resources, you can follow us on [Twitter](https://twitter.com/NotionBear_com), or you can subscribe to our monthly [newsletter](https://NotionBear.com/#subscribe).
+If you would like to know when we release new resources, you can follow us on [Twitter](https://twitter.com/absurdfounder), or you can subscribe to our monthly [newsletter](https://NotionBear.com/#subscribe).
