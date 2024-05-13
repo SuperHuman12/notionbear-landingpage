@@ -40,9 +40,9 @@ export default function Pricing() {
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Page header */}
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 aos-init aos-animate">
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tighter tracking-tighter mb-4 aos-init aos-animate">
               Try NotionBear free for{" "}
-              <u className="gradient-border-accent"> 7 days</u>
+              <span className="gradient-border-accent"> 7 days</span>
             </h1>
           </div>
 
@@ -145,6 +145,21 @@ export default function Pricing() {
                     Monthly
                   </button>
                 </div>
+
+                <div className="
+          sm:block
+          hidden
+          absolute
+          mx-auto
+          text-xs
+          ml-[440px]
+          opacity-50
+          font-medium
+        ">
+        → Save 2 months on yearly 🎁
+      </div>
+
+
               </div>
               <div className="mb-4">
                 <label className="block text-sm font-medium text-gray-700">
@@ -270,7 +285,7 @@ export default function Pricing() {
                                   ></path>
                                 </svg>
                               </figure>
-                              <span>5 Help Centers</span>
+                              <span>5 NotionBear Sites</span>
                             </li>
                             <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
                               <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
@@ -308,7 +323,7 @@ export default function Pricing() {
                                   ></path>
                                 </svg>
                               </figure>
-                              <span>Private Help Center</span>
+                              <span>Paywall Integration</span>
                             </li>
                             <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
                               <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
@@ -346,7 +361,7 @@ export default function Pricing() {
                                   ></path>
                                 </svg>
                               </figure>
-                              <span>Guest Accounts</span>
+                              <span>SEO Ready</span>
                             </li>
                             <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
                               <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
@@ -405,7 +420,7 @@ export default function Pricing() {
                                   ></path>
                                 </svg>
                               </figure>
-                              <span>Article Suggester</span>
+                              <span>Article Recomendation</span>
                             </li>
                             <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
                               <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
@@ -843,7 +858,7 @@ export default function Pricing() {
                                   ></path>
                                 </svg>
                               </figure>
-                              <span>Report / Analytics</span>
+                              <span>Detailed Analytics</span>
                             </li>
                           </div>
                         </ul>
@@ -851,7 +866,7 @@ export default function Pricing() {
                     </>
                   )}
 
-                  <div className="grid gap-3">
+                  <div className="grid gap-3 p-8">
                     <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
                       {/* Background illustration */}
                       <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
@@ -866,8 +881,7 @@ export default function Pricing() {
                       <div className="relative flex flex-col lg:flex-row justify-between items-center">
                         {/* CTA content */}
                         <div className="text-center lg:text-left lg:max-w-xl">
-                          <h3 className="h3 text-white mb-2">
-                            Free
+                          <h3 className="h4 text-white mb-2">
                             <b className="text-orange-600">Design Services</b>{" "}
                             Complimentary{" "}
                           </h3>
@@ -876,10 +890,10 @@ export default function Pricing() {
                           <form className="w-full lg:w-auto">
                             <div>
                               <a
-                                className="btn bg-orange-600 hover:bg-orange-700 shadow"
+                                className="btn bg-gray-200 hover:bg-orange-700 shadow"
                                 href="https://buy.stripe.com/5kAeV0b6K27w8BG6os"
                               >
-                                Get this Add On
+                                Included
                               </a>
                             </div>
                             {/* Success message */}
@@ -906,20 +920,19 @@ export default function Pricing() {
                       <div className="relative flex flex-col lg:flex-row justify-between items-center">
                         {/* CTA content */}
                         <div className="text-center lg:text-left lg:max-w-xl">
-                          <h3 className="h3 text-white mb-2">
-                            Free
+                          <h3 className="h4 text-white mb-2">
                             <b className="text-orange-600">Data Migration </b>{" "}
-                            Complimentary
+                            Free
                           </h3>
 
                           {/* CTA form */}
                           <form className="w-full lg:w-auto">
                             <div>
                               <a
-                                className="btn bg-orange-600 hover:bg-orange-700 shadow"
+                                className="btn bg-gray-200 hover:bg-orange-700 shadow"
                                 href="https://buy.stripe.com/5kAeV0b6K27w8BG6os"
                               >
-                                Get this Add On
+                                Included
                               </a>
                             </div>
                             {/* Success message */}
@@ -946,9 +959,9 @@ export default function Pricing() {
                       <div className="relative flex flex-col lg:flex-row justify-between items-center">
                         {/* CTA content */}
                         <div className="text-center lg:text-left lg:max-w-xl">
-                          <h3 className="h3 text-white mb-2">
+                          <h3 className="h4 text-white mb-2">
                             NotionBear
-                            <b className="text-orange-600">AI Support</b> at $25
+                            <b className="text-orange-600"> AI</b> at $25
                             / Month
                           </h3>
 
@@ -986,7 +999,7 @@ export default function Pricing() {
                       <div className="relative flex flex-col lg:flex-row justify-between items-center">
                         {/* CTA content */}
                         <div className="text-center lg:text-left lg:max-w-xl">
-                          <h3 className="h3 text-white mb-2">
+                          <h3 className="h4 text-white mb-2">
                             Remove{" "}
                             <b className="text-orange-600">
                               NotionBear Branding
