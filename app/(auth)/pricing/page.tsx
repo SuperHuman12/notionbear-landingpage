@@ -914,9 +914,9 @@ export default function Pricing() {
                       <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
                         <Image
                           alt="Logo"
-                          width={220}
+                          width={300}
                           className="block"
-                          src={notionfooterImage}
+                          src={MigrateFrom}
                         />
                       </div>
 
@@ -1038,8 +1038,8 @@ export default function Pricing() {
     <section className="p-8 rounded-lg bg-gray-100">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center">
             <div className="relative">
-                <div className="aspect-w-1 aspect-h-1"><img src="/_nuxt/image/bffbe5.webp" width="800" alt="" loading="lazy" className="object-cover rounded-lg" /></div>
-                <div className="absolute bottom-0 right-0 inline-flex px-4 py-2 -mb-5 -mr-4 bg-white rounded-lg shadow-xl"><img src="/_nuxt/image/73bb1e.webp" width="400" alt="" loading="lazy" className="w-20 rounded-lg" /></div>
+                <div className="aspect-w-1 aspect-h-1"><img src="https://helpkit.so/_nuxt/image/bffbe5.webp" width="800" alt="" loading="lazy" className="object-cover rounded-lg" /></div>
+                <div className="absolute bottom-0 right-0 inline-flex px-4 py-2 -mb-5 -mr-4 bg-white rounded-lg shadow-xl"><img src="https://helpkit.so/_nuxt/image/73bb1e.webp" width="400" alt="" loading="lazy" className="w-20 rounded-lg" /></div>
             </div>
             <blockquote className="sm:col-span-2">
                 <p className="font-medium text-lg sm:text-xl">
