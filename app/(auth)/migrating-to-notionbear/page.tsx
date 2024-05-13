@@ -15,9 +15,9 @@ export default function ResetPassword() {
 
           {/* Page header */}
 
-          <div className="max-w-4xl py-10 mx-auto lg:py-32">
+          <div className="max-w-4xl py-10 mx-auto lg:py-12">
     <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-        <div className="relative flex items-center justify-center px-3 py-1 text-sm font-semibold leading-6 text-purple-700 rounded-full ring-1 ring-purple-700/80 opacity-60 hover:ring-purple-900/20">
+        <div className="relative flex items-center justify-center px-3 py-1 text-sm font-semibold leading-6 text-purple-700 rounded-full ring-1 ring-purple-700/80 opacity-60 hover:ring-purple-900/20 w-fit m-auto mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" className="w-4 h-4 mr-1">
                 <path
                     fill="currentColor"
@@ -30,12 +30,12 @@ export default function ResetPassword() {
         </div>
     </div>
     <div className="text-center">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl"><span className="gradient-text-accent">Migrate</span> your content from another external Knowledge Base</h1>
+        <h1 className="md:text-5xl font-bold tracking-tight text-gray-900 sm:text-4xl font-extrabold leading-tighter tracking-tighter mb-4 aos-init aos-animate"><span className="gradient-text-accent">Migrate</span> your content from another external Knowledge Base</h1>
         <p className="mt-6 leading-7 text-gray-600 sm:text-lg sm:leading-8">
             Planning to move your help content from another provider? We can seamlessly import your existing knowledge base from pretty much any platform into our Notion template.
         </p>
         <div className="flex items-center justify-center mt-10 gap-x-6">
-            <button className="px-6 py-2 text-lg font-semibold text-white rounded-lg gradient-bg-accent">
+            <button className="px-6 py-2 text-lg font-semibold text-white rounded-lg gradient-bg-accent bg-gray-800">
                 Contact Us →
             </button>
         </div>
@@ -59,16 +59,16 @@ export default function ResetPassword() {
     <div className="bg-white">
         <div className="px-6 mx-auto max-w-7xl lg:px-8">
             <div className="-mx-6 grid grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-3">
-                <div className="p-8 bg-gray-400/5 sm:p-10"><img src="/imgs/providers/intercom.png" alt="Intercom" width="158" height="48" className="object-contain w-full max-h-10" /></div>
-                <div className="p-6 bg-gray-400/5 sm:p-10"><img src="/imgs/providers/crisp.png" alt="Crisp" width="158" height="48" className="object-contain w-full pt-1 max-h-10" /></div>
-                <div className="p-6 bg-gray-400/5 sm:p-10"><img src="/imgs/providers/helpscout.png" alt="HelpScout" width="158" height="48" className="object-contain w-full pt-3 max-h-10" /></div>
-                <div className="p-6 bg-gray-400/5 sm:p-10"><img src="/imgs/providers/document360.png" alt="Document360" width="158" height="48" className="object-contain w-full max-h-12" /></div>
-                <div className="p-6 bg-gray-400/5 sm:p-10"><img src="/imgs/providers/gitbook.png" alt="Gitbook" width="158" height="48" className="object-contain w-full max-h-12" /></div>
+                <div className="p-8 bg-gray-400/5 sm:p-10"><img src="https://helpkit.so/imgs/providers/intercom.png" alt="Intercom" width="158" height="48" className="object-contain w-full max-h-10" /></div>
+                <div className="p-6 bg-gray-400/5 sm:p-10"><img src="https://helpkit.so/imgs/providers/crisp.png" alt="Crisp" width="158" height="48" className="object-contain w-full pt-1 max-h-10" /></div>
+                <div className="p-6 bg-gray-400/5 sm:p-10"><img src="https://helpkit.so/imgs/providers/helpscout.png" alt="HelpScout" width="158" height="48" className="object-contain w-full pt-3 max-h-10" /></div>
+                <div className="p-6 bg-gray-400/5 sm:p-10"><img src="https://helpkit.so/imgs/providers/document360.png" alt="Document360" width="158" height="48" className="object-contain w-full max-h-12" /></div>
+                <div className="p-6 bg-gray-400/5 sm:p-10"><img src="https://helpkit.so/imgs/providers/gitbook.png" alt="Gitbook" width="158" height="48" className="object-contain w-full max-h-12" /></div>
                 <div className="flex items-center justify-center p-6 bg-gray-400/5 sm:p-10"><span className="text-2xl font-semibold gradient-text-accent">Many more</span></div>
             </div>
         </div>
         <div className="flex items-center justify-center w-full pt-12">
-            <button className="px-6 py-2 text-lg font-semibold text-white rounded-lg gradient-bg-accent">
+            <button className="px-6 py-2 text-lg font-semibold text-white rounded-lg gradient-bg-accent bg-gray-800">
                 Contact Us →
             </button>
         </div>

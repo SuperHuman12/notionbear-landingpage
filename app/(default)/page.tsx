@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <FeaturesBlocks />
       <Features />
+      <FeaturesBlocks />
       <Showcases />
       <Testimonials />
       <AboutMe />
