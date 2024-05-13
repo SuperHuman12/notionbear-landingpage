@@ -177,7 +177,7 @@ export default function Pricing() {
                 </select>
               </div>
               <div>
-                <article className="overflow-hidden rounded-lg border-2 pb-5 shadow-md">
+                <article className="overflow-hidden rounded-lg border-2 pb-5 shadow-md gradient-border-accent">
                   {activeTab === "Yearly" ? (
                     <>
                       <div className="relative bg-white border-b-2 border-dashed px-7 py-6 md:pt-7">
@@ -1031,12 +1031,180 @@ export default function Pricing() {
           </div>
         </div>
 
+        <div className="max-w-5xl px-4 py-8 mx-auto mt-10">
+    <section className="p-8 rounded-lg bg-gray-100">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center">
+            <div className="relative">
+                <div className="aspect-w-1 aspect-h-1"><img src="/_nuxt/image/bffbe5.webp" width="800" alt="" loading="lazy" className="object-cover rounded-lg" /></div>
+                <div className="absolute bottom-0 right-0 inline-flex px-4 py-2 -mb-5 -mr-4 bg-white rounded-lg shadow-xl"><img src="/_nuxt/image/73bb1e.webp" width="400" alt="" loading="lazy" className="w-20 rounded-lg" /></div>
+            </div>
+            <blockquote className="sm:col-span-2">
+                <p className="font-medium text-lg sm:text-xl">
+                    "With Helpkit we literally went from 0 to fully functional knowledge-base in 1 hour! The best thing about Helpkit is it allows my non-technical co-founder to do 95% of the work and manage our knowledge-base. We signed up
+                    because of how beautiful and well-designed the product is!"
+                </p>
+                <div className="mt-5 flex space-x-0.5 justify-start text-yellow-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        ></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        ></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        ></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        ></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        ></path>
+                    </svg>
+                </div>
+                <cite className="inline-flex items-center mt-8 not-italic">
+                    <span className="hidden w-6 h-px bg-gray-400 sm:inline-block"></span>
+                    <h3 className="text-sm text-gray-500 uppercase sm:ml-3"><span className="sr-only">Testimonial from</span> <strong>Dan Kelly</strong>, CEO at Adjust Square.</h3>
+                </cite>
+            </blockquote>
+        </div>
+    </section>
+</div>
 
-        <div className="max-w-5xl px-4 py-8 mx-auto mt-10"><section className="p-8 rounded-lg bg-gray-100"><div className="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center"><div className="relative"><div className="aspect-w-1 aspect-h-1"><img src="/_nuxt/image/bffbe5.webp" width="800" alt="" loading="lazy" className="object-cover rounded-lg"></div> <div className="absolute bottom-0 right-0 inline-flex px-4 py-2 -mb-5 -mr-4 bg-white rounded-lg shadow-xl "><img src="/_nuxt/image/73bb1e.webp" width="400" alt="" loading="lazy" className="w-20 rounded-lg"></div></div> <blockquote className="sm:col-span-2"><p className="font-medium text-lg sm:text-xl">
-            "With Helpkit we literally went from 0 to fully functional knowledge-base in 1 hour! The best thing about Helpkit is it allows my non-technical co-founder to do 95% of the work and manage our knowledge-base. We signed up because of how beautiful and well-designed the product is!"
-          </p> <div className="mt-5 flex space-x-0.5 justify-start text-yellow-300"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg></div> <cite className="inline-flex items-center mt-8 not-italic"><span className="hidden w-6 h-px bg-gray-400 sm:inline-block"></span> <h3 className="text-sm text-gray-500 uppercase sm:ml-3"><span className="sr-only">Testimonial from</span> <strong>Dan Kelly</strong>, CEO at Adjust Square.
-             
-            </h3></cite></blockquote></div></section></div>
+
+
+
+<div className="bg-white w-4/5 mx-auto">
+    <div className="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
+        <div className="text-center sm:max-w-2xl lg:mx-auto">
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+                Frequently asked questions
+            </h2>
+            <p className="mx-auto mt-4 sm:w-8/12 text-cool-gray-500">
+                You have questions? 🤔 We have the answers. Can’t find the answer you’re looking for? Reach out and ask
+            </p>
+        </div>
+        <div className="mt-10 sm:mt-20">
+            <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-10">
+                <div>
+                    <dt className="inline-flex items-center justify-center font-semibold text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 mr-1.5">
+                            <path
+                                fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                        What is HelpKit?
+                    </dt>
+                    <dd className="mt-3 text-gray-500">
+                        HelpKit is the perfect tool for creating your knowledge base in the shortest possible time. It is powered by the best content management system in the world: Notion. You write your help articles in Notion and HelpKit
+                        takes care of the rest. It's as simple as that.
+                    </dd>
+                </div>
+                <div>
+                    <dt className="inline-flex items-center justify-center font-semibold text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 mr-1.5">
+                            <path
+                                fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                        Why do I need a knowledge base?
+                    </dt>
+                    <dd className="mt-3 text-gray-500">
+                        Unless you have built a flawless product (<i>congratulations</i>
+                        🤩), your customers will always have questions and they demand immediate help. A knowledge base can provide all the information that users need in one place. It can range from FAQs about your product/service, common
+                        issues and their solutions, videos with tutorials on how to do things and more.
+                    </dd>
+                </div>
+                <div>
+                    <dt className="inline-flex items-center justify-center font-semibold text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 mr-1.5">
+                            <path
+                                fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                        How does the free 7 day trial work?
+                    </dt>
+                    <dd className="mt-3 text-gray-500">
+                        HelpKit offers a 7 day free trial to help you explore. No credit card required. There’s zero cost to get in the product and set things up. Within the trial period you will be able to use all available features. After
+                        the trial is over, you can choose to subscribe to one of our offered subscription plans.
+                    </dd>
+                </div>
+                <div>
+                    <dt className="inline-flex items-center justify-center font-semibold text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 mr-1.5">
+                            <path
+                                fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                        Is my data safe with HelpKit?
+                    </dt>
+                    <dd className="mt-3 text-gray-500">
+                        HelpKit takes your privacy seriously and follows best practices to ensure that the confidentiality of personal information and customer data is protected and maintained. We do not disclose or share your data with
+                        outside parties. All your knowledge base content is hosted in your own Notion workspace.
+                    </dd>
+                </div>
+                <div>
+                    <dt className="inline-flex items-center justify-center font-semibold text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 mr-1.5">
+                            <path
+                                fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                        Can I use every block type from Notion?
+                    </dt>
+                    <dd className="mt-3 text-gray-500">
+                        HelpKit supports most blocks from Notion. There are just a few complex block types such as calendars and databases that we are working on to get rendered as well. You can see our
+                        <a href="https://support.helpkit.so/Working-with-Notion-Docs/crG31kiLtd678d3PdJXvfj/Which-Notion-block-types-are-supported/2qK2E1KRvDMdsmHYi625Xd" target="_blank" className="font-medium underline">test suite here</a>.
+                    </dd>
+                </div>
+                <div>
+                    <dt className="inline-flex items-center justify-center font-semibold text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4 mr-1.5">
+                            <path
+                                fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                        Who is behind HelpKit?
+                    </dt>
+                    <dd className="mt-3 text-gray-500">
+                        HelpKit is an indie software company
+                        <a href="/run-by-a-human" className="font-medium underline">run by a human</a>
+                        named
+                        <a href="https://twitter.com/sobedominik" target="_blank" className="font-medium text-purple-500">Dominik</a>.
+                    </dd>
+                </div>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<div className="flex flex-col items-center justify-center w-4/5 mx-auto -mt-5 sm:-mt-10">
+    <div className="mb-2"><img width="80" src="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/200/000000/external-video-call-coworking-space-inipagistudio-lineal-color-inipagistudio.png" /></div>
+    <span className="mt-2 text-center text-lg font-semibold text-cool-gray-800"> Planning to <span className="gradient-text-accent font-bold">migrate</span> to HelpKit from another platform? </span>
+    <a href="/migrating-to-helpkit" target="_blank" className="pb-1 mt-4 text-base text-gray-500 border-b border-gray-500 cursor-pointer hover:text-cool-gray-800 hover:border-cool-gray-800">We can do it for you →</a>
+</div>
+
+
 
       </div>
     </section>
