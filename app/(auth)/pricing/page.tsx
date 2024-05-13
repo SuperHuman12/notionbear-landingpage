@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import notionfooterImage from "@/public/images/freedesigner.png";
-import Testimonials from '../compare-against/Testimonials';
+import Testimonials from "@/components/testimonials";
+
 
 export default function Pricing() {
   const [activeTab, setActiveTab] = useState("Yearly");
