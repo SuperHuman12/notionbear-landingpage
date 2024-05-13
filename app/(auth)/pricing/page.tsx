@@ -1200,11 +1200,34 @@ export default function Pricing() {
     </div>
 </div>
 
-<div className="flex flex-col items-center justify-center w-4/5 mx-auto -mt-5 sm:-mt-10">
-    <div className="mb-2"><img width="80" src="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/200/000000/external-video-call-coworking-space-inipagistudio-lineal-color-inipagistudio.png" /></div>
-    <span className="mt-2 text-center text-lg font-semibold text-cool-gray-800"> Planning to <span className="gradient-text-accent font-bold">migrate</span> to NotionBear from another platform? </span>
-    <a href="/migrating-to-NotionBear" target="_blank" className="pb-1 mt-4 text-base text-gray-500 border-b border-gray-500 cursor-pointer hover:text-cool-gray-800 hover:border-cool-gray-800">We can do it for you →</a>
-</div>
+
+<div className="relative flex flex-col lg:flex-row justify-between items-center">
+                  {/* CTA content */}
+                  <div className="text-center lg:text-left lg:max-w-xl">
+                    <h3 className="h4 text-white mb-2">
+                    Planning to <b className="text-orange-600">migrate</b> to NotionBear from another platform?
+                    </h3>
+
+                    {/* CTA form */}
+                    <form className="w-full lg:w-auto">
+                      <div>
+                        <a
+                          className="btn bg-orange-600 hover:bg-orange-700 shadow"
+                          href="#"
+                        >
+                          We can do it for you →
+                        </a>
+                      </div>
+                      {/* Success message */}
+                      {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
+                      <p className="text-sm text-gray-400 mt-3">
+                        Free of charge
+                      </p>
+                    </form>
+                  </div>
+                </div>
+
+
 
 
 <Rating />
