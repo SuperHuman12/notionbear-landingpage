@@ -213,7 +213,7 @@ export default function Pricing() {
                           Extend your workflows with round-robin and collective
                           events and make advanced routing forms.
                         </p>
-                        <ul className="grid gap-3 p-8">
+                        <ul className="flex gap-3 p-8">
                           <div className="p-4">
                             <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
                               <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
