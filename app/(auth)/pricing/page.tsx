@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import notionfooterImage from "@/public/images/freedesigner.png";
 import Testimonials from "@/components/testimonials";
-
+import Rating from "../compare-against/Rating";
 
 export default function Pricing() {
   const [activeTab, setActiveTab] = useState("Yearly");
@@ -1206,6 +1206,8 @@ export default function Pricing() {
     <a href="/migrating-to-NotionBear" target="_blank" className="pb-1 mt-4 text-base text-gray-500 border-b border-gray-500 cursor-pointer hover:text-cool-gray-800 hover:border-cool-gray-800">We can do it for you →</a>
 </div>
 
+
+<Rating />
 
 <Testimonials />
 
