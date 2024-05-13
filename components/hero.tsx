@@ -233,7 +233,7 @@ export default function Hero() {
 
           <div className="sm:flex justify-center items-center mt-8 flex-col sm:flex-row hidden">
             <a
-              href="https://support.helpkit.so/"
+              href="#"
               target="_blank"
               className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 bg-gray-50 px-3 py-2 opacity-80 hover:opacity-100"
             >
@@ -247,7 +247,7 @@ export default function Hero() {
               </span>
             </a>
             <a
-              href="https://docs.helpkit.so/"
+              href="#"
               target="_blank"
               className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-50 px-3 py-2 opacity-80 hover:opacity-100"
             >
