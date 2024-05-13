@@ -51,7 +51,7 @@ export default function Hero() {
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           <div className="text-center">
             <h1
-              className="text-6xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 aos-init aos-animate"
+              className="sm:text-3xl md:text-6xl font-extrabold leading-tight tracking-loose mb-4 aos-init aos-animate"
               data-aos="zoom-y-out"
             >
               Easily build your <br />
