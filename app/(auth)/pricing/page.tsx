@@ -38,8 +38,8 @@ export default function Pricing() {
 
                         <div>
                             <div className="w-full text-center ltr:mr-4 rtl:ml-4 md:block mb-8">
-                                <p className="mt-2 text-lg font-medium text-gray-400">Join 50+ happy customers who set up fully functional directories, helpdesk and blogs 
-in hours not days --- All powered by Notion.</p>
+                                <p className="mt-2 text-lg font-medium text-gray-400">Join 50+ happy customers who set up fully functional directories, helpdesk and blogs
+                                    in hours not days --- All powered by Notion.</p>
                             </div>
                             <div className="justify-center mb-4 w-100 my-5"><div className="w-100"></div></div>
 
@@ -144,7 +144,7 @@ in hours not days --- All powered by Notion.</p>
 
 
                                                 <p className="text-md max-w-[482px] pt-6 text-gray-500 md:pt-4">Extend your workflows with round-robin and collective events and make advanced routing forms.</p>
-                                                <ul className="flex gap-4">
+                                                <ul className="grid gap-3 p-8">
                                                     <div className="p-4">
                                                         <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
                                                             <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
@@ -376,80 +376,156 @@ in hours not days --- All powered by Notion.</p>
                                     <div className="flex gap-3">
 
                                     <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden"
-                            >
+                                        >
 
-                                {/* Background illustration */}
-                                <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block" >
-
-
-
-                                    <Image alt="Logo"
-                                        width={220}
-                                        className="block"
-                                        src={notionfooterImage} />
+                                            {/* Background illustration */}
+                                            <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block" >
 
 
 
-                                </div>
+                                                <Image alt="Logo"
+                                                    width={220}
+                                                    className="block"
+                                                    src={notionfooterImage} />
 
-                                <div className="relative flex flex-col lg:flex-row justify-between items-center">
 
-                                    {/* CTA content */}
-                                    <div className="text-center lg:text-left lg:max-w-xl">
-                                        <h3 className="h3 text-white mb-2"><b className="text-orange-600">NotionBear AI</b> at $25 / Month</h3>
 
-                                        {/* CTA form */}
-                                        <form className="w-full lg:w-auto">
-                                            <div>
-                                                <a className="btn bg-orange-600 hover:bg-orange-700 shadow" href="https://buy.stripe.com/5kAeV0b6K27w8BG6os">Get this Deal</a>
                                             </div>
-                                            {/* Success message */}
-                                            {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
-                                            <p className="text-sm text-gray-400 mt-3">Add On.</p>
-                                        </form>
-                                    </div>
 
-                                </div>
+                                            <div className="relative flex flex-col lg:flex-row justify-between items-center">
 
-                            </div>
+                                                {/* CTA content */}
+                                                <div className="text-center lg:text-left lg:max-w-xl">
+                                                    <h3 className="h3 text-white mb-2">Free<b className="text-orange-600">Design Services</b> Complimentary </h3>
 
-                            <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden"
-                            >
+                                                    {/* CTA form */}
+                                                    <form className="w-full lg:w-auto">
+                                                        <div>
+                                                            <a className="btn bg-orange-600 hover:bg-orange-700 shadow" href="https://buy.stripe.com/5kAeV0b6K27w8BG6os">Get this Add On</a>
+                                                        </div>
+                                                        {/* Success message */}
+                                                        {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
+                                                        <p className="text-sm text-gray-400 mt-3">Add On.</p>
+                                                    </form>
+                                                </div>
 
-                                {/* Background illustration */}
-                                <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block" >
-
-
-
-                                    <Image alt="Logo"
-                                        width={220}
-                                        className="block"
-                                        src={notionfooterImage} />
-
-
-
-                                </div>
-
-                                <div className="relative flex flex-col lg:flex-row justify-between items-center">
-
-                                    {/* CTA content */}
-                                    <div className="text-center lg:text-left lg:max-w-xl">
-                                        <h3 className="h3 text-white mb-2">Get <b className="text-orange-600">Remove NotionBear Branding</b> at $50</h3>
-
-                                        {/* CTA form */}
-                                        <form className="w-full lg:w-auto">
-                                            <div>
-                                                <a className="btn bg-orange-600 hover:bg-orange-700 shadow" href="https://buy.stripe.com/5kAeV0b6K27w8BG6os">Get this Deal</a>
                                             </div>
-                                            {/* Success message */}
-                                            {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
-                                            <p className="text-sm text-gray-400 mt-3">Add On</p>
-                                        </form>
-                                    </div>
 
-                                </div>
+                                        </div>
 
-                            </div>
+                                        <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden"
+                                        >
+
+                                            {/* Background illustration */}
+                                            <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block" >
+
+
+
+                                                <Image alt="Logo"
+                                                    width={220}
+                                                    className="block"
+                                                    src={notionfooterImage} />
+
+
+
+                                            </div>
+
+                                            <div className="relative flex flex-col lg:flex-row justify-between items-center">
+
+                                                {/* CTA content */}
+                                                <div className="text-center lg:text-left lg:max-w-xl">
+                                                    <h3 className="h3 text-white mb-2">Free<b className="text-orange-600">Data Migration </b> Complimentary</h3>
+
+                                                    {/* CTA form */}
+                                                    <form className="w-full lg:w-auto">
+                                                        <div>
+                                                            <a className="btn bg-orange-600 hover:bg-orange-700 shadow" href="https://buy.stripe.com/5kAeV0b6K27w8BG6os">Get this Add On</a>
+                                                        </div>
+                                                        {/* Success message */}
+                                                        {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
+                                                        <p className="text-sm text-gray-400 mt-3">Add On.</p>
+                                                    </form>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden"
+                                        >
+
+                                            {/* Background illustration */}
+                                            <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block" >
+
+
+
+                                                <Image alt="Logo"
+                                                    width={220}
+                                                    className="block"
+                                                    src={notionfooterImage} />
+
+
+
+                                            </div>
+
+                                            <div className="relative flex flex-col lg:flex-row justify-between items-center">
+
+                                                {/* CTA content */}
+                                                <div className="text-center lg:text-left lg:max-w-xl">
+                                                    <h3 className="h3 text-white mb-2">NotionBear<b className="text-orange-600">AI Support</b> at $25 / Month</h3>
+
+                                                    {/* CTA form */}
+                                                    <form className="w-full lg:w-auto">
+                                                        <div>
+                                                            <a className="btn bg-orange-600 hover:bg-orange-700 shadow" href="https://buy.stripe.com/5kAeV0b6K27w8BG6os">Get this Add On</a>
+                                                        </div>
+                                                        {/* Success message */}
+                                                        {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
+                                                        <p className="text-sm text-gray-400 mt-3">Add On.</p>
+                                                    </form>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden"
+                                        >
+
+                                            {/* Background illustration */}
+                                            <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block" >
+
+
+
+                                                <Image alt="Logo"
+                                                    width={220}
+                                                    className="block"
+                                                    src={notionfooterImage} />
+
+
+
+                                            </div>
+
+                                            <div className="relative flex flex-col lg:flex-row justify-between items-center">
+
+                                                {/* CTA content */}
+                                                <div className="text-center lg:text-left lg:max-w-xl">
+                                                    <h3 className="h3 text-white mb-2">Remove <b className="text-orange-600">NotionBear Branding</b> at $50</h3>
+
+                                                    {/* CTA form */}
+                                                    <form className="w-full lg:w-auto">
+                                                        <div>
+                                                            <a className="btn bg-orange-600 hover:bg-orange-700 shadow" href="https://buy.stripe.com/5kAeV0b6K27w8BG6os">Get this Add On</a>
+                                                        </div>
+                                                        {/* Success message */}
+                                                        {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
+                                                        <p className="text-sm text-gray-400 mt-3">Add On</p>
+                                                    </form>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
 
 
 
