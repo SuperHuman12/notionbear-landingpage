@@ -1201,6 +1201,17 @@ export default function Pricing() {
 </div>
 
 
+<div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
+                {/* Background illustration */}
+                <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
+                  <Image
+                    alt="Logo"
+                    width={220}
+                    className="block"
+                    src={notionfooterImage}
+                  />
+                </div>
+
 <div className="relative flex flex-col lg:flex-row justify-between items-center">
                   {/* CTA content */}
                   <div className="text-center lg:text-left lg:max-w-xl">
@@ -1227,6 +1238,7 @@ export default function Pricing() {
                   </div>
                 </div>
 
+</div>
 
 
 

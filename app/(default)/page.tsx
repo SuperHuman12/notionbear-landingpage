@@ -7,6 +7,7 @@ import Hero from '@/components/hero'
 import Features from '@/components/features'
 import FeaturesBlocks from '@/components/features-blocks'
 import Testimonials from '@/components/testimonials'
+import AboutMe from '@/components/aboutme'
 import Showcases from '@/components/showcase'
 import Newsletter from '@/components/newsletter'
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Features />
       <Showcases />
       <Testimonials />
+      <AboutMe />
       <Newsletter />
     </>
   )

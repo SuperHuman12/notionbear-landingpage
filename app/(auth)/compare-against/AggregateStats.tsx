@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Testimonials: React.FC = () => {
+const AggregateStats: React.FC = () => {
     return (
         
         <section>
@@ -57,4 +57,4 @@ const Testimonials: React.FC = () => {
     );
 };
 
-export default Testimonials;
+export default AggregateStats;

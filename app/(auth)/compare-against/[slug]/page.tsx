@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import CompareHero from '@/public/images/heroimage.png'
 import Rating from '../Rating';
-import Testimonials from '../AggregateStats';
+import AggregateStats from '../AggregateStats';
 import TrustedBy from '../TrustedBy';
 import ComparisonTable from '../ComparisonTable';
 import TemplateDesign from '../TemplateDesign';
@@ -113,7 +113,7 @@ export default function ComparisonAgainst() {
           <ComparisonTable id={filterBySlug?.id} />
           <Rating />
           <TemplateDesign />
-          <Testimonials />
+          <AggregateStats />
           <TemplateLibrary />
 
         </div>
