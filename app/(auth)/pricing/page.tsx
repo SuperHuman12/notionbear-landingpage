@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import notionfooterImage from "@/public/images/freedesigner.png";
+import Testimonials from '../Testimonials';
 
 export default function Pricing() {
   const [activeTab, setActiveTab] = useState("Yearly");
@@ -1040,7 +1041,7 @@ export default function Pricing() {
             </div>
             <blockquote className="sm:col-span-2">
                 <p className="font-medium text-lg sm:text-xl">
-                    "With Helpkit we literally went from 0 to fully functional knowledge-base in 1 hour! The best thing about Helpkit is it allows my non-technical co-founder to do 95% of the work and manage our knowledge-base. We signed up
+                    "With NotionBear we literally went from 0 to fully functional knowledge-base in 1 hour! The best thing about NotionBear is it allows my non-technical co-founder to do 95% of the work and manage our knowledge-base. We signed up
                     because of how beautiful and well-designed the product is!"
                 </p>
                 <div className="mt-5 flex space-x-0.5 justify-start text-yellow-300">
@@ -1103,10 +1104,10 @@ export default function Pricing() {
                                 clip-rule="evenodd"
                             ></path>
                         </svg>
-                        What is HelpKit?
+                        What is NotionBear?
                     </dt>
                     <dd className="mt-3 text-gray-500">
-                        HelpKit is the perfect tool for creating your knowledge base in the shortest possible time. It is powered by the best content management system in the world: Notion. You write your help articles in Notion and HelpKit
+                        NotionBear is the perfect tool for creating your knowledge base in the shortest possible time. It is powered by the best content management system in the world: Notion. You write your help articles in Notion and NotionBear
                         takes care of the rest. It's as simple as that.
                     </dd>
                 </div>
@@ -1139,7 +1140,7 @@ export default function Pricing() {
                         How does the free 7 day trial work?
                     </dt>
                     <dd className="mt-3 text-gray-500">
-                        HelpKit offers a 7 day free trial to help you explore. No credit card required. There’s zero cost to get in the product and set things up. Within the trial period you will be able to use all available features. After
+                        NotionBear offers a 7 day free trial to help you explore. No credit card required. There’s zero cost to get in the product and set things up. Within the trial period you will be able to use all available features. After
                         the trial is over, you can choose to subscribe to one of our offered subscription plans.
                     </dd>
                 </div>
@@ -1152,10 +1153,10 @@ export default function Pricing() {
                                 clip-rule="evenodd"
                             ></path>
                         </svg>
-                        Is my data safe with HelpKit?
+                        Is my data safe with NotionBear?
                     </dt>
                     <dd className="mt-3 text-gray-500">
-                        HelpKit takes your privacy seriously and follows best practices to ensure that the confidentiality of personal information and customer data is protected and maintained. We do not disclose or share your data with
+                        NotionBear takes your privacy seriously and follows best practices to ensure that the confidentiality of personal information and customer data is protected and maintained. We do not disclose or share your data with
                         outside parties. All your knowledge base content is hosted in your own Notion workspace.
                     </dd>
                 </div>
@@ -1171,8 +1172,8 @@ export default function Pricing() {
                         Can I use every block type from Notion?
                     </dt>
                     <dd className="mt-3 text-gray-500">
-                        HelpKit supports most blocks from Notion. There are just a few complex block types such as calendars and databases that we are working on to get rendered as well. You can see our
-                        <a href="https://support.helpkit.so/Working-with-Notion-Docs/crG31kiLtd678d3PdJXvfj/Which-Notion-block-types-are-supported/2qK2E1KRvDMdsmHYi625Xd" target="_blank" className="font-medium underline">test suite here</a>.
+                        NotionBear supports most blocks from Notion. There are just a few complex block types such as calendars and databases that we are working on to get rendered as well. You can see our
+                        <a href="https://support.notionbear.com/Working-with-Notion-Docs/crG31kiLtd678d3PdJXvfj/Which-Notion-block-types-are-supported/2qK2E1KRvDMdsmHYi625Xd" target="_blank" className="font-medium underline">test suite here</a>.
                     </dd>
                 </div>
                 <div>
@@ -1184,10 +1185,10 @@ export default function Pricing() {
                                 clip-rule="evenodd"
                             ></path>
                         </svg>
-                        Who is behind HelpKit?
+                        Who is behind NotionBear?
                     </dt>
                     <dd className="mt-3 text-gray-500">
-                        HelpKit is an indie software company
+                        NotionBear is an indie software company
                         <a href="/run-by-a-human" className="font-medium underline">run by a human</a>
                         named
                         <a href="https://twitter.com/sobedominik" target="_blank" className="font-medium text-purple-500">Dominik</a>.
@@ -1200,9 +1201,12 @@ export default function Pricing() {
 
 <div className="flex flex-col items-center justify-center w-4/5 mx-auto -mt-5 sm:-mt-10">
     <div className="mb-2"><img width="80" src="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/200/000000/external-video-call-coworking-space-inipagistudio-lineal-color-inipagistudio.png" /></div>
-    <span className="mt-2 text-center text-lg font-semibold text-cool-gray-800"> Planning to <span className="gradient-text-accent font-bold">migrate</span> to HelpKit from another platform? </span>
-    <a href="/migrating-to-helpkit" target="_blank" className="pb-1 mt-4 text-base text-gray-500 border-b border-gray-500 cursor-pointer hover:text-cool-gray-800 hover:border-cool-gray-800">We can do it for you →</a>
+    <span className="mt-2 text-center text-lg font-semibold text-cool-gray-800"> Planning to <span className="gradient-text-accent font-bold">migrate</span> to NotionBear from another platform? </span>
+    <a href="/migrating-to-NotionBear" target="_blank" className="pb-1 mt-4 text-base text-gray-500 border-b border-gray-500 cursor-pointer hover:text-cool-gray-800 hover:border-cool-gray-800">We can do it for you →</a>
 </div>
+
+
+<Testimonials />
 
 
 
