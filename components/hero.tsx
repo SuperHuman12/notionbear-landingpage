@@ -61,7 +61,7 @@ export default function Hero() {
 
 
           <div className="hidden sm:flex justify-center items-center mt-8 sm:mb-0 mb-3 sm:mt-12 sm:w-[60%] mx-auto">
-            <div className="flex-shrink-0 sm:block hidden"><img src="https://www.notionbear.com/imgs/testimonials/adjust_square_portrait.jpg" alt="Author's image" className="w-16 h-16 object-cover text-gray-300 bg-white rounded-full" /></div>
+            <div className="flex-shrink-0 sm:block hidden"><img src="https://www.helpkit.so/imgs/testimonials/adjust_square_portrait.jpg" alt="Author's image" className="w-16 h-16 object-cover text-gray-300 bg-white rounded-full" /></div>
             <div className="ml-5">
               <div className="text-left">
                 <p className="-mt-1 opacity-70">

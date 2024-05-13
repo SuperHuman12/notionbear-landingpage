@@ -1175,7 +1175,7 @@ export default function Pricing() {
                     </dt>
                     <dd className="mt-3 text-gray-500">
                         NotionBear supports most blocks from Notion. There are just a few complex block types such as calendars and databases that we are working on to get rendered as well. You can see our
-                        <a href="https://support.notionbear.com/Working-with-Notion-Docs/crG31kiLtd678d3PdJXvfj/Which-Notion-block-types-are-supported/2qK2E1KRvDMdsmHYi625Xd" target="_blank" className="font-medium underline">test suite here</a>.
+                        <a href="https://support.notionbear.com/Working-with-Notion-Docs/crG31kiLtd678d3PdJXvfj/Which-Notion-block-types-are-supported/2qK2E1KRvDMdsmHYi625Xd" target="_blank" className="font-medium underline"> test suite here</a>.
                     </dd>
                 </div>
                 <div>
@@ -1190,9 +1190,7 @@ export default function Pricing() {
                         Who is behind NotionBear?
                     </dt>
                     <dd className="mt-3 text-gray-500">
-                        NotionBear is an indie software company
-                        <a href="/run-by-a-human" className="font-medium underline">run by a human</a>
-                        named
+                        NotionBear is an indie software company run by a human named
                         <a href="https://twitter.com/absurdfounder" target="_blank" className="font-medium text-purple-500"> Vaibhav</a>.
                     </dd>
                 </div>
@@ -1207,7 +1205,7 @@ export default function Pricing() {
                 <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
                   <Image
                     alt="Logo"
-                    width={220}
+                    width={400}
                     className="block"
                     src={MigrateFrom}
                   />
@@ -1216,7 +1214,7 @@ export default function Pricing() {
 <div className="relative flex flex-col lg:flex-row justify-between items-center">
                   {/* CTA content */}
                   <div className="text-center lg:text-left lg:max-w-xl">
-                    <h3 className="h4 text-white mb-2">
+                    <h3 className="h3 text-white mb-2">
                     Planning to <b className="text-orange-600">migrate</b> to NotionBear from another platform?
                     </h3>
 

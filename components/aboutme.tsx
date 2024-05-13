@@ -59,7 +59,7 @@ export default function aboutme() {
               </strong>
             </p>
             <br /> <br />
-            <p className="my-2">— Vaibhav, Founder</p>
+            <p className="my-2">— Vaibhav, Creator</p>
           </div>
         </div>
       </div>
