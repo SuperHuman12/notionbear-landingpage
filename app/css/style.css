@@ -73,3 +73,9 @@
     --tw-translate-y: -100%;
     transform: var(--tw-transform);
 }
+
+
+.gradient-border-accent {
+    border-image-source: linear-gradient(-60deg, #ff7733, #ffaa55, #e89d13);
+    border-image-slice: 1;
+}

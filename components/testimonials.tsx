@@ -200,7 +200,7 @@ export default function Testimonials() {
         About NotionBear
     </h2>
     <h3 className="pb-8 text-2xl font-black text-center text-gray-900 sm:text-4xl tracking-snug sm:leading-15 md:leading-20">
-        I want you to launch real businesses on and spend less time on support and website development.
+    Launch businesses in minutes, then grow to millions without leaving Notion.
     </h3>
     <div className="grid items-start pt-6 mx-auto gap-8 md:flex md:items-start justify-center">
         <div className="float-right w-1/3 mb-6 ml-6 sm:float-none sm:ml-12 sm:mb-0 ">
