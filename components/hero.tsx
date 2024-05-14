@@ -51,7 +51,7 @@ export default function Hero() {
         <div className="pt-32 pb-12 md:pt-18 md:pb-20">
           <div className="text-center">
             <h1
-              className="sm:text-3xl md:text-6xl font-extrabold leading-tight tracking-loose mb-4 aos-init aos-animate"
+              className="sm:text-3xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 aos-init aos-animate"
               data-aos="zoom-y-out"
             >
               Easily build your <br />
@@ -159,7 +159,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="hidden sm:flex justify-center items-center mt-4 sm:mb-0 mb-3 sm:mt-12 w-full mx-auto mx-4">
+          <div className="hidden sm:flex justify-center items-center mt-4 sm:mb-0 mb-3 bg-white w-fit mx-auto mx-4 p-4 rounded-md">
             <div className="flex-shrink-0 sm:block hidden">
               <img
                 src="https://www.helpkit.so/imgs/testimonials/adjust_square_portrait.jpg"
@@ -169,7 +169,7 @@ export default function Hero() {
             </div>
             <div className="ml-5">
               <div className="text-left">
-                <p className="-mt-1 opacity-70">
+                <p className="mt-1">
                   <span className="mr-1 text-xl italic opacity-60 font-medium">
                     "
                   </span>
@@ -257,7 +257,7 @@ export default function Hero() {
                 className="shadow-md"
               />{" "}
               <span className="ml-3 text-sm">
-                View Documentation Demo <span className="opacity-90">↗️</span>
+                View Helpdesk Demo <span className="opacity-90">↗️</span>
               </span>
             </a>
             <a
