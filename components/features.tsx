@@ -23,7 +23,7 @@ export default function Features() {
   }, [])
 
   return (
-    <section className="relative mt-4 mb-4 pb-4 bg-gray-900 rounded-4 border-4 border border-gray-600" style={{ background: 'linear-gradient(45deg, rgb(255 227 197), #edebea)' }}>
+    <section className="relative mt-4 mb-4 pb-4 bg-gray-900 rounded-4 border-gray-600" style={{ background: 'linear-gradient(45deg, rgb(255 236 225), rgb(255 222 205))' }}>
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div className="inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
@@ -46,7 +46,7 @@ export default function Features() {
               {/* Tabs buttons */}
               <div className="grid gap-4 mb-8 md:mb-0">
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 1 ? 'bg-gray-200' : 'bg-gray-900 text-white'}`}
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 1 ? 'bg-gray-100' : 'bg-orange-800 text-white'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
