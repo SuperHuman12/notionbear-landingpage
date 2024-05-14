@@ -1,6 +1,3 @@
-"use client";
-
-import React, { useState, useEffect } from "react";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -9,9 +6,9 @@ import TrustedBy from "../compare-against/TrustedBy";
 import FeaturesBlocks from "@/components/features-blocks";
 
 export const metadata = {
-    title: "Hire a NotionBear Expert",
+    title: "Create a Blog with Notion (no-code and free)",
     description:
-        "Hire NotionBear Agency when your ready to grow beyond we can help setup, design and manage your helpdesk, blog, or even marketplace. Also add custom code to your website deployment to make sure your needs are always met.",
+        "Build a blog in Notion, with our Notion blog maker. Go live in under a minute.  Build your free NotionBear Blog website in a minute!",
 };
 
 export default function ResetPassword() {
