@@ -44,11 +44,12 @@ export default function showcases() {
 
             <div role="list" className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
               <div role="listitem" className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full border">
-                <a href="https://catalog-xi.vercel.app" target="_blank" className="block" rel="noopener noreferrer">
+                <a className="block" >
                   <img src="https://dazzling-cat.netlify.app/catalog-xi.vercel.app_.png" alt="PreviewX" className="w-auto mx-auto" />
                   <div className="p-4">
-                  <Link href="#0">
+                  <Link className='flex gap-2' href="https://catalog-xi.vercel.app" target="_blank" rel="noopener noreferrer">
                   <h2 className="text-start mt-2 font-bold mb-4 hover:text-orange-600">PreviewX</h2>
+                  <span className="ml-4"><svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><g stroke="#52667A" stroke-width="1.25" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M4.10437012.76923H1.83333333C1.37309604.76923 1 1.11362635 1 1.53846077v7.69230769c0 .42483442.37309604.76923077.83333333.76923077h8.33333334c.46023729 0 .83333333-.34439635.83333333-.76923077V7.03051681M7.4205317.78000087h3.20254469c.21241721 0 .38461538.17219818.38461538.38461539V4.345704M10.5 1.5L6 5.84615385"></path></g></svg></span>
                   </Link>
                     <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded my-2">Helpdesk</span>
                     <div className="flex mt-2 gap-4">
@@ -59,11 +60,12 @@ export default function showcases() {
                 </a>
               </div>
               <div role="listitem" className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full border">
-                <a href="https://supportgroups.vercel.app" target="_blank" className="block" rel="noopener noreferrer">
+              <a className="block" >
                   <img src="https://dazzling-cat.netlify.app/supportgroups.vercel.app_.png" alt="Support Groups" className="w-auto mx-auto" />
                   <div className="p-4">
-                  <Link href="#0">
+                  <Link className='flex gap-2' href="https://supportgroups.vercel.app" target="_blank" rel="noopener noreferrer">
                     <h2 className="text-start mt-2 font-bold mb-4 hover:text-orange-600">Support Groups</h2>
+                    <span className="ml-4"><svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><g stroke="#52667A" stroke-width="1.25" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M4.10437012.76923H1.83333333C1.37309604.76923 1 1.11362635 1 1.53846077v7.69230769c0 .42483442.37309604.76923077.83333333.76923077h8.33333334c.46023729 0 .83333333-.34439635.83333333-.76923077V7.03051681M7.4205317.78000087h3.20254469c.21241721 0 .38461538.17219818.38461538.38461539V4.345704M10.5 1.5L6 5.84615385"></path></g></svg></span>
                     </Link>
                     <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded my-2">Helpdesk</span>
                     <div className="flex mt-2 gap-4">
@@ -74,11 +76,12 @@ export default function showcases() {
                 </a>
               </div>
               <div role="listitem" className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full border">
-                <a href="https://agencydatahub.vercel.app" target="_blank" className="block" rel="noopener noreferrer">
+              <a className="block" >
                   <img src="https://dazzling-cat.netlify.app/agencydatahub.vercel.app_.png" alt="Bear Vocal : Agency Hub" className="w-auto mx-auto" />
                   <div className="p-4">
-                  <Link href="#0">
+                  <Link className='flex gap-2' href="https://agencydatahub.vercel.app" target="_blank" rel="noopener noreferrer">
                     <h2 className="text-start mt-2 font-bold mb-4 hover:text-orange-600">Bear Vocal : Agency Hub</h2>
+                    <span className="ml-4"><svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><g stroke="#52667A" stroke-width="1.25" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M4.10437012.76923H1.83333333C1.37309604.76923 1 1.11362635 1 1.53846077v7.69230769c0 .42483442.37309604.76923077.83333333.76923077h8.33333334c.46023729 0 .83333333-.34439635.83333333-.76923077V7.03051681M7.4205317.78000087h3.20254469c.21241721 0 .38461538.17219818.38461538.38461539V4.345704M10.5 1.5L6 5.84615385"></path></g></svg></span>
                     </Link>
                     <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded my-2">Helpdesk</span>
                     <div className="flex mt-2 gap-4">
@@ -89,11 +92,12 @@ export default function showcases() {
                 </a>
               </div>
               <div role="listitem" className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full border">
-                <a href="http://eventstown.vercel.app" target="_blank" className="block" rel="noopener noreferrer">
+              <a className="block" >
                   <img src="https://dazzling-cat.netlify.app/eventstown.vercel.app_.png" alt="Event Town" className="w-auto mx-auto" />
                   <div className="p-4">
-                  <Link href="#0">
+                  <Link className='flex gap-2' href="http://eventstown.vercel.app" target="_blank" rel="noopener noreferrer">
                     <h2 className="text-start mt-2 font-bold mb-4 hover:text-orange-600">Event Town</h2>
+                    <span className="ml-4"><svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><g stroke="#52667A" stroke-width="1.25" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M4.10437012.76923H1.83333333C1.37309604.76923 1 1.11362635 1 1.53846077v7.69230769c0 .42483442.37309604.76923077.83333333.76923077h8.33333334c.46023729 0 .83333333-.34439635.83333333-.76923077V7.03051681M7.4205317.78000087h3.20254469c.21241721 0 .38461538.17219818.38461538.38461539V4.345704M10.5 1.5L6 5.84615385"></path></g></svg></span>
                     </Link>
                     <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded my-2">Helpdesk</span>
                     <div className="flex mt-2 gap-4">
@@ -104,11 +108,12 @@ export default function showcases() {
                 </a>
               </div>
               <div role="listitem" className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full border">
-                <a href="https://workremotelyeverywhere.vercel.app" target="_blank" className="block" rel="noopener noreferrer">
+              <a className="block" >
                   <img src="https://dazzling-cat.netlify.app/workremotelyeverywhere.vercel.app.png" alt="Work Remote Jobs" className="w-auto mx-auto" />
                   <div className="p-4">
-                  <Link href="#0">
+                  <Link className='flex gap-2' href="https://workremotelyeverywhere.vercel.app" target="_blank" rel="noopener noreferrer">
                     <h2 className="text-start mt-2 font-bold mb-4 hover:text-orange-600">Work Remote Jobs</h2>
+                    <span className="ml-4"><svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><g stroke="#52667A" stroke-width="1.25" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M4.10437012.76923H1.83333333C1.37309604.76923 1 1.11362635 1 1.53846077v7.69230769c0 .42483442.37309604.76923077.83333333.76923077h8.33333334c.46023729 0 .83333333-.34439635.83333333-.76923077V7.03051681M7.4205317.78000087h3.20254469c.21241721 0 .38461538.17219818.38461538.38461539V4.345704M10.5 1.5L6 5.84615385"></path></g></svg></span>
                     </Link>
                     <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded my-2">Helpdesk</span>
                     <div className="flex mt-2 gap-4">
@@ -119,11 +124,12 @@ export default function showcases() {
                 </a>
               </div>
               <div role="listitem" className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full border">
-                <a href="https://stevemarksvoice.com/" target="_blank" className="block" rel="noopener noreferrer">
+              <a className="block" >
                   <img src="https://assets-global.website-files.com/64edcbee727ea2112b0c00f2/64edcbee727ea2112b0c0776_brandbird%20(53).jpg" alt="Steve Marks Voice" className="w-auto mx-auto" />
                   <div className="p-4">
-                  <Link href="#0">
+                  <Link className='flex gap-2' href="https://stevemarksvoice.com/" target="_blank" rel="noopener noreferrer">
                     <h2 className="text-start mt-2 font-bold mb-4 hover:text-orange-600">Steve Marks Voice</h2>
+                    <span className="ml-4"><svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><g stroke="#52667A" stroke-width="1.25" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M4.10437012.76923H1.83333333C1.37309604.76923 1 1.11362635 1 1.53846077v7.69230769c0 .42483442.37309604.76923077.83333333.76923077h8.33333334c.46023729 0 .83333333-.34439635.83333333-.76923077V7.03051681M7.4205317.78000087h3.20254469c.21241721 0 .38461538.17219818.38461538.38461539V4.345704M10.5 1.5L6 5.84615385"></path></g></svg></span>
                     </Link>
                     <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded my-2">Helpdesk</span>
                     <div className="flex mt-2 gap-4">
