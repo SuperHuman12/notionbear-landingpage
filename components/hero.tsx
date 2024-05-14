@@ -86,7 +86,7 @@ export default function Hero() {
               <b className="text-gray-900">Turn your Notion docs</b> quickly
               into a beautiful{" "}
               <b className="text-gray-900">
-                SaaS, Apps, marketplaces, Blogs, Helpdesks
+                SaaS, Apps, Marketplaces, Blogs, Helpdesks
               </b>{" "}
               – no code required.
             </p>
@@ -243,7 +243,7 @@ export default function Hero() {
                 className="shadow-md"
               />{" "}
               <span className="ml-3 text-sm">
-                View marketplace Demo <span className="opacity-90">↗️</span>
+                View Marketplace Demo <span className="opacity-90">↗️</span>
               </span>
             </a>
             <a

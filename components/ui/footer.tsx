@@ -81,6 +81,9 @@ export default function Footer() {
                 <a href="/create-a-marketplace-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Marketplace</a>
               </li>
 
+              <li className="mb-2">
+                <a href="/create-a-company-wiki-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Company Wiki</a>
+              </li>
               
 
 

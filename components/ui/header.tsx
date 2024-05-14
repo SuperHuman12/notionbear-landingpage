@@ -48,9 +48,7 @@ export default function Header() {
               <li>
                 <Link href="/integration" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Integrations</Link>
               </li>              
-              <li>
-                <Link href="/template" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Business Templates</Link>
-              </li>
+
               <li>
                 <Link href="/showcase" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Showcase</Link>
               </li>
