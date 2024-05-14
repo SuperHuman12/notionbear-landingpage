@@ -57,6 +57,35 @@ export default function Footer() {
                 <a href="/agency" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Hire Experts</a>
               </li>
 
+              <li className="mb-2">
+                <a href="/create-a-blog-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Blog</a>
+              </li>
+
+              <li className="mb-2">
+                <a href="/create-a-directory-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Directory</a>
+              </li>
+              
+              <li className="mb-2">
+                <a href="/create-a-documentation-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Documentation</a>
+              </li>
+
+              <li className="mb-2">
+                <a href="/create-a-helpdesk-servicedesk-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Help Desk - Service Desk</a>
+              </li>
+              
+              <li className="mb-2">
+                <a href="/create-a-knowledge-base-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Knowledge Base</a>
+              </li>
+
+              <li className="mb-2">
+                <a href="/create-a-marketplace-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Marketplace</a>
+              </li>
+
+              
+
+
+
+
 
             </ul>
           </div>
