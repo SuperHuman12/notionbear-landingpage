@@ -6,7 +6,7 @@ import Image from "next/image";
 import FeaturesBg from "@/public/images/features-bg.png";
 import FeaturesElement from "@/public/images/features-element.png";
 import helpdeskImage from "@/public/images/helpdesk.gif";
-import directoryImage from "@/public/images/directory.gif";
+import marketplaceImage from "@/public/images/marketplace.gif";
 
 export default function Features() {
   const [tab, setTab] = useState<number>(1);
@@ -47,7 +47,7 @@ export default function Features() {
             <p className="text-xl text-gray-600">
               Notionbear is designed for all types from content curation to
               content creation. Build company blogs, helpdesks, company wiki,
-              documentations, or even directory and directories.
+              documentations, or even marketplace and directories.
             </p>
           </div>
 
@@ -232,7 +232,7 @@ export default function Features() {
                     <div className="relative inline-flex flex-col">
                       <Image
                         className="md:max-w-none mx-auto rounded border border-2 border-gray-600 shadow-lg"
-                        src={directoryImage}
+                        src={marketplaceImage}
                         width={500}
                         height={462}
                         unoptimized
@@ -242,13 +242,13 @@ export default function Features() {
                         A simpler alternative to{" "}
                         <img
                           alt="Ana"
-                          src="./images/simpler-directoryue2.png"
+                          src="./images/simpler-marketplaceue2.png"
                           className="rounded-full w-auto h-8"
                         />{" "}
                         and{" "}
                         <img
                           alt="Ana"
-                          src="./images/simpler-directoryue.png"
+                          src="./images/simpler-marketplaceue.png"
                           className="rounded-full w-auto h-8"
                         />
                       </div>

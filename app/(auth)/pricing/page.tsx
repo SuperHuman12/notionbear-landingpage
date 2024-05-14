@@ -211,7 +211,7 @@ export default function Pricing() {
                                   checked
                                   name="addon"
                                   className="h-5 w-5 rounded border-gray-300 text-gray-900 focus:ring-gray-900"
-                                  aria-label="Sub-directory blogs addon"
+                                  aria-label="Sub-marketplace blogs addon"
                                 />
                               </div>
                               <div className="ml-3 text-base">
@@ -554,7 +554,7 @@ export default function Pricing() {
                                   checked
                                   name="addon"
                                   className="h-5 w-5 rounded border-gray-300 text-gray-900 focus:ring-gray-900"
-                                  aria-label="Sub-directory blogs addon"
+                                  aria-label="Sub-marketplace blogs addon"
                                 />
                               </div>
                               <div className="ml-3 text-base">

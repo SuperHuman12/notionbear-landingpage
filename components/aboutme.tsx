@@ -41,7 +41,7 @@ export default function aboutme() {
               now. It's an amazing tool for storing and organizing all of my
               company's knowledge and writings. It should feel similiar to tools
               such as Intercom or Zendesk when it comes to support or webflow
-              and framer if your building directorys with 1000s of documents.{" "}
+              and framer if your building marketplaces with 1000s of documents.{" "}
               <br />
               <br />
               Since I couldn't find the right solution –{" "}

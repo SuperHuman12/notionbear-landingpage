@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Hero() {
   const words = [
     "Helpdesk",
-    "directorys",
+    "marketplaces",
     "Blog",
     "Company Wiki",
     "Documentation",
@@ -243,7 +243,7 @@ export default function Hero() {
                 className="shadow-md"
               />{" "}
               <span className="ml-3 text-sm">
-                View Directory Demo <span className="opacity-90">↗️</span>
+                View marketplace Demo <span className="opacity-90">↗️</span>
               </span>
             </a>
             <a

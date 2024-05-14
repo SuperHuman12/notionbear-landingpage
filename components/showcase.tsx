@@ -44,8 +44,8 @@ export default function showcases() {
 
             <div role="list" className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
               <div role="listitem" className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl h-full border">
-                <a href="https://directory-xi.vercel.app" target="_blank" className="block" rel="noopener noreferrer">
-                  <img src="https://dazzling-cat.netlify.app/directory-xi.vercel.app_.png" alt="PreviewX" className="w-auto mx-auto" />
+                <a href="https://marketplace-xi.vercel.app" target="_blank" className="block" rel="noopener noreferrer">
+                  <img src="https://dazzling-cat.netlify.app/marketplace-xi.vercel.app_.png" alt="PreviewX" className="w-auto mx-auto" />
                   <div className="p-4">
                     <h2 className="text-start mt-2 font-bold mb-4">PreviewX</h2>
                     <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded my-2">Helpdesk</span>
