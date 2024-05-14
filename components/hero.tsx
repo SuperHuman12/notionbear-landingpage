@@ -48,7 +48,7 @@ export default function Hero() {
         </svg>
       </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+        <div className="pt-32 pb-12 md:pt-18 md:pb-20">
           <div className="text-center">
             <h1
               className="sm:text-3xl md:text-6xl font-extrabold leading-tight tracking-loose mb-4 aos-init aos-animate"
@@ -159,7 +159,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="hidden sm:flex justify-center items-center mt-8 sm:mb-0 mb-3 sm:mt-12 sm:w-[60%] mx-auto">
+          <div className="hidden sm:flex justify-center items-center mt-4 sm:mb-0 mb-3 sm:mt-12 w-full mx-auto mx-4">
             <div className="flex-shrink-0 sm:block hidden">
               <img
                 src="https://www.helpkit.so/imgs/testimonials/adjust_square_portrait.jpg"
@@ -174,7 +174,7 @@ export default function Hero() {
                     "
                   </span>
                   With NotionBear we literally went
-                  <span className="bg-[#ffecd7] text-[##ce6a01] font-medium px-0.5 py-0.5">
+                  <span className="bg-[#ffecd7] text-[##ce6a01] font-medium px-0.5 py-0.5 mx-1 px-2">
                     from 0 to fully functional knowledge-base in 1 hour.
                   </span>{" "}
                   I highly recommend it!
@@ -235,7 +235,7 @@ export default function Hero() {
             <a
               href="#"
               target="_blank"
-              className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 bg-gray-50 px-3 py-2 opacity-80 hover:opacity-100"
+              className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
               <img
                 src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png"
@@ -243,13 +243,13 @@ export default function Hero() {
                 className="shadow-md"
               />{" "}
               <span className="ml-3 text-sm">
-                View Help Center Demo <span className="opacity-90">↗️</span>
+                View Directory Demo <span className="opacity-90">↗️</span>
               </span>
             </a>
             <a
               href="#"
               target="_blank"
-              className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-50 px-3 py-2 opacity-80 hover:opacity-100"
+              className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
               <img
                 src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
@@ -258,6 +258,20 @@ export default function Hero() {
               />{" "}
               <span className="ml-3 text-sm">
                 View Documentation Demo <span className="opacity-90">↗️</span>
+              </span>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
+            >
+              <img
+                src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
+                width="30"
+                className="shadow-md"
+              />{" "}
+              <span className="ml-3 text-sm">
+                View Blog Demo <span className="opacity-90">↗️</span>
               </span>
             </a>
           </div>
