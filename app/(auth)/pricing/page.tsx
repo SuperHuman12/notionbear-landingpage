@@ -1191,7 +1191,7 @@ export default function Pricing() {
                     </dt>
                     <dd className="mt-3 text-gray-500">
                         NotionBear is an indie software company run by a human named
-                        <a href="https://twitter.com/absurdfounder" target="_blank" className="font-medium text-purple-500"> Vaibhav</a>.
+                        <a href="https://twitter.com/absurdfounder" target="_blank" className="font-medium text-orange-500"> Vaibhav</a>.
                     </dd>
                 </div>
             </dl>
