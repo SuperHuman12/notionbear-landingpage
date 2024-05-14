@@ -83,12 +83,12 @@
 
 
 .text-4xl {
-    font-size: 3.625rem;
+    font-size: 3.625rem !important;
   }
 
   
   .text-5xl {
-    font-size: 4.25rem;
+    font-size: 4.25rem !important;
   }
   
 
