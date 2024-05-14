@@ -77,11 +77,15 @@ export default async function Template() {
 
           <div className="max-w-3xl mx-auto aos-init aos-animate max-w-sm grid md:grid-cols-1 lg:grid-cols-2 items-start md:max-w-2xl lg:max-w-none gap-6 ">
             {templates.map((template: any, index: number) => (
-              <Link key={index} href={"/template/" + template.id} className="cursor-pointer   m-2 relative flex items-center p-6 bg-white rounded shadow-xl h-full border mt-6">
+
+
+
+
+              <div key={index} className="relative flex flex-col items-center  bg-white rounded shadow-xl h-full border">
                 <div>
                   <div>
                     <div className="items-start">
-                      <Image className="w-full rounded mb-4 border border-dashed border-2"
+                      <Image className="w-auto mx-auto border"
                         width={100}
                         height={100}
                         src={template?.product?.logo}
@@ -91,13 +95,17 @@ export default async function Template() {
 
                       <div className='flex justify-between gap-4'>
 
-                        <span className="text-dark font-bold m-auto ml-1">{template?.product?.name}</span>
+                      <Link className='flex gap-2' href={"/template/" + template.id}  target="_blank" rel="noopener noreferrer">
+                        <span className="text-start mt-2 mb-1 font-bold hover:text-orange-600">{template?.product?.name}</span>
+                        <span className="ml-2 m-auto mb-3"><svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><g stroke="#52667A" stroke-width="1.25" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M4.10437012.76923H1.83333333C1.37309604.76923 1 1.11362635 1 1.53846077v7.69230769c0 .42483442.37309604.76923077.83333333.76923077h8.33333334c.46023729 0 .83333333-.34439635.83333333-.76923077V7.03051681M7.4205317.78000087h3.20254469c.21241721 0 .38461538.17219818.38461538.38461539V4.345704M10.5 1.5L6 5.84615385"></path></g></svg></span>
+                      </Link>
+
                         <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded my-2">Helpdesk</span>
 
                       </div>
 
                     </div>
-                    <p className="text-gray-600">{template?.product?.description}</p>
+                    <p className="text-sm text-gray-400 mt-2 mb-3">{template?.product?.description}</p>
 
 
 
@@ -114,7 +122,7 @@ export default async function Template() {
 
                   </div>
                 </div>
-              </Link>
+              </div>
             ))}
 
           </div>
