@@ -55,7 +55,7 @@ export default function Pricing() {
               <div className="w-full text-center ltr:mr-4 rtl:ml-4 md:block mb-8">
                 <p className="mt-2 text-lg font-medium text-gray-400">
                   Join 50+ happy customers who set up fully functional
-                  directories, helpdesk and blogs in hours not days --- All
+                  marketplaces, helpdesk and blogs in hours not days --- All
                   powered by Notion.
                 </p>
               </div>

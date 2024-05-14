@@ -47,7 +47,7 @@ export default function Features() {
             <p className="text-xl text-gray-600">
               Notionbear is designed for all types from content curation to
               content creation. Build company blogs, helpdesks, company wiki,
-              documentations, or even marketplace and directories.
+              documentations, or even marketplace and marketplaces.
             </p>
           </div>
 
@@ -125,7 +125,7 @@ export default function Features() {
                     </div>
                   </div>
                 </a>
-                |
+                
               </div>
             </div>
 

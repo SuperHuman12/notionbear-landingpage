@@ -12,7 +12,7 @@ export default function Hero() {
     "Blog",
     "Company Wiki",
     "Documentation",
-    "Directories",
+    "marketplaces",
   ];
   const [index, setIndex] = useState(0);
 
@@ -86,7 +86,7 @@ export default function Hero() {
               <b className="text-gray-900">Turn your Notion docs</b> quickly
               into a beautiful{" "}
               <b className="text-gray-900">
-                SaaS, Apps, Directories, Blogs, Helpdesks
+                SaaS, Apps, marketplaces, Blogs, Helpdesks
               </b>{" "}
               – no code required.
             </p>
