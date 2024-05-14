@@ -80,3 +80,16 @@
     border-image-source: linear-gradient(-60deg, #f73, #fa5, #e89d13);
     border-image-slice: 1;
 }
+
+
+.text-4xl {
+    font-size: 3.625rem;
+  }
+
+  
+  .text-5xl {
+    font-size: 4.25rem;
+  }
+  
+
+  
