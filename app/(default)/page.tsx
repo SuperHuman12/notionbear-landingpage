@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'NotionBear : Notion to Blog, Notion to Helpdesk, Notion to Catalog and Notion to Company Wiki',
-  description: 'Write your content on Notion and automatically publish it to your SEO-friendly blog, helpdesk, or catalog with a single click. No coding or design skills required.',
+  title: 'NotionBear : Notion to Blog, Notion to Helpdesk, Notion to directory and Notion to Company Wiki',
+  description: 'Write your content on Notion and automatically publish it to your SEO-friendly blog, helpdesk, or directory with a single click. No coding or design skills required.',
 }
 
 import Hero from '@/components/hero'

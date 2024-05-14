@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Migrate to NotionBear',
-  description: 'Migrate your helpdesk, blog, or even catalog to notionbear. Start living a hassle free life just SET and FORGET.',
+  description: 'Migrate your helpdesk, blog, or even directory to notionbear. Start living a hassle free life just SET and FORGET.',
 }
 
 export default function ResetPassword() {

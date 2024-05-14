@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Hire a NotionBear Expert',
-  description: 'Hire NotionBear Agency when your ready to grow beyond we can help setup, design and manage your helpdesk, blog, or even catalog. Also add custom code to your website deployment to make sure your needs are always met.',
+  description: 'Hire NotionBear Agency when your ready to grow beyond we can help setup, design and manage your helpdesk, blog, or even directory. Also add custom code to your website deployment to make sure your needs are always met.',
 }
 
 export default function ResetPassword() {

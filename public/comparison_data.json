@@ -81,7 +81,7 @@
           }
         },
         {
-          "feature": "Catalog CMS",
+          "feature": "directory CMS",
           "feature_value": {
             "Item": true,
             "Notion": true
@@ -184,7 +184,7 @@
           }
         },
         {
-          "feature": "Catalog CMS",
+          "feature": "directory CMS",
           "feature_value": {
             "Item": true,
             "Notion": true
@@ -287,7 +287,7 @@
           }
         },
         {
-          "feature": "Catalog CMS",
+          "feature": "directory CMS",
           "feature_value": {
             "Item": true,
             "Notion": true
@@ -390,7 +390,7 @@
           }
         },
         {
-          "feature": "Catalog CMS",
+          "feature": "directory CMS",
           "feature_value": {
             "Item": true,
             "Notion": true
@@ -493,7 +493,7 @@
           }
         },
         {
-          "feature": "Catalog CMS",
+          "feature": "directory CMS",
           "feature_value": {
             "Item": true,
             "Notion": true
@@ -596,7 +596,7 @@
           }
         },
         {
-          "feature": "Catalog CMS",
+          "feature": "directory CMS",
           "feature_value": {
             "Item": false,
             "Notion": true
@@ -699,7 +699,7 @@
           }
         },
         {
-          "feature": "Catalog CMS",
+          "feature": "directory CMS",
           "feature_value": {
             "Item": false,
             "Notion": true
@@ -802,7 +802,7 @@
           }
         },
         {
-          "feature": "Catalog CMS",
+          "feature": "directory CMS",
           "feature_value": {
             "Item": false,
             "Notion": true
@@ -905,7 +905,7 @@
           }
         },
         {
-          "feature": "Catalog CMS",
+          "feature": "directory CMS",
           "feature_value": {
             "Item": false,
             "Notion": true
@@ -1008,7 +1008,7 @@
           }
         },
         {
-          "feature": "Catalog CMS",
+          "feature": "directory CMS",
           "feature_value": {
             "Item": false,
             "Notion": true
