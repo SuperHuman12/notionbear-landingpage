@@ -17,7 +17,7 @@ export default function ResetPassword() {
 
           <div className="max-w-4xl py-10 mx-auto lg:py-12">
     <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-        <div className="relative flex items-center justify-center px-3 py-1 text-sm font-semibold leading-6 text-purple-700 rounded-full ring-1 ring-purple-700/80 opacity-60 hover:ring-purple-900/20 w-fit m-auto mb-4">
+        <div className="relative flex items-center justify-center px-3 py-1 text-sm font-semibold leading-6  rounded-full ring-1 ring-purple-700/80 opacity-60  w-fit m-auto mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" className="w-4 h-4 mr-1">
                 <path
                     fill="currentColor"
@@ -45,7 +45,7 @@ export default function ResetPassword() {
 <section className="mb-20">
     <div className="px-6 pt-5 pb-10 bg-white lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-            <p className="text-base font-semibold leading-7 text-indigo-600">
+            <p className="text-base font-semibold leading-7 text-orange-600">
                 SUPPORTED PLATFORMS
             </p>
             <h2 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">

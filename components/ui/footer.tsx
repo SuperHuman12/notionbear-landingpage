@@ -20,7 +20,7 @@ export default function Footer() {
             <Image src={Logo} loading='eager'  alt="Logo" width={200} height={200} />
               <p className="text-sm text-gray-600 mt-4 mb-4">Notion Bear is an easy-to-use website builder for busy founders. Lead by <a href="https://twitter.com/absurdfounder">@absurdfounder</a>.</p>
 
-              <p className='mt-2'>NotionBear is not related with Notion™ the company in any way.</p>
+              <p className='mb-2 text-sm text-gray-400'>NotionBear is not related with Notion™ the company in any way.</p>
 
             </Link>
             <div className="text-sm text-gray-600">
@@ -50,6 +50,14 @@ export default function Footer() {
               <li className="mb-2">
                 <a href="/pricing" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Pricing</a>
               </li>
+              <li className="mb-2">
+                <a href="/migrating-to-notionbear" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Migrate to NotionBear</a>
+              </li>
+              <li className="mb-2">
+                <a href="/agency" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Hire Experts</a>
+              </li>
+
+
             </ul>
           </div>
 
