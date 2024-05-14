@@ -75,28 +75,28 @@ export default function FeaturesBlocks() {
 
               {/* 7th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
-                <img alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/uicomponents.png" />
+                <img alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/linkdomain.png" />
                 <div>
                   <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Your Domain</h4>
-                  <p className="text-gray-600 text-center">No need to be a designer.</p>
+                  <p className="text-gray-600 text-center">Your site your address.</p>
                 </div>
               </div>
 
               {/* 8th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
-                <img alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/customcode.png" />
+                <img alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/teamsemoji.png" />
                 <div>
                   <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Perfect for Teams</h4>
-                  <p className="text-gray-600 text-center">If you need more, you can add custom code.</p>
+                  <p className="text-gray-600 text-center">Collaborate together as a team.</p>
                 </div>
               </div>
 
               {/* 9th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
-                <img alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/analytics.png" />
+                <img alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/gatedcontent.png" />
                 <div>
-                  <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Blazingly Fast</h4>
-                  <p className="text-gray-600 text-center">Know how your website performs.</p>
+                  <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Gated Content</h4>
+                  <p className="text-gray-600 text-center">Protect your content behind a paywall.</p>
                 </div>
               </div>
 
