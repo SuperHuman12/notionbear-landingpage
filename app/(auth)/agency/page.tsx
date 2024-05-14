@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 
 export const metadata = {
-  title: 'Migrate to NotionBear',
-  description: 'Migrate your helpdesk, blog, or even catalog to notionbear. Start living a hassle free life just SET and FORGET.',
+  title: 'Hire a NotionBear Expert',
+  description: 'Hire NotionBear Agency when your ready to grow beyond we can help setup, design and manage your helpdesk, blog, or even catalog. Also add custom code to your website deployment to make sure your needs are always met.',
 }
 
 export default function ResetPassword() {
@@ -30,9 +30,9 @@ export default function ResetPassword() {
         </div>
     </div>
     <div className="text-center">
-        <h1 className="md:text-5xl font-bold tracking-tight text-gray-900 sm:text-4xl font-extrabold leading-tighter tracking-tighter mb-4 aos-init aos-animate"><span className="gradient-text-accent">Migrate</span> your content from another external Knowledge Base</h1>
+        <h1 className="md:text-5xl font-bold tracking-tight text-gray-900 sm:text-4xl font-extrabold leading-tighter tracking-tighter mb-4 aos-init aos-animate"><span className="gradient-text-accent">Hire a NotionBear Expert</span> to help you grow beyond the limitations.</h1>
         <p className="mt-6 leading-7 text-gray-600 sm:text-lg sm:leading-8">
-            Planning to move your help content from another provider? We can seamlessly import your existing knowledge base from pretty much any platform into our Notion template.
+            If your ready to grow from a 100 users to 10,000 , We can customize your notionbear site to match your needs. 
         </p>
         <div className="flex items-center justify-center mt-10 gap-x-6">
             <button className="px-6 py-2 text-lg font-semibold text-white rounded-lg gradient-bg-accent bg-gray-800">
@@ -56,6 +56,67 @@ export default function ResetPassword() {
             </p>
         </div>
     </div>
+
+
+    <div className="container mx-auto">
+    <div className="w-40 mx-auto text-center">
+        <h2 className="text-2xl font-bold mb-4">What can Webflow Experts do?</h2>
+        <div className="text-lg text-gray-600 mb-8">
+            Experts can help with a wide range of design, development, and marketing projects.
+        </div>
+    </div>
+    <div className="project_type-wrapper w-dyn-list">
+        <div role="list" className="project_type-list w-dyn-items grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div role="listitem" className="project_type-item w-dyn-item bg-white shadow-lg p-6 rounded-lg">
+                <div className="experts-services-item_link flex items-center">
+                    <img loading="lazy" height="60" alt="Platform migrations" src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316fc6b33cce40a33c2b1b_Migration.svg" className="project_type-image mr-4" />
+                    <div>
+                        <h3 className="text-xl font-semibold mb-2">Platform migrations</h3>
+                        <p>Move all (or just part of) your site from another platform to Webflow.</p>
+                    </div>
+                </div>
+            </div>
+            <div role="listitem" className="project_type-item w-dyn-item bg-white shadow-lg p-6 rounded-lg">
+                <div className="experts-services-item_link flex items-center">
+                    <img loading="lazy" height="60" alt="Custom code &amp; integrations" src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316fb84aabe974ccc5e90a_Plugins.svg" className="project_type-image mr-4" />
+                    <div>
+                        <h3 className="text-xl font-semibold mb-2">Custom code &amp; integrations</h3>
+                        <p>Get help with integrations or other extensions that require development work.</p>
+                    </div>
+                </div>
+            </div>
+            <div role="listitem" className="project_type-item w-dyn-item bg-white shadow-lg p-6 rounded-lg">
+                <div className="experts-services-item_link flex items-center">
+                    <img loading="lazy" height="60" alt="Rebrands &amp; redesigns" src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316f5a0c978936919bd6fe_SiteRefresh.svg" className="project_type-image mr-4" />
+                    <div>
+                        <h3 className="text-xl font-semibold mb-2">Rebrands &amp; redesigns</h3>
+                        <p>Give your whole site a new look or work on a fresh new project with an Expert.</p>
+                    </div>
+                </div>
+            </div>
+            <div role="listitem" className="project_type-item w-dyn-item bg-white shadow-lg p-6 rounded-lg">
+                <div className="experts-services-item_link flex items-center">
+                    <img loading="lazy" height="60" alt="Marketing &amp; SEO guidance" src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316f8527b38c23039bb126_SEO.svg" className="project_type-image mr-4" />
+                    <div>
+                        <h3 className="text-xl font-semibold mb-2">Marketing &amp; SEO guidance</h3>
+                        <p>Get guidance and hands-on help with making sure your website gets found.</p>
+                    </div>
+                </div>
+            </div>
+            <div role="listitem" className="project_type-item w-dyn-item bg-white shadow-lg p-6 rounded-lg">
+                <div className="experts-services-item_link flex items-center">
+                    <img loading="lazy" height="60" alt="Interactions &amp; animations" src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316f46e1fd513dd0ff1b99_Interactions.svg" className="project_type-image mr-4" />
+                    <div>
+                        <h3 className="text-xl font-semibold mb-2">Interactions &amp; animations</h3>
+                        <p>Bring your site to life with custom-built interactions and animations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
     <div className="bg-white">
         <div className="px-6 mx-auto max-w-7xl lg:px-8">
             <div className="-mx-6 grid grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-3">
