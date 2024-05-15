@@ -24,7 +24,7 @@ export default function Footer() {
 
             </Link>
             <div className="text-sm text-gray-600">
-              <a href="/tos" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</a> · <a href="/privacy-policy" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</a>
+              <a href="/terms" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</a> · <a href="/privacy" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</a>
             </div>
           </div>
 
@@ -183,13 +183,6 @@ export default function Footer() {
                 <a href="/affiliate" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Affiliate Program</a>
               </li>
 
-              <li className="mb-2">
-                <a href="/privacy" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Privacy</a>
-              </li>
-
-              <li className="mb-2">
-                <a href="/terms" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Terms</a>
-              </li>              
 
               <li className="mb-2">
                 <a href="https://notionbear.com/help" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Helpcenter</a>

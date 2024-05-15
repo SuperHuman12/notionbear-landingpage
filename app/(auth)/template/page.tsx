@@ -75,13 +75,13 @@ export default async function Template() {
 
 
 
-          <div className="max-w-3xl mx-auto aos-init aos-animate max-w-sm grid md:grid-cols-1 lg:grid-cols-2 items-start md:max-w-2xl lg:max-w-none gap-6 ">
+          <div className="max-w-3xl mx-auto aos-init aos-animate max-w-sm grid md:grid-cols-1 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none gap-6">
             {templates.map((template: any, index: number) => (
 
 
 
 
-              <div key={index} className="relative flex flex-col items-center  bg-white rounded shadow-xl h-full border">
+              <Link href={"/template/" + template.id}  key={index} className="relative flex flex-col items-center  bg-white rounded shadow-xl h-full border">
                 <div>
                   <div>
                     <div className="items-start">
@@ -105,17 +105,6 @@ export default async function Template() {
                         <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded my-2">Helpdesk</span>
 
 
-                        <div className="flex gap-4 justify-between">
-
-                          <button className="bg-gray-900 border p-2 px-4 rounded my-2 text-white w-full mt-4 rounded text-center">
-                            {template?.callToCopy?.text || "Duplicate"}
-                          </button>
-
-                          <Link href={"/template/" + template.id} className="bg-gray-200 border p-2 px-4 rounded my-2 border border-gray-600 w-full mt-4 text-center rounded">
-                            {template?.callToCopy?.text || "View Site"}
-                          </Link>
-                        </div>
-
                       </div>
 
                     </div>
@@ -126,7 +115,7 @@ export default async function Template() {
 
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
 
           </div>
