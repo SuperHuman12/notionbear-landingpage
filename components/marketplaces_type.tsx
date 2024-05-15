@@ -8,7 +8,7 @@ import FeaturesElement from "@/public/images/features-element.png";
 import helpdeskImage from "@/public/images/helpdesk.gif";
 import marketplaceImage from "@/public/images/marketplace.gif";
 
-export default function Marketplaces_Type() {
+export default function Marketplace_Type() {
   const [tab, setTab] = useState<number>(1);
 
   const tabs = useRef<HTMLDivElement>(null);
@@ -41,13 +41,12 @@ export default function Marketplaces_Type() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">
-              No matter how unique your concept is, NotionBear can support it
+              No matter how unique your marketplace concept is, NotionBear can support it
               over.
             </h1>
             <p className="text-xl text-gray-600">
-              Notionbear is designed for all types from content curation to
-              content creation. Build company blogs, helpdesks, company wiki,
-              documentations, and marketplaces.
+              Notionbear is designed for all types from marketplace models from Rental marketplaces
+Service marketplaces, Product marketplaces, Other marketplaces.
             </p>
           </div>
 
