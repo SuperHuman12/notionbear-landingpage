@@ -76,6 +76,7 @@ export default async function Template() {
                 <div>
                   <div>
                     <div className="items-start">
+                      <div className="m-auto">
                       <Image
                         className="w-auto mx-auto border"
                         width={100}
@@ -84,6 +85,7 @@ export default async function Template() {
                         unoptimized
                         alt={template?.product?.name}
                       />
+                      </div>
 
                       <div className="p-6">
                         <Link href={template.id} className="flex gap-2">
