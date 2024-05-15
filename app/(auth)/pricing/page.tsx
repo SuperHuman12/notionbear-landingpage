@@ -1,17 +1,38 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import notionfooterImage from "@/public/images/freedesigner.png";
 import MigrateFrom from "@/public/images/migratefrom.png";
 import Testimonials from "@/components/testimonials";
 import Rating from "../compare-against/Rating";
 
+const pricingMap = {
+  3000: 5,
+  10000: 15,
+  50000: 30,
+  100000: 50,
+  1000000: 100,
+};
+
 export default function Pricing() {
   const [activeTab, setActiveTab] = useState("Yearly");
+  const [selectedUsers, setSelectedUsers] = useState(3000);
+  const [monthlyPrice, setMonthlyPrice] = useState(pricingMap[selectedUsers]);
+  const [yearlyPrice, setYearlyPrice] = useState(monthlyPrice * 10);
 
-  const handleTabClick = (tabName: string) => {
+  useEffect(() => {
+    const newMonthlyPrice = pricingMap[selectedUsers];
+    setMonthlyPrice(newMonthlyPrice);
+    setYearlyPrice(newMonthlyPrice * 10);
+  }, [selectedUsers]);
+
+  const handleTabClick = (tabName) => {
     setActiveTab(tabName);
+  };
+
+  const handleUserChange = (event) => {
+    setSelectedUsers(Number(event.target.value));
   };
 
   return (
@@ -171,6 +192,8 @@ export default function Pricing() {
                 <select
                   className="relative bg-white border-1 rounded mt-2 w-full p-4 font-bold h3"
                   id="num-of-views"
+                  value={selectedUsers}
+                  onChange={handleUserChange}
                 >
                   <option value="3000">3K Users</option>
                   <option value="10000">10K Users</option>
@@ -186,7 +209,7 @@ export default function Pricing() {
                       <div className="relative bg-white border-b-2 border-dashed px-7 py-6 md:pt-7">
                         <h5 className="h2 flex gap-2">
                           <span>
-                            <div className="font-bold">$50</div>
+                            <div className="font-bold">${yearlyPrice}</div>
                           </span>
                           <span
                             className="relative text-3xl leading-8 text-neutral-500 m-auto"
