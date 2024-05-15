@@ -15,6 +15,24 @@ const pricingMap: Record<number, number> = {
   1000000: 100,
 };
 
+const features = [
+  "Unlimited articles & collections",
+  "Unlimited languages",
+  "5 NotionBear Sites",
+  "Custom Domain / SSL",
+  "Paywall Integration",
+  "Password Protection",
+  "SEO Ready",
+  "Integrations",
+  "Advanced Customization",
+  "Article Suggester",
+  "Advanced Article Search",
+  "Content Rating",
+  "Auto Sync",
+  "Remove 'Powered by' badge",
+  "Detailed Analytics",
+];
+
 export default function Pricing() {
   const [activeTab, setActiveTab] = useState<"Monthly" | "Yearly">("Yearly");
   const [selectedUsers, setSelectedUsers] = useState<keyof typeof pricingMap>(3000);
@@ -204,509 +222,79 @@ export default function Pricing() {
               </div>
               <div>
                 <article className="overflow-hidden rounded-lg border-2 pb-5 shadow-md gradient-border-accent">
-                  {activeTab === "Yearly" ? (
-                    <>
-                      <div className="relative bg-white border-b-2 border-dashed px-7 py-6 md:pt-7">
-                        <h5 className="h2 flex gap-2">
-                          <span>
-                            <div className="font-bold">${yearlyPrice}</div>
-                          </span>
-                          <span
-                            className="relative text-3xl leading-8 text-neutral-500 m-auto"
-                            style={{ marginLeft: "0" }}
-                          >
-                            / Yearly
-                          </span>
-                        </h5>
-                        <div className="flex grow flex-col gap-2 md:flex-row md:items-end mt-6 mb-4">
-                          <button className="bg-gray-900 text-white w-full p-4 rounded-lg text-center">
-                            Upgrade
-                          </button>
+                  <div className="relative bg-white border-b-2 border-dashed px-7 py-6 md:pt-7">
+                    <h5 className="h2 flex gap-2">
+                      <span>
+                        <div className="font-bold">
+                          {activeTab === "Yearly" ? `$${yearlyPrice}` : `$${monthlyPrice}`}
                         </div>
+                      </span>
+                      <span
+                        className="relative text-3xl leading-8 text-neutral-500 m-auto"
+                        style={{ marginLeft: "0" }}
+                      >
+                        / {activeTab}
+                      </span>
+                    </h5>
+                    <div className="flex grow flex-col gap-2 md:flex-row md:items-end mt-6 mb-4">
+                      <button className="bg-gray-900 text-white w-full p-4 rounded-lg text-center">
+                        Upgrade
+                      </button>
+                    </div>
 
-                        <div className="relative overflow-hidden rounded-2xl border border-gray-200 bg-white">
-                          <div className="p-6 md:px-10 md:py-4 justify-center bg-gray-200">
-                            <div className="relative flex items-center">
-                              <div className="flex h-5 items-center">
-                                <input
-                                  type="checkbox"
-                                  id="addon"
-                                  checked
-                                  name="addon"
-                                  className="h-5 w-5 rounded border-gray-300 text-gray-900 focus:ring-gray-900"
-                                  aria-label="Sub-marketplace blogs addon"
-                                />
-                              </div>
-                              <div className="ml-3 text-base">
-                                <label className="font-normal text-gray-900">
-                                  <span>Including </span>
-                                  <span className="mr-3 inline-flex items-center rounded-md bg-gray-900 px-2.5 py-0.5 text-sm font-medium uppercase text-white">
-                                    Free Design Services
-                                  </span>
-                                  <span>limited time only.</span>
-                                </label>
-                              </div>
-                            </div>
+                    <div className="relative overflow-hidden rounded-2xl border border-gray-200 bg-white">
+                      <div className="p-6 md:px-10 md:py-4 justify-center bg-gray-200">
+                        <div className="relative flex items-center">
+                          <div className="flex h-5 items-center">
+                            <input
+                              type="checkbox"
+                              id="addon"
+                              checked
+                              name="addon"
+                              className="h-5 w-5 rounded border-gray-300 text-gray-900 focus:ring-gray-900"
+                              aria-label="Sub-marketplace blogs addon"
+                            />
+                          </div>
+                          <div className="ml-3 text-base">
+                            <label className="font-normal text-gray-900">
+                              <span>Including </span>
+                              <span className="mr-3 inline-flex items-center rounded-md bg-gray-900 px-2.5 py-0.5 text-sm font-medium uppercase text-white">
+                                Free Design Services
+                              </span>
+                              <span>limited time only.</span>
+                            </label>
                           </div>
                         </div>
-
-                        <p className="text-md max-w-[482px] pt-6 text-gray-500 md:pt-4">
-                          Extend your workflows with round-robin and collective
-                          events and make advanced routing forms.
-                        </p>
-                        <ul className="flex gap-3 p-8">
-                          <div className="p-4">
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>Unlimited articles &amp; collections</span>
-                            </li>
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>Unlimited languages</span>
-                            </li>
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>5 NotionBear Sites</span>
-                            </li>
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>Custom Domain / SSL</span>
-                            </li>
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>Private Help Center</span>
-                            </li>
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>Password Protection</span>
-                            </li>
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>Guest Accounts</span>
-                            </li>
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>Integrations</span>
-                            </li>
-                          </div>
-                          <div className="p-4">
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>Advanced Customization</span>
-                            </li>
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>Article Suggester</span>
-                            </li>
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>Advanced Article Search</span>
-                            </li>
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>Content Rating</span>
-                            </li>
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>Auto Sync</span>
-                            </li>
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>Remove 'Powered by' badge</span>
-                            </li>
-                            <li className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                              <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
-                                <svg
-                                  width="28px"
-                                  height="28px"
-                                  viewBox="0 0 15 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
-                                    fill="#060419"
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                  ></path>
-                                </svg>
-                              </figure>
-                              <span>Detailed Analytics</span>
-                            </li>
-                          </div>
-                        </ul>
-                      </div>
-                    </>
-                  )}
-
-                  <div className="grid gap-3 p-8">
-                    <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
-                      {/* Background illustration */}
-                      <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
-                        <Image
-                          alt="Logo"
-                          width={220}
-                          className="block"
-                          src={notionfooterImage}
-                        />
-                      </div>
-
-                      <div className="relative flex flex-col lg:flex-row justify-between items-center">
-                        {/* CTA content */}
-                        <div className="text-center lg:text-left lg:max-w-xl">
-                          <h3 className="h4 text-white mb-2">
-                            <b className="text-orange-600">Design Services</b>{" "}
-                            Complimentary{" "}
-                          </h3>
-
-                          {/* CTA form */}
-                          <form className="w-full lg:w-auto">
-                            <div>
-                              <a
-                                className="btn bg-gray-200 hover:bg-orange-700 shadow"
-                                href="/migrating-to-notionbear"
-                              >
-                                Included
-                              </a>
-                            </div>
-                            {/* Success message */}
-                            {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
-                            <p className="text-sm text-gray-400 mt-3">
-                              Add On.
-                            </p>
-                          </form>
-                        </div>
                       </div>
                     </div>
 
-                    <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
-                      {/* Background illustration */}
-                      <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
-                        <Image
-                          alt="Logo"
-                          width={300}
-                          className="block"
-                          src={MigrateFrom}
-                        />
-                      </div>
-
-                      <div className="relative flex flex-col lg:flex-row justify-between items-center">
-                        {/* CTA content */}
-                        <div className="text-center lg:text-left lg:max-w-xl">
-                          <h3 className="h4 text-white mb-2">
-                            <b className="text-orange-600">Data Migration </b>{" "}
-                            Free
-                          </h3>
-
-                          {/* CTA form */}
-                          <form className="w-full lg:w-auto">
-                            <div>
-                              <a
-                                className="btn bg-gray-200 hover:bg-orange-700 shadow"
-                                href="/agency"
-                              >
-                                Included
-                              </a>
-                            </div>
-                            {/* Success message */}
-                            {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
-                            <p className="text-sm text-gray-400 mt-3">
-                              Add On.
-                            </p>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
-                      {/* Background illustration */}
-                      <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
-                        <Image
-                          alt="Logo"
-                          width={220}
-                          className="block"
-                          src={notionfooterImage}
-                        />
-                      </div>
-
-                      <div className="relative flex flex-col lg:flex-row justify-between items-center">
-                        {/* CTA content */}
-                        <div className="text-center lg:text-left lg:max-w-xl">
-                          <h3 className="h4 text-white mb-2">
-                            NotionBear
-                            <b className="text-orange-600"> AI</b> at $25
-                            / Month
-                          </h3>
-
-                          {/* CTA form */}
-                          <form className="w-full lg:w-auto">
-                            <div>
-                              <a
-                                className="btn bg-orange-600 hover:bg-orange-700 shadow"
-                                href="https://buy.stripe.com/5kAeV0b6K27w8BG6os"
-                              >
-                                Get this Add On
-                              </a>
-                            </div>
-                            {/* Success message */}
-                            {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
-                            <p className="text-sm text-gray-400 mt-3">
-                              Add On.
-                            </p>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
-                      {/* Background illustration */}
-                      <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
-                        <Image
-                          alt="Logo"
-                          width={220}
-                          className="block"
-                          src={notionfooterImage}
-                        />
-                      </div>
-
-                      <div className="relative flex flex-col lg:flex-row justify-between items-center">
-                        {/* CTA content */}
-                        <div className="text-center lg:text-left lg:max-w-xl">
-                          <h3 className="h4 text-white mb-2">
-                            Remove{" "}
-                            <b className="text-orange-600">
-                              NotionBear Branding
-                            </b>{" "}
-                            at $50
-                          </h3>
-
-                          {/* CTA form */}
-                          <form className="w-full lg:w-auto">
-                            <div>
-                              <a
-                                className="btn bg-orange-600 hover:bg-orange-700 shadow"
-                                href="https://buy.stripe.com/5kAeV0b6K27w8BG6os"
-                              >
-                                Get this Add On
-                              </a>
-                            </div>
-                            {/* Success message */}
-                            {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
-                            <p className="text-sm text-gray-400 mt-3">Add On</p>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
+                    <p className="text-md max-w-[482px] pt-6 text-gray-500 md:pt-4">
+                      Extend your workflows with round-robin and collective
+                      events and make advanced routing forms.
+                    </p>
+                    <ul className="flex gap-3 p-8">
+                      {features.map((feature, index) => (
+                        <li key={index} className="text-md flex items-start gap-2 leading-[32px] mb-2">
+                          <figure className="min-w-6 flex min-h-[32px] items-center text-green-600 bg-gray-200 text-white rounded-full">
+                            <svg
+                              width="28px"
+                              height="28px"
+                              viewBox="0 0 15 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z"
+                                fill="#060419"
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </figure>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </article>
               </div>
