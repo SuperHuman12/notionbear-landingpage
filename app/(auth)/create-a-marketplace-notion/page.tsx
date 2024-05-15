@@ -10,6 +10,8 @@ import Image from "next/image";
 import TrustedBy from "../compare-against/TrustedBy";
 import FeaturesBlocks from "@/components/features-blocks";
 
+import Marketplaces_Type from "@/components/marketplaces_type";
+
 export const metadata = {
     title: "Create a Marketplace with Notion (no-code and free)",
     description:
@@ -74,6 +76,9 @@ export default function ResetPassword() {
                                 videoHeight={1080}
                             />
 
+
+
+<Marketplaces_Type />
 
 
                     <FeaturesBlocks />
