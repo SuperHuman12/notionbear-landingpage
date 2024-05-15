@@ -14,7 +14,7 @@ export default function DefaultLayout({
 }: {
   children: React.ReactNode
 }) {
-  useEffect(() => {
+  useEffect(() => {658
     AOS.init({
       once: true,
       disable: 'phone',

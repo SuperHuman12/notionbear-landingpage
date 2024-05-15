@@ -10,6 +10,9 @@ import Image from "next/image";
 import TrustedBy from "../compare-against/TrustedBy";
 import FeaturesBlocks from "@/components/features-blocks";
 
+import Aos from "aos";
+import 'aos/dist/aos.css'
+
 export const metadata = {
     title: "Create a Company Wiki with Notion (no-code and free)",
     description:
