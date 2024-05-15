@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '@/public/images/logonew-black.png';
@@ -9,6 +9,8 @@ import MobileMenu from './mobile-menu';
 export default function Header() {
   const [top, setTop] = useState<boolean>(true);
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
 
   // detect whether user has scrolled the page down by 10px
   const scrollHandler = () => {
@@ -37,13 +39,13 @@ export default function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li className="relative">
                 <button
-                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex gap-2 items-center transition duration-150 ease-in-out"
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                 >
                   Create a..
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 text-gray-400 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-500" data-v-0d428460=""><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" data-v-0d428460=""></path></svg>
                 </button>
                 {dropdownOpen && (
-
 <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white absolute z-10 w-screen max-w-md px-2 transform -translate-x-1/2 left-1/2 sm:px-0">
     <div className="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
         <a href="/help-center-software-powered-by-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50">
@@ -73,6 +75,7 @@ export default function Header() {
             </svg>
             <div className="ml-4 -mt-0.5">
                 <p className="text-base font-medium text-gray-900">Documentation</p>
+
                 <p className="mt-1 text-sm text-gray-500">
                     Create your world-class product documentation with Notion and HelpKit
                 </p>
@@ -109,7 +112,7 @@ export default function Header() {
                 </p>
             </div>
         </a>
-        <a href="/helpkit-ai" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out border rounded-lg border-purple-600/10 hover:bg-gray-50">
+        <a href="/helpkit-ai" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="url(#grad1)" className="flex-shrink-0 w-6 h-6 stroke-purple-600">
                 <defs>
                     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -128,7 +131,6 @@ export default function Header() {
             <div className="ml-4 -mt-0.5">
                 <p className="relative text-base font-medium text-gray-900">
                     Blog
-                    <span className="relative ml-1 text-xs bottom-1 gradient-text-accent">Recommended</span>
                 </p>
                 <p className="mt-1 text-sm text-gray-500">
                     AI powered chatbot and user insights add-on trained on your company's knowledge base
@@ -139,24 +141,24 @@ export default function Header() {
     <div className="px-5 py-5 space-y-6 bg-gray-50 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
         <div className="flow-root font-medium text-gray-900">
             <a href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 p-3 -m-3">
-                <img src="/_nuxt/img/helpsite_layout.99f86ce.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm">Help Center Demo <span className="opacity-90"></span></span>
+                <img src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm">Help Center Demo <span className="opacity-90"></span></span>
             </a>
         </div>
         <div className="flow-root">
             <a href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 p-3 -m-3">
-                <img src="/_nuxt/img/docsite_layout.e98f21d.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm"> Doc Site Demo <span className="opacity-90"></span></span>
+                <img src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm"> Doc Site Demo <span className="opacity-90"></span></span>
             </a>
         </div>
     </div>
     <div className="px-5 py-5 space-y-6 bg-gray-50 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
         <div className="flow-root font-medium text-gray-900">
             <a href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 p-3 -m-3">
-                <img src="/_nuxt/img/helpsite_layout.99f86ce.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm">Blog Site Demo <span className="opacity-90"></span></span>
+                <img src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm">Blog Site Demo <span className="opacity-90"></span></span>
             </a>
         </div>
         <div className="flow-root">
             <a href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 p-3 -m-3">
-                <img src="/_nuxt/img/docsite_layout.e98f21d.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm"> Marketplace Demo <span className="opacity-90"></span></span>
+                <img src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm"> Marketplace Demo <span className="opacity-90"></span></span>
             </a>
         </div>
     </div>
