@@ -1,3 +1,5 @@
+import ModalVideo from "@/components/modal-video";
+import VideoThumb from "@/public/images/hero-image.png";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -53,6 +55,17 @@ export default function ResetPassword() {
                                     </div>
                                 </div>
                             </div>
+
+                            <ModalVideo
+                                thumb={VideoThumb}
+                                thumbWidth={768}
+                                thumbHeight={432}
+                                thumbAlt="Modal video thumbnail"
+                                video="/videos/video.mp4"
+                                videoWidth={1920}
+                                videoHeight={1080}
+                            />
+
 
 
                         </div>
