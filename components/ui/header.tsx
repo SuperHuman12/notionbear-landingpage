@@ -44,7 +44,7 @@ export default function Header() {
                 </button>
                 {dropdownOpen && (
 
-<div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+<div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white absolute z-10 w-screen max-w-md px-2 transform -translate-x-1/2 left-1/2 sm:px-0">
     <div className="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
         <a href="/help-center-software-powered-by-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-purple-600">
@@ -88,7 +88,7 @@ export default function Header() {
                 ></path>
             </svg>
             <div className="ml-4 -mt-0.5">
-                <p className="text-base font-medium text-gray-900">Embeddable Widget</p>
+                <p className="text-base font-medium text-gray-900">Marketplace</p>
                 <p className="mt-1 text-sm text-gray-500">
                     Show your help articles to your customers right on your own website with our customizable widget
                 </p>
@@ -103,7 +103,7 @@ export default function Header() {
                 ></path>
             </svg>
             <div className="ml-4 -mt-0.5">
-                <p className="text-base font-medium text-gray-900">Protected Access</p>
+                <p className="text-base font-medium text-gray-900">Company Wiki</p>
                 <p className="mt-1 text-sm text-gray-500">
                     Protect and control access to your HelpKit sites for members only. Earn money with your content.
                 </p>
@@ -127,7 +127,7 @@ export default function Header() {
             </svg>
             <div className="ml-4 -mt-0.5">
                 <p className="relative text-base font-medium text-gray-900">
-                    HelpKit AI
+                    Blog
                     <span className="relative ml-1 text-xs bottom-1 gradient-text-accent">Recommended</span>
                 </p>
                 <p className="mt-1 text-sm text-gray-500">
@@ -148,13 +148,17 @@ export default function Header() {
             </a>
         </div>
     </div>
-    <div className="flex items-center justify-start pt-2 pb-6 pl-8 bg-cool-gray-50">
-        <a href="/#productvideo" className="inline-flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-gray-400">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
-            </svg>
-            <span className="ml-3">Watch our video instruction</span>
-        </a>
+    <div className="px-5 py-5 space-y-6 bg-gray-50 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+        <div className="flow-root font-medium text-gray-900">
+            <a href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 p-3 -m-3">
+                <img src="/_nuxt/img/helpsite_layout.99f86ce.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm">Blog Site Demo <span className="opacity-90"></span></span>
+            </a>
+        </div>
+        <div className="flow-root">
+            <a href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 p-3 -m-3">
+                <img src="/_nuxt/img/docsite_layout.e98f21d.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm"> Marketplace Demo <span className="opacity-90"></span></span>
+            </a>
+        </div>
     </div>
 </div>
 
