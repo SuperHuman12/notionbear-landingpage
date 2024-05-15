@@ -12,8 +12,6 @@ import FeaturesBlocks from "@/components/features-blocks";
 
 import Marketplaces_Type from "@/components/marketplaces_type";
 
-import Aos from "aos";
-import 'aos/dist/aos.css'
 
 export const metadata = {
     title: "Create a Marketplace with Notion (no-code and free)",

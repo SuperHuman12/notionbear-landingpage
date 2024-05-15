@@ -10,8 +10,7 @@ import Image from "next/image";
 import TrustedBy from "../compare-against/TrustedBy";
 import FeaturesBlocks from "@/components/features-blocks";
 
-import Aos from "aos";
-import 'aos/dist/aos.css'
+
 
 export const metadata = {
     title: "Create a Help Desk with Notion (no-code and free)",
