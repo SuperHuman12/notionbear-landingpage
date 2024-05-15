@@ -41,7 +41,7 @@ className="relative flex flex-col items-center  bg-white rounded shadow-xl h-ful
       />
       </div>
 
-      <div className="p-6">
+      <div className="p-6 text-start">
         <Link href={template.id} className="flex gap-2">
           <span className="text-start mt-2 mb-1 font-bold hover:text-orange-600">
             {template?.product?.name}
