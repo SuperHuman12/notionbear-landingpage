@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import Link from 'next/link'; 
 import templateData from '@/public/template_data.json';
+
+// Define TypeScript interfaces for the template data
+interface Product {
+  name: string;
+  logo: string;
+  description: string;
+}
+
+interface Template {
+  id: string;
+  product: Product;
+}
 
 // Utility function to truncate text
 const truncateText = (text: string, maxLength: number): string => {
@@ -12,26 +24,42 @@ const truncateText = (text: string, maxLength: number): string => {
 };
 
 // Utility function to shuffle an array
-const shuffleArray = (array: any[]) => {
-  return array.sort(() => Math.random() - 0.5);
+const shuffleArray = (array: Template[]): Template[] => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
 };
 
 const TemplateLibrary = () => {
-  const shuffledTemplates = shuffleArray([...templateData.template_library]).slice(0, 6);
+  const [templates, setTemplates] = useState<Template[]>([]);
+
+  useEffect(() => {
+    const shuffledTemplates = shuffleArray([...templateData.template_library]);
+    setTemplates(shuffledTemplates.slice(0, 6));
+  }, []);
 
   return (
-    <section className='max-w-6xl m-auto text-center space-y-4'>
+    <section className='max-w-3xl m-auto text-center space-y-4'>
       <h1 className="h2 mb-4 p-2">Incredible sites built with NotionBear</h1>
       <p className="text-xl text-gray-600 mb-8">Browse through examples of live Notion websites, built with NotionBear.</p>
 
-      <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center aos-init aos-animate mt-6" data-aos="zoom-y-out" data-aos-delay="300"><div><a className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.notionbear.com">Ask our Designer for Help</a></div><div><a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-2 m-auto" href="/template">View all Templates</a></div></div>
+      <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center aos-init aos-animate mt-6" data-aos="zoom-y-out" data-aos-delay="300">
+        <div>
+          <a className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.notionbear.com">Ask our Designer for Help</a>
+        </div>
+        <div>
+          <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-2 m-auto" href="/template">View all Templates</a>
+        </div>
+      </div>
 
-      <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none mt-9">
-        {shuffledTemplates.map((template, index) => (
+      <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start md:max-w-2xl lg:max-w-none mt-9">
+        {templates.map((template, index) => (
           <Link
             href={"/template/" + template.id}
             key={index}
-            className="relative flex flex-col items-center bg-white rounded shadow-xl h-full border"
+            className="relative flex flex-col items-center  bg-white rounded shadow-xl h-full border"
           >
             <div>
               <div>
@@ -41,16 +69,15 @@ const TemplateLibrary = () => {
                       className="w-auto mx-auto"
                       width={100}
                       height={100}
-                      src={template?.product?.logo}
+                      src={template.product.logo}
                       unoptimized
-                      alt={template?.product?.name}
+                      alt={template.product.name}
                     />
                   </div>
-
                   <div className="p-6 text-start">
                     <Link href={template.id} className="flex gap-2">
                       <span className="text-start mt-2 mb-1 font-bold hover:text-orange-600">
-                        {template?.product?.name}
+                        {template.product.name}
                       </span>
                       <span className="ml-2 m-auto mb-3">
                         <svg
@@ -72,11 +99,9 @@ const TemplateLibrary = () => {
                         </svg>
                       </span>
                     </Link>
-
                     <p className="text-sm text-gray-400 mt-2 mb-3">
-                      {truncateText(template?.product?.description, 76)}
+                      {truncateText(template.product.description, 76)}
                     </p>
-
                     <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded my-2">
                       Helpdesk
                     </span>
