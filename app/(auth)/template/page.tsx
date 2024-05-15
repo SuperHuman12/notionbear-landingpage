@@ -122,7 +122,7 @@ export default async function Template() {
                         </Link>
 
                         <p className="text-sm text-gray-400 mt-2 mb-3">
-                        {truncateText(template?.product?.description, 100)}
+                        {truncateText(template?.product?.description, 76)}
                         </p>
 
                         <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded my-2">
