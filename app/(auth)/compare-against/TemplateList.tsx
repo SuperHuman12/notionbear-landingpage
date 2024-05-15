@@ -41,7 +41,7 @@ const TemplateLibrary = () => {
   }, []);
 
   return (
-    <section className='max-w-3xl m-auto text-center space-y-4'>
+    <section className='max-w-3xl m-auto text-center'>
       <h1 className="h2 mb-4 p-2">Incredible sites built with NotionBear</h1>
       <p className="text-xl text-gray-600 mb-8">Browse through examples of live Notion websites, built with NotionBear.</p>
 
