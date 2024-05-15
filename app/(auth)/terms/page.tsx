@@ -31,7 +31,7 @@ export default function ResetPassword() {
                     </h2>
                     <p className="text-gray-600 my-2">
                         <span>
-                            <span>These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and&nbsp;Seven Degrees Labs LLC, doing business as NotionBear&nbsp;("NotionBear", “</span>
+                            <span>These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and&nbsp;Malai Tikka Labs LLC, doing business as NotionBear&nbsp;("NotionBear", “</span>
                             <b><span>we</span></b><span>”, “</span><b><span>us</span></b><span>”, or “</span><b><span>our</span></b><span>”), concerning your access to and use of the&nbsp;</span>
                             <a target="_blank" href="https://www.notionbear.com/" className="link"><span>https://www.notionbear.com</span></a>
                             <span>
@@ -240,7 +240,7 @@ export default function ResetPassword() {
                         <span><span>LICENSE</span></span>
                     </h2>
                     <p className="text-gray-600 my-2">
-                        <span><span>Seven Degrees Labs LLC grants you a revocable, non-exclusive, non-transferable, limited license to use the Application strictly in accordance with the terms of this Agreement. </span></span>
+                        <span><span> LLC grants you a revocable, non-exclusive, non-transferable, limited license to use the Application strictly in accordance with the terms of this Agreement. </span></span>
                     </p>
                     <h2 className="h4 my-2">
                         <span><span>RESTRICTIONS</span></span>
@@ -262,7 +262,7 @@ export default function ResetPassword() {
                     </ul>
                     <ul className="list list-disc my-2">
                         <li>
-                            <span><span>remove, alter or obscure any proprietary notice (including any notice of copyright or trademark) of Seven Degrees Labs LLC or its affiliates, partners, suppliers or the licensors of the Application.</span></span>
+                            <span><span>remove, alter or obscure any proprietary notice (including any notice of copyright or trademark) of Malai Tikka Labs LLC or its affiliates, partners, suppliers or the licensors of the Application.</span></span>
                         </li>
                         
                     </ul>
@@ -271,7 +271,7 @@ export default function ResetPassword() {
                         <span><span>FAIR USE POLICY</span></span>
                     </h2>
                     <p className="text-gray-600 my-2">
-                        <span><span>Customers of Seven Degrees Labs need to adhere the following fair use policy:</span></span>
+                        <span><span>Customers of Malai Tikka Labs need to adhere the following fair use policy:</span></span>
                     </p>
                     <ul className="list list-disc my-2">
                         <li>
@@ -290,8 +290,8 @@ export default function ResetPassword() {
                     <p className="text-gray-600 my-2">
                         <span>
                             <span>
-                                Any feedback, comments, ideas, improvements or suggestions (collectively, "Suggestions") provided by you to Seven Degrees Labs LLC with respect to the Application shall remain the sole and exclusive property of Seven
-                                Degrees Labs LLC Seven Degrees Labs LLC shall be free to use, copy, modify, publish, or redistribute the Suggestions for any purpose and in any way without any credit or any compensation to you.
+                                Any feedback, comments, ideas, improvements or suggestions (collectively, "Suggestions") provided by you to Malai Tikka Labs LLC with respect to the Application shall remain the sole and exclusive property of Malai
+                                Tikka Labs LLC shall be free to use, copy, modify, publish, or redistribute the Suggestions for any purpose and in any way without any credit or any compensation to you.
                             </span>
                         </span>
                     </p>
@@ -901,22 +901,22 @@ export default function ResetPassword() {
                     </p>
                     <p className="text-gray-600 my-2">
                         <span>
-                            <b><span>Seven Degrees Labs LLC</span></b>
+                            <b><span>Malai Tikka Labs LLC</span></b>
                         </span>
                     </p>
                     <p className="text-gray-600 my-2">
                         <span>
-                            <b><span>30 N GOULD ST STE R SHERIDAN, WY 82801</span></b>
+                            <b><span>Kohat Enclave, Delhi, India 110033</span></b>
                         </span>
                     </p>
                     <p className="text-gray-600 my-2">
                         <span>
-                            <b><span>Phone:&nbsp;+436505611176</span></b>
+                            <b><span>Phone:&nbsp;+919711269346</span></b>
                         </span>
                     </p>
                     <p className="text-gray-600 my-2">
                         <span>
-                            <b><span>vaibhav@sevendegrees.io</span></b>
+                            <b><span>hey@vaibhavkalra.com</span></b>
                         </span>
                     </p>
                     <p className="text-gray-600 my-2">
