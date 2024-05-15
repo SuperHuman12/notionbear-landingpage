@@ -16,9 +16,12 @@ const truncateText = (text: string, maxLength: number): string => {
 const TemplateLibrary = () => {
   return (
     <section className='max-w-3xl m-auto text-center space-y-4'>
-      <h1 className="h1 mb-4">Incredible sites built with NotionBear</h1>
+      <h1 className="h2 mb-4 p-2">Incredible sites built with NotionBear</h1>
       <p className="text-xl text-gray-600 mb-8">Browse through examples of live Notion websites, built with NotionBear.</p>
-      <button className="text-dark border rounded w-fit p-2 mt-4 px-4 bg-gray-200">View all Templates</button>
+
+      <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center aos-init aos-animate mt-6" data-aos="zoom-y-out" data-aos-delay="300"><div><a className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.notionbear.com">Ask our Designer for Help</a></div><div><a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-2 m-auto" href="/template">View all Templates</a></div></div>
+
+
       <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start md:max-w-2xl lg:max-w-none mt-9">
         {templateData.template_library.map((template, index) => (
 
