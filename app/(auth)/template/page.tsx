@@ -9,6 +9,14 @@ export const metadata = {
     "Jumpstart your SaaS business with pre-built solutions from NotionBear and our community",
 };
 
+// Utility function to truncate text
+const truncateText = (text: string, maxLength: number): string => {
+  if (text.length > maxLength) {
+    return text.slice(0, maxLength) + "...";
+  }
+  return text;
+};
+
 export default async function Template() {
   const templates = await _loadFromJson();
 
@@ -114,7 +122,7 @@ export default async function Template() {
                         </Link>
 
                         <p className="text-sm text-gray-400 mt-2 mb-3">
-                          {template?.product?.description}
+                        {truncateText(template?.product?.description, 100)}
                         </p>
 
                         <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded my-2">
