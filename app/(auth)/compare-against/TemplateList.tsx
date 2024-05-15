@@ -43,7 +43,7 @@ const TemplateLibrary = () => {
   }, []);
 
   return (
-    <section className='max-w-3xl m-auto text-center'>
+    <section className='max-w-6xl m-auto text-center'>
       <h1 className="h2 mb-4 p-2">Incredible sites built with NotionBear</h1>
       <p className="text-xl text-gray-600 mb-8">Browse through examples of live Notion websites, built with NotionBear.</p>
 
@@ -56,7 +56,7 @@ const TemplateLibrary = () => {
         </div>
       </div>
 
-      <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start md:max-w-2xl lg:max-w-none mt-9">
+      <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-3 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none mt-8">
         {templates.map((template, index) => (
           <Link
             href={"/template/" + template.id}
