@@ -97,6 +97,9 @@ export default function Footer() {
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-800 font-medium mb-2">Resources</h6>
             <ul className="text-sm">
+
+
+              
               <li className="mb-2">
                 <a href="/compare-against/notionbear-vs-wix" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Wix</a>
               </li>
@@ -127,6 +130,41 @@ export default function Footer() {
               <li className="mb-2">
                 <a href="/compare-against/notionbear-vs-shopify" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Shopify</a>
               </li>                                 
+
+
+
+              <li className="mb-2">
+                <a href="/compare-against/notionbear-vs-wix" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a peer-to-peer marketplace</a>
+              </li>
+              <li className="mb-2">
+                <a href="/compare-against/notionbear-vs-webflow" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a B2B marketplace</a>
+              </li>
+              <li className="mb-2">
+                <a href="/compare-against/notionbear-vs-wordpress" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Airbnb</a>
+              </li>
+              <li className="mb-2">
+                <a href="/compare-against/notionbear-vs-squarespace" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Etsy</a>
+              </li>
+              <li className="mb-2">
+                <a href="/compare-against/notionbear-vs-zendesk" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Fiverr</a>
+              </li>
+              <li className="mb-2">
+                <a href="/compare-against/notionbear-vs-intercom" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a rental marketplace?</a>
+              </li>
+              <li className="mb-2">
+                <a href="/compare-against/notionbear-vs-ghost" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a service marketplace</a>
+              </li>
+              <li className="mb-2">
+                <a href="/compare-against/notionbear-vs-framer" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a two-sided marketplace</a>
+              </li>  
+              <li className="mb-2">
+                <a href="/compare-against/notionbear-vs-gitbook" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Gitbook</a>
+              </li>                
+              <li className="mb-2">
+                <a href="/compare-against/notionbear-vs-shopify" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Shopify</a>
+              </li>                                 
+
+
             </ul>
           </div>
 
@@ -149,6 +187,15 @@ export default function Footer() {
               <li className="mb-2">
                 <a href="/affiliate" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Affiliate Program</a>
               </li>
+
+              <li className="mb-2">
+                <a href="/privacy" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Privacy</a>
+              </li>
+
+              <li className="mb-2">
+                <a href="/terms" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Terms</a>
+              </li>              
+
               <li className="mb-2">
                 <a href="https://notionbear.com/help" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Helpcenter</a>
               </li>                                          
