@@ -21,7 +21,7 @@ export default async function Template() {
   const templates = await _loadFromJson();
 
   return (
-    <section className="bg-gradient-to-b from-gray-100 to-white">
+    <section className="bg-gradient-to-b from-gray-100 to-white" id="template-section">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-32 pb-12 md:pt-18 md:pb-20">
           {/* Page header */}

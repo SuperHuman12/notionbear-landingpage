@@ -23,7 +23,8 @@ export default function Features() {
   }, []);
 
   return (
-    <section
+    <section 
+    id="featured-section"
       className="relative mt-4 mb-4 pb-4 bg-gray-900 rounded-4 border-gray-600"
       style={{
         background:
