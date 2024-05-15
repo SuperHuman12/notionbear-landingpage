@@ -6,7 +6,7 @@ import TrustedBy from "../compare-against/TrustedBy";
 import FeaturesBlocks from "@/components/features-blocks";
 
 export const metadata = {
-    title: "Create a help desk with Notion (no-code and free)",
+    title: "Create a Help Desk with Notion (no-code and free)",
     description:
         "Build a help desk in Notion, with our Notion help desk maker. Go live in under a minute.  Build your free NotionBear help desk website in a minute!",
 };

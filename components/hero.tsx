@@ -8,12 +8,11 @@ import Image from "next/image";
 export default function Hero() {
   const words = [
     "Helpdesk",
-    "marketplaces",
+    "Marketplaces",
     "Blog",
     "Company Wiki",
-    "Documentation",
-    "marketplaces",
-  ];
+    "Documentation"
+    ];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {

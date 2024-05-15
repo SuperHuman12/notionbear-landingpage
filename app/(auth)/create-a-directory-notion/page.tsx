@@ -6,7 +6,7 @@ import TrustedBy from "../compare-against/TrustedBy";
 import FeaturesBlocks from "@/components/features-blocks";
 
 export const metadata = {
-    title: "Create a directory with Notion (no-code and free)",
+    title: "Create a Directory with Notion (no-code and free)",
     description:
         "Build a directory in Notion, with our Notion directory maker. Go live in under a minute.  Build your free NotionBear directory website in a minute!",
 };

@@ -8,7 +8,7 @@ import FeaturesBlocks from "@/components/features-blocks";
 export const metadata = {
     title: "Create a Blog with Notion (no-code and free)",
     description:
-        "Build a blog in Notion, with our Notion blog maker. Go live in under a minute.  Build your free NotionBear Blog website in a minute!",
+        "Build a blog in Notion, with our Notion blog maker. Go live in under a minute.  Build your free NotionBear blog website in a minute!",
 };
 
 export default function ResetPassword() {
@@ -38,7 +38,7 @@ export default function ResetPassword() {
                                             Notion into a
                                         </span>
                                         <br className="block" />
-                                        professional<span className="text-3xl sm:text-5xl md:text-5xl gradient-text-accent mx-4">Blog</span>
+                                        professional<span className="text-3xl sm:text-5xl md:text-5xl gradient-text-accent mx-4">blog</span>
                                     </h1>
                                     <p className="max-w-md mx-auto mt-3 -mb-3 text-base text-gray-500 sm:mb-0 sm:text-lg md:mt-5 md:text-lg md:max-w-2xl">
                                         NotionBear is the perfect tool for creating your blogs powered by notion. You write your articles in Notion and NotionBear takes care of the rest. It's as simple as that.
@@ -46,7 +46,7 @@ export default function ResetPassword() {
                                     <div className="flex flex-col-reverse justify-center w-full mt-10 -mb-8 sm:flex-row">
                                         <div className="mt-3 sm:mt-0">
                                             <a href="/signup" className=" inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out rounded-md shadow bg-orange-700 sm:w-auto ">
-                                                <strong className="mr-1">Create your Blog with Notion →</strong>
+                                                <strong className="mr-1">Create your blog with Notion →</strong>
                                             </a>
                                             <p className="mt-3 text-sm text-gray-700"><strong> Free</strong> 7 day trial. No credit card required.</p>
                                         </div>

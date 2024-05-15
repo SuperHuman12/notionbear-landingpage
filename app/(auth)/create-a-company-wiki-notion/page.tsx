@@ -6,7 +6,7 @@ import TrustedBy from "../compare-against/TrustedBy";
 import FeaturesBlocks from "@/components/features-blocks";
 
 export const metadata = {
-    title: "Create a company wiki with Notion (no-code and free)",
+    title: "Create a Company Wiki with Notion (no-code and free)",
     description:
         "Build a company wiki in Notion, with our Notion company wiki maker. Go live in under a minute.  Build your free NotionBear company wiki website in a minute!",
 };

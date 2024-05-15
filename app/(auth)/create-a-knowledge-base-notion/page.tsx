@@ -6,7 +6,7 @@ import TrustedBy from "../compare-against/TrustedBy";
 import FeaturesBlocks from "@/components/features-blocks";
 
 export const metadata = {
-    title: "Create a knowledge base with Notion (no-code and free)",
+    title: "Create a Knowledge Base with Notion (no-code and free)",
     description:
         "Build a knowledge base in Notion, with our Notion knowledge base maker. Go live in under a minute.  Build your free NotionBear knowledge base website in a minute!",
 };

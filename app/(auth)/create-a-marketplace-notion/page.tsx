@@ -6,7 +6,7 @@ import TrustedBy from "../compare-against/TrustedBy";
 import FeaturesBlocks from "@/components/features-blocks";
 
 export const metadata = {
-    title: "Create a marketplace with Notion (no-code and free)",
+    title: "Create a Marketplace with Notion (no-code and free)",
     description:
         "Build a marketplace in Notion, with our Notion marketplace maker. Go live in under a minute.  Build your free NotionBear marketplace website in a minute!",
 };

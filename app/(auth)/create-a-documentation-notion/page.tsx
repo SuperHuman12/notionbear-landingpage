@@ -6,7 +6,7 @@ import TrustedBy from "../compare-against/TrustedBy";
 import FeaturesBlocks from "@/components/features-blocks";
 
 export const metadata = {
-    title: "Create a documentation with Notion (no-code and free)",
+    title: "Create a Documentation with Notion (no-code and free)",
     description:
         "Build a documentation in Notion, with our Notion documentation maker. Go live in under a minute.  Build your free NotionBear documentation website in a minute!",
 };
