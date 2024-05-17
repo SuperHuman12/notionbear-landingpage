@@ -15,7 +15,12 @@ const pricingMap: Record<number, number> = {
   1000000: 100,
 };
 
-const features = [
+interface Feature {
+  name: string;
+  popup: { image: string; headline: string; description: string } | null;
+}
+
+const features: Feature[] = [
   { name: "Unlimited articles & collections", popup: { image: "/path/to/image1.png", headline: "Unlimited Articles", description: "Create unlimited articles and collections effortlessly." } },
   { name: "Unlimited languages", popup: null },
   { name: "5 NotionBear Sites", popup: { image: "/path/to/image2.png", headline: "Multiple Sites", description: "Manage up to 5 different NotionBear sites." } },
