@@ -9,8 +9,9 @@ import Image from "next/image";
 
 import TrustedBy from "../compare-against/TrustedBy";
 import FeaturesBlocks from "@/components/features-blocks";
+import Marketplaces_Type from "@/components/marketplaces_type";
 
-
+import Testimonials from "@/components/testimonials";
 
 export const metadata = {
     title: "Create a Help Desk with Notion (no-code and free)",
@@ -100,8 +101,17 @@ export default function PageDetail() {
         </section>
 
 
+        <Marketplaces_Type/>
+
 
         <FeaturesBlocks />
+
+
+<Testimonials />
+
+
+
+
 
 
 
