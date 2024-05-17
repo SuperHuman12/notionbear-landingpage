@@ -36,7 +36,7 @@ export const metadata = {
         },
 };
 
-export default function ResetPassword() {
+export default function PageDetail() {
     return (
 
         <div>

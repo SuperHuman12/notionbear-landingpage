@@ -37,7 +37,7 @@ export const metadata = {
         },
 };
 
-export default function ResetPassword() {
+export default function PageDetail() {
     return (
         <div>
         <section className="bg-gradient-to-b from-gray-100 to-white">
