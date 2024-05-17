@@ -59,7 +59,7 @@ export default function Header() {
             </svg>
             <div className="ml-4 -mt-0.5">
                 <p className="text-base font-medium text-gray-50">Help Center</p>
-                <p className="mt-1 text-sm text-gray-200">
+                <p className="mt-1 text-sm text-gray-400">
                     Create your professional self-service help center with Notion and NotionBear
                 </p>
             </div>
@@ -76,7 +76,7 @@ export default function Header() {
             <div className="ml-4 -mt-0.5">
                 <p className="text-base font-medium text-gray-50">Documentation</p>
 
-                <p className="mt-1 text-sm text-gray-200">
+                <p className="mt-1 text-sm text-gray-400">
                     Create your world-class product documentation with Notion and NotionBear
                 </p>
             </div>
@@ -92,7 +92,7 @@ export default function Header() {
             </svg>
             <div className="ml-4 -mt-0.5">
                 <p className="text-base font-medium text-gray-50">Marketplace</p>
-                <p className="mt-1 text-sm text-gray-200">
+                <p className="mt-1 text-sm text-gray-400">
                     Create a self serving community marketplace that can handle millions in traffic on Notion.
                 </p>
             </div>
@@ -107,7 +107,7 @@ export default function Header() {
             </svg>
             <div className="ml-4 -mt-0.5">
                 <p className="text-base font-medium text-gray-50">Company Wiki</p>
-                <p className="mt-1 text-sm text-gray-200">
+                <p className="mt-1 text-sm text-gray-400">
                     Create company wiki protected access and AI to answer queries on top of Notion as a database. 
                 </p>
             </div>
@@ -132,31 +132,31 @@ export default function Header() {
                 <p className="relative text-base font-medium text-gray-50">
                     Blog
                 </p>
-                <p className="mt-1 text-sm text-gray-200">
+                <p className="mt-1 text-sm text-gray-400">
                     Create a beautiful blog for your startup or company with Notion and NotionBear.
                 </p>
             </div>
         </a>
     </div>
     <div className="px-5 py-5 space-y-6 bg-gray-900 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full">
-        <div className="flow-root font-medium text-gray-900">
+        <div className="flow-root font-medium w-full">
             <a href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white">
                 <img src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm">Help Center Demo <span className="opacity-90"></span></span>
             </a>
         </div>
-        <div className="flow-root">
+        <div className="flow-root font-medium w-full">
             <a href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white">
                 <img src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm"> Doc Site Demo <span className="opacity-90"></span></span>
             </a>
         </div>
     </div>
     <div className="px-5 py-5 space-y-6 bg-gray-900 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full">
-        <div className="flow-root font-medium text-gray-900">
+        <div className="flow-root font-medium w-full">
             <a href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-200">
                 <img src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm">Blog Site Demo <span className="opacity-90"></span></span>
             </a>
         </div>
-        <div className="flow-root">
+        <div className="flow-root font-medium w-full">
             <a href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-200">
                 <img src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm"> Marketplace Demo <span className="opacity-90"></span></span>
             </a>
