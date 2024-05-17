@@ -12,8 +12,11 @@ import FeaturesBlocks from "@/components/features-blocks";
 
 import Marketplaces_Type from "@/components/marketplaces_type";
 
-
 import Testimonials from "@/components/testimonials";
+
+
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 
 export const metadata = {
