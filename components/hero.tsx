@@ -161,7 +161,7 @@ export default function Hero() {
 
           <div className="hidden sm:flex justify-center items-center mt-4 sm:mb-0 mb-3 bg-white w-fit mx-auto mx-4 p-4 rounded-md">
             <div className="flex-shrink-0 sm:block hidden">
-              <img
+              <Image
                 src="https://www.helpkit.so/imgs/testimonials/adjust_square_portrait.jpg"
                 alt="Author's image"
                 className="w-16 h-16 object-cover text-gray-300 bg-white rounded-full"
@@ -237,11 +237,10 @@ export default function Hero() {
               target="_blank"
               className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
-              <img
+              <Image
                 src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
                 width="30"
-                className="shadow-md"
-              />{" "}
+                className="shadow-md" alt={""} />{" "}
               <span className="ml-3 text-sm">
                 View Helpdesk Demo <span className="opacity-90">↗️</span>
               </span>
@@ -251,11 +250,10 @@ export default function Hero() {
               target="_blank"
               className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
-              <img
+              <Image
                 src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png"
                 width="30"
-                className="shadow-md"
-              />{" "}
+                className="shadow-md" alt={""}              />{" "}
               <span className="ml-3 text-sm">
                 View Marketplace Demo <span className="opacity-90">↗️</span>
               </span>
@@ -265,11 +263,10 @@ export default function Hero() {
               target="_blank"
               className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
-              <img
+              <Image
                 src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
                 width="30"
-                className="shadow-md"
-              />{" "}
+                className="shadow-md" alt={""}              />{" "}
               <span className="ml-3 text-sm">
                 View Blog Demo <span className="opacity-90">↗️</span>
               </span>
@@ -279,11 +276,10 @@ export default function Hero() {
               target="_blank"
               className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
-              <img
+              <Image
                 src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
                 width="30"
-                className="shadow-md"
-              />{" "}
+                className="shadow-md" alt={""}              />{" "}
               <span className="ml-3 text-sm">
                 View Company Wiki Demo <span className="opacity-90">↗️</span>
               </span>

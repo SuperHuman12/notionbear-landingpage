@@ -433,7 +433,7 @@ export default function Pricing() {
             <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center">
               <div className="relative">
                 <div className="aspect-w-1 aspect-h-1">
-                  <img
+                  <Image
                     src="https://helpkit.so/_nuxt/image/bffbe5.webp"
                     width="800"
                     alt=""
@@ -442,7 +442,7 @@ export default function Pricing() {
                   />
                 </div>
                 <div className="absolute bottom-0 right-0 inline-flex px-4 py-2 -mb-5 -mr-4 bg-white rounded-lg shadow-xl">
-                  <img
+                  <Image
                     src="https://helpkit.so/_nuxt/image/73bb1e.webp"
                     width="400"
                     alt=""

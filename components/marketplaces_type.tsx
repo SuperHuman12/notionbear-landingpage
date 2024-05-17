@@ -161,13 +161,13 @@ Service marketplaces, Product marketplaces, Other marketplaces.
                       />
                       <div className="flex gap-2 justify-center mt-4 text-xl text-gray-900">
                         A simpler alternative to{" "}
-                        <img
+                        <Image
                           alt="Ana"
                           src="./images/simpler-helpdesk2.png"
                           className="rounded-full w-auto h-8"
                         />{" "}
                         and{" "}
-                        <img
+                        <Image
                           alt="Ana"
                           src="./images/simpler-helpdesk.png"
                           className="rounded-full w-auto h-8"
@@ -200,13 +200,13 @@ Service marketplaces, Product marketplaces, Other marketplaces.
                       />
                       <div className="flex gap-2 justify-center mt-4 text-xl text-gray-900">
                         A simpler alternative to{" "}
-                        <img
+                        <Image
                           alt="Ana"
                           src="./images/simpler-blog.png"
                           className="rounded-full w-auto h-8"
                         />{" "}
                         and{" "}
-                        <img
+                        <Image
                           alt="Ana"
                           src="./images/simpler-blog2.png"
                           className="rounded-full w-auto h-8"
@@ -239,13 +239,13 @@ Service marketplaces, Product marketplaces, Other marketplaces.
                       />
                       <div className="flex gap-2 justify-center mt-4 text-xl text-gray-900">
                         A simpler alternative to{" "}
-                        <img
+                        <Image
                           alt="Ana"
                           src="./images/simpler-marketplaceue2.png"
                           className="rounded-full w-auto h-8"
                         />{" "}
                         and{" "}
-                        <img
+                        <Image
                           alt="Ana"
                           src="./images/simpler-marketplaceue.png"
                           className="rounded-full w-auto h-8"
@@ -278,13 +278,13 @@ Service marketplaces, Product marketplaces, Other marketplaces.
                       />
                       <div className="flex gap-2 justify-center mt-4 text-xl text-gray-900">
                         A simpler alternative to{" "}
-                        <img
+                        <Image
                           alt="Ana"
                           src="./images/webflow-icon.png"
                           className="rounded-full w-auto h-8"
                         />{" "}
                         and{" "}
-                        <img
+                        <Image
                           alt="Ana"
                           src="./images/framer-icon.png"
                           className="rounded-full w-auto h-8"

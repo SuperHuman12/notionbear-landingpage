@@ -115,7 +115,7 @@ export default function ResetPassword() {
                     className="project_type-item w-dyn-item bg-white shadow-lg p-6 rounded-lg"
                 >
                     <div className="grid gap-4 items-center">
-                        <img
+                        <Image
                             loading="lazy"
                             height="60"
                             alt="Platform migrations"
@@ -139,7 +139,7 @@ export default function ResetPassword() {
                     className="project_type-item w-dyn-item bg-white shadow-lg p-6 rounded-lg"
                 >
                     <div className="grid gap-4 items-center">
-                        <img
+                        <Image
                             loading="lazy"
                             height="60"
                             alt="Custom code &amp; integrations"
@@ -163,7 +163,7 @@ export default function ResetPassword() {
                     className="project_type-item w-dyn-item bg-white shadow-lg p-6 rounded-lg"
                 >
                     <div className="grid gap-4 items-center">
-                        <img
+                        <Image
                             loading="lazy"
                             height="60"
                             alt="Rebrands &amp; redesigns"

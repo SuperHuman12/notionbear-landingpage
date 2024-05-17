@@ -80,7 +80,7 @@ export default function ModalVideo({
             <div className="flex flex-row flex-wrap max-w-800 gap-4 mx-auto justify-center flex items-center p-6">
                 {/* Image 1 */}
                 <div className="w-full md:w-1/2 lg:w-1/5 px-4">
-                    <img
+                    <Image
                         alt="image"
                         loading="lazy"
                         width="144"
@@ -92,7 +92,7 @@ export default function ModalVideo({
                 </div>
                 {/* Image 2 */}
                 <div className="w-full md:w-1/2 lg:w-1/5 px-4">
-                    <img
+                    <Image
                         alt="image"
                         loading="lazy"
                         width="200"
@@ -104,7 +104,7 @@ export default function ModalVideo({
                 </div>
                 {/* Image 3 */}
                 <div className="w-full md:w-1/2 lg:w-1/5 px-4">
-                    <img
+                    <Image
                         alt="image"
                         loading="lazy"
                         width="120"
@@ -116,7 +116,7 @@ export default function ModalVideo({
                 </div>
                 {/* Image 4 */}
                 <div className="w-full md:w-1/2 lg:w-1/5 px-4">
-                    <img
+                    <Image
                         alt="image"
                         loading="lazy"
                         width="144"
@@ -128,7 +128,7 @@ export default function ModalVideo({
                 </div>
                 {/* Image 5 */}
                 <div className="w-full md:w-1/2 lg:w-1/5 px-4">
-                    <img
+                    <Image
                         alt="image"
                         loading="lazy"
                         width="192"
@@ -140,7 +140,7 @@ export default function ModalVideo({
                 </div>
                 {/* Image 6 */}
                 <div className="w-full md:w-1/2 lg:w-1/5 px-4">
-                    <img
+                    <Image
                         alt="image"
                         loading="lazy"
                         width="144"
@@ -152,7 +152,7 @@ export default function ModalVideo({
                 </div>
                 {/* Image 7 */}
                 <div className="w-full md:w-1/2 lg:w-1/5 px-4">
-                    <img
+                    <Image
                         alt="image"
                         loading="lazy"
                         width="240"

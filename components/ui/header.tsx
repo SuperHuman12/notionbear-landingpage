@@ -141,24 +141,24 @@ export default function Header() {
     <div className="px-5 py-5 space-y-6 bg-gray-900 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full">
         <div className="flow-root font-medium w-full">
             <a href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white">
-                <img src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm">Help Center Demo <span className="opacity-90"></span></span>
+                <Image src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png" width="30" className="shadow-md" alt={''} /> <span className="ml-3 text-sm">Help Center Demo <span className="opacity-90"></span></span>
             </a>
         </div>
         <div className="flow-root font-medium w-full">
             <a href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white">
-                <img src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm"> Doc Site Demo <span className="opacity-90"></span></span>
+                <Image src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png" width="30" className="shadow-md" alt={''} /> <span className="ml-3 text-sm"> Doc Site Demo <span className="opacity-90"></span></span>
             </a>
         </div>
     </div>
     <div className="px-5 py-5 space-y-6 bg-gray-900 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full">
         <div className="flow-root font-medium w-full">
             <a href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white">
-                <img src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm">Blog Site Demo <span className="opacity-90"></span></span>
+                <Image src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png" width="30" className="shadow-md" alt={''} /> <span className="ml-3 text-sm">Blog Site Demo <span className="opacity-90"></span></span>
             </a>
         </div>
         <div className="flow-root font-medium w-full">
             <a href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white">
-                <img src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm"> Marketplace Demo <span className="opacity-90"></span></span>
+                <Image src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png" width="30" className="shadow-md" alt={''} /> <span className="ml-3 text-sm"> Marketplace Demo <span className="opacity-90"></span></span>
             </a>
         </div>
     </div>

@@ -59,11 +59,11 @@ export default function ResetPassword() {
     <div className="bg-white">
         <div className="px-6 mx-auto max-w-7xl lg:px-8">
             <div className="-mx-6 grid grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-3">
-                <div className="p-8 bg-gray-400/5 sm:p-10"><img src="https://helpkit.so/imgs/providers/intercom.png" alt="Intercom" width="158" height="48" className="object-contain w-full max-h-10" /></div>
-                <div className="p-6 bg-gray-400/5 sm:p-10"><img src="https://helpkit.so/imgs/providers/crisp.png" alt="Crisp" width="158" height="48" className="object-contain w-full pt-1 max-h-10" /></div>
-                <div className="p-6 bg-gray-400/5 sm:p-10"><img src="https://helpkit.so/imgs/providers/helpscout.png" alt="HelpScout" width="158" height="48" className="object-contain w-full pt-3 max-h-10" /></div>
-                <div className="p-6 bg-gray-400/5 sm:p-10"><img src="https://helpkit.so/imgs/providers/document360.png" alt="Document360" width="158" height="48" className="object-contain w-full max-h-12" /></div>
-                <div className="p-6 bg-gray-400/5 sm:p-10"><img src="https://helpkit.so/imgs/providers/gitbook.png" alt="Gitbook" width="158" height="48" className="object-contain w-full max-h-12" /></div>
+                <div className="p-8 bg-gray-400/5 sm:p-10"><Image src="https://helpkit.so/imgs/providers/intercom.png" alt="Intercom" width="158" height="48" className="object-contain w-full max-h-10" /></div>
+                <div className="p-6 bg-gray-400/5 sm:p-10"><Image src="https://helpkit.so/imgs/providers/crisp.png" alt="Crisp" width="158" height="48" className="object-contain w-full pt-1 max-h-10" /></div>
+                <div className="p-6 bg-gray-400/5 sm:p-10"><Image src="https://helpkit.so/imgs/providers/helpscout.png" alt="HelpScout" width="158" height="48" className="object-contain w-full pt-3 max-h-10" /></div>
+                <div className="p-6 bg-gray-400/5 sm:p-10"><Image src="https://helpkit.so/imgs/providers/document360.png" alt="Document360" width="158" height="48" className="object-contain w-full max-h-12" /></div>
+                <div className="p-6 bg-gray-400/5 sm:p-10"><Image src="https://helpkit.so/imgs/providers/gitbook.png" alt="Gitbook" width="158" height="48" className="object-contain w-full max-h-12" /></div>
                 <div className="flex items-center justify-center p-6 bg-gray-400/5 sm:p-10"><span className="text-2xl font-semibold gradient-text-accent">Many more</span></div>
             </div>
         </div>

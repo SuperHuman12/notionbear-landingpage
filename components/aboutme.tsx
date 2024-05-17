@@ -13,7 +13,7 @@ export default function aboutme() {
         </h3>
         <div className="grid items-start pt-6 mx-auto gap-8 md:flex md:items-start justify-center">
           <div className="float-right w-1/3 mb-6 ml-6 sm:float-none sm:ml-12 sm:mb-0 ">
-            <img
+            <Image
               src="https://dazzling-cat.netlify.app/image 1469.png"
               width="600"
               height="905"
