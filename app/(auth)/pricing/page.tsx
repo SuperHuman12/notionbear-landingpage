@@ -296,7 +296,9 @@ export default function Pricing() {
                           <figure className="border bg-orange-700 p-2 px-4 rounded-full font-bold text-white">
                             ✓
                           </figure>
-                          <span className="${feature.popup ? 'border-b-2 border-dashed pointer hover:text-orange-600' : ''}">{feature.name}</span>
+                          <span 
+                          className={`p-1 ${feature.popup ? 'border-b-2 border-dashed pointer hover:text-orange-600' : ''}`}
+                          >{feature.name}</span>
                         </li>
                       ))}
                     </ul>
