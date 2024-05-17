@@ -290,13 +290,13 @@ export default function Pricing() {
                       {features.map((feature, index) => (
                         <li
                           key={index}
-                          className={`text-md flex items-start gap-2 leading-[32px] mb-2 items-center ${feature.popup ? 'underline cursor-pointer' : ''}`}
+                          className={`text-md flex items-start gap-2 leading-[32px] mb-2 items-center `}
                           onClick={() => feature.popup && handleFeatureClick(feature)}
                         >
                           <figure className="border bg-orange-700 p-2 px-4 rounded-full font-bold text-white">
                             ✓
                           </figure>
-                          <span>{feature.name}</span>
+                          <span className="${feature.popup ? 'border-b-2 border-dashed pointer hover:text-orange-600' : ''}">{feature.name}</span>
                         </li>
                       ))}
                     </ul>
@@ -310,7 +310,7 @@ export default function Pricing() {
         {popupFeature && popupFeature.popup && (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
     <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto relative">
-      <button onClick={closePopup} className="absolute top-2 right-2 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+      <button onClick={closePopup} className="absolute top-2 right-2 bg-gray-200 text-white rounded-full w-8 h-8 flex items-center justify-center">
         ✕
       </button>
       <Image src={popupFeature.popup.image} alt={popupFeature.popup.headline} width={300} height={200} />
