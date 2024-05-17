@@ -246,7 +246,7 @@ export default function FeaturesBlocks() {
               <div className="text-start mt-6 w-full p-4">
                 <h2 className="h2 font-bold mb-4">Integrates with your existing apps</h2>
                 <p className="text-gray-700">
-                  NotionBear integrates with the tools you already use. Connect to Slack for notifications, embed your live chat widget from Intercom, Hubspot, Crisp and more. Need your app connected to HelpKit? We got you covered.
+                  NotionBear integrates with the tools you already use. Connect to Slack for notifications, embed your live chat widget from Intercom, Hubspot, Crisp and more. Need your app connected to NotionBear? We got you covered.
                 </p>
                 <div className="max-w-xs mx-auto sm:max-w-none sm:flex aos-init aos-animate mt-6" data-aos="zoom-y-out" data-aos-delay="300">
                   <div><a className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.notionbear.com">Get free lifetime plan</a></div>

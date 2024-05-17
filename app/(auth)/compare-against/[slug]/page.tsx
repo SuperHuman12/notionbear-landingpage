@@ -6,8 +6,9 @@ import Rating from '../Rating';
 import AggregateStats from '../AggregateStats';
 import TrustedBy from '../TrustedBy';
 import ComparisonTable from '../ComparisonTable';
-import TemplateDesign from '../showcaseDesign';
-import TemplateLibrary from '../showcaseList';
+import TemplateDesign from '../TemplateDesign';
+import TemplateLibrary from '../TemplateList';
+
 
 
 

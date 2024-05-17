@@ -93,7 +93,7 @@ const TemplateDesign = () => {
                         <div className="space-y-2">
                             <h1 className="mt-4 text-2xl font-bold text-gray-900 sm:text-3xl">Integrates with your existing apps</h1>
                             <p className="mt-2 text-base font-normal text-gray-700 lg:text-lg">
-                                NotionBear integrates with the tools you already use. Connect to Slack for notifications, embed your live chat widget from Intercom, Hubspot, Crisp and more. Need your app connected to HelpKit? We got you covered.
+                                NotionBear integrates with the tools you already use. Connect to Slack for notifications, embed your live chat widget from Intercom, Hubspot, Crisp and more. Need your app connected to NotionBear? We got you covered.
                             </p>
                         </div>
                     </div>

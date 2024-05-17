@@ -52,7 +52,7 @@ export default function ResetPassword() {
                 Migrate from 100+ Knowledge base platforms
             </h2>
             <p className="mt-6 text-gray-600 sm:text-lg sm:leading-8">
-                Migrate your articles from pretty much any knowledge base platform to HelpKit. Our experts will make sure it’s a hassle-free and quick transition.
+                Migrate your articles from pretty much any knowledge base platform to NotionBear. Our experts will make sure it’s a hassle-free and quick transition.
             </p>
         </div>
     </div>
