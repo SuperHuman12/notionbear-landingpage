@@ -17,33 +17,38 @@ const pricingMap: Record<number, number> = {
 
 interface Feature {
   name: string;
-  popup: { image: string; headline: string; description: string } | null;
+  popup?: {
+    image: string;
+    headline: string;
+    description: string;
+  };
 }
 
 const features: Feature[] = [
   { name: "Unlimited articles & collections", popup: { image: "/path/to/image1.png", headline: "Unlimited Articles", description: "Create unlimited articles and collections effortlessly." } },
-  { name: "Unlimited languages", popup: null },
+  { name: "Unlimited languages" },
   { name: "5 NotionBear Sites", popup: { image: "/path/to/image2.png", headline: "Multiple Sites", description: "Manage up to 5 different NotionBear sites." } },
-  { name: "Custom Domain / SSL", popup: null },
+  { name: "Custom Domain / SSL" },
   { name: "Paywall Integration", popup: { image: "/path/to/image3.png", headline: "Paywall Integration", description: "Integrate paywall seamlessly with your content." } },
-  { name: "Password Protection", popup: null },
+  { name: "Password Protection" },
   { name: "SEO Ready", popup: { image: "/path/to/image4.png", headline: "SEO Ready", description: "Optimize your content for search engines with built-in SEO tools." } },
-  { name: "Integrations", popup: null },
-  { name: "Advanced Customization", popup: null },
-  { name: "Article Suggester", popup: null },
-  { name: "Advanced Article Search", popup: null },
-  { name: "Content Rating", popup: null },
-  { name: "Auto Sync", popup: null },
-  { name: "Remove 'Powered by' badge", popup: null },
-  { name: "Detailed Analytics", popup: null },
+  { name: "Integrations" },
+  { name: "Advanced Customization" },
+  { name: "Article Suggester" },
+  { name: "Advanced Article Search" },
+  { name: "Content Rating" },
+  { name: "Auto Sync" },
+  { name: "Remove 'Powered by' badge" },
+  { name: "Detailed Analytics" },
 ];
+
 
 export default function Pricing() {
   const [activeTab, setActiveTab] = useState<"Monthly" | "Yearly">("Yearly");
   const [selectedUsers, setSelectedUsers] = useState<keyof typeof pricingMap>(3000);
   const [monthlyPrice, setMonthlyPrice] = useState(pricingMap[selectedUsers]);
   const [yearlyPrice, setYearlyPrice] = useState(monthlyPrice * 10);
-  const [popupFeature, setPopupFeature] = useState(null);
+  const [popupFeature, setPopupFeature] = useState<Feature | null>(null);
 
   useEffect(() => {
     const newMonthlyPrice = pricingMap[selectedUsers];
@@ -59,13 +64,17 @@ export default function Pricing() {
     setSelectedUsers(Number(event.target.value) as keyof typeof pricingMap);
   };
 
-  const handleFeatureClick = (feature) => {
+
+
+  const handleFeatureClick = (feature: Feature) => {
     setPopupFeature(feature);
   };
-
+  
   const closePopup = () => {
     setPopupFeature(null);
   };
+  
+
 
   return (
     <section className="bg-gradient-to-b from-gray-100 to-white">
@@ -298,7 +307,7 @@ export default function Pricing() {
           </div>
         </div>
 
-        {popupFeature && (
+        {popupFeature && popupFeature.popup && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
             <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
               <button onClick={closePopup} className="absolute top-2 right-2">
