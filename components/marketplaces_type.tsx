@@ -8,6 +8,9 @@ import FeaturesElement from "@/public/images/features-element.png";
 import helpdeskImage from "@/public/images/helpdesk.gif";
 import marketplaceImage from "@/public/images/marketplace.gif";
 
+import Aos from "aos";
+import 'aos/dist/aos.css'
+
 export default function Marketplace_Type() {
   const [tab, setTab] = useState<number>(1);
 

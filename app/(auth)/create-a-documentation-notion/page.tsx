@@ -12,6 +12,8 @@ import FeaturesBlocks from "@/components/features-blocks";
 
 
 
+
+
 export const metadata = {
     title: "Create a Documentation with Notion (no-code and free)",
     description:
