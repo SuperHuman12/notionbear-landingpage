@@ -20,6 +20,7 @@ export default function aboutme() {
               width="600"
               height="905"
               className="rounded-md"
+              alt={''}
               style={{ filter: "grayscale(1)", opacity: 0.85 }}
             />
           </div>
