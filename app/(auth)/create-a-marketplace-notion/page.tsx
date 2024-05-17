@@ -10,7 +10,7 @@ import Image from "next/image";
 import TrustedBy from "../compare-against/TrustedBy";
 import FeaturesBlocks from "@/components/features-blocks";
 
-import Marketplaces_Type from "@/components/marketplaces_type";
+import Marketplace_Type from "@/components/marketplaces_type";
 
 import Testimonials from "@/components/testimonials";
 
@@ -109,7 +109,7 @@ export default function PageDetail() {
         </section>
 
 
-        <Marketplaces_Type />
+        <Marketplace_Type />
 
 
 <FeaturesBlocks />
