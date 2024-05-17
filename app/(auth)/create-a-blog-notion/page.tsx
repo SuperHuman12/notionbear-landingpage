@@ -21,7 +21,7 @@ export const metadata = {
         openGraph: {
             images: [
                 {
-                    url: "/images/meta-image.png",
+                    url: "https://dazzling-cat.netlify.app/querykitty_socialshare.png",
                     width: 1200,
                     height: 630,
                     alt: "Create a Marketplace with Notion",
@@ -32,7 +32,7 @@ export const metadata = {
             card: "summary_large_image",
             images: [
                 {
-                    url: "/images/meta-image.png",
+                    url: "https://dazzling-cat.netlify.app/querykitty_socialshare.png",
                     alt: "Create a Marketplace with Notion",
                 },
             ],
