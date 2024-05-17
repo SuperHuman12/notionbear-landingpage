@@ -24,23 +24,131 @@ interface Feature {
   };
 }
 
+
 const features: Feature[] = [
-  { name: "Unlimited articles & collections", popup: { image: "/path/to/image1.png", headline: "Unlimited Articles", description: "Create unlimited articles and collections effortlessly." } },
-  { name: "Unlimited languages" },
-  { name: "5 NotionBear Sites", popup: { image: "/path/to/image2.png", headline: "Multiple Sites", description: "Manage up to 5 different NotionBear sites." } },
-  { name: "Custom Domain / SSL" },
-  { name: "Paywall Integration", popup: { image: "/path/to/image3.png", headline: "Paywall Integration", description: "Integrate paywall seamlessly with your content." } },
-  { name: "Password Protection" },
-  { name: "SEO Ready", popup: { image: "/path/to/image4.png", headline: "SEO Ready", description: "Optimize your content for search engines with built-in SEO tools." } },
-  { name: "Integrations" },
-  { name: "Advanced Customization" },
-  { name: "Article Suggester" },
-  { name: "Advanced Article Search" },
-  { name: "Content Rating" },
-  { name: "Auto Sync" },
-  { name: "Remove 'Powered by' badge" },
-  { name: "Detailed Analytics" },
+  {
+    name: "Unlimited articles & collections",
+    popup: {
+      image: "/path/to/image1.png",
+      headline: "Unlimited Articles",
+      description: "Create unlimited articles and collections effortlessly."
+    }
+  },
+  {
+    name: "Unlimited languages",
+    popup: {
+      image: "/path/to/image_languages.png",
+      headline: "Multiple Languages",
+      description: "Support for multiple languages to cater to a global audience."
+    }
+  },
+  {
+    name: "5 NotionBear Sites",
+    popup: {
+      image: "/path/to/image2.png",
+      headline: "Multiple Sites",
+      description: "Manage up to 5 different NotionBear sites."
+    }
+  },
+  {
+    name: "Custom Domain / SSL",
+    popup: {
+      image: "/path/to/image_custom_domain.png",
+      headline: "Custom Domain & SSL",
+      description: "Use your custom domain with SSL encryption for added security."
+    }
+  },
+  {
+    name: "Paywall Integration",
+    popup: {
+      image: "/path/to/image3.png",
+      headline: "Paywall Integration",
+      description: "Integrate paywall seamlessly with your content."
+    }
+  },
+  {
+    name: "Password Protection",
+    popup: {
+      image: "/path/to/image_password_protection.png",
+      headline: "Password Protection",
+      description: "Protect your content with secure password protection."
+    }
+  },
+  {
+    name: "SEO Ready",
+    popup: {
+      image: "/path/to/image4.png",
+      headline: "SEO Ready",
+      description: "Optimize your content for search engines with built-in SEO tools."
+    }
+  },
+  {
+    name: "Integrations",
+    popup: {
+      image: "/path/to/image_integrations.png",
+      headline: "Integrations",
+      description: "Integrate with your existing apps like Slack, Intercom, and more."
+    }
+  },
+  {
+    name: "Advanced Customization",
+    popup: {
+      image: "/path/to/image_advanced_customization.png",
+      headline: "Advanced Customization",
+      description: "Customize your site extensively with no-code themes and templates."
+    }
+  },
+  {
+    name: "Article Suggester",
+    popup: {
+      image: "/path/to/image_article_suggester.png",
+      headline: "Article Suggester",
+      description: "Get intelligent article suggestions to enhance your content."
+    }
+  },
+  {
+    name: "Advanced Article Search",
+    popup: {
+      image: "/path/to/image_advanced_search.png",
+      headline: "Advanced Article Search",
+      description: "Provide powerful search capabilities for your articles."
+    }
+  },
+  {
+    name: "Content Rating",
+    popup: {
+      image: "/path/to/image_content_rating.png",
+      headline: "Content Rating",
+      description: "Allow users to rate your content for better feedback."
+    }
+  },
+  {
+    name: "Auto Sync",
+    popup: {
+      image: "/path/to/image_auto_sync.png",
+      headline: "Auto Sync",
+      description: "Automatically sync your content with Notion."
+    }
+  },
+  {
+    name: "Remove 'Powered by' badge",
+    popup: {
+      image: "/path/to/image_remove_badge.png",
+      headline: "Remove Branding",
+      description: "Remove the 'Powered by NotionBear' badge from your site."
+    }
+  },
+  {
+    name: "Detailed Analytics",
+    popup: {
+      image: "/path/to/image_detailed_analytics.png",
+      headline: "Detailed Analytics",
+      description: "Access in-depth analytics to track your site's performance."
+    }
+  }
 ];
+
+
 
 
 export default function Pricing() {
@@ -167,7 +275,7 @@ export default function Pricing() {
               <div
                 dir="ltr"
                 data-orientation="horizontal"
-                className="mt-8 mb-4 w-1/2 lg:mb-13 border rounded-full m-auto border-gray-600"
+                className="mt-8 mb-4 w-fit lg:mb-13 border rounded-full m-auto border-gray-600"
               >
                 <div
                   role="tablist"
@@ -176,12 +284,12 @@ export default function Pricing() {
                   data-orientation="horizontal"
                 >
                   <span
-                    className={`absolute inset-y-0 left-0 -z-10 rounded-full border-2 w-1/2 h-14 transition-transform duration-300 ease-in-out ${
+                    className={`absolute inset-y-0 left-0 -z-10 rounded-full border-2 w-full h-14 transition-transform duration-300 ease-in-out white-space-nowrap ${
                       activeTab === "Monthly" ? "translate-x-full" : ""
                     }`}
                   ></span>
                   <button
-                    className={`w-1/2 text-md h-14 flex items-center justify-center uppercase transition-colors duration-300 ease-in-out ${
+                    className={`w-fit text-md h-14 flex items-center justify-center uppercase transition-colors duration-300 ease-in-out px-6 ${
                       activeTab === "Yearly"
                         ? "bg-orange-600 rounded-full border-2 border-dark"
                         : "bg-transparent text-gray-900"
@@ -194,7 +302,7 @@ export default function Pricing() {
                     ANNUALLY  ♥ 2 MONTHS FREE
                   </button>
                   <button
-                    className={`w-1/2 text-md h-14 flex items-center justify-center uppercase transition-colors duration-300 ease-in-out ${
+                    className={`w-fit text-md h-14 flex items-center justify-center uppercase transition-colors duration-300 ease-in-out px-6 ${
                       activeTab === "Monthly"
                         ? "bg-orange-600 rounded-full border-2 border-dark"
                         : "bg-transparent text-gray-900"
