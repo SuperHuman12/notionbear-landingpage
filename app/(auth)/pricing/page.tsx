@@ -144,7 +144,7 @@ export default function Pricing() {
               <div
                 dir="ltr"
                 data-orientation="horizontal"
-                className="mt-8 mb-8 w-1/2 lg:mb-13 border rounded-full m-auto border-gray-600"
+                className="mt-8 mb-4 w-1/2 lg:mb-13 border rounded-full m-auto border-gray-600"
               >
                 <div
                   role="tablist"
@@ -190,7 +190,7 @@ export default function Pricing() {
 
               </div>
 
-              <div className="sm:block hidden text-xs opacity-50 font-medium justify-center text-center mt-4">
+              <div className="sm:block hidden text-xs opacity-50 font-medium justify-center text-center mb-4">
          Save 2 months on yearly 🎁
       </div>
 

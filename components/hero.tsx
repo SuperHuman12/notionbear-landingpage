@@ -235,21 +235,7 @@ export default function Hero() {
             <a
               href="#"
               target="_blank"
-              className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
-            >
-              <img
-                src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png"
-                width="30"
-                className="shadow-md"
-              />{" "}
-              <span className="ml-3 text-sm">
-                View Marketplace Demo <span className="opacity-90">↗️</span>
-              </span>
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
+              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
               <img
                 src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
@@ -263,7 +249,21 @@ export default function Hero() {
             <a
               href="#"
               target="_blank"
-              className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
+              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
+            >
+              <img
+                src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png"
+                width="30"
+                className="shadow-md"
+              />{" "}
+              <span className="ml-3 text-sm">
+                View Marketplace Demo <span className="opacity-90">↗️</span>
+              </span>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
               <img
                 src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
@@ -274,6 +274,21 @@ export default function Hero() {
                 View Blog Demo <span className="opacity-90">↗️</span>
               </span>
             </a>
+            <a
+              href="#"
+              target="_blank"
+              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
+            >
+              <img
+                src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
+                width="30"
+                className="shadow-md"
+              />{" "}
+              <span className="ml-3 text-sm">
+                View Company Wiki Demo <span className="opacity-90">↗️</span>
+              </span>
+            </a>
+
           </div>
 
           <ModalVideo

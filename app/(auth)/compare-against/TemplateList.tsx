@@ -52,7 +52,7 @@ const TemplateLibrary = () => {
           <a className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.notionbear.com">Ask our Designer for Help</a>
         </div>
         <div>
-          <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-2 m-auto" href="/showcase">View all Templates</a>
+          <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-2 m-auto" href="/showcase">View all</a>
         </div>
       </div>
 

@@ -35,7 +35,7 @@ export default function ModalVideo({
 
       {/* Video thumbnail */}
       <div>
-        <div className="justify-center mb-8 mt-8" data-aos="zoom-y-out" data-aos-delay="450">
+        <div className="justify-center mb-8 mt-8 aos-init aos-animate" data-aos="zoom-y-out" data-aos-delay="450">
 
 
           {/*
