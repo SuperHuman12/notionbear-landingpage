@@ -5,6 +5,25 @@ import Image from 'next/image'
 export const metadata = {
   title: 'Hire a NotionBear Expert',
   description: 'Hire NotionBear Agency when your ready to grow beyond we can help setup, design and manage your helpdesk, blog, or even marketplace. Also add custom code to your website deployment to make sure your needs are always met.',
+  openGraph: {
+    images: [
+        {
+            url: "/images/meta-image.png",
+            width: 1200,
+            height: 630,
+            alt: "Create a Marketplace with Notion",
+        },
+    ],
+},
+twitter: {
+    card: "summary_large_image",
+    images: [
+        {
+            url: "/images/meta-image.png",
+            alt: "Create a Marketplace with Notion",
+        },
+    ],
+},
 }
 
 export default function ResetPassword() {

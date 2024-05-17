@@ -154,7 +154,6 @@ Service marketplaces, Product marketplaces, Other marketplaces.
                       <Image
                         className="md:max-w-none mx-auto rounded border border-2 border-gray-600 shadow-lg"
                         src={helpdeskImage}
-                        unoptimized
                         width={500}
                         height={462}
                         alt="Features bg"
@@ -193,7 +192,6 @@ Service marketplaces, Product marketplaces, Other marketplaces.
                       <Image
                         className="md:max-w-none mx-auto rounded border border-2 border-gray-600 shadow-lg"
                         src="/images/blog.gif"
-                        unoptimized
                         width={500}
                         height="462"
                         alt="Features bg"
@@ -234,7 +232,6 @@ Service marketplaces, Product marketplaces, Other marketplaces.
                         src={marketplaceImage}
                         width={500}
                         height={462}
-                        unoptimized
                         alt="Features bg"
                       />
                       <div className="flex gap-2 justify-center mt-4 text-xl text-gray-900">
@@ -273,7 +270,6 @@ Service marketplaces, Product marketplaces, Other marketplaces.
                         src={"/path/to/your/fourth-tab-image.gif"} // Update this path
                         width={500}
                         height={462}
-                        unoptimized
                         alt="Fourth tab gif"
                       />
                       <div className="flex gap-2 justify-center mt-4 text-xl text-gray-900">

@@ -5,6 +5,25 @@ import Image from 'next/image'
 export const metadata = {
   title: 'Affiliate Program',
   description: 'Join the NotionBear affiliate program to become our partner. Spread the website builder and earn money with us.',
+  openGraph: {
+    images: [
+        {
+            url: "/images/meta-image.png",
+            width: 1200,
+            height: 630,
+            alt: "Create a Marketplace with Notion",
+        },
+    ],
+},
+twitter: {
+    card: "summary_large_image",
+    images: [
+        {
+            url: "/images/meta-image.png",
+            alt: "Create a Marketplace with Notion",
+        },
+    ],
+},
 }
 
 export default function ResetPassword() {

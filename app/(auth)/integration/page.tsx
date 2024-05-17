@@ -6,6 +6,25 @@ import { _loadFromJson } from '@/app/utils/helper';
 export const metadata = {
   title: 'Notion Bear Integrations',
   description: 'Integrate with your stack and extend functionality with powerful integrations built by us and our amazing community.',
+  openGraph: {
+    images: [
+        {
+            url: "/images/meta-image.png",
+            width: 1200,
+            height: 630,
+            alt: "Create a Marketplace with Notion",
+        },
+    ],
+},
+twitter: {
+    card: "summary_large_image",
+    images: [
+        {
+            url: "/images/meta-image.png",
+            alt: "Create a Marketplace with Notion",
+        },
+    ],
+},
 }
 const Integration = async () => {
   const integrations = await _loadFromJson(false);

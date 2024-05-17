@@ -5,6 +5,25 @@ import Image from 'next/image'
 export const metadata = {
   title: 'Migrate to NotionBear',
   description: 'Migrate your helpdesk, blog, or even marketplace to notionbear. Start living a hassle free life just SET and FORGET.',
+  openGraph: {
+    images: [
+        {
+            url: "/images/meta-image.png",
+            width: 1200,
+            height: 630,
+            alt: "Create a Marketplace with Notion",
+        },
+    ],
+},
+twitter: {
+    card: "summary_large_image",
+    images: [
+        {
+            url: "/images/meta-image.png",
+            alt: "Create a Marketplace with Notion",
+        },
+    ],
+},
 }
 
 export default function ResetPassword() {
