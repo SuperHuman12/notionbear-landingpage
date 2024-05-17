@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import showcaseImage from '@/public/images/showcase.jpg'
 import Link from 'next/link'
-import TemplateList from '@/app/(auth)/compare-against/showcaseList'
+import TemplateList from '@/app/(auth)/compare-against/TemplateList'
+
 export default function showcases() {
   return (
 
