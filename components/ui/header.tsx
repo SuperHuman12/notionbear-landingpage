@@ -47,8 +47,8 @@ export default function Header() {
                 </button>
                 {dropdownOpen && (
 <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white absolute z-10 w-screen max-w-md px-2 transform -translate-x-1/2 left-1/2 sm:px-0">
-    <div className="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
-        <a href="/create-a-helpdesk-servicedesk-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50">
+    <div className="relative grid gap-6 px-5 py-6 bg-gray-900 text-white sm:gap-8 sm:p-8">
+        <a href="/create-a-helpdesk-servicedesk-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-orange-600">
                 <path
                     stroke-linecap="round"
@@ -58,13 +58,13 @@ export default function Header() {
                 ></path>
             </svg>
             <div className="ml-4 -mt-0.5">
-                <p className="text-base font-medium text-gray-900">Help Center</p>
-                <p className="mt-1 text-sm text-gray-500">
+                <p className="text-base font-medium text-gray-50">Help Center</p>
+                <p className="mt-1 text-sm text-gray-200">
                     Create your professional self-service help center with Notion and NotionBear
                 </p>
             </div>
         </a>
-        <a href="/create-a-documentation-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50">
+        <a href="/create-a-documentation-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-orange-600">
                 <path
                     stroke-linecap="round"
@@ -74,14 +74,14 @@ export default function Header() {
                 ></path>
             </svg>
             <div className="ml-4 -mt-0.5">
-                <p className="text-base font-medium text-gray-900">Documentation</p>
+                <p className="text-base font-medium text-gray-50">Documentation</p>
 
-                <p className="mt-1 text-sm text-gray-500">
+                <p className="mt-1 text-sm text-gray-200">
                     Create your world-class product documentation with Notion and NotionBear
                 </p>
             </div>
         </a>
-        <a href="/create-a-marketplace-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50">
+        <a href="/create-a-marketplace-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-orange-600">
                 <path
                     stroke-linecap="round"
@@ -91,13 +91,13 @@ export default function Header() {
                 ></path>
             </svg>
             <div className="ml-4 -mt-0.5">
-                <p className="text-base font-medium text-gray-900">Marketplace</p>
-                <p className="mt-1 text-sm text-gray-500">
+                <p className="text-base font-medium text-gray-50">Marketplace</p>
+                <p className="mt-1 text-sm text-gray-200">
                     Create a self serving community marketplace that can handle millions in traffic on Notion.
                 </p>
             </div>
         </a>
-        <a href="/create-a-company-wiki-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50">
+        <a href="/create-a-company-wiki-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-orange-600">
                 <path
                     stroke-linecap="round"
@@ -106,13 +106,13 @@ export default function Header() {
                 ></path>
             </svg>
             <div className="ml-4 -mt-0.5">
-                <p className="text-base font-medium text-gray-900">Company Wiki</p>
-                <p className="mt-1 text-sm text-gray-500">
+                <p className="text-base font-medium text-gray-50">Company Wiki</p>
+                <p className="mt-1 text-sm text-gray-200">
                     Create company wiki protected access and AI to answer queries on top of Notion as a database. 
                 </p>
             </div>
         </a>
-        <a href="/create-a-blog-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50">
+        <a href="/create-a-blog-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="url(#grad1)" className="flex-shrink-0 w-6 h-6 stroke-orange-600">
                 <defs>
                     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -129,35 +129,35 @@ export default function Header() {
                 ></path>
             </svg>
             <div className="ml-4 -mt-0.5">
-                <p className="relative text-base font-medium text-gray-900">
+                <p className="relative text-base font-medium text-gray-50">
                     Blog
                 </p>
-                <p className="mt-1 text-sm text-gray-500">
+                <p className="mt-1 text-sm text-gray-200">
                     Create a beautiful blog for your startup or company with Notion and NotionBear.
                 </p>
             </div>
         </a>
     </div>
-    <div className="px-5 py-5 space-y-6 bg-gray-50 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+    <div className="px-5 py-5 space-y-6 bg-gray-900 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full">
         <div className="flow-root font-medium text-gray-900">
-            <a href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 p-2 px-4 -m-3 bg-gray-200">
+            <a href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white">
                 <img src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm">Help Center Demo <span className="opacity-90"></span></span>
             </a>
         </div>
         <div className="flow-root">
-            <a href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 p-2 px-4 -m-3 bg-gray-200">
+            <a href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white">
                 <img src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm"> Doc Site Demo <span className="opacity-90"></span></span>
             </a>
         </div>
     </div>
-    <div className="px-5 py-5 space-y-6 bg-gray-50 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+    <div className="px-5 py-5 space-y-6 bg-gray-900 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full">
         <div className="flow-root font-medium text-gray-900">
-            <a href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 p-2 px-4 -m-3 bg-gray-200">
+            <a href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-200">
                 <img src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm">Blog Site Demo <span className="opacity-90"></span></span>
             </a>
         </div>
         <div className="flow-root">
-            <a href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-100 p-2 px-4 -m-3 bg-gray-200">
+            <a href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-200">
                 <img src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png" width="30" className="shadow-md" /> <span className="ml-3 text-sm"> Marketplace Demo <span className="opacity-90"></span></span>
             </a>
         </div>
