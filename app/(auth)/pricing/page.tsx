@@ -237,7 +237,7 @@ export default function Pricing() {
                       </span>
                     </h5>
                     <div className="flex grow flex-col gap-2 md:flex-row md:items-end mt-6 mb-4">
-                      <button className="bg-gray-900 text-white w-full p-4 rounded-lg text-center">
+                      <button className="bg-gray-700 text-white w-full p-4 rounded-lg text-center">
                         Get Started
                       </button>
                     </div>
@@ -272,10 +272,10 @@ export default function Pricing() {
                       Extend your workflows with round-robin and collective
                       events and make advanced routing forms.
                     </p>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 p-8">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4  p-8">
                       {features.map((feature, index) => (
                         <li key={index} className="text-md flex items-start gap-2 leading-[32px] mb-2">
-                          <figure className="border bg-orange-600 p-2 px-4 rounded-full font-bold">
+                          <figure className="border bg-orange-700 p-2 px-4 rounded-full font-bold text-white">
                            ✓
                           </figure>
                           <span>{feature}</span>
