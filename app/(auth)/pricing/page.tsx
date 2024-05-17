@@ -191,10 +191,7 @@ export default function Pricing() {
                     aria-selected={activeTab === "Yearly"}
                     onClick={() => handleTabClick("Yearly")}
                   >
-                    Yearly
-                    <span className="relative -top-0.5 rounded-full bg-white p-1 text-xs font-normal text-gray-900 ml-4 px-3">
-                      -20%
-                    </span>
+                    ANNUALLY  ♥ 2 MONTHS FREE
                   </button>
                   <button
                     className={`w-1/2 text-md h-14 flex items-center justify-center uppercase transition-colors duration-300 ease-in-out ${
@@ -207,7 +204,7 @@ export default function Pricing() {
                     aria-selected={activeTab === "Monthly"}
                     onClick={() => handleTabClick("Monthly")}
                   >
-                    Monthly
+                    MONTHLY
                   </button>
                 </div>
 
@@ -297,7 +294,7 @@ export default function Pricing() {
                             ✓
                           </figure>
                           <span 
-                          className={`p-1 ${feature.popup ? 'border-b-2 border-dashed pointer hover:text-orange-600' : ''}`}
+                          className={`p-0 px-1 ml-2 ${feature.popup ? 'border-b-2 border-gray-600 border-dashed pointer hover:text-orange-600' : ''}`}
                           >{feature.name}</span>
                         </li>
                       ))}
@@ -312,7 +309,7 @@ export default function Pricing() {
         {popupFeature && popupFeature.popup && (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
     <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto relative">
-      <button onClick={closePopup} className="absolute top-2 right-2 bg-gray-200 text-white rounded-full w-8 h-8 flex items-center justify-center">
+      <button onClick={closePopup} className="absolute top-2 right-2 bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center">
         ✕
       </button>
       <Image src={popupFeature.popup.image} alt={popupFeature.popup.headline} width={300} height={200} />
