@@ -438,6 +438,7 @@ export default function Pricing() {
                     width="800"
                     alt=""
                     loading="lazy"
+                    unoptimized
                     className="object-cover rounded-lg"
                   />
                 </div>
@@ -446,6 +447,7 @@ export default function Pricing() {
                     src="https://helpkit.so/_nuxt/image/73bb1e.webp"
                     width="400"
                     alt=""
+                    unoptimized
                     loading="lazy"
                     className="w-20 rounded-lg"
                   />

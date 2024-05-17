@@ -163,6 +163,7 @@ export default function Hero() {
             <div className="flex-shrink-0 sm:block hidden">
               <Image
                 src="https://www.helpkit.so/imgs/testimonials/adjust_square_portrait.jpg"
+                unoptimized
                 alt="Author's image"
                 className="w-16 h-16 object-cover text-gray-300 bg-white rounded-full"
               />
@@ -239,6 +240,7 @@ export default function Hero() {
             >
               <Image
                 src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
+                unoptimized
                 width="30"
                 className="shadow-md" alt={""} />{" "}
               <span className="ml-3 text-sm">
@@ -252,6 +254,7 @@ export default function Hero() {
             >
               <Image
                 src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png"
+                unoptimized
                 width="30"
                 className="shadow-md" alt={""}              />{" "}
               <span className="ml-3 text-sm">
@@ -265,6 +268,7 @@ export default function Hero() {
             >
               <Image
                 src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
+                unoptimized
                 width="30"
                 className="shadow-md" alt={""}              />{" "}
               <span className="ml-3 text-sm">
@@ -278,6 +282,7 @@ export default function Hero() {
             >
               <Image
                 src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
+                unoptimized
                 width="30"
                 className="shadow-md" alt={""}              />{" "}
               <span className="ml-3 text-sm">

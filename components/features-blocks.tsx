@@ -130,6 +130,7 @@ export default function FeaturesBlocks() {
                   decoding="async"
                   className="w-full rounded"
                   src="https://dazzling-cat.netlify.app/write%20on%20notion.png"
+                  unoptimized
                 />
               </div>
             </div>
@@ -158,6 +159,7 @@ export default function FeaturesBlocks() {
                   decoding="async"
                   className="w-full rounded"
                   src="https://dazzling-cat.netlify.app/notion to website.png"
+                  unoptimized
                 />
               </div>
             </div>
@@ -185,6 +187,7 @@ export default function FeaturesBlocks() {
                   decoding="async"
                   className="w-full rounded"
                   src="https://dazzling-cat.netlify.app/performancewebsite.png"
+                  unoptimized
                 />
               </div>
             </div>
@@ -211,6 +214,7 @@ export default function FeaturesBlocks() {
                   decoding="async"
                   className="w-full rounded"
                   src="https://dazzling-cat.netlify.app/analyticsseo.png"
+                  unoptimized
                 />
               </div>
             </div>
@@ -239,6 +243,7 @@ export default function FeaturesBlocks() {
                   decoding="async"
                   className="w-full rounded"
                   src="https://dazzling-cat.netlify.app/seograph.png"
+                  unoptimized
                 />
               </div>
             </div>
@@ -264,6 +269,7 @@ export default function FeaturesBlocks() {
                   decoding="async"
                   className="w-full rounded"
                   src="https://dazzling-cat.netlify.app/integrationsdb.png"
+                  unoptimized
                 />
               </div>
             </div>

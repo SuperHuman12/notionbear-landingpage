@@ -19,6 +19,7 @@ export default function aboutme() {
               src="https://dazzling-cat.netlify.app/image 1469.png"
               width="600"
               height="905"
+              unoptimized
               className="rounded-md"
               alt={''}
               style={{ filter: "grayscale(1)", opacity: 0.85 }}

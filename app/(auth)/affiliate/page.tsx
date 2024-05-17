@@ -146,12 +146,12 @@ refer to NotionBear, without limits. Join
               <br />
               <p className="text-md mt-4 mb-4 text-gray-800">We prepared designs for you to download and use right away — no extra work. Missing a format? Just ask and we will make unique design files just for you. Free of charge.</p>
             </div>
-            <Image src="https://dazzling-cat.netlify.app/nb-assets.png" alt="Banners free pack" className="w-full lg:w-1/2 p-8 m-auto" />
+            <Image src="https://dazzling-cat.netlify.app/nb-assets.png" unoptimized alt="Banners free pack" className="w-full lg:w-1/2 p-8 m-auto" />
           </div>
 
 
           <div className="flex mx-auto px-4 py-8 mt-8">
-            <Image src="https://dazzling-cat.netlify.app/freelancer-mockup.webp" alt="Design agency" className="w-full lg:w-1/2 p-8 m-auto" />
+            <Image src="https://dazzling-cat.netlify.app/freelancer-mockup.webp" unoptimized alt="Design agency" className="w-full lg:w-1/2 p-8 m-auto" />
             <div className="w-full lg:w-1/2 p-8 m-auto">
               <h2 className="h2 font-bold mb-8">You’re a freelancer or an agency</h2>
               <p className="text-md mt-4 mb-4 text-gray-800">Demonstrate your industry knowledge by recommending NotionBear to your clients and fellow marketers. This will help you create an additional revenue source for your business. "Diversification is the key to financial resilience." — Warren Buffett.</p>
@@ -164,7 +164,7 @@ refer to NotionBear, without limits. Join
               <h2 className="h2 font-bold mb-8">You have an audience</h2>
               <p className="text-md mt-4 mb-4 text-gray-800">Have an X.com account that is followed by marketers? Or a website about web design? Monetize your audience by recommending them a great tool. Use our affiliate program link alongside with your existing monetization. Boost your earnings!</p>
             </div>
-            <Image src="https://dazzling-cat.netlify.app/influencer-mockup.webp" alt="Influencer" className="w-full lg:w-1/2 p-8 m-auto" />
+            <Image src="https://dazzling-cat.netlify.app/influencer-mockup.webp" unoptimized alt="Influencer" className="w-full lg:w-1/2 p-8 m-auto" />
           </div>
 
 

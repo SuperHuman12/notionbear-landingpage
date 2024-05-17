@@ -22,7 +22,7 @@ function IntegrationDetail() {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-4" >
                     <div className="w-20 h-20 rounded-full overflow-hidden" >
-                      <Image src="https://framerusercontent.com/images/FS1of0gxF0A6UP7GmCpIBKQM.png" alt="" className="w-full h-full object-contain" />
+                      <Image src="https://framerusercontent.com/images/FS1of0gxF0A6UP7GmCpIBKQM.png"  unoptimized alt="" className="w-full h-full object-contain" />
                     </div>
                     <div className="space-y-2" >
                       <h1 className="text-2xl font-bold text-gray-800">Arcade</h1>
@@ -39,7 +39,7 @@ function IntegrationDetail() {
                   </div>
                 </div>
                 <div className="relative w-full" >
-                  <Image src="https://framerusercontent.com/images/JwSD9igebl5YjP1p0XBssmuRU4.png" alt="" className="w-full h-full object-contain" />
+                  <Image src="https://framerusercontent.com/images/JwSD9igebl5YjP1p0XBssmuRU4.png" unoptimized alt="" className="w-full h-full object-contain" />
                 </div>
               </div>
 
