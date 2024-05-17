@@ -36,7 +36,7 @@ export default function Footer() {
                 <a href="https://app.notionbear.com" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">NotionBear Builder</a>
               </li>
               <li className="mb-2">
-                <a href="/template" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Showcase</a>
+                <a href="/showcase" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Showcase</a>
               </li>
               <li className="mb-2">
                 <a href="https://notionbear.com/blog" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</a>

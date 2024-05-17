@@ -106,7 +106,7 @@ export default function Hero() {
               <div>
                 <a
                   className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-                  href="/template"
+                  href="#template-section"
                 >
                   View Examples
                 </a>

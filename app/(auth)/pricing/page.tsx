@@ -188,21 +188,12 @@ export default function Pricing() {
                   </button>
                 </div>
 
-                <div className="
-          sm:block
-          hidden
-          absolute
-          mx-auto
-          text-xs
-          ml-[440px]
-          opacity-50
-          font-medium
-        ">
-        → Save 2 months on yearly 🎁
+              </div>
+
+              <div className="sm:block hidden text-xs opacity-50 font-medium justify-center text-center mt-4">
+         Save 2 months on yearly 🎁
       </div>
 
-
-              </div>
               <div className="mb-4">
                 <label className="block text-sm font-medium text-gray-700">
                   Number of Users Every Month
@@ -237,7 +228,7 @@ export default function Pricing() {
                       </span>
                     </h5>
                     <div className="flex grow flex-col gap-2 md:flex-row md:items-end mt-6 mb-4">
-                      <button className="bg-gray-700 text-white w-full p-4 rounded-lg text-center">
+                      <button className="bg-orange-700 text-white w-full p-4 rounded-lg text-center">
                         Get Started
                       </button>
                     </div>
@@ -274,7 +265,7 @@ export default function Pricing() {
                     </p>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4  p-8">
                       {features.map((feature, index) => (
-                        <li key={index} className="text-md flex items-start gap-2 leading-[32px] mb-2">
+                        <li key={index} className="text-md flex items-start gap-2 leading-[32px] mb-2 items-center">
                           <figure className="border bg-orange-700 p-2 px-4 rounded-full font-bold text-white">
                            ✓
                           </figure>

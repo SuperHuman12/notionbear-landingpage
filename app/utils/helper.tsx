@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import integrationData from '../../public/integration_data.json';
-import templateData from '../../public/template_data.json';
+import templateData from '../../public/showcase_data.json';
 import comparisonData from '../../public/comparison_data.json';
 
 

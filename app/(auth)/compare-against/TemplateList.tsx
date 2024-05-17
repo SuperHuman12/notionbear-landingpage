@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import Link from 'next/link'; 
-import templateData from '@/public/template_data.json';
+import templateData from '@/public/showcase_data.json';
 
 // Define TypeScript interfaces for the template data
 interface Product {
@@ -52,14 +52,14 @@ const TemplateLibrary = () => {
           <a className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.notionbear.com">Ask our Designer for Help</a>
         </div>
         <div>
-          <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-2 m-auto" href="/template">View all Templates</a>
+          <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-2 m-auto" href="/showcase">View all Templates</a>
         </div>
       </div>
 
       <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-3 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none mt-8">
         {templates.map((template, index) => (
           <Link
-            href={"/template/" + template.id}
+            href={"/showcase/" + template.id}
             key={index}
             className="relative flex flex-col items-center  bg-white rounded shadow-xl h-full border"
           >

@@ -77,7 +77,7 @@ export default async function Template() {
           <div className="max-w-3xl mx-auto aos-init aos-animate max-w-sm grid md:grid-cols-1 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none gap-6">
             {templates.map((template: any, index: number) => (
               <Link
-                href={"/template/" + template.id}
+                href={"/showcase/" + template.id}
                 key={index}
                 className="relative flex flex-col items-center  bg-white rounded shadow-xl h-full border"
               >

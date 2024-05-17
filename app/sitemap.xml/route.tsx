@@ -52,7 +52,7 @@ function generateSiteMap(integrationsOrTemplates: IntegrationOrTemplate[]): stri
     <loc>${URL}/affiliate</loc>
   </url>
   <url>
-    <loc>${URL}/template</loc>
+    <loc>${URL}/showcase</loc>
   </url>
   ${integrationsOrTemplates
             .map(item => {

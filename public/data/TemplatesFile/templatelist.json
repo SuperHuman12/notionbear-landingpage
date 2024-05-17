@@ -1,7 +1,7 @@
 {
     "templates": [
       {
-        "href": "/template/remote-jobs",
+        "href": "/showcase/remote-jobs",
         "imageSrc": "/images/remotejobs.png",
         "altText": "Remote Jobs",
         "name": "Remote Jobs",
