@@ -308,17 +308,18 @@ export default function Pricing() {
         </div>
 
         {popupFeature && popupFeature.popup && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-            <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
-              <button onClick={closePopup} className="absolute top-2 right-2">
-                Close
-              </button>
-              <Image src={popupFeature.popup.image} alt={popupFeature.popup.headline} width={300} height={200} />
-              <h2 className="text-2xl font-bold mt-4">{popupFeature.popup.headline}</h2>
-              <p className="mt-2">{popupFeature.popup.description}</p>
-            </div>
-          </div>
-        )}
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+    <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto relative">
+      <button onClick={closePopup} className="absolute top-2 right-2 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center">
+        ✕
+      </button>
+      <Image src={popupFeature.popup.image} alt={popupFeature.popup.headline} width={300} height={200} />
+      <h2 className="text-2xl font-bold mt-4">{popupFeature.popup.headline}</h2>
+      <p className="mt-2">{popupFeature.popup.description}</p>
+    </div>
+  </div>
+)}
+
 
         <div className="max-w-5xl px-4 py-8 mx-auto mt-10">
           <section className="p-8 rounded-lg bg-gray-100">
