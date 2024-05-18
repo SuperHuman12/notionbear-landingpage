@@ -175,14 +175,20 @@ export default function Marketplace_Type() {
                         A simpler alternative to{" "}
                         <Image
                           alt="Ana"
+                          width={120}
+                          height={120}
                           src="./images/simpler-helpdesk2.png"
                           className="rounded-full w-auto h-8"
+                          unoptimized
                         />{" "}
                         and{" "}
                         <Image
                           alt="Ana"
+                          height={120}
+                          width={120}
                           src="./images/simpler-helpdesk.png"
                           className="rounded-full w-auto h-8"
+                          unoptimized
                         />
                       </div>
                     </div>
@@ -219,12 +225,19 @@ export default function Marketplace_Type() {
                           alt="Ana"
                           src="./images/simpler-blog.png"
                           className="rounded-full w-auto h-8"
+                          height={120}
+                          width={120}
+                          unoptimized
+                          
                         />{" "}
                         and{" "}
                         <Image
                           alt="Ana"
                           src="./images/simpler-blog2.png"
                           className="rounded-full w-auto h-8"
+                          width={120}
+                          height={120}
+                          unoptimized
                         />
                       </div>
                     </div>
@@ -261,12 +274,18 @@ export default function Marketplace_Type() {
                           alt="Ana"
                           src="./images/simpler-marketplaceue2.png"
                           className="rounded-full w-auto h-8"
+                          unoptimized
+                          width={120}
+                          height={120}
                         />{" "}
                         and{" "}
                         <Image
                           alt="Ana"
                           src="./images/simpler-marketplaceue.png"
                           className="rounded-full w-auto h-8"
+                          height={120}
+                          width={120}
+                          unoptimized
                         />
                       </div>
                     </div>
@@ -303,12 +322,20 @@ export default function Marketplace_Type() {
                           alt="Ana"
                           src="./images/webflow-icon.png"
                           className="rounded-full w-auto h-8"
+                          height={120}
+                          width={120}
+                          unoptimized
                         />{" "}
                         and{" "}
                         <Image
                           alt="Ana"
                           src="./images/framer-icon.png"
                           className="rounded-full w-auto h-8"
+                          width={120}
+                          height={120
+                          
+                          }
+
                         />
                       </div>
                     </div>

@@ -84,7 +84,7 @@ export default function ModalVideo({
                         alt="image"
                         loading="lazy"
                         width="144"
-                        height="42.48"
+                        height="42"
                         decoding="async"
                         unoptimized
                         className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
@@ -110,7 +110,7 @@ export default function ModalVideo({
                         alt="image"
                         loading="lazy"
                         width="120"
-                        height="35.4"
+                        height="35"
                         decoding="async"
                         unoptimized
                         className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
@@ -123,7 +123,7 @@ export default function ModalVideo({
                         alt="image"
                         loading="lazy"
                         width="144"
-                        height="39.6"
+                        height="39"
                         decoding="async"
                         unoptimized
                         className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
@@ -136,7 +136,7 @@ export default function ModalVideo({
                         alt="image"
                         loading="lazy"
                         width="192"
-                        height="30.72"
+                        height="30"
                         decoding="async"
                         unoptimized
                         className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
@@ -149,7 +149,7 @@ export default function ModalVideo({
                         alt="image"
                         loading="lazy"
                         width="144"
-                        height="72.50704225352112"
+                        height="73"
                         decoding="async"
                         unoptimized
                         className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
