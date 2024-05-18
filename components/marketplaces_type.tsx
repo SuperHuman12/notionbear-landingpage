@@ -20,7 +20,12 @@ export default function Marketplace_Type() {
 
   useEffect(() => {
     heightFix();
+    console.log("Marketplace_Type component mounted");
   }, []);
+
+  useEffect(() => {
+    console.log("Current tab:", tab);
+  }, [tab]);
 
   return (
     <section 
@@ -67,6 +72,7 @@ export default function Marketplace_Type() {
                   href="#0"
                   onClick={(e) => {
                     e.preventDefault();
+                    console.log("Tab 1 clicked");
                     setTab(1);
                   }}
                 >
@@ -82,6 +88,7 @@ export default function Marketplace_Type() {
                   href="#0"
                   onClick={(e) => {
                     e.preventDefault();
+                    console.log("Tab 2 clicked");
                     setTab(2);
                   }}
                 >
@@ -98,6 +105,7 @@ export default function Marketplace_Type() {
                   href="#0"
                   onClick={(e) => {
                     e.preventDefault();
+                    console.log("Tab 3 clicked");
                     setTab(3);
                   }}
                 >
@@ -109,13 +117,13 @@ export default function Marketplace_Type() {
                   </div>
                 </a>
 
-
                 <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 4 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
                   href="#0"
                   onClick={(e) => {
                     e.preventDefault();
+                    console.log("Tab 4 clicked");
                     setTab(4);
                   }}
                 >
@@ -126,7 +134,6 @@ export default function Marketplace_Type() {
                     </div>
                   </div>
                 </a>
-                
               </div>
             </div>
 
@@ -149,7 +156,10 @@ export default function Marketplace_Type() {
                     leave="transition ease-in-out duration-300 transform absolute"
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
+                    beforeEnter={() => {
+                      console.log("Entering Tab 1");
+                      heightFix();
+                    }}
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
@@ -188,7 +198,10 @@ export default function Marketplace_Type() {
                     leave="transition ease-in-out duration-300 transform absolute"
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
+                    beforeEnter={() => {
+                      console.log("Entering Tab 2");
+                      heightFix();
+                    }}
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
@@ -227,7 +240,10 @@ export default function Marketplace_Type() {
                     leave="transition ease-in-out duration-300 transform absolute"
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
+                    beforeEnter={() => {
+                      console.log("Entering Tab 3");
+                      heightFix();
+                    }}
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
@@ -266,7 +282,10 @@ export default function Marketplace_Type() {
                     leave="transition ease-in-out duration-300 transform absolute"
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
+                    beforeEnter={() => {
+                      console.log("Entering Tab 4");
+                      heightFix();
+                    }}
                     unmount={false}
                   >
                     <div className="relative inline-flex flex-col">
