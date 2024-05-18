@@ -73,7 +73,7 @@ export default function PageDetail() {
                                             Notion into a
                                         </span>
                                         <br className="block" />
-                                        professional<span className="text-3xl sm:text-5xl md:text-5xl gradient-text-accent mx-4">marketplace</span>
+                                        professional <span className="text-3xl sm:text-5xl md:text-5xl gradient-text-accent mx-4">help desk</span>
                                     </h1>
                                     <p className="max-w-md mx-auto mt-3 -mb-3 text-base text-gray-500 sm:mb-0 sm:text-lg md:mt-5 md:text-lg md:max-w-2xl">
                                         NotionBear is the perfect tool for creating your marketplaces powered by notion. You write your articles in Notion and NotionBear takes care of the rest. It's as simple as that.
