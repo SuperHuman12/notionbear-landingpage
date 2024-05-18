@@ -6,7 +6,14 @@ import Image from "next/image";
 import FeaturesBg from "@/public/images/features-bg.png";
 import FeaturesElement from "@/public/images/features-element.png";
 import helpdeskImage from "@/public/images/helpdesk.gif";
+import blogImage from "@/public/images/blog.gif";
 import marketplaceImage from "@/public/images/marketplace.gif";
+import helpdeskrival1 from "@/public/images/simpler-helpdesk.png";
+import helpdeskrival2 from "@/public/images/simpler-helpdesk2.png";
+import blogrival1 from "@/public/images/simpler-blog.png";
+import blogrival2 from "@/public/images/simpler-blog2.png";
+import marketplacerival1 from "@/public/images/simpler-catalogue.png";
+import marketplacerival2 from "@/public/images/simpler-catalogue2.png";
 
 export default function Marketplace_Type() {
   const [tab, setTab] = useState<number>(1);
@@ -177,7 +184,7 @@ export default function Marketplace_Type() {
                           alt="Ana"
                           width={120}
                           height={120}
-                          src="./images/simpler-helpdesk2.png"
+                          src={helpdeskrival1}
                           className="rounded-full w-auto h-8"
                           unoptimized
                         />{" "}
@@ -186,7 +193,7 @@ export default function Marketplace_Type() {
                           alt="Ana"
                           height={120}
                           width={120}
-                          src="./images/simpler-helpdesk.png"
+                          src={helpdeskrival2}
                           className="rounded-full w-auto h-8"
                           unoptimized
                         />
@@ -213,7 +220,7 @@ export default function Marketplace_Type() {
                     <div className="relative inline-flex flex-col">
                       <Image
                         className="md:max-w-none mx-auto rounded border border-2 border-gray-600 shadow-lg"
-                        src="/images/blog.gif"
+                        src={blogImage}
                         unoptimized
                         width={500}
                         height="462"
@@ -223,7 +230,7 @@ export default function Marketplace_Type() {
                         A simpler alternative to{" "}
                         <Image
                           alt="Ana"
-                          src="./images/simpler-blog.png"
+                          src={blogrival1}
                           className="rounded-full w-auto h-8"
                           height={120}
                           width={120}
@@ -233,7 +240,7 @@ export default function Marketplace_Type() {
                         and{" "}
                         <Image
                           alt="Ana"
-                          src="./images/simpler-blog2.png"
+                          src={blogrival2}
                           className="rounded-full w-auto h-8"
                           width={120}
                           height={120}
@@ -272,7 +279,7 @@ export default function Marketplace_Type() {
                         A simpler alternative to{" "}
                         <Image
                           alt="Ana"
-                          src="./images/simpler-marketplaceue2.png"
+                          src={marketplacerival1}
                           className="rounded-full w-auto h-8"
                           unoptimized
                           width={120}
@@ -281,7 +288,7 @@ export default function Marketplace_Type() {
                         and{" "}
                         <Image
                           alt="Ana"
-                          src="./images/simpler-marketplaceue.png"
+                          src={marketplacerival2}
                           className="rounded-full w-auto h-8"
                           height={120}
                           width={120}
@@ -320,7 +327,7 @@ export default function Marketplace_Type() {
                         A simpler alternative to{" "}
                         <Image
                           alt="Ana"
-                          src="./images/webflow-icon.png"
+                          src={helpdeskrival1}
                           className="rounded-full w-auto h-8"
                           height={120}
                           width={120}
@@ -329,7 +336,7 @@ export default function Marketplace_Type() {
                         and{" "}
                         <Image
                           alt="Ana"
-                          src="./images/framer-icon.png"
+                          src={helpdeskrival1}
                           className="rounded-full w-auto h-8"
                           width={120}
                           height={120
