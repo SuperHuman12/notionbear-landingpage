@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Hero() {
   const words = [
     "Helpdesk",
-    "Marketplaces",
+    "Marketplace",
     "Blog",
     "Company Wiki",
     "Documentation"
