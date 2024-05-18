@@ -9,7 +9,7 @@ import MobileMenu from './mobile-menu';
 export default function Header() {
   const [top, setTop] = useState<boolean>(true);
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const dropdownRef = useRef<HTMLLIElement>(null);
 
   // detect whether user has scrolled the page down by 10px
   const scrollHandler = () => {
