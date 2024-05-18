@@ -26,7 +26,7 @@ export const metadata = {
         openGraph: {
             images: [
                 {
-                    url: "https://dazzling-cat.netlify.app/querykitty_socialshare.png",
+                    url: "https://dazzling-cat.netlify.app/notiontohelpdesk_socialshare.png",
                     width: 1200,
                     height: 630,
                     alt: "Create a help desk with Notion",
@@ -37,7 +37,7 @@ export const metadata = {
             card: "summary_large_image",
             images: [
                 {
-                    url: "https://dazzling-cat.netlify.app/querykitty_socialshare.png",
+                    url: "https://dazzling-cat.netlify.app/notiontohelpdesk_socialshare.png",
                     alt: "Create a help desk with Notion",
                 },
             ],
