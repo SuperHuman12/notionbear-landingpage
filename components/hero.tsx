@@ -55,7 +55,7 @@ export default function Hero() {
               data-aos="zoom-y-out"
             >
               Easily build your <br />
-              <span className=" -translate-y-full slideUp h-full w-full bg-clip-text text-transparent text-orange-600">
+              <span className=" -translate-y-full slideUp h-full w-full bg-clip-text text-transparent gradient-text-accent">
                 {words[index]}
               </span>{" "}
               <br />{" "}
