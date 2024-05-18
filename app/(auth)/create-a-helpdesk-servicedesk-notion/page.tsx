@@ -2,19 +2,25 @@
 import React, { useState, useEffect } from "react";
 
 import ModalVideo from "@/components/modal-video";
-import VideoThumb from "@/public/images/hero-image.png"; 
+import VideoThumb from "@/public/images/hero-image.png";
 
 import Link from "next/link";
 import Image from "next/image";
 
 import TrustedBy from "../compare-against/TrustedBy";
 import FeaturesBlocks from "@/components/features-blocks";
+
 import Marketplace_Type from "@/components/marketplaces_type";
 
 import Testimonials from "@/components/testimonials";
 
+
+import Aos from "aos";
+import 'aos/dist/aos.css'
+
+
 export const metadata = {
-    title: "Create a Help Desk with Notion (no-code and free)",
+    title: "Create a help desk with Notion (no-code and free)",
     description:
         "Build a help desk in Notion, with our Notion help desk maker. Go live in under a minute.  Build your free NotionBear help desk website in a minute!",
         openGraph: {
@@ -23,7 +29,7 @@ export const metadata = {
                     url: "https://dazzling-cat.netlify.app/querykitty_socialshare.png",
                     width: 1200,
                     height: 630,
-                    alt: "Create a Marketplace with Notion",
+                    alt: "Create a help desk with Notion",
                 },
             ],
         },
@@ -32,7 +38,7 @@ export const metadata = {
             images: [
                 {
                     url: "https://dazzling-cat.netlify.app/querykitty_socialshare.png",
-                    alt: "Create a Marketplace with Notion",
+                    alt: "Create a help desk with Notion",
                 },
             ],
         },
@@ -40,6 +46,7 @@ export const metadata = {
 
 export default function PageDetail() {
     return (
+
         <div>
         <section className="bg-gradient-to-b from-gray-100 to-white">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -66,10 +73,10 @@ export default function PageDetail() {
                                             Notion into a
                                         </span>
                                         <br className="block" />
-                                        professional<span className="text-3xl sm:text-5xl md:text-5xl gradient-text-accent mx-4">help desk</span>
+                                        professional<span className="text-3xl sm:text-5xl md:text-5xl gradient-text-accent mx-4">marketplace</span>
                                     </h1>
                                     <p className="max-w-md mx-auto mt-3 -mb-3 text-base text-gray-500 sm:mb-0 sm:text-lg md:mt-5 md:text-lg md:max-w-2xl">
-                                        NotionBear is the perfect tool for creating your help desks powered by notion. You write your articles in Notion and NotionBear takes care of the rest. It's as simple as that.
+                                        NotionBear is the perfect tool for creating your marketplaces powered by notion. You write your articles in Notion and NotionBear takes care of the rest. It's as simple as that.
                                     </p>
                                     <div className="flex flex-col-reverse justify-center w-full mt-10 -mb-8 sm:flex-row">
                                         <div className="mt-3 sm:mt-0">
@@ -86,6 +93,7 @@ export default function PageDetail() {
                         </div>
                     </div>
 
+
                     <ModalVideo
                                 thumb={VideoThumb}
                                 thumbWidth={768}
@@ -101,17 +109,10 @@ export default function PageDetail() {
         </section>
 
 
-        <Marketplace_Type/>
+        <Marketplace_Type />
 
 
-        <FeaturesBlocks />
-
-
-<Testimonials />
-
-
-
-
+<FeaturesBlocks />
 
 
 
@@ -216,7 +217,13 @@ export default function PageDetail() {
             </div>
         </div>
     </div>
+
+    
 </section>
+
+
+<Testimonials />
+
 
 
 </div>

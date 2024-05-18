@@ -14,7 +14,7 @@ export default function aboutme() {
           Notion.
         </h3>
         <div className="grid items-start pt-6 mx-auto gap-8 md:flex md:items-start justify-center">
-          <div className="float-right w-1/3 mb-6 ml-6 sm:float-none sm:ml-12 sm:mb-0 ">
+          <div className="float-right md:w-1/3 sm:w-full mb-6 ml-6 sm:float-none sm:ml-12 sm:mb-0  ">
             <Image
               src="https://dazzling-cat.netlify.app/image 1469.png"
               width="600"

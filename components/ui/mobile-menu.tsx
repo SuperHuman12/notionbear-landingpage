@@ -74,7 +74,7 @@ export default function MobileMenu() {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 text-gray-400 transition duration-150 ease-in-out group-hover:text-gray-500 group-focus:text-gray-500" data-v-0d428460=""><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" data-v-0d428460=""></path></svg>
               </button>
               {dropdownOpen && (
-                <div className="bg-white shadow-lg py-2">
+                <div className="bg-white w-full">
                   <ul>
                     <li className="flex items-start p-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-100">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 text-orange-600">
@@ -160,7 +160,7 @@ export default function MobileMenu() {
               <Link href="/showcase" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out w-full justify-between border-b-2">Showcase</Link>
             </li>
             <li>
-              <Link href="https://app.notionbear.com" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out w-full justify-between border-b-2">Login</Link>
+              <Link href="https://app.notionbear.com" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out w-full justify-between">Login</Link>
             </li>
             <li>
               <Link href="https://app.notionbear.com" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3 w-full justify-between">
