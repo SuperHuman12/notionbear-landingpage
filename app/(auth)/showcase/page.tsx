@@ -117,7 +117,7 @@ export default async function Template() {
                       </div>
 
                       <div className="p-6">
-                        <Link href={template.id} className="flex gap-2">
+                        <Link href={"/showcase/" + template.id} className="flex gap-2">
                           <span className="text-start mt-2 mb-1 font-bold hover:text-orange-600">
                             {template?.product?.name}
                           </span>
