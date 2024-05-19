@@ -3,11 +3,32 @@ import Image from "next/image";
 import { _loadFromJson } from "@/app/utils/helper";
 import notionfooterImage from "@/public/images/freedesigner.png";
 
+
+
 export const metadata = {
-  title: "Notion Bear Templates",
-  description:
-    "Jumpstart your SaaS business with pre-built solutions from NotionBear and our community",
-};
+  title: 'Beautiful websites built on notion using notionbear',
+  description: 'Jumpstart your SaaS business with pre-built solutions from NotionBear and our community.',
+  openGraph: {
+    images: [
+        {
+            url: "https://dazzling-cat.netlify.app/notionbearshowcase_socialshare.png",
+            width: 1200,
+            height: 630,
+            alt: "Create a Marketplace with Notion",
+        },
+    ],
+},
+twitter: {
+    card: "summary_large_image",
+    images: [
+        {
+            url: "https://dazzling-cat.netlify.app/notionbearshowcase_socialshare.png",
+            alt: "Create a Marketplace with Notion",
+        },
+    ],
+},
+}
+
 
 // Utility function to truncate text
 const truncateText = (text: string, maxLength: number): string => {

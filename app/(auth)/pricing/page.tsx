@@ -7,6 +7,31 @@ import MigrateFrom from "@/public/images/migratefrom.png";
 import Testimonials from "@/components/testimonials";
 import Rating from "../compare-against/Rating";
 
+export const metadata = {
+  title: 'Notionbear Pricing',
+  description: 'Learn pricing plans of NotionBear, the website builder for startups.',
+  openGraph: {
+    images: [
+        {
+            url: "https://dazzling-cat.netlify.app/notionbearpricing_socialshare.png",
+            width: 1200,
+            height: 630,
+            alt: "Create a Marketplace with Notion",
+        },
+    ],
+},
+twitter: {
+    card: "summary_large_image",
+    images: [
+        {
+            url: "https://dazzling-cat.netlify.app/notionbearpricing_socialshare.png",
+            alt: "Create a Marketplace with Notion",
+        },
+    ],
+},
+}
+
+
 const pricingMap: Record<number, number> = {
   3000: 5,
   10000: 15,
