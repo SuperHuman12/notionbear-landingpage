@@ -1,7 +1,6 @@
 "use client";
 import Image from 'next/image'
 import Link from 'next/link';
-import CompareHero from '@/public/images/heroimage.png'
 import Rating from '../Rating';
 import AggregateStats from '../AggregateStats';
 import TrustedBy from '../TrustedBy';
