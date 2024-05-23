@@ -24,7 +24,10 @@ export default function FeaturesBlocks() {
             <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
               {/* 1st item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
-                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/aipowered.png" />
+                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" 
+                width={30}
+                height={30}
+                src="/images/aipowered.png" />
                 <div>
                   <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">AI-Powered</h4>
                   <p className="text-gray-600 text-center">Build a website or make changes with prompts.</p>
@@ -33,7 +36,10 @@ export default function FeaturesBlocks() {
 
               {/* 2nd item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
-                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/moneypaid.png" />
+                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2"
+                width={30}
+                height={30}
+                src="/images/moneypaid.png" />
                 <div>
                   <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Accept Payments</h4>
                   <p className="text-gray-600 text-center">Accept payments with secure Stripe</p>
@@ -42,7 +48,10 @@ export default function FeaturesBlocks() {
 
               {/* 3rd item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
-                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/handsup.png" />
+                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2"
+                width={30}
+                height={30}
+                src="/images/handsup.png" />
                 <div>
                   <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">100% No Code</h4>
                   <p className="text-gray-600 text-center">No need to code to build a powerful website.</p>
@@ -51,7 +60,10 @@ export default function FeaturesBlocks() {
 
               {/* 4th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
-                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/uicomponents.png" />
+                <Image alt="image" loading="lazy" decoding="async" 
+                width={30}
+                height={30}
+                className="h-20 mb-2" src="/images/uicomponents.png" />
                 <div>
                   <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">UI & UX-Ready</h4>
                   <p className="text-gray-600 text-center">No need to be a designer.</p>
@@ -60,7 +72,12 @@ export default function FeaturesBlocks() {
 
               {/* 5th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
-                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/customcode.png" />
+                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" 
+                
+              width={30}
+              height={30}
+
+                src="/images/customcode.png" />
                 <div>
                   <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Custom Code</h4>
                   <p className="text-gray-600 text-center">If you need more, you can add custom code.</p>
@@ -69,7 +86,10 @@ export default function FeaturesBlocks() {
 
               {/* 6th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
-                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/analytics.png" />
+                <Image alt="image" loading="lazy" decoding="async" 
+                width={30}
+                height={30}
+                className="h-20 mb-2" src="/images/analytics.png" />
                 <div>
                   <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Full Analytics</h4>
                   <p className="text-gray-600 text-center">Know how your website performs.</p>
@@ -78,7 +98,10 @@ export default function FeaturesBlocks() {
 
               {/* 7th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
-                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/linkdomain.png" />
+                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" 
+                width={30}
+                height={30}
+                src="/images/linkdomain.png" />
                 <div>
                   <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Your Domain</h4>
                   <p className="text-gray-600 text-center">Your site your address.</p>
@@ -87,7 +110,10 @@ export default function FeaturesBlocks() {
 
               {/* 8th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
-                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/teamsemoji.png" />
+                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" 
+                width={30}
+                height={30}
+                src="/images/teamsemoji.png" />
                 <div>
                   <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Perfect for Teams</h4>
                   <p className="text-gray-600 text-center">Collaborate together as a team.</p>
@@ -96,7 +122,10 @@ export default function FeaturesBlocks() {
 
               {/* 9th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
-                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" src="/images/gatedcontent.png" />
+                <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" 
+                height={30}
+                width={30}
+                src="/images/gatedcontent.png" />
                 <div>
                   <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Gated Content</h4>
                   <p className="text-gray-600 text-center">Protect your content behind a paywall.</p>
@@ -127,6 +156,8 @@ export default function FeaturesBlocks() {
                 <Image
                   alt="image"
                   loading="lazy"
+                  width={100}
+                  height={100}
                   decoding="async"
                   className="w-full rounded"
                   src="https://dazzling-cat.netlify.app/write%20on%20notion.png"
@@ -157,6 +188,8 @@ export default function FeaturesBlocks() {
                   alt="image"
                   loading="lazy"
                   decoding="async"
+                  width={100}
+                  height={100}
                   className="w-full rounded"
                   src="https://dazzling-cat.netlify.app/notion to website.png"
                   unoptimized
@@ -185,6 +218,8 @@ export default function FeaturesBlocks() {
                   alt="image"
                   loading="lazy"
                   decoding="async"
+                  width={100}
+                  height={100}
                   className="w-full rounded"
                   src="https://dazzling-cat.netlify.app/performancewebsite.png"
                   unoptimized

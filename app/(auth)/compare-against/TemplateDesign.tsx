@@ -20,7 +20,10 @@ const TemplateDesign = () => {
                         <a href="https://app.notionbear.com/integrations/arcade" className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank"><span>Sign Up</span></a>
                     </div>
                 </div>
-                <div className="relative w-full"><Image unoptimized src="https://dazzling-cat.netlify.app/write%20on%20notion.png" alt="" className="h-full w-full rounded-2xl object-cover" /></div>
+                <div className="relative w-full"><Image 
+                width={100}
+                height={100}
+                unoptimized src="https://dazzling-cat.netlify.app/write%20on%20notion.png" alt="" className="h-full w-full rounded-2xl object-cover" /></div>
             </div>
 
 
@@ -61,13 +64,19 @@ const TemplateDesign = () => {
                         <a href="https://app.notionbear.com/integrations/arcade" className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank"><span>Sign Up</span></a>
                     </div>
                 </div>
-                <div className="relative w-full"><Image unoptimized src="https://dazzling-cat.netlify.app/performancewebsite.png" alt="" className="h-full w-full rounded-2xl object-cover" /></div>
+                <div className="relative w-full"><Image unoptimized src="https://dazzling-cat.netlify.app/performancewebsite.png" 
+                width={100}
+                height={100}
+                alt="" className="h-full w-full rounded-2xl object-cover" /></div>
             </div>
 
 
             <div className="grid grid-cols-1 gap-y-8 gap-x-12 lg:grid-cols-2 lg:items-center xl:gap-x-16 mb-12">
 
-                <div className="relative w-full"><Image unoptimized src="https://dazzling-cat.netlify.app/analyticsseo.png" alt="" className="h-full w-full rounded-2xl object-cover" /></div>
+                <div className="relative w-full"><Image unoptimized
+                
+                
+                src="https://dazzling-cat.netlify.app/analyticsseo.png" alt="" className="h-full w-full rounded-2xl object-cover" /></div>
 
                 <div className="max-w-sm">
                     <div className="flex items-center space-x-4">

@@ -72,7 +72,10 @@ refer to NotionBear, without limits. Join
                 <ul className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
                   <li className="flex flex-col items-center">
                     <div className="relative">
-                      <Image src="/images/Group 8770.png" alt="Become a partner" className="h-40 p-4" />
+                      <Image 
+                      width={100}
+                      height={100}
+                      src="/images/Group 8770.png" alt="Become a partner" className="h-40 p-4" />
                       <div className="absolute -right-4 -bottom-4">
                         {/* SVG icon */}
                       </div>

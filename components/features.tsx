@@ -309,7 +309,7 @@ export default function Features() {
                         and{" "}
                         <Image
                           alt="Ana"
-                          src="./images/framer-icon.png"
+                          src="/images/framer-icon.png"
                           className="rounded-full w-auto h-8"
                           width={120}
                           height={120}

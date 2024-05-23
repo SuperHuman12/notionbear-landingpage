@@ -164,6 +164,8 @@ export default function Hero() {
               <Image
                 src="https://www.helpkit.so/imgs/testimonials/adjust_square_portrait.jpg"
                 unoptimized
+                width={100}
+                height={100}
                 alt="Author's image"
                 className="w-16 h-16 object-cover text-gray-300 bg-white rounded-full"
               />
@@ -241,7 +243,9 @@ export default function Hero() {
               <Image
                 src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
                 unoptimized
-                width="30"
+                width={30}
+                height={30}
+
                 className="shadow-md" alt={""} />{" "}
               <span className="ml-3 text-sm">
                 View Helpdesk Demo <span className="opacity-90">↗️</span>
@@ -255,7 +259,8 @@ export default function Hero() {
               <Image
                 src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png"
                 unoptimized
-                width="30"
+                width={30}
+                height={30}
                 className="shadow-md" alt={""}              />{" "}
               <span className="ml-3 text-sm">
                 View Marketplace Demo <span className="opacity-90">↗️</span>
@@ -269,7 +274,8 @@ export default function Hero() {
               <Image
                 src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
                 unoptimized
-                width="30"
+                width={30}
+                height={30}
                 className="shadow-md" alt={""}              />{" "}
               <span className="ml-3 text-sm">
                 View Blog Demo <span className="opacity-90">↗️</span>
@@ -283,7 +289,8 @@ export default function Hero() {
               <Image
                 src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
                 unoptimized
-                width="30"
+                width={30}
+                height={30}
                 className="shadow-md" alt={""}              />{" "}
               <span className="ml-3 text-sm">
                 View Company Wiki Demo <span className="opacity-90">↗️</span>
