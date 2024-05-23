@@ -1,11 +1,12 @@
-"use client";
 
 import { useState, useEffect } from "react";
-import Image from 'next/image'
+import Image from "next/image";
 import notionfooterImage from "@/public/images/freedesigner.png";
 import MigrateFrom from "@/public/images/migratefrom.png";
 import Testimonials from "@/components/testimonials";
 import Rating from "../compare-against/Rating";
+
+
 
 export const metadata = {
   title: 'Notionbear Pricing',
@@ -261,9 +262,12 @@ export default function Pricing() {
               <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
                 {/* Background illustration */}
                 <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
-                <Image src={notionfooterImage} alt="Footer Logo" width={220} height={0} />
-
-
+                  <Image
+                    alt="Logo"
+                    width={220}
+                    className="block"
+                    src={notionfooterImage}
+                  />
                 </div>
 
                 <div className="relative flex flex-col lg:flex-row justify-between items-center">
@@ -729,7 +733,12 @@ export default function Pricing() {
         <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
           {/* Background illustration */}
           <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
-          <Image src={MigrateFrom} alt="Migrate From" width={400} height={0} />
+            <Image
+              alt="Logo"
+              width={400}
+              className="block"
+              src={MigrateFrom}
+            />
           </div>
 
           <div className="relative flex flex-col lg:flex-row justify-between items-center">
