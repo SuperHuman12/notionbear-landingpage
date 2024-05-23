@@ -7,8 +7,6 @@ import MigrateFrom from "@/public/images/migratefrom.png";
 import Testimonials from "@/components/testimonials";
 import Rating from "../compare-against/Rating";
 
-
-
 export const metadata = {
   title: 'Notionbear Pricing',
   description: 'Learn pricing plans of NotionBear, the website builder for startups.',
