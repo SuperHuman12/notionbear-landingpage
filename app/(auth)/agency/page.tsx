@@ -71,7 +71,7 @@ export default function PageDetail() {
         <div role="list" className="project_type-list w-dyn-items grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <div role="listitem" className="project_type-item w-dyn-item bg-white shadow-lg p-6 rounded-lg">
                 <div className="grid gap-4 items-center">
-                    <Image loading="lazy" height="60" alt="Platform migrations" unoptimized src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316fc6b33cce40a33c2b1b_Migration.svg" className="project_type-image mr-4" style={{ filter: 'hue-rotate(161deg)' }} />
+                    <Image loading="lazy" width={100} height={100} alt="Platform migrations"  unoptimized src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316fc6b33cce40a33c2b1b_Migration.svg" className="project_type-image mr-4" style={{ filter: 'hue-rotate(161deg)' }} />
                     <div>
                         <h3 className="text-xl font-semibold mb-2">Platform migrations</h3>
                         <p>Move all (or just part of) your site from another platform to Webflow.</p>
@@ -80,7 +80,7 @@ export default function PageDetail() {
             </div>
             <div role="listitem" className="project_type-item w-dyn-item bg-white shadow-lg p-6 rounded-lg">
                 <div className="grid gap-4 items-center">
-                    <Image loading="lazy" height="60" alt="Custom code &amp; integrations" unoptimized src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316fb84aabe974ccc5e90a_Plugins.svg" className="project_type-image mr-4" style={{ filter: 'hue-rotate(161deg)' }} />
+                    <Image loading="lazy" width={100} height={100} alt="Custom code &amp; integrations" unoptimized src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316fb84aabe974ccc5e90a_Plugins.svg" className="project_type-image mr-4" style={{ filter: 'hue-rotate(161deg)' }} />
                     <div>
                         <h3 className="text-xl font-semibold mb-2">Custom code &amp; integrations</h3>
                         <p>Get help with integrations or other extensions that require development work.</p>
@@ -89,7 +89,7 @@ export default function PageDetail() {
             </div>
             <div role="listitem" className="project_type-item w-dyn-item bg-white shadow-lg p-6 rounded-lg">
                 <div className="grid gap-4 items-center">
-                    <Image loading="lazy" height="60" alt="Rebrands &amp; redesigns" unoptimized src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316f5a0c978936919bd6fe_SiteRefresh.svg" className="project_type-image mr-4" style={{ filter: 'hue-rotate(161deg)' }} />
+                    <Image loading="lazy" width={100} height={100} alt="Rebrands &amp; redesigns" unoptimized src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316f5a0c978936919bd6fe_SiteRefresh.svg" className="project_type-image mr-4" style={{ filter: 'hue-rotate(161deg)' }} />
                     <div>
                         <h3 className="text-xl font-semibold mb-2">Rebrands &amp; redesigns</h3>
                         <p>Give your whole site a new look or work on a fresh new project with an Expert.</p>

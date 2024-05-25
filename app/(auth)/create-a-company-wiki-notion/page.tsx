@@ -146,7 +146,7 @@ export default function PageDetail() {
                     <div className="grid gap-4 items-center">
                         <Image
                             loading="lazy"
-                            height="60"
+                            width={100} height={100}
                             alt="Platform migrations"
                             unoptimized
                             src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316fc6b33cce40a33c2b1b_Migration.svg"
@@ -171,7 +171,7 @@ export default function PageDetail() {
                     <div className="grid gap-4 items-center">
                         <Image
                             loading="lazy"
-                            height="60"
+                            width={100} height={100}
                             alt="Custom code &amp; integrations"
                             unoptimized
                             src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316fb84aabe974ccc5e90a_Plugins.svg"
@@ -196,7 +196,7 @@ export default function PageDetail() {
                     <div className="grid gap-4 items-center">
                         <Image
                             loading="lazy"
-                            height="60"
+                            width={100} height={100}
                             alt="Rebrands &amp; redesigns"
                             unoptimized
                             src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316f5a0c978936919bd6fe_SiteRefresh.svg"

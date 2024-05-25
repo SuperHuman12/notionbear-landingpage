@@ -248,6 +248,7 @@ export default function FeaturesBlocks() {
                   loading="lazy"
                   decoding="async"
                   className="w-full rounded"
+                  width={100} height={100}
                   src="https://dazzling-cat.netlify.app/analyticsseo.png"
                   unoptimized
                 />
@@ -277,6 +278,7 @@ export default function FeaturesBlocks() {
                   loading="lazy"
                   decoding="async"
                   className="w-full rounded"
+                  width={100} height={100}
                   src="https://dazzling-cat.netlify.app/seograph.png"
                   unoptimized
                 />
@@ -303,6 +305,7 @@ export default function FeaturesBlocks() {
                   loading="lazy"
                   decoding="async"
                   className="w-full rounded"
+                  width={100} height={100}
                   src="https://dazzling-cat.netlify.app/integrationsdb.png"
                   unoptimized
                 />

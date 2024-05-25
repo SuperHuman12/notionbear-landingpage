@@ -84,7 +84,7 @@ refer to NotionBear, without limits. Join
                   </li>
                   <li className="flex flex-col items-center">
                     <div className="relative">
-                      <Image src="/images/Group 8771 (1).png" alt="Earn money" className="h-40 p-4" />
+                      <Image src="/images/Group 8771 (1).png" alt="Earn money" width={100} height={100} className="h-40 p-4" />
                       <div className="absolute -right-4 -bottom-4">
                         {/* SVG icon */}
                       </div>
@@ -93,7 +93,7 @@ refer to NotionBear, without limits. Join
                   </li>
                   <li className="flex flex-col items-center">
                     <div className="relative">
-                      <Image src="/images/Group 8772.png" alt="Cash out in one click" className="h-40 p-4" />
+                      <Image src="/images/Group 8772.png" alt="Cash out in one click" width={100} height={100} className="h-40 p-4" />
                     </div>
                     <div className="mt-4 text-center">Check in anytime to view referrals. Cash out in one click (Bank, Paypal, Wise).</div>
                   </li>
@@ -116,7 +116,7 @@ refer to NotionBear, without limits. Join
               {/* Affiliate Detail Item */}
               <a href="." className="flex flex-col items-center space-y-2 px-8 border p-6 rounded">
                 {/* SVG icon */}
-                <Image src="/images/🤑.png" alt="Cash out in one click" className="h-10" />
+                <Image src="/images/🤑.png" alt="Cash out in one click" className="h-10" width={100} height={100}/>
                 <h2 className="h2 font-semibold">33%</h2>
                 <span className="text-base text-gray-600">your commission</span>
               </a>
@@ -124,7 +124,7 @@ refer to NotionBear, without limits. Join
               {/* Affiliate Detail Item */}
               <a href="." className="flex flex-col items-center space-y-2 px-8 border p-6 rounded">
                 {/* SVG icon */}
-                <Image src="/images/🍪.png" alt="Cash out in one click" className="h-10" />
+                <Image src="/images/🍪.png" alt="Cash out in one click" className="h-10" width={100} height={100}/>
                 <h2 className="h2 font-semibold">60 days</h2>
                 <span className="text-base text-gray-600">cookie period</span>
               </a>
@@ -132,7 +132,7 @@ refer to NotionBear, without limits. Join
               {/* Affiliate Detail Item */}
               <a href="." className="flex flex-col items-center space-y-2 px-8 border p-6 rounded">
                 {/* SVG icon */}
-                <Image src="/images/partyblow.png" alt="Cash out in one click" className="h-10" />
+                <Image src="/images/partyblow.png" alt="Cash out in one click" className="h-10" width={100} height={100} />
                 <h2 className="h2 font-semibold">10%</h2>
                 <span className="text-base text-gray-600">2nd tier commission</span>
               </a>
@@ -149,12 +149,12 @@ refer to NotionBear, without limits. Join
               <br />
               <p className="text-md mt-4 mb-4 text-gray-800">We prepared designs for you to download and use right away — no extra work. Missing a format? Just ask and we will make unique design files just for you. Free of charge.</p>
             </div>
-            <Image src="https://dazzling-cat.netlify.app/nb-assets.png" unoptimized alt="Banners free pack" className="w-full lg:w-1/2 p-8 m-auto" />
+            <Image src="https://dazzling-cat.netlify.app/nb-assets.png" unoptimized alt="Banners free pack" width={100} height={100} className="w-full lg:w-1/2 p-8 m-auto" />
           </div>
 
 
           <div className="flex mx-auto px-4 py-8 mt-8">
-            <Image src="https://dazzling-cat.netlify.app/freelancer-mockup.webp" unoptimized alt="Design agency" className="w-full lg:w-1/2 p-8 m-auto" />
+            <Image src="https://dazzling-cat.netlify.app/freelancer-mockup.webp" unoptimized alt="Design agency" width={100} height={100} className="w-full lg:w-1/2 p-8 m-auto" />
             <div className="w-full lg:w-1/2 p-8 m-auto">
               <h2 className="h2 font-bold mb-8">You’re a freelancer or an agency</h2>
               <p className="text-md mt-4 mb-4 text-gray-800">Demonstrate your industry knowledge by recommending NotionBear to your clients and fellow marketers. This will help you create an additional revenue source for your business. "Diversification is the key to financial resilience." — Warren Buffett.</p>
@@ -167,7 +167,7 @@ refer to NotionBear, without limits. Join
               <h2 className="h2 font-bold mb-8">You have an audience</h2>
               <p className="text-md mt-4 mb-4 text-gray-800">Have an X.com account that is followed by marketers? Or a website about web design? Monetize your audience by recommending them a great tool. Use our affiliate program link alongside with your existing monetization. Boost your earnings!</p>
             </div>
-            <Image src="https://dazzling-cat.netlify.app/influencer-mockup.webp" unoptimized alt="Influencer" className="w-full lg:w-1/2 p-8 m-auto" />
+            <Image src="https://dazzling-cat.netlify.app/influencer-mockup.webp" unoptimized alt="Influencer" width={100} height={100} className="w-full lg:w-1/2 p-8 m-auto" />
           </div>
 
 
@@ -236,21 +236,21 @@ refer to NotionBear, without limits. Join
               <ul className="flex flex-wrap justify-center">
                 <li className="w-full md:w-1/3 px-4 py-2">
                   <div className="text-center">
-                    <Image src="/images/🧑_🏫.png" alt="Free coaching" className="mx-auto h-20" />
+                    <Image src="/images/🧑_🏫.png" alt="Free coaching" className="mx-auto h-20" width={100} height={100}/>
                     <h3 className="h4 font-semibold mt-2 ">Free coaching</h3>
                     <p className=" mt-1">Struggling with growing your blog or agency? Let us consult you. Our team has experts in the niche.</p>
                   </div>
                 </li>
                 <li className="w-full md:w-1/3 px-4 py-2">
                   <div className="text-center">
-                    <Image src="/images/💻.png" alt="Personal dashboard" className="mx-auto h-20" />
+                    <Image src="/images/💻.png" alt="Personal dashboard" className="mx-auto h-20" width={100} height={100} />
                     <h3 className="h4 font-semibold mt-2 ">Personal dashboard</h3>
                     <p className=" mt-1">Track every campaign, URL click, and dollar you earn. Easy and convenient.</p>
                   </div>
                 </li>
                 <li className="w-full md:w-1/3 px-4 py-2">
                   <div className="text-center">
-                    <Image src="/images/🧑_🎨.png" alt="Have our designer for $0" className="mx-auto h-20" />
+                    <Image src="/images/🧑_🎨.png" alt="Have our designer for $0" className="mx-auto h-20" width={100} height={100}/>
                     <h3 className="h4 font-semibold mt-2 ">Have our designer for $0</h3>
                     <p className=" mt-1">Not satisfied with our media kit? Just ask! Our design crew will prepare exclusive images and videos.</p>
                   </div>

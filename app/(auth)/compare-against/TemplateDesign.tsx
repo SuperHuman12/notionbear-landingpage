@@ -76,7 +76,7 @@ const TemplateDesign = () => {
                 <div className="relative w-full"><Image unoptimized
                 
                 
-                src="https://dazzling-cat.netlify.app/analyticsseo.png" alt="" className="h-full w-full rounded-2xl object-cover" /></div>
+                src="https://dazzling-cat.netlify.app/analyticsseo.png" width={100} height={100} alt="" className="h-full w-full rounded-2xl object-cover" /></div>
 
                 <div className="max-w-sm">
                     <div className="flex items-center space-x-4">
