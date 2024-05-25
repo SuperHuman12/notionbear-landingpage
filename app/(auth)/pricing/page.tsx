@@ -438,7 +438,7 @@ export default function Pricing() {
                 <div className="aspect-w-1 aspect-h-1">
                   <Image
                     src="https://helpkit.so/_nuxt/image/bffbe5.webp"
-                    width="800"
+                    width={100} height={100}
                     alt=""
                     loading="lazy"
                     unoptimized
@@ -448,7 +448,7 @@ export default function Pricing() {
                 <div className="absolute bottom-0 right-0 inline-flex px-4 py-2 -mb-5 -mr-4 bg-white rounded-lg shadow-xl">
                   <Image
                     src="https://helpkit.so/_nuxt/image/73bb1e.webp"
-                    width="400"
+                    width={100} height={100}
                     alt=""
                     unoptimized
                     loading="lazy"

@@ -71,7 +71,7 @@ const Page: React.FC = () => {
 
 
   if (!filterBySlug) {
-    return <Loading/>;;
+    return <Loading />;;
   }
 
   return (
@@ -80,7 +80,7 @@ const Page: React.FC = () => {
 
       <div className="grid grid-cols-1 gap-y-8 gap-x-12 lg:grid-cols-2 xl:gap-x-16">
         <div>
-        <MoveBack/>
+          <MoveBack />
 
           <div className="mb-4">
             <h1 className="text-3xl font-bold text-gray-800 mt-8">{filterBySlug?.product?.name}</h1>
@@ -104,32 +104,32 @@ const Page: React.FC = () => {
         </div>
 
         <Image
-            src={filterBySlug?.proof?.screenshot}
-            alt={filterBySlug?.product?.name}
-            width={400}
-            className=" w-full rounded-2xl border border-gray-600 object-cover shadow-xl"  
-            height={450}
-            quality="90"
-          
-          />
+          src={filterBySlug?.proof?.screenshot}
+          alt={filterBySlug?.product?.name}
+          width={400}
+          className=" w-full rounded-2xl border border-gray-600 object-cover shadow-xl"
+          height={450}
+          quality="90"
+
+        />
 
 
       </div>
 
 
       <div className="mb-4">
-            <h1 className="text-2xl font-bold text-gray-800">Overview</h1>
-            <p className="text-md text-gray-600">{filterBySlug?.overview?.content}</p>
+        <h1 className="text-2xl font-bold text-gray-800">Overview</h1>
+        <p className="text-md text-gray-600">{filterBySlug?.overview?.content}</p>
       </div>
 
       <div className="mb-4">
-            <h1 className="text-2xl font-bold text-gray-800">How it Works</h1>
-            <p className="text-md text-gray-600">{filterBySlug?.howItWorks?.content}</p>
+        <h1 className="text-2xl font-bold text-gray-800">How it Works</h1>
+        <p className="text-md text-gray-600">{filterBySlug?.howItWorks?.content}</p>
       </div>
 
       <div className="mb-4">
-            <h1 className="text-2xl font-bold text-gray-800">Configuration</h1>
-            <p className="text-md text-gray-600">{filterBySlug?.configuration?.content}</p>
+        <h1 className="text-2xl font-bold text-gray-800">Configuration</h1>
+        <p className="text-md text-gray-600">{filterBySlug?.configuration?.content}</p>
       </div>
 
 
