@@ -55,7 +55,7 @@ export default function Marketplace_Type() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">
-              No matter how unique your website concept is, NotionBear can support it.
+              No matter how unique your marketplace concept is, NotionBear can support it.
               over.
             </h1>
             <p className="text-xl text-gray-600">
@@ -86,7 +86,7 @@ export default function Marketplace_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                      Notion to <span className="bg-clip-text ">Helpdesk</span>
+                      <span className="bg-clip-text ">Rental</span> Marketplace
                     </div>
                   </div>
                 </Link>
@@ -102,7 +102,7 @@ export default function Marketplace_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                      Notion to <span className="bg-clip-text ">Blog</span>
+                    <span className="bg-clip-text ">Service</span> Marketplace
                     </div>
                   </div>
                 </Link>
@@ -119,8 +119,7 @@ export default function Marketplace_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                      Notion to{" "}
-                      <span className="bg-clip-text">Marketplace</span>
+                    <span className="bg-clip-text ">Product</span> Marketplace
                     </div>
                   </div>
                 </Link>
@@ -137,8 +136,7 @@ export default function Marketplace_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                      Notion to{" "}
-                      <span className="bg-clip-text ">Company Wiki</span>
+                    <span className="bg-clip-text ">Other</span> Marketplace
                     </div>
                   </div>
                 </Link>

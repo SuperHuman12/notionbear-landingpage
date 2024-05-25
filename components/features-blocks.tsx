@@ -26,7 +26,7 @@ export default function FeaturesBlocks() {
               {/* 1st item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
                 <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" 
-                width={30}
+                width={130}
                 height={30}
                 src="/images/aipowered.png" />
                 <div>
@@ -38,7 +38,7 @@ export default function FeaturesBlocks() {
               {/* 2nd item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
                 <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2"
-                width={30}
+                width={90}
                 height={30}
                 src="/images/moneypaid.png" />
                 <div>
@@ -50,7 +50,7 @@ export default function FeaturesBlocks() {
               {/* 3rd item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
                 <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2"
-                width={30}
+                width={80}
                 height={30}
                 src="/images/handsup.png" />
                 <div>
@@ -62,7 +62,7 @@ export default function FeaturesBlocks() {
               {/* 4th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
                 <Image alt="image" loading="lazy" decoding="async" 
-                width={30}
+                width={100}
                 height={30}
                 className="h-20 mb-2" src="/images/uicomponents.png" />
                 <div>
@@ -75,7 +75,7 @@ export default function FeaturesBlocks() {
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
                 <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" 
                 
-              width={30}
+              width={120}
               height={30}
 
                 src="/images/customcode.png" />
@@ -88,7 +88,7 @@ export default function FeaturesBlocks() {
               {/* 6th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
                 <Image alt="image" loading="lazy" decoding="async" 
-                width={30}
+                width={80}
                 height={30}
                 className="h-20 mb-2" src="/images/analytics.png" />
                 <div>
@@ -100,7 +100,7 @@ export default function FeaturesBlocks() {
               {/* 7th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
                 <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" 
-                width={30}
+                width={80}
                 height={30}
                 src="/images/linkdomain.png" />
                 <div>
@@ -112,7 +112,7 @@ export default function FeaturesBlocks() {
               {/* 8th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
                 <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" 
-                width={30}
+                width={100}
                 height={30}
                 src="/images/teamsemoji.png" />
                 <div>
@@ -124,7 +124,7 @@ export default function FeaturesBlocks() {
               {/* 9th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
                 <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" 
-                height={30}
+                height={90}
                 width={30}
                 src="/images/gatedcontent.png" />
                 <div>
@@ -157,7 +157,7 @@ export default function FeaturesBlocks() {
                 <Image
                   alt="image"
                   loading="lazy"
-                  width={100}
+                  width={80}
                   height={100}
                   decoding="async"
                   className="w-full rounded"
@@ -189,7 +189,7 @@ export default function FeaturesBlocks() {
                   alt="image"
                   loading="lazy"
                   decoding="async"
-                  width={100}
+                  width={80}
                   height={100}
                   className="w-full rounded"
                   src="https://dazzling-cat.netlify.app/notion to website.png"
@@ -219,7 +219,7 @@ export default function FeaturesBlocks() {
                   alt="image"
                   loading="lazy"
                   decoding="async"
-                  width={100}
+                  width={80}
                   height={100}
                   className="w-full rounded"
                   src="https://dazzling-cat.netlify.app/performancewebsite.png"
@@ -249,7 +249,7 @@ export default function FeaturesBlocks() {
                   loading="lazy"
                   decoding="async"
                   className="w-full rounded"
-                  width={100} height={100}
+                  width={80} height={100}
                   src="https://dazzling-cat.netlify.app/analyticsseo.png"
                   unoptimized
                 />
@@ -279,7 +279,7 @@ export default function FeaturesBlocks() {
                   loading="lazy"
                   decoding="async"
                   className="w-full rounded"
-                  width={100} height={100}
+                  width={80} height={100}
                   src="https://dazzling-cat.netlify.app/seograph.png"
                   unoptimized
                 />
@@ -306,7 +306,7 @@ export default function FeaturesBlocks() {
                   loading="lazy"
                   decoding="async"
                   className="w-full rounded"
-                  width={100} height={100}
+                  width={80} height={100}
                   src="https://dazzling-cat.netlify.app/integrationsdb.png"
                   unoptimized
                 />
