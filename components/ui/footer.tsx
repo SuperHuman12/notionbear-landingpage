@@ -168,7 +168,7 @@ export default function Footer() {
             <h6 className="text-gray-800 font-medium mb-2">Company</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Join on Telegram</a>
+                <a  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Join on Telegram</a>
               </li>
               <li className="mb-2">
                 <a href="https://www.whatsapp.com/channel/0029VaBrxz9FnSzC4z2HGd2T" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Join Whatsapp Channel</a>
@@ -195,22 +195,22 @@ export default function Footer() {
             <h6 className="text-gray-800 font-medium mb-2">Sites by Bear 🐻</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Discord Bots</a>
+                <a  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Discord Bots</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Telegram Bots</a>
+                <a  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Telegram Bots</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Whatsapp Bots</a>
+                <a  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Whatsapp Bots</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Remote Jobs</a>
+                <a  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Remote Jobs</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Mental Health</a>
+                <a  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Mental Health</a>
               </li>
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Agency marketplace</a>
+                <a  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Agency marketplace</a>
               </li>
 
 
