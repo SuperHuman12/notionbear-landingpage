@@ -153,7 +153,7 @@ export default function Testimonials() {
                 </cite>
                 <div className="text-gray-600">
                   <span>CEO & Co-Founder</span>{" "}
-                  <a className="text-orange-600 hover:underline" >
+                  <Link className="text-orange-600 hover:underline" >
                     Conversion Factory
                   </a>
                 </div>
@@ -186,7 +186,7 @@ export default function Testimonials() {
                 </cite>
                 <div className="text-gray-600">
                   <span>CEO & Co-Founder</span>{" "}
-                  <a className="text-orange-600 hover:underline" >
+                  <Link className="text-orange-600 hover:underline" >
                     Indie Master Minds
                   </a>
                 </div>
@@ -219,7 +219,7 @@ export default function Testimonials() {
                 </cite>
                 <div className="text-gray-600">
                   <span>CEO & Co-Founder</span>{" "}
-                  <a className="text-orange-600 hover:underline" >
+                  <Link className="text-orange-600 hover:underline" >
                     TweetHunter
                   </a>
                 </div>
@@ -253,7 +253,7 @@ export default function Testimonials() {
                 </cite>
                 <div className="text-gray-600">
                   <span>CEO & Co-Founder</span>{" "}
-                  <a className="text-orange-600 hover:underline" >
+                  <Link className="text-orange-600 hover:underline" >
                     ClearBit
                   </a>
                 </div>
@@ -286,7 +286,7 @@ export default function Testimonials() {
                 </cite>
                 <div className="text-gray-600">
                   <span>CEO & Co-Founder</span>{" "}
-                  <a className="text-orange-600 hover:underline" >
+                  <Link className="text-orange-600 hover:underline" >
                     Tailwind
                   </a>
                 </div>
@@ -320,7 +320,7 @@ export default function Testimonials() {
                 </cite>
                 <div className="text-gray-600">
                   <span>CEO & Co-Founder</span>{" "}
-                  <a className="text-orange-600 hover:underline" >
+                  <Link className="text-orange-600 hover:underline" >
                     Floosh
                   </a>
                 </div>

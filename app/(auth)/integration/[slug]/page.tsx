@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname, useSearchParams } from 'next/navigation'; 
 import { _loadFromJson, _transformDataToPostPageView } from '../../../utils/helper';
 import Image from 'next/image'
 import Link from 'next/link';
@@ -66,7 +66,7 @@ const Page: React.FC = () => {
 
 
   if (!filterBySlug) {
-    return <Loading />;
+    return <Loading/>;
   }
 
 

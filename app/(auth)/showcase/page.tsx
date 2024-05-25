@@ -76,7 +76,7 @@ export default async function Template() {
                     {/* CTA form */}
                     <form className="w-full lg:w-auto">
                       <div>
-                        <a
+                        <Link
                           className="btn bg-orange-600 hover:bg-orange-700 shadow"
                           href="https://buy.stripe.com/5kAeV0b6K27w8BG6os"
                         >

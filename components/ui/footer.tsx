@@ -16,7 +16,7 @@ export default function Footer() {
 
           {/* 1st block */}
           <div className="sm:col-span-12 lg:col-span-3">
-            <Link href={"0"} className="mb-2">
+            <Link href={"0"}  className="mb-2">
             <Image src={Logo} loading='eager'  alt="Logo" width={200} height={200} />
               <p className="text-sm text-gray-600 mt-4 mb-4">Notion Bear is an easy-to-use website builder for busy founders. Lead by <a href="https://twitter.com/absurdfounder">@absurdfounder</a>.</p>
 

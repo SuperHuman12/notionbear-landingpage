@@ -448,7 +448,7 @@ export default function Pricing() {
                 <div className="absolute bottom-0 right-0 inline-flex px-4 py-2 -mb-5 -mr-4 bg-white rounded-lg shadow-xl">
                   <Image
                     src="https://helpkit.so/_nuxt/image/73bb1e.webp"
-                    width={100} height={100}
+                    width="400"
                     alt=""
                     unoptimized
                     loading="lazy"

@@ -73,7 +73,7 @@ export default function Marketplace_Type() {
             >
               {/* Tabs buttons */}
               <div className="grid gap-4 mb-8 md:mb-0">
-                <a
+                <Link
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 1 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
                   
@@ -89,7 +89,7 @@ export default function Marketplace_Type() {
                     </div>
                   </div>
                 </a>
-                <a
+                <Link
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 2 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
                   
@@ -106,7 +106,7 @@ export default function Marketplace_Type() {
                   </div>
                 </a>
 
-                <a
+                <Link
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 3 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
                   
@@ -124,7 +124,7 @@ export default function Marketplace_Type() {
                   </div>
                 </a>
 
-                <a
+                <Link
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 4 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
                   

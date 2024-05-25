@@ -46,7 +46,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
 
           {/* Site branding */}
-          <Link href={"0"}  className="shrink-0 mr-4">
+          <Link href="/" className="shrink-0 mr-4">
             <Image src={Logo} unoptimized alt="Logo" width={200} height={200} />
           </Link>
 

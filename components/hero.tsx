@@ -96,7 +96,7 @@ export default function Hero() {
               data-aos-delay="300"
             >
               <div>
-                <a
+                <Link
                   className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0"
                   href="https://app.notionbear.com"
                 >
@@ -104,7 +104,7 @@ export default function Hero() {
                 </a>
               </div>
               <div>
-                <a
+                <Link
                   className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
                   href="#template-section"
                 >
@@ -235,7 +235,7 @@ export default function Hero() {
           </div>
 
           <div className="sm:flex justify-center items-center mt-8 flex-col sm:flex-row hidden">
-            <a
+            <Link
               href="#"
               target="_blank"
               className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
@@ -251,7 +251,7 @@ export default function Hero() {
                 View Helpdesk Demo <span className="opacity-90">↗️</span>
               </span>
             </a>
-            <a
+            <Link
               href="#"
               target="_blank"
               className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
@@ -266,7 +266,7 @@ export default function Hero() {
                 View Marketplace Demo <span className="opacity-90">↗️</span>
               </span>
             </a>
-            <a
+            <Link
               href="#"
               target="_blank"
               className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
@@ -281,7 +281,7 @@ export default function Hero() {
                 View Blog Demo <span className="opacity-90">↗️</span>
               </span>
             </a>
-            <a
+            <Link
               href="#"
               target="_blank"
               className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-md cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"

@@ -32,7 +32,7 @@ const renderContent = (item: any, index: number) => {
         </ul>
       );
     case 'link':
-      return <a key={index} href={item.href} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 underline">{item.text}</a>;
+      return <Link key={index} href={item.href} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 underline">{item.text}</a>;
     case 'blockquote':
       return <blockquote key={index} className="italic border-l-4 border-gray-200 pl-4 py-2 my-2">{item.text}</blockquote>;
     case 'code':
