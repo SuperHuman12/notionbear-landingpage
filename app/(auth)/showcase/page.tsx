@@ -81,7 +81,7 @@ export default async function Template() {
                           href="https://buy.stripe.com/5kAeV0b6K27w8BG6os"
                         >
                           Sign Up
-                        </a>
+                        </Link>
                       </div>
                       {/* Success message */}
                       {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}

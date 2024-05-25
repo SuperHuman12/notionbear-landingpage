@@ -7,6 +7,7 @@ import FeaturesBg from "@/public/images/features-bg.png";
 import FeaturesElement from "@/public/images/features-element.png";
 import helpdeskImage from "@/public/images/helpdesk.gif";
 import marketplaceImage from "@/public/images/marketplace.gif";
+import Link from "next/link";
 
 export default function Features() {
   const [tab, setTab] = useState<number>(1);
@@ -61,7 +62,7 @@ export default function Features() {
             >
               {/* Tabs buttons */}
               <div className="grid gap-4 mb-8 md:mb-0">
-                <Link
+                <Link href="#"
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 1 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
                   
@@ -75,8 +76,8 @@ export default function Features() {
                       Notion to <span className="bg-clip-text ">Helpdesk</span>
                     </div>
                   </div>
-                </a>
-                <Link
+                </Link>
+                <Link href="#"
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 2 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
                   
@@ -90,9 +91,9 @@ export default function Features() {
                       Notion to <span className="bg-clip-text ">Blog</span>
                     </div>
                   </div>
-                </a>
+                </Link>
 
-                <Link
+                <Link href="#"
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 3 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
                   
@@ -107,10 +108,10 @@ export default function Features() {
                       <span className="bg-clip-text">Marketplace</span>
                     </div>
                   </div>
-                </a>
+                </Link>
 
 
-                <Link
+                <Link href="#"
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 4 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
                   
@@ -125,7 +126,7 @@ export default function Features() {
                       <span className="bg-clip-text ">Company Wiki</span>
                     </div>
                   </div>
-                </a>
+                </Link>
                 
               </div>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const TemplateDesign = () => {
     return (
@@ -17,7 +18,7 @@ const TemplateDesign = () => {
                         </div>
                     </div>
                     <div className="mt-6 space-y-3 text-base font-normal text-gray-700 lg:text-lg">
-                        <a href="https://app.notionbear.com/integrations/arcade" className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank"><span>Sign Up</span></a>
+                        <Link href="https://app.notionbear.com/integrations/arcade" className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank"><span>Sign Up</span></Link>
                     </div>
                 </div>
                 <div className="relative w-full"><Image 
@@ -42,7 +43,7 @@ const TemplateDesign = () => {
                         </div>
                     </div>
                     <div className="mt-6 space-y-3 text-base font-normal text-gray-700 lg:text-lg">
-                        <a href="https://app.notionbear.com/integrations/arcade" className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank"><span>Sign Up</span></a>
+                        <Link href="https://app.notionbear.com/integrations/arcade" className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank"><span>Sign Up</span></Link>
                     </div>
                 </div>
             </div>
@@ -61,7 +62,7 @@ const TemplateDesign = () => {
                         </div>
                     </div>
                     <div className="mt-6 space-y-3 text-base font-normal text-gray-700 lg:text-lg">
-                        <a href="https://app.notionbear.com/integrations/arcade" className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank"><span>Sign Up</span></a>
+                        <Link href="https://app.notionbear.com/integrations/arcade" className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank"><span>Sign Up</span></Link>
                     </div>
                 </div>
                 <div className="relative w-full"><Image unoptimized src="https://dazzling-cat.netlify.app/performancewebsite.png" 
@@ -88,7 +89,7 @@ const TemplateDesign = () => {
                         </div>
                     </div>
                     <div className="mt-6 space-y-3 text-base font-normal text-gray-700 lg:text-lg">
-                        <a href="https://app.notionbear.com/integrations/arcade" className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank"><span>Sign Up</span></a>
+                        <Link href="https://app.notionbear.com/integrations/arcade" className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank"><span>Sign Up</span></Link>
                     </div>
                 </div>
             </div>
@@ -107,7 +108,7 @@ const TemplateDesign = () => {
                         </div>
                     </div>
                     <div className="mt-6 space-y-3 text-base font-normal text-gray-700 lg:text-lg">
-                        <a href="https://app.notionbear.com/integrations/arcade" className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank"><span>Sign Up</span></a>
+                        <Link href="https://app.notionbear.com/integrations/arcade" className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank"><span>Sign Up</span></Link>
                     </div>
                 </div>
             </div>

@@ -49,8 +49,8 @@ refer to NotionBear, without limits. Join
 
 
 
-          <div className="m-auto text-center"><a className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://notionbear.lemonsqueezy.com/affiliates">Sign Up</a></div>
-          <a href="https://notionbear.tolt.io/" target="_blank" className="block mt-8 text-sm text-orange-600 sm:mt-4 opacity-40 hover:opacity-100 m-auto w-fit">Already partner? Open the affiliate dashboard →</a>
+          <div className="m-auto text-center"><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://notionbear.lemonsqueezy.com/affiliates">Sign Up</Link></div>
+          <Link href="https://notionbear.tolt.io/" target="_blank" className="block mt-8 text-sm text-orange-600 sm:mt-4 opacity-40 hover:opacity-100 m-auto w-fit">Already partner? Open the affiliate dashboard →</Link>
 
 
 
@@ -101,7 +101,7 @@ refer to NotionBear, without limits. Join
               </div>
 
               <div className="mt-8 text-center">
-                <a href="https://notionbear.lemonsqueezy.com/affiliates" target="_self" className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0">Become our Partner</a>
+                <Link href="https://notionbear.lemonsqueezy.com/affiliates" target="_self" className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0">Become our Partner</Link>
               </div>
             </div>
 
@@ -114,28 +114,28 @@ refer to NotionBear, without limits. Join
           <div className="container mx-auto py-8">
             <div className="flex gap-4 justify-center space-x-4 relative items-center p-6 bg-white rounded shadow-xl text-center h-full border w-fit m-auto">
               {/* Affiliate Detail Item */}
-              <a href="." className="flex flex-col items-center space-y-2 px-8 border p-6 rounded">
+              <Link href="." className="flex flex-col items-center space-y-2 px-8 border p-6 rounded">
                 {/* SVG icon */}
                 <Image src="/images/🤑.png" alt="Cash out in one click" className="h-10" width={100} height={100}/>
                 <h2 className="h2 font-semibold">33%</h2>
                 <span className="text-base text-gray-600">your commission</span>
-              </a>
+              </Link>
 
               {/* Affiliate Detail Item */}
-              <a href="." className="flex flex-col items-center space-y-2 px-8 border p-6 rounded">
+              <Link href="." className="flex flex-col items-center space-y-2 px-8 border p-6 rounded">
                 {/* SVG icon */}
                 <Image src="/images/🍪.png" alt="Cash out in one click" className="h-10" width={100} height={100}/>
                 <h2 className="h2 font-semibold">60 days</h2>
                 <span className="text-base text-gray-600">cookie period</span>
-              </a>
+              </Link>
 
               {/* Affiliate Detail Item */}
-              <a href="." className="flex flex-col items-center space-y-2 px-8 border p-6 rounded">
+              <Link href="." className="flex flex-col items-center space-y-2 px-8 border p-6 rounded">
                 {/* SVG icon */}
                 <Image src="/images/partyblow.png" alt="Cash out in one click" className="h-10" width={100} height={100} />
                 <h2 className="h2 font-semibold">10%</h2>
                 <span className="text-base text-gray-600">2nd tier commission</span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -220,7 +220,7 @@ refer to NotionBear, without limits. Join
                 </li>
               </ul>
               <div className="text-center mt-8">
-                <a href="https://partner.notionbear.com/" target="_self" className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0">Start to earn money</a>
+                <Link href="https://partner.notionbear.com/" target="_self" className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0">Start to earn money</Link>
               </div>
             </div>
           </div>
@@ -317,7 +317,7 @@ refer to NotionBear, without limits. Join
         <h2 className="h2 font-bold">Start earning cash by referring customers to NotionBear</h2>
         <br />
         <p className="mt-4">Quick payouts to Wise, Paypal or your local bank. Premium support and cross-promotions from us.</p>
-        <div className="mt-8"><a href="https://notionbear.lemonsqueezy.com/affiliates" target="_blank" className="btn text-gray-900 bg-gray-200 hover:bg-gray-600 w-full mb-4 sm:w-auto sm:mb-0">Become our partner</a></div>
+        <div className="mt-8"><Link href="https://notionbear.lemonsqueezy.com/affiliates" target="_blank" className="btn text-gray-900 bg-gray-200 hover:bg-gray-600 w-full mb-4 sm:w-auto sm:mb-0">Become our partner</Link></div>
     </div>
 </div>
 

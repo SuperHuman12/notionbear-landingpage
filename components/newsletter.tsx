@@ -4,6 +4,7 @@
 import React, { useState, useEffect } from 'react'; // Import React hooks
 import Image from 'next/image'; // Import the Image component from Next.js
 import notionfooterImage from '@/public/images/notionfooter.png';
+import Link from 'next/link';
 
 export default function Newsletter() {
   const words = ["Helpdesk", "Marketplaces", "Blog", "Company Wiki", "Documentation" ];
@@ -51,7 +52,7 @@ export default function Newsletter() {
                 <form className="w-full lg:w-auto">
                   <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
                     <input type="email" className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="I want a site that…" aria-label="I want a site..." />
-                    <Link className="btn text-white bg-orange-600 hover:bg-orange-700 shadow" >Create</a>
+                    <Link href="#" className="btn text-white bg-orange-600 hover:bg-orange-700 shadow" >Create</Link>
                   </div>
                   {/* Success message */}
                   {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}

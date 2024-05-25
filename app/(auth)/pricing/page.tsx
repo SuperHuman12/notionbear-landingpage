@@ -6,6 +6,7 @@ import notionfooterImage from "@/public/images/freedesigner.png";
 import MigrateFrom from "@/public/images/migratefrom.png";
 import Testimonials from "@/components/testimonials";
 import Rating from "../compare-against/Rating";
+import Link from "next/link";
 
 
 
@@ -258,12 +259,12 @@ export default function Pricing() {
                     {/* CTA form */}
                     <form className="w-full lg:w-auto">
                       <div>
-                        <a
+                        <Link
                           className="btn bg-orange-600 hover:bg-orange-700 shadow"
                           href="https://buy.stripe.com/5kAeV0b6K27w8BG6os"
                         >
                           Get this Deal
-                        </a>
+                        </Link>
                       </div>
                       {/* Success message */}
                       {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
@@ -448,7 +449,7 @@ export default function Pricing() {
                 <div className="absolute bottom-0 right-0 inline-flex px-4 py-2 -mb-5 -mr-4 bg-white rounded-lg shadow-xl">
                   <Image
                     src="https://helpkit.so/_nuxt/image/73bb1e.webp"
-                    width="400"
+                    width={100} height={100}
                     alt=""
                     unoptimized
                     loading="lazy"
@@ -662,14 +663,14 @@ export default function Pricing() {
                     a few complex block types such as calendars and databases
                     that we are working on to get rendered as well. You can see
                     our
-                    <a
+                    <Link
                       href="https://support.notionbear.com/Working-with-Notion-Docs/crG31kiLtd678d3PdJXvfj/Which-Notion-block-types-are-supported/2qK2E1KRvDMdsmHYi625Xd"
                       target="_blank"
                       className="font-medium underline"
                     >
                       {" "}
                       test suite here
-                    </a>
+                    </Link>
                     .
                   </dd>
                 </div>
@@ -691,14 +692,14 @@ export default function Pricing() {
                   </dt>
                   <dd className="mt-3 text-gray-500">
                     NotionBear is an indie software company run by a human named
-                    <a
+                    <Link
                       href="https://twitter.com/absurdfounder"
                       target="_blank"
                       className="font-medium text-orange-500"
                     >
                       {" "}
                       Vaibhav
-                    </a>
+                    </Link>
                     .
                   </dd>
                 </div>
@@ -729,12 +730,12 @@ export default function Pricing() {
               {/* CTA form */}
               <form className="w-full lg:w-auto">
                 <div>
-                  <a
+                  <Link
                     className="btn bg-orange-600 hover:bg-orange-700 shadow"
                     href="#"
                   >
                     We can do it for you →
-                  </a>
+                  </Link>
                 </div>
                 {/* Success message */}
                 {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}

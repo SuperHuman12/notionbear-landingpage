@@ -18,13 +18,13 @@ export default function Footer() {
           <div className="sm:col-span-12 lg:col-span-3">
             <Link href={"0"}  className="mb-2">
             <Image src={Logo} loading='eager'  alt="Logo" width={200} height={200} />
-              <p className="text-sm text-gray-600 mt-4 mb-4">Notion Bear is an easy-to-use website builder for busy founders. Lead by <a href="https://twitter.com/absurdfounder">@absurdfounder</a>.</p>
+              <p className="text-sm text-gray-600 mt-4 mb-4">Notion Bear is an easy-to-use website builder for busy founders. Lead by <Link href="https://twitter.com/absurdfounder">@absurdfounder</Link>.</p>
 
               <p className='mb-2 text-sm text-gray-400'>NotionBear is not related with Notion™ the company in any way.</p>
 
             </Link>
             <div className="text-sm text-gray-600">
-              <a href="/terms" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</a> · <a href="/privacy" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</a>
+              <Link href="/terms" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</Link> · <Link href="/privacy" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</Link>
             </div>
           </div>
 
@@ -33,56 +33,56 @@ export default function Footer() {
             <h6 className="text-gray-800 font-medium mb-2">Product</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <a href="https://app.notionbear.com" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">NotionBear Builder</a>
+                <Link href="https://app.notionbear.com" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">NotionBear Builder</Link>
               </li>
               <li className="mb-2">
-                <a href="/showcase" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Showcase</a>
+                <Link href="/showcase" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Showcase</Link>
               </li>
               <li className="mb-2">
-                <a href="https://notionbear.com/blog" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</a>
+                <Link href="https://notionbear.com/blog" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</Link>
               </li>
               <li className="mb-2">
-                <a href="https://notionbear.com/changelog" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Changelog</a>
+                <Link href="https://notionbear.com/changelog" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Changelog</Link>
               </li>
               <li className="mb-2">
-                <a href="/integration" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Integrations</a>
+                <Link href="/integration" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Integrations</Link>
               </li>
               <li className="mb-2">
-                <a href="/pricing" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Pricing</a>
+                <Link href="/pricing" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Pricing</Link>
               </li>
               <li className="mb-2">
-                <a href="/migrating-to-notionbear" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Migrate to NotionBear</a>
+                <Link href="/migrating-to-notionbear" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Migrate to NotionBear</Link>
               </li>
               <li className="mb-2">
-                <a href="/agency" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Hire Experts</a>
-              </li>
-
-              <li className="mb-2">
-                <a href="/create-a-blog-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Blog</a>
+                <Link href="/agency" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Hire Experts</Link>
               </li>
 
               <li className="mb-2">
-                <a href="/create-a-directory-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Directory</a>
+                <Link href="/create-a-blog-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Blog</Link>
+              </li>
+
+              <li className="mb-2">
+                <Link href="/create-a-directory-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Directory</Link>
               </li>
               
               <li className="mb-2">
-                <a href="/create-a-documentation-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Documentation</a>
+                <Link href="/create-a-documentation-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Documentation</Link>
               </li>
 
               <li className="mb-2">
-                <a href="/create-a-helpdesk-servicedesk-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Help Desk - Service Desk</a>
+                <Link href="/create-a-helpdesk-servicedesk-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Help Desk - Service Desk</Link>
               </li>
               
               <li className="mb-2">
-                <a href="/create-a-knowledge-base-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Knowledge Base</a>
+                <Link href="/create-a-knowledge-base-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Knowledge Base</Link>
               </li>
 
               <li className="mb-2">
-                <a href="/create-a-marketplace-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Marketplace</a>
+                <Link href="/create-a-marketplace-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Marketplace</Link>
               </li>
 
               <li className="mb-2">
-                <a href="/create-a-company-wiki-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Company Wiki</a>
+                <Link href="/create-a-company-wiki-notion" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Notion to Company Wiki</Link>
               </li>
               
 
@@ -101,61 +101,61 @@ export default function Footer() {
 
               
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-wix" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Wix</a>
+                <Link href="/compare-against/notionbear-vs-wix" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Wix</Link>
               </li>
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-webflow" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Webflow</a>
+                <Link href="/compare-against/notionbear-vs-webflow" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Webflow</Link>
               </li>
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-wordpress" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with WordPress</a>
+                <Link href="/compare-against/notionbear-vs-wordpress" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with WordPress</Link>
               </li>
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-squarespace" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Squarespace</a>
+                <Link href="/compare-against/notionbear-vs-squarespace" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Squarespace</Link>
               </li>
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-zendesk" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Zendesk</a>
+                <Link href="/compare-against/notionbear-vs-zendesk" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Zendesk</Link>
               </li>
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-intercom" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Intercom</a>
+                <Link href="/compare-against/notionbear-vs-intercom" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Intercom</Link>
               </li>
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-ghost" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Ghost</a>
+                <Link href="/compare-against/notionbear-vs-ghost" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Ghost</Link>
               </li>
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-framer" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Framer</a>
+                <Link href="/compare-against/notionbear-vs-framer" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Framer</Link>
               </li>  
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-gitbook" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Gitbook</a>
+                <Link href="/compare-against/notionbear-vs-gitbook" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Gitbook</Link>
               </li>                
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-shopify" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Shopify</a>
+                <Link href="/compare-against/notionbear-vs-shopify" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Shopify</Link>
               </li>                                 
 
 
 
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-wix" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a peer-to-peer marketplace</a>
+                <Link href="/compare-against/notionbear-vs-wix" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a peer-to-peer marketplace</Link>
               </li>
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-webflow" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a B2B marketplace</a>
+                <Link href="/compare-against/notionbear-vs-webflow" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a B2B marketplace</Link>
               </li>
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-wordpress" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Airbnb</a>
+                <Link href="/compare-against/notionbear-vs-wordpress" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Airbnb</Link>
               </li>
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-squarespace" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Etsy</a>
+                <Link href="/compare-against/notionbear-vs-squarespace" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Etsy</Link>
               </li>
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-zendesk" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Fiverr</a>
+                <Link href="/compare-against/notionbear-vs-zendesk" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Fiverr</Link>
               </li>
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-intercom" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a rental marketplace?</a>
+                <Link href="/compare-against/notionbear-vs-intercom" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a rental marketplace?</Link>
               </li>
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-ghost" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a service marketplace</a>
+                <Link href="/compare-against/notionbear-vs-ghost" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a service marketplace</Link>
               </li>
               <li className="mb-2">
-                <a href="/compare-against/notionbear-vs-framer" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a two-sided marketplace</a>
+                <Link href="/compare-against/notionbear-vs-framer" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a two-sided marketplace</Link>
               </li>  
                             
 
@@ -168,24 +168,24 @@ export default function Footer() {
             <h6 className="text-gray-800 font-medium mb-2">Company</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <a  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Join on Telegram</a>
+                <Link href="#"  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Join on Telegram</Link>
               </li>
               <li className="mb-2">
-                <a href="https://www.whatsapp.com/channel/0029VaBrxz9FnSzC4z2HGd2T" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Join Whatsapp Channel</a>
+                <Link href="https://www.whatsapp.com/channel/0029VaBrxz9FnSzC4z2HGd2T" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Join Whatsapp Channel</Link>
               </li>
               <li className="mb-2">
-                <a href="https://drive.google.com/drive/u/2/folders/13TfS2QV-VHg5Snw6rVbgmoVVRXTeiDHA" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Media Kit</a>
+                <Link href="https://drive.google.com/drive/u/2/folders/13TfS2QV-VHg5Snw6rVbgmoVVRXTeiDHA" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Media Kit</Link>
               </li>
               <li className="mb-2">
-                <a href="mailto:hey@vaibhavkalra.com?subject=Hi%2C%20I%20have%20a%20query%20regarding%20NotionBear" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Email Us</a>
+                <Link href="mailto:hey@vaibhavkalra.com?subject=Hi%2C%20I%20have%20a%20query%20regarding%20NotionBear" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Email Us</Link>
               </li>
               <li className="mb-2">
-                <a href="/affiliate" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Affiliate Program</a>
+                <Link href="/affiliate" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Affiliate Program</Link>
               </li>
 
 
               <li className="mb-2">
-                <a href="https://notionbear.com/help" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Helpcenter</a>
+                <Link href="https://notionbear.com/help" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Helpcenter</Link>
               </li>                                          
             </ul>
           </div>
@@ -195,22 +195,22 @@ export default function Footer() {
             <h6 className="text-gray-800 font-medium mb-2">Sites by Bear 🐻</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <a  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Discord Bots</a>
+                <Link href="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Discord Bots</Link>
               </li>
               <li className="mb-2">
-                <a  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Telegram Bots</a>
+                <Link  href="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Telegram Bots</Link>
               </li>
               <li className="mb-2">
-                <a  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Whatsapp Bots</a>
+                <Link href="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Whatsapp Bots</Link>
               </li>
               <li className="mb-2">
-                <a  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Remote Jobs</a>
+                <Link href="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Remote Jobs</Link>
               </li>
               <li className="mb-2">
-                <a  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Mental Health</a>
+                <Link href="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Mental Health</Link>
               </li>
               <li className="mb-2">
-                <a  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Agency marketplace</a>
+                <Link href="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Agency marketplace</Link>
               </li>
 
 
@@ -227,18 +227,18 @@ export default function Footer() {
           {/* Social as */}
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li>
-              <a href="https://twitter.com/absurdfounder" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter">
+              <Link href="https://twitter.com/absurdfounder" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter">
                 <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path d="m13.063 9 3.495 4.475L20.601 9h2.454l-5.359 5.931L24 23h-4.938l-3.866-4.893L10.771 23H8.316l5.735-6.342L8 9h5.063Zm-.74 1.347h-1.457l8.875 11.232h1.36l-8.778-11.232Z" />
                 </svg>
-              </a>
+              </Link>
             </li>
             <li className="ml-4">
-              <a href="https://github.com/SuperHuman12" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Github">
+              <Link href="https://github.com/SuperHuman12" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Github">
                 <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 8.2c-4.4 0-8 3.6-8 8 0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4V22c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3.1-1.9 3.7-3.7 3.9.3.4.6.9.6 1.6v2.2c0 .2.1.5.6.4 3.2-1.1 5.5-4.1 5.5-7.6-.1-4.4-3.7-8-8.1-8z" />
                 </svg>
-              </a>
+              </Link>
             </li>
           </ul>
 

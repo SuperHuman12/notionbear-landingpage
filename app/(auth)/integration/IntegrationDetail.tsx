@@ -33,9 +33,9 @@ function IntegrationDetail() {
                     <p>Embed interactive product demos in your documentation and turn all users into power users.</p>
                   </div>
                   <div className="flex space-x-2 items-center" >
-                    <a href="https://app.notionbear.com/integrations/arcade" className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank">
+                    <Link href="https://app.notionbear.com/integrations/arcade" className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank">
                       <span>Install</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="relative w-full" >

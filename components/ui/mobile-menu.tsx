@@ -82,7 +82,7 @@ export default function MobileMenu() {
                       </svg>
                       <div className="ml-4">
                         <Link href="/create-a-helpdesk-servicedesk-notion">
-                          <Link className="text-base font-medium text-gray-900">Help Center</a>
+                          <Link className="text-base font-medium text-gray-900">Help Center</Link>
                         </Link>
                         <p className="mt-1 text-sm text-gray-500">Create your professional self-service help center with Notion and NotionBear.</p>
                       </div>
@@ -93,7 +93,7 @@ export default function MobileMenu() {
                       </svg>
                       <div className="ml-4">
                         <Link href="/create-a-documentation-notion">
-                          <Link className="text-base font-medium text-gray-900">Documentation</a>
+                          <Link className="text-base font-medium text-gray-900">Documentation</Link>
                         </Link>
                         <p className="mt-1 text-sm text-gray-500">Create your world-class product documentation with Notion and NotionBear.</p>
                       </div>
@@ -104,7 +104,7 @@ export default function MobileMenu() {
                       </svg>
                       <div className="ml-4">
                         <Link href="/create-a-marketplace-notion">
-                          <Link className="text-base font-medium text-gray-900">Marketplace</a>
+                          <Link className="text-base font-medium text-gray-900">Marketplace</Link>
                         </Link>
                         <p className="mt-1 text-sm text-gray-500">Create a self-serving community marketplace that can handle millions in traffic on Notion.</p>
                       </div>
@@ -115,7 +115,7 @@ export default function MobileMenu() {
                       </svg>
                       <div className="ml-4">
                         <Link href="/create-a-company-wiki-notion">
-                          <Link className="text-base font-medium text-gray-900">Company Wiki</a>
+                          <Link className="text-base font-medium text-gray-900">Company Wiki</Link>
                         </Link>
                         <p className="mt-1 text-sm text-gray-500">Create a company wiki with protected access and AI to answer queries on top of Notion as a database.</p>
                       </div>
@@ -138,7 +138,7 @@ export default function MobileMenu() {
                       </svg>
                       <div className="ml-4">
                         <Link href="/create-a-blog-notion">
-                          <Link className="text-base font-medium text-gray-900">Blog</a>
+                          <Link className="text-base font-medium text-gray-900">Blog</Link>
                         </Link>
                         <p className="mt-1 text-sm text-gray-500">Create a beautiful blog for your startup or company with Notion and NotionBear.</p>
                       </div>

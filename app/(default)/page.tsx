@@ -39,7 +39,7 @@ export default function Home() {
       <FeaturesBlocks />
       <Showcases />
       <Testimonials />
-      <LinkboutMe />
+      <AboutMe />
       <Newsletter />
     </>
   )

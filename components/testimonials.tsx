@@ -1,5 +1,6 @@
 import Image from "next/image";
 import TestimonialImage from "@/public/images/testimonial.jpg";
+import Link from "next/link";
 
 export default function Testimonials() {
   return (
@@ -153,9 +154,9 @@ export default function Testimonials() {
                 </cite>
                 <div className="text-gray-600">
                   <span>CEO & Co-Founder</span>{" "}
-                  <Link className="text-orange-600 hover:underline" >
+                  <Link href="#" className="text-orange-600 hover:underline" >
                     Conversion Factory
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -186,9 +187,9 @@ export default function Testimonials() {
                 </cite>
                 <div className="text-gray-600">
                   <span>CEO & Co-Founder</span>{" "}
-                  <Link className="text-orange-600 hover:underline" >
+                  <Link href="#" className="text-orange-600 hover:underline" >
                     Indie Master Minds
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -219,9 +220,9 @@ export default function Testimonials() {
                 </cite>
                 <div className="text-gray-600">
                   <span>CEO & Co-Founder</span>{" "}
-                  <Link className="text-orange-600 hover:underline" >
+                  <Link href="#" className="text-orange-600 hover:underline" >
                     TweetHunter
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -253,9 +254,9 @@ export default function Testimonials() {
                 </cite>
                 <div className="text-gray-600">
                   <span>CEO & Co-Founder</span>{" "}
-                  <Link className="text-orange-600 hover:underline" >
+                  <Link href="#" className="text-orange-600 hover:underline" >
                     ClearBit
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -286,9 +287,9 @@ export default function Testimonials() {
                 </cite>
                 <div className="text-gray-600">
                   <span>CEO & Co-Founder</span>{" "}
-                  <Link className="text-orange-600 hover:underline" >
+                  <Link href="#" className="text-orange-600 hover:underline" >
                     Tailwind
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -320,9 +321,9 @@ export default function Testimonials() {
                 </cite>
                 <div className="text-gray-600">
                   <span>CEO & Co-Founder</span>{" "}
-                  <Link className="text-orange-600 hover:underline" >
+                  <Link href="#" className="text-orange-600 hover:underline" >
                     Floosh
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

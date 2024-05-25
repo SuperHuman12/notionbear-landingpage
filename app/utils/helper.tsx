@@ -3,6 +3,7 @@ import Image from 'next/image';
 import integrationData from '../../public/integration_data.json';
 import templateData from '../../public/showcase_data.json';
 import comparisonData from '../../public/comparison_data.json';
+import Link from 'next/link';
 
 
   const goBack = () => {
@@ -32,7 +33,7 @@ const renderContent = (item: any, index: number) => {
         </ul>
       );
     case 'link':
-      return <Link key={index} href={item.href} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 underline">{item.text}</a>;
+      return <Link key={index} href={item.href} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 underline">{item.text}</Link>;
     case 'blockquote':
       return <blockquote key={index} className="italic border-l-4 border-gray-200 pl-4 py-2 my-2">{item.text}</blockquote>;
     case 'code':

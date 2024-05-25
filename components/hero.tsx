@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import VideoThumb from "@/public/images/hero-image.png";
 import ModalVideo from "@/components/modal-video";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   const words = [
@@ -101,7 +102,7 @@ export default function Hero() {
                   href="https://app.notionbear.com"
                 >
                   Get free lifetime plan
-                </a>
+                </Link>
               </div>
               <div>
                 <Link
@@ -109,7 +110,7 @@ export default function Hero() {
                   href="#template-section"
                 >
                   View Examples
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -250,7 +251,7 @@ export default function Hero() {
               <span className="ml-3 text-sm">
                 View Helpdesk Demo <span className="opacity-90">↗️</span>
               </span>
-            </a>
+            </Link>
             <Link
               href="#"
               target="_blank"
@@ -265,7 +266,7 @@ export default function Hero() {
               <span className="ml-3 text-sm">
                 View Marketplace Demo <span className="opacity-90">↗️</span>
               </span>
-            </a>
+            </Link>
             <Link
               href="#"
               target="_blank"
@@ -280,7 +281,7 @@ export default function Hero() {
               <span className="ml-3 text-sm">
                 View Blog Demo <span className="opacity-90">↗️</span>
               </span>
-            </a>
+            </Link>
             <Link
               href="#"
               target="_blank"
@@ -295,7 +296,7 @@ export default function Hero() {
               <span className="ml-3 text-sm">
                 View Company Wiki Demo <span className="opacity-90">↗️</span>
               </span>
-            </a>
+            </Link>
 
           </div>
 
