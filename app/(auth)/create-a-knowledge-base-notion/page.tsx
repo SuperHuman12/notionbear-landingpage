@@ -10,7 +10,7 @@ import Image from "next/image";
 import TrustedBy from "../compare-against/TrustedBy";
 import FeaturesBlocks from "@/components/features-blocks";
 
-import Directory_Type from "@/components/directory_type";
+import Directory_Type from "@/components/knowledgebase_type";
 
 
 import Testimonials from "@/components/testimonials";
@@ -110,7 +110,7 @@ export default function PageDetail() {
         </section>
 
 
-        <KnowledgeBase_Type />
+        <Directory_Type />
 
 
 <FeaturesBlocks />
@@ -221,6 +221,8 @@ export default function PageDetail() {
 
     
 </section>
+
+
 
 
 <Testimonials />

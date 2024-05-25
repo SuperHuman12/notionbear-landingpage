@@ -86,7 +86,7 @@ export default function Blog_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                      <span className="bg-clip-text ">Rental</span> Marketplace
+                      <span className="bg-clip-text ">Personal </span> Blog
                     </div>
                   </div>
                 </Link>
@@ -102,7 +102,7 @@ export default function Blog_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                      <span className="bg-clip-text ">Service</span> Marketplace
+                      <span className="bg-clip-text ">Company </span> Blog
                     </div>
                   </div>
                 </Link>
@@ -119,7 +119,7 @@ export default function Blog_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                      <span className="bg-clip-text ">Product</span> Marketplace
+                      <span className="bg-clip-text ">Industry-Specific </span> Blogs
                     </div>
                   </div>
                 </Link>
@@ -136,7 +136,7 @@ export default function Blog_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                      <span className="bg-clip-text ">Other</span> Marketplace
+                      <span className="bg-clip-text ">Other</span> Blogs
                     </div>
                   </div>
                 </Link>

@@ -16,7 +16,7 @@ import marketplacerival1 from "@/public/images/simpler-catalogue.png";
 import marketplacerival2 from "@/public/images/simpler-catalogue2.png";
 import Link from "next/link";
 
-export default function Helpdesk_Type() {
+export default function Marketplace_Type() {
   const [tab, setTab] = useState<number>(1);
 
   const tabs = useRef<HTMLDivElement>(null);
@@ -55,7 +55,7 @@ export default function Helpdesk_Type() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">
-              No matter how unique your helpdesk or service desk concept is, NotionBear can support it.
+              No matter how unique your marketplace concept is, NotionBear can support it.
               over.
             </h1>
             <p className="text-xl text-gray-600">
@@ -86,7 +86,7 @@ export default function Helpdesk_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                      <span className="bg-clip-text ">Customer Support</span> Desk
+                      <span className="bg-clip-text ">API</span> Docs
                     </div>
                   </div>
                 </Link>
@@ -102,7 +102,7 @@ export default function Helpdesk_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                      <span className="bg-clip-text ">IT Service</span> Desk
+                      <span className="bg-clip-text ">Technical</span> Docs
                     </div>
                   </div>
                 </Link>
@@ -119,7 +119,7 @@ export default function Helpdesk_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                      <span className="bg-clip-text ">Internal </span> Helpdesk
+                      <span className="bg-clip-text ">User Manual</span> Docs
                     </div>
                   </div>
                 </Link>
@@ -136,7 +136,7 @@ export default function Helpdesk_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                      <span className="bg-clip-text ">Other</span> Helpdesks
+                      <span className="bg-clip-text ">Other</span> Docs
                     </div>
                   </div>
                 </Link>
