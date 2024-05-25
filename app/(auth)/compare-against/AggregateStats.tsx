@@ -14,7 +14,7 @@ const AggregateStats: React.FC = () => {
           {/* Items */}
           <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-4 lg:grid-cols-4 items-start md:max-w-2xl lg:max-w-none">
             {/* 1st item */}
-            <Link  className="relative flex flex-col items-center p-6 bg-white rounded h-full">
+            <Link href={"0"} className="relative flex flex-col items-center p-6 bg-white rounded h-full">
               <div>
                 <div >
                   <h1 className="h1 mb-4 text-gray-500">86%</h1>
@@ -24,7 +24,7 @@ const AggregateStats: React.FC = () => {
             </Link>
 
             {/* 2nd item */}
-            <Link  className="relative flex flex-col items-center p-6 bg-white rounded h-full">
+            <Link href={"0"}   className="relative flex flex-col items-center p-6 bg-white rounded h-full">
               <div>
                 <div>
                   <h1 className="h1 mb-4 text-gray-500">90%</h1>
@@ -33,7 +33,7 @@ const AggregateStats: React.FC = () => {
               </div>
             </Link>
             {/* 3rd item */}
-            <Link  className="relative flex flex-col items-center p-6 bg-white rounded h-full">
+            <Link href={"0"}   className="relative flex flex-col items-center p-6 bg-white rounded h-full">
               <div>
                 <div>
                   <h1 className="h1 mb-4 text-gray-500">91%</h1>
@@ -42,7 +42,7 @@ const AggregateStats: React.FC = () => {
               </div>
             </Link>
             {/* 4th item */}
-            <Link  className="relative flex flex-col items-center p-6 bg-white rounded h-full">
+            <Link href={"0"}   className="relative flex flex-col items-center p-6 bg-white rounded h-full">
               <div>
                 <div>
                   <h1 className="h1 mb-4 text-gray-500">86%</h1>
