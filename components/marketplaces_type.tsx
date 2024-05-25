@@ -36,8 +36,8 @@ export default function Marketplace_Type() {
   }, [tab]);
 
   return (
-    <section 
-    id="featured-section"
+    <section
+      id="featured-section"
       className="relative mt-4 mb-4 pb-4 bg-gray-900 rounded-4 border-gray-600"
       style={{
         background:
@@ -77,7 +77,7 @@ export default function Marketplace_Type() {
                 <Link href="#"
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 1 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
-                  
+
                   onClick={(e) => {
                     e.preventDefault();
                     console.log("Tab 1 clicked");
@@ -93,7 +93,7 @@ export default function Marketplace_Type() {
                 <Link href="#"
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 2 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
-                  
+
                   onClick={(e) => {
                     e.preventDefault();
                     console.log("Tab 2 clicked");
@@ -102,7 +102,7 @@ export default function Marketplace_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                    <span className="bg-clip-text ">Service</span> Marketplace
+                      <span className="bg-clip-text ">Service</span> Marketplace
                     </div>
                   </div>
                 </Link>
@@ -110,7 +110,7 @@ export default function Marketplace_Type() {
                 <Link href="#"
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 3 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
-                  
+
                   onClick={(e) => {
                     e.preventDefault();
                     console.log("Tab 3 clicked");
@@ -119,7 +119,7 @@ export default function Marketplace_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                    <span className="bg-clip-text ">Product</span> Marketplace
+                      <span className="bg-clip-text ">Product</span> Marketplace
                     </div>
                   </div>
                 </Link>
@@ -127,7 +127,7 @@ export default function Marketplace_Type() {
                 <Link href="#"
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 4 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
-                  
+
                   onClick={(e) => {
                     e.preventDefault();
                     console.log("Tab 4 clicked");
@@ -136,7 +136,7 @@ export default function Marketplace_Type() {
                 >
                   <div>
                     <div className="h4 font-bold leading-snug tracking-tight mb-1">
-                    <span className="bg-clip-text ">Other</span> Marketplace
+                      <span className="bg-clip-text ">Other</span> Marketplace
                     </div>
                   </div>
                 </Link>
@@ -234,7 +234,7 @@ export default function Marketplace_Type() {
                           height={120}
                           width={120}
                           unoptimized
-                          
+
                         />{" "}
                         and{" "}
                         <Image
@@ -339,7 +339,7 @@ export default function Marketplace_Type() {
                           className="rounded-full w-auto h-8"
                           width={120}
                           height={120
-                          
+
                           }
 
                         />
