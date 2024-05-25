@@ -124,8 +124,8 @@ export default function FeaturesBlocks() {
               {/* 9th item */}
               <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
                 <Image alt="image" loading="lazy" decoding="async" className="h-20 mb-2" 
-                height={90}
-                width={30}
+                width={90}
+                height={30}
                 src="/images/gatedcontent.png" />
                 <div>
                   <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Gated Content</h4>

@@ -133,7 +133,7 @@ export default function PageDetail() {
         </div>
     </div>
 
-    <div className="container mx-auto">
+    <div className="max-w-6xl  container mx-auto">
         <div className="mt-4">
             <div
                 role="list"

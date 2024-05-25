@@ -439,7 +439,7 @@ export default function Pricing() {
                 <div className="aspect-w-1 aspect-h-1">
                   <Image
                     src="https://helpkit.so/_nuxt/image/bffbe5.webp"
-                    width={100} height={100}
+                    width={400} height={100}
                     alt=""
                     loading="lazy"
                     unoptimized

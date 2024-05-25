@@ -73,7 +73,7 @@ refer to NotionBear, without limits. Join
                   <li className="flex flex-col items-center">
                     <div className="relative">
                       <Image 
-                      width={100}
+                      width={300}
                       height={100}
                       src="/images/Group 8770.png" alt="Become a partner" className="h-40 p-4" />
                       <div className="absolute -right-4 -bottom-4">
@@ -84,7 +84,7 @@ refer to NotionBear, without limits. Join
                   </li>
                   <li className="flex flex-col items-center">
                     <div className="relative">
-                      <Image src="/images/Group 8771 (1).png" alt="Earn money" width={100} height={100} className="h-40 p-4" />
+                      <Image src="/images/Group 8771 (1).png" alt="Earn money" width={300} height={100} className="h-40 p-4" />
                       <div className="absolute -right-4 -bottom-4">
                         {/* SVG icon */}
                       </div>
@@ -93,7 +93,7 @@ refer to NotionBear, without limits. Join
                   </li>
                   <li className="flex flex-col items-center">
                     <div className="relative">
-                      <Image src="/images/Group 8772.png" alt="Cash out in one click" width={100} height={100} className="h-40 p-4" />
+                      <Image src="/images/Group 8772.png" alt="Cash out in one click" width={300} height={100} className="h-40 p-4" />
                     </div>
                     <div className="mt-4 text-center">Check in anytime to view referrals. Cash out in one click (Bank, Paypal, Wise).</div>
                   </li>
@@ -111,12 +111,12 @@ refer to NotionBear, without limits. Join
 
 
 
-          <div className="container mx-auto py-8">
+          <div className="max-w-6xl  container mx-auto py-8">
             <div className="flex gap-4 justify-center space-x-4 relative items-center p-6 bg-white rounded shadow-xl text-center h-full border w-fit m-auto">
               {/* Affiliate Detail Item */}
               <Link href="." className="flex flex-col items-center space-y-2 px-8 border p-6 rounded">
                 {/* SVG icon */}
-                <Image src="/images/🤑.png" alt="Cash out in one click" className="h-10" width={100} height={100}/>
+                <Image src="/images/🤑.png" alt="Cash out in one click" className="h-10" width={40} height={100}/>
                 <h2 className="h2 font-semibold">33%</h2>
                 <span className="text-base text-gray-600">your commission</span>
               </Link>
@@ -124,7 +124,7 @@ refer to NotionBear, without limits. Join
               {/* Affiliate Detail Item */}
               <Link href="." className="flex flex-col items-center space-y-2 px-8 border p-6 rounded">
                 {/* SVG icon */}
-                <Image src="/images/🍪.png" alt="Cash out in one click" className="h-10" width={100} height={100}/>
+                <Image src="/images/🍪.png" alt="Cash out in one click" className="h-10" width={40} height={100}/>
                 <h2 className="h2 font-semibold">60 days</h2>
                 <span className="text-base text-gray-600">cookie period</span>
               </Link>
@@ -132,7 +132,7 @@ refer to NotionBear, without limits. Join
               {/* Affiliate Detail Item */}
               <Link href="." className="flex flex-col items-center space-y-2 px-8 border p-6 rounded">
                 {/* SVG icon */}
-                <Image src="/images/partyblow.png" alt="Cash out in one click" className="h-10" width={100} height={100} />
+                <Image src="/images/partyblow.png" alt="Cash out in one click" className="h-10" width={40} height={100} />
                 <h2 className="h2 font-semibold">10%</h2>
                 <span className="text-base text-gray-600">2nd tier commission</span>
               </Link>
@@ -178,7 +178,7 @@ refer to NotionBear, without limits. Join
               <h2 className="h2 font-semibold mb-4 mt-8">Make Passive Income!</h2>
               <p className="text-md mt-4 mb-4 text-gray-800">Just imagine this amount of cash coming into your bank account every single month. *Calculations are based on the Startup plan.</p>
             </div>
-            <div className="container mx-auto">
+            <div className="max-w-6xl  container mx-auto">
               <ul className="flex flex-wrap justify-center">
                 <li className="w-1/3 px-2 mb-4">
                   <div className="bg-gray-100 p-4 rounded-lg shadow border-gray-600 border">
@@ -236,21 +236,21 @@ refer to NotionBear, without limits. Join
               <ul className="flex flex-wrap justify-center">
                 <li className="w-full md:w-1/3 px-4 py-2">
                   <div className="text-center">
-                    <Image src="/images/🧑_🏫.png" alt="Free coaching" className="mx-auto h-20" width={100} height={100}/>
+                    <Image src="/images/🧑_🏫.png" alt="Free coaching" className="mx-auto h-20" width={80} height={100}/>
                     <h3 className="h4 font-semibold mt-2 ">Free coaching</h3>
                     <p className=" mt-1">Struggling with growing your blog or agency? Let us consult you. Our team has experts in the niche.</p>
                   </div>
                 </li>
                 <li className="w-full md:w-1/3 px-4 py-2">
                   <div className="text-center">
-                    <Image src="/images/💻.png" alt="Personal dashboard" className="mx-auto h-20" width={100} height={100} />
+                    <Image src="/images/💻.png" alt="Personal dashboard" className="mx-auto h-20" width={80} height={100} />
                     <h3 className="h4 font-semibold mt-2 ">Personal dashboard</h3>
                     <p className=" mt-1">Track every campaign, URL click, and dollar you earn. Easy and convenient.</p>
                   </div>
                 </li>
                 <li className="w-full md:w-1/3 px-4 py-2">
                   <div className="text-center">
-                    <Image src="/images/🧑_🎨.png" alt="Have our designer for $0" className="mx-auto h-20" width={100} height={100}/>
+                    <Image src="/images/🧑_🎨.png" alt="Have our designer for $0" className="mx-auto h-20" width={80} height={100}/>
                     <h3 className="h4 font-semibold mt-2 ">Have our designer for $0</h3>
                     <p className=" mt-1">Not satisfied with our media kit? Just ask! Our design crew will prepare exclusive images and videos.</p>
                   </div>
