@@ -47,7 +47,7 @@ export default async function Template() {
         <div className="pt-32 pb-12 md:pt-18 md:pb-20">
           {/* Page header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h1 className="h1 mb-4">Find your Template</h1>
+            <h1 className="h2 mb-4">Find your Template</h1>
             <p className="text-xl text-gray-600">
               Jumpstart your SaaS business with pre-built solutions from
               NotionBear and our community.
