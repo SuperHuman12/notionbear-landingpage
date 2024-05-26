@@ -65,7 +65,7 @@ export default function ModalVideo({
 
           <button className="relative top-full flex items-center transform -translate-y-1/2 rounded-full font-medium group p-4 shadow-lg border border-4 border-gray-100 bg-orange-600 text-black m-auto" onClick={() => { setModalOpen(true) }}>
             <svg className="w-6 h-6 fill-current text-gray-900 group-hover:text-blue-600 shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 2C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12z" />
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 2C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-10 12z" />
               <path d="M10 17l6-5-6-5z" />
             </svg>
             <span className="ml-3">Watch the full video (2 min)</span>
@@ -77,101 +77,26 @@ export default function ModalVideo({
 
         <div>
 
-            <p className="text-center">Trusted by teams</p>
 
-            <div className="flex flex-row flex-wrap max-w-800 gap-4 mx-auto justify-center flex items-center p-6">
-                {/* Image 1 */}
-                <div className="w-full md:w-1/2 lg:w-1/5 px-4">
-                    <Image
-                        alt="image"
-                        loading="lazy"
-                        width="144"
-                        height="42"
-                        decoding="async"
-                        unoptimized
-                        className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
-                        src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/3d6d8b9e-51b7-4733-8611-12babc56d8c3/Strapi/w=441.59999999999997,quality=90"
-                    />
-                </div>
-                {/* Image 2 */}
-                <div className="w-full md:w-1/2 lg:w-1/5 px-4">
-                    <Image
-                        alt="image"
-                        loading="lazy"
-                        width="200"
-                        height="34"
-                        decoding="async"
-                        unoptimized
-                        className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
-                        src="https://dazzling-cat.netlify.app/tinystartups-gray.png"
-                    />
-                </div>
-                {/* Image 3 */}
-                <div className="w-full md:w-1/2 lg:w-1/5 px-4">
-                    <Image
-                        alt="image"
-                        loading="lazy"
-                        width="120"
-                        height="35"
-                        decoding="async"
-                        unoptimized
-                        className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
-                        src="https://dazzling-cat.netlify.app/remotedesk-gray.png"
-                    />
-                </div>
-                {/* Image 4 */}
-                <div className="w-full md:w-1/2 lg:w-1/5 px-4">
-                    <Image
-                        alt="image"
-                        loading="lazy"
-                        width="144"
-                        height="39"
-                        decoding="async"
-                        unoptimized
-                        className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
-                        src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/d4e13333-1551-4114-b1a6-d2a7041c58a4/spline/w=441.59999999999997,quality=90"
-                    />
-                </div>
-                {/* Image 5 */}
-                <div className="w-full md:w-1/2 lg:w-1/5 px-4">
-                    <Image
-                        alt="image"
-                        loading="lazy"
-                        width="250"
-                        height="40"
-                        decoding="async"
-                        unoptimized
-                        className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
-                        src="https://dazzling-cat.netlify.app/rightagency-gray.png"
-                    />
-                </div>
-                {/* Image 6 */}
-                <div className="w-full md:w-1/2 lg:w-1/5 px-4">
-                    <Image
-                        alt="image"
-                        loading="lazy"
-                        width="144"
-                        height="73"
-                        decoding="async"
-                        unoptimized
-                        className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
-                        src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/4f2d2e91-850a-49df-b099-c685aba7c766/browser-company/w=441.59999999999997,quality=90"
-                    />
-                </div>
-                {/* Image 7 */}
-                <div className="w-full md:w-1/2 lg:w-1/5 px-4">
-                    <Image
-                        alt="image"
-                        loading="lazy"
-                        width="240"
-                        height="48"
-                        decoding="async"
-                        unoptimized
-                        className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
-                        src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/cba078a4-ecf1-4336-97d9-bffabc5fb432/Harmony/w=736,quality=90"
-                    />
-                </div>
-            </div>
+
+        <div className="mt-8 text-center">
+    <p className="text-lg font-semibold text-gray-700">Trusted by 100+ startups</p>
+    <div className="mt-5 flex flex-wrap items-center justify-center gap-x-10 gap-y-6 lg:mt-10 lg:gap-x-16 lg:gap-y-8">
+    <img alt="Xumm" src="https://dazzling-cat.netlify.app/remotedesk-gray.png" className="h-10 w-auto object-contain" />
+        <img alt="Green Got" src="https://dazzling-cat.netlify.app/downtown.png" className="h-12 w-auto object-contain lg:h-20" />
+        <img alt="GrowthX" src="https://dazzling-cat.netlify.app/saasboiler-gray.png" className="h-10 w-auto object-contain lg:h-8" />
+
+
+        <img alt="Beyonk" src="https://dazzling-cat.netlify.app/vcdeal.png" className="h-10 w-auto object-contain lg:h-10" />
+        <img alt="Taplio" src="https://dazzling-cat.netlify.app/tinystartups-gray.png" className="h-10 w-auto object-contain lg:h-10" />
+
+        <img alt="Lal10" src="https://dazzling-cat.netlify.app/rightagency-gray.png" className="h-10 w-auto object-contain" />
+        <img alt="Indie Worldwide" src="https://dazzling-cat.netlify.app/betterhealth.png" className="h-10 w-auto object-contain lg:h-8" />
+
+    </div>
+</div>
+
+
         </div>
 
 
