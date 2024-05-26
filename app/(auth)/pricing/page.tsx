@@ -292,7 +292,7 @@ const Pricing: React.FC = () => {
   const [isLifetimeDealVisible, setIsLifetimeDealVisible] = useState(true);
 
   const startDate = new Date("2023-05-01"); // Replace with your start date
-  const endDate = new Date("2024-05-01"); // Replace with your end date
+  const endDate = new Date("2024-06-30"); // Replace with your end date
 
   useEffect(() => {
     const today = new Date();
@@ -432,46 +432,40 @@ const Pricing: React.FC = () => {
                 </div>
               )}
 
-              {isModalOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-                  <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto relative">
-                    <button
-                      onClick={toggleModal}
-                      className="absolute top-2 right-2 bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center"
-                    >
-                      ✕
-                    </button>
 
-                    <h2 className="text-2xl font-bold mt-4">
-                      Limited Lifetime Deal
-                    </h2>
 
-                    <p className="mt-2">
-                      $94 for super early birds. Due to the high demand, the
-                      lifetime deal price will be increased to $199 in{" "}
-                      {formatTime(countdown)}. Timer is real; I'm not kidding :)
-                      We will launch our subscription plan soon! Grab our
-                      limited lifetime deal. You pay once, use forever with no
-                      limit!
-                    </p>
+{isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto relative">
+            <button
+              onClick={toggleModal}
+              className="absolute top-2 right-2 bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center"
+            >
+              ✕
+            </button>
 
-                    <h3 className="text-xl font-bold mt-4 mb-4">
-                      Lifetime deal $94.00
-                    </h3>
+            <h2 className="text-2xl font-bold mt-4">Limited Lifetime Deal</h2>
+            <p className="mt-2">
+            $99 for super early birds. <span className="font-bold text-red-500">Due to the high demand, the lifetime deal price will be increased to $199 in {formatTime(countdown)}.</span> Timer is real; I'm not kidding :) We will launch our subscription plan soon! Grab our limited lifetime deal. You pay once, use forever with no limit!
+            </p>
 
-                    <Link
-                      className="btn bg-orange-600 hover:bg-orange-700 shadow w-full"
-                      href="https://buy.stripe.com/5kAeV0b6K27w8BG6os"
-                    >
-                      Get this Deal
-                    </Link>
+            <div className="text-center mt-4">
+              <h3 className="text-3xl font-bold mt-4 mb-4">$99.00</h3>
+              <Link
+                className="bg-black text-white text-xl py-2 px-16 rounded-2xl w-full"
+                href="https://buy.stripe.com/5kAeV0b6K27w8BG6os"
+              >
+                Buy
+              </Link>
+            </div>
+            <div className="text-center text-gray-500 mt-4">
+              Supported payment methods
+            </div>
+          </div>
+        </div>
+      )}
 
-                    <div className="mt-4 text-center text-gray-600">
-                      Supported payment methods {/* Add supported payment method icons here */}
-                    </div>
-                  </div>
-                </div>
-              )}
+
 
               <div
                 dir="ltr"
