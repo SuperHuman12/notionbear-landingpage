@@ -41,9 +41,12 @@
 }
 
 .text-orange-600 {
-    color: #d17d2c;
+    color: #d17d2c !important;
 }
 
+.stroke-orange-600 {
+    color: #d17d2c !important;
+}
 
 .dyanmictext{
     background: #ffba73;

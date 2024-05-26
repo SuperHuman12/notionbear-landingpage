@@ -40,6 +40,10 @@ export default function Header() {
     };
   }, [dropdownOpen]);
 
+  const handleDropdownLinkClick = () => {
+    setDropdownOpen(false);
+  };
+
   return (
     <header className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${!top ? 'bg-white backdrop-blur-sm shadow-lg' : ''}`}>
       <div className="max-w-8xl mx-auto px-5 sm:px-6">
@@ -65,8 +69,8 @@ export default function Header() {
                 {dropdownOpen && (
                   <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white absolute z-10 w-screen max-w-lg px-2 transform -translate-x-1/2 left-1/2 sm:px-0">
                     <div className="relative grid gap-6 px-5 py-6 bg-gray-900 text-white sm:gap-8 sm:p-8">
-                      <Link href="/create-a-helpdesk-servicedesk-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-orange-600">
+                      <Link href="/create-a-helpdesk-servicedesk-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800" onClick={handleDropdownLinkClick}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 stroke-orange-600">
                           <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
@@ -81,8 +85,8 @@ export default function Header() {
                           </p>
                         </div>
                       </Link>
-                      <Link href="/create-a-documentation-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-orange-600">
+                      <Link href="/create-a-documentation-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800" onClick={handleDropdownLinkClick}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 stroke-orange-600">
                           <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
@@ -97,8 +101,8 @@ export default function Header() {
                           </p>
                         </div>
                       </Link>
-                      <Link href="/create-a-marketplace-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-orange-600">
+                      <Link href="/create-a-marketplace-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800" onClick={handleDropdownLinkClick}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 stroke-orange-600">
                           <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
@@ -113,8 +117,8 @@ export default function Header() {
                           </p>
                         </div>
                       </Link>
-                      <Link href="/create-a-company-wiki-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-orange-600">
+                      <Link href="/create-a-company-wiki-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800" onClick={handleDropdownLinkClick}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="flex-shrink-0 w-6 h-6 stroke-orange-600">
                           <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
@@ -128,7 +132,7 @@ export default function Header() {
                           </p>
                         </div>
                       </Link>
-                      <Link href="/create-a-blog-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800">
+                      <Link href="/create-a-blog-notion" className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800" onClick={handleDropdownLinkClick}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="url(#grad1)" className="flex-shrink-0 w-6 h-6 stroke-orange-600">
                           <defs>
                             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -156,7 +160,7 @@ export default function Header() {
                     </div>
                     <div className="px-5 py-5 space-y-6 bg-gray-900 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full pb-6">
                       <div className="flow-root font-medium w-full">
-                        <Link href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white">
+                        <Link href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
                           <Image src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png" 
                           unoptimized className="shadow-md" alt={''}
                           width={30}
@@ -165,7 +169,7 @@ export default function Header() {
                         </Link>
                       </div>
                       <div className="flow-root font-medium w-full">
-                        <Link href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white">
+                        <Link href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
                           <Image
                            src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png" unoptimized 
                            
@@ -177,7 +181,7 @@ export default function Header() {
                     </div>
                     <div className="px-5 py-5 space-y-6 bg-gray-900 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full pb-8">
                       <div className="flow-root font-medium w-full">
-                        <Link href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white">
+                        <Link href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
                           <Image
                           
                           src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png" unoptimized
@@ -187,7 +191,7 @@ export default function Header() {
                         </Link>
                       </div>
                       <div className="flow-root font-medium w-full">
-                        <Link href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white">
+                        <Link href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
                           <Image
                           
                           width={30}

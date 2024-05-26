@@ -121,7 +121,7 @@ export default function MobileMenu() {
                       </div>
                     </li>
                     <li className="flex items-start p-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-100">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="url(#grad1)" className="flex-shrink-0 w-6 h-6 stroke-orange-600">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="url(#grad1)" className="flex-shrink-0 w-6 h-6 text-orange-600">
                         <defs>
                           <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
                             <stop offset="0%"></stop>
