@@ -7,6 +7,8 @@ import MigrateFrom from "@/public/images/migratefrom.png";
 import Testimonials from "@/components/testimonials";
 import Rating from "../compare-against/Rating";
 import Link from "next/link";
+import confetti from "canvas-confetti"; // Importing the confetti library
+
 
 const pricingMap: Record<number, number> = {
   3000: 5,
@@ -313,6 +315,15 @@ const Pricing: React.FC = () => {
     }, 1000);
     return () => clearInterval(timer);
   }, []);
+
+  // Confetti effect when the page is rendered
+  useEffect(() => {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+    });
+  }, []); // Empty dependency array to run only on initial render
 
   const handleTabClick = (tabName: "Monthly" | "Yearly") => {
     setActiveTab(tabName);
