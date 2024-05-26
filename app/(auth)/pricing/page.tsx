@@ -240,7 +240,7 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <div className="bg-white w-4/5 mx-auto mt-10">
+    <div className="bg-white w-11/12 mx-auto mt-10">
       <div className="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
         <div className="text-center sm:max-w-2xl lg:mx-auto">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -255,13 +255,13 @@ const FAQSection: React.FC = () => {
         </div>
 
         <div className="mt-12">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-8 flex-wrap">
             {["Website", "AI Support Bot", "Pricing"].map((tab) => (
               <button
                 key={tab}
-                className={`px-4 py-2 font-semibold text-lg rounded-2xl ${
+                className={`px-4 py-2 font-semibold text-lg rounded-2xl m-2 ${
                   activeTab === tab
-                    ? "bg-orange-600"
+                    ? "bg-orange-600 text-white"
                     : "text-gray-700"
                 }`}
                 onClick={() => handleTabClick(tab as keyof typeof faqs)}
@@ -356,11 +356,11 @@ const Pricing: React.FC = () => {
                   powered by Notion.
                 </p>
               </div>
-              <div className="justify-center mb-4 w-100 my-5">
-                <div className="w-100"></div>
+              <div className="justify-center mb-4 w-full my-5">
+                <div className="w-full"></div>
               </div>
 
-              <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
+              <div className="relative bg-gray-900 rounded-2xl py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
                 {/* Background illustration */}
                 <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
                   <Image
@@ -453,7 +453,7 @@ const Pricing: React.FC = () => {
                   Number of Users Every Month
                 </label>
                 <select
-                  className="relative bg-white border-1 rounded mt-2 w-full p-4 font-bold h3"
+                  className="relative bg-white border-1 rounded-2xl mt-2 w-full p-4 font-bold h3"
                   id="num-of-views"
                   value={selectedUsers}
                   onChange={handleUserChange}
@@ -496,14 +496,14 @@ const Pricing: React.FC = () => {
                               id="addon"
                               checked
                               name="addon"
-                              className="h-5 w-5 rounded border-gray-300 text-gray-900 focus:ring-gray-900"
+                              className="h-5 w-5 rounded-2xl border-gray-300 text-gray-900 focus:ring-gray-900"
                               aria-label="Sub-marketplace blogs addon"
                             />
                           </div>
                           <div className="ml-3 text-base">
                             <label className="font-normal text-gray-900">
                               <span>Including </span>
-                              <span className="mr-3 inline-flex items-center rounded-md bg-gray-900 px-2.5 py-0.5 text-sm font-medium uppercase text-white">
+                              <span className="mr-3 inline-flex items-center rounded-2xl bg-gray-900 px-2.5 py-0.5 text-sm font-medium uppercase text-white">
                                 Free Design Services
                               </span>
                               <span>limited time only.</span>
@@ -594,7 +594,7 @@ const Pricing: React.FC = () => {
                     Remove NotionBear Branding (Addon)
                   </h2>
                 </div>
-                <div className="flex items-end gap-0.5">
+                <div className="flex items-center gap-0.5">
                   <p className="text-3xl font-semibold tracking-tight text-gray-900">
                     +$50
                   </p>
@@ -620,7 +620,7 @@ const Pricing: React.FC = () => {
                     Extra 2k Traffic (Addon)
                   </h2>
                 </div>
-                <div className="flex items-end gap-0.5">
+                <div className="flex items-center gap-0.5">
                   <p className="text-3xl font-semibold tracking-tight text-gray-900">
                     +$7
                   </p>
@@ -633,7 +633,7 @@ const Pricing: React.FC = () => {
 
         <FAQSection />
 
-        <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
+        <div className="relative bg-gray-900 rounded-2xl py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
           {/* Background illustration */}
           <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
             <Image alt="Logo" width={400} className="block" src={MigrateFrom} />

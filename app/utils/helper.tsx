@@ -38,7 +38,7 @@ const renderContent = (item: any, index: number) => {
       return <blockquote key={index} className="italic border-l-4 border-gray-200 pl-4 py-2 my-2">{item.text}</blockquote>;
     case 'code':
       return (
-        <pre key={index} className="bg-gray-100 rounded-md p-3 overflow-auto">
+        <pre key={index} className="bg-gray-100 rounded-2xl p-3 overflow-auto">
           <code className="text-sm">{item.code}</code>
         </pre>
       );

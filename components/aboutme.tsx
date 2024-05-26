@@ -20,7 +20,7 @@ export default function aboutme() {
               width="600"
               height="905"
               unoptimized
-              className="rounded-md"
+              className="rounded-2xl"
               alt={''}
               style={{ filter: "grayscale(1)", opacity: 0.85 }}
             />

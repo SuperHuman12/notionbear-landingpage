@@ -63,7 +63,7 @@ export default function Features() {
               {/* Tabs buttons */}
               <div className="grid gap-4 mb-8 md:mb-0">
                 <Link href="#"
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 1 ? "bg-gray-100" : "bg-orange-800 text-white"
+                  className={`flex items-center text-lg p-5 rounded-2xl border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 1 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
                   
                   onClick={(e) => {
@@ -78,7 +78,7 @@ export default function Features() {
                   </div>
                 </Link>
                 <Link href="#"
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 2 ? "bg-gray-100" : "bg-orange-800 text-white"
+                  className={`flex items-center text-lg p-5 rounded-2xl border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 2 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
                   
                   onClick={(e) => {
@@ -94,7 +94,7 @@ export default function Features() {
                 </Link>
 
                 <Link href="#"
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 3 ? "bg-gray-100" : "bg-orange-800 text-white"
+                  className={`flex items-center text-lg p-5 rounded-2xl border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 3 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
                   
                   onClick={(e) => {
@@ -112,7 +112,7 @@ export default function Features() {
 
 
                 <Link href="#"
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 4 ? "bg-gray-100" : "bg-orange-800 text-white"
+                  className={`flex items-center text-lg p-5 rounded-2xl border transition duration-300 ease-in-out border border-dashed shadow-md border-gray-600 hover:shadow-lg text-gray-900 ${tab !== 4 ? "bg-gray-100" : "bg-orange-800 text-white"
                     }`}
                   
                   onClick={(e) => {
@@ -155,7 +155,7 @@ export default function Features() {
                   >
                     <div className="relative inline-flex flex-col">
                       <Image
-                        className="md:max-w-none mx-auto rounded border border-2 border-gray-600 shadow-lg"
+                        className="md:max-w-none mx-auto rounded-2xl border border-2 border-gray-600 shadow-lg"
                         src={helpdeskImage}
                         unoptimized
                         width={500}
@@ -200,7 +200,7 @@ export default function Features() {
                   >
                     <div className="relative inline-flex flex-col">
                       <Image
-                        className="md:max-w-none mx-auto rounded border border-2 border-gray-600 shadow-lg"
+                        className="md:max-w-none mx-auto rounded-2xl border border-2 border-gray-600 shadow-lg"
                         src="/images/blog.gif"
                         unoptimized
                         width={500}
@@ -245,7 +245,7 @@ export default function Features() {
                   >
                     <div className="relative inline-flex flex-col">
                       <Image
-                        className="md:max-w-none mx-auto rounded border border-2 border-gray-600 shadow-lg"
+                        className="md:max-w-none mx-auto rounded-2xl border border-2 border-gray-600 shadow-lg"
                         src={marketplaceImage}
                         width={500}
                         height={462}
@@ -290,7 +290,7 @@ export default function Features() {
                   >
                     <div className="relative inline-flex flex-col">
                       <Image
-                        className="md:max-w-none mx-auto rounded border border-2 border-gray-600 shadow-lg"
+                        className="md:max-w-none mx-auto rounded-2xl border border-2 border-gray-600 shadow-lg"
                         src={"/path/to/your/fourth-tab-image.gif"} // Update this path
                         width={500}
                         height={462}

@@ -44,13 +44,13 @@ const Integration = async () => {
           <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
             {integrations.map((integration: any, index: number) => (
               <Link key={index} href={"/integration/" + integration.id} >
-                <div className="cursor-pointer relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border">
+                <div className="cursor-pointer relative flex flex-col items-center p-6 bg-white rounded-2xl shadow-xl text-center h-full border">
                   <div className='w-full'>
                     <div className="flex items-center space-x-2 mb-4">
                       <Image className="w-10 h-10" src={integration?.product?.logo} alt={integration?.product?.name} />
                       <span className="text-dark font-bold">{integration?.product?.name}  </span>
                     </div>
-                    <button className="text-white bg-gray-900 rounded w-full p-2 mt-4">
+                    <button className="text-white bg-gray-900 rounded-2xl w-full p-2 mt-4">
                       {integration?.callToCopy?.text || "Integrate"}
                     </button>
                   </div>
@@ -59,13 +59,13 @@ const Integration = async () => {
             ))}
 
             <Link href="https://iframely.com/domains" target='_blank'>
-            <div className="cursor-pointer relative flex flex-col items-center p-6 bg-white rounded shadow-xl text-center h-full border border-gray-600 border-dashed">
+            <div className="cursor-pointer relative flex flex-col items-center p-6 bg-white rounded-2xl shadow-xl text-center h-full border border-gray-600 border-dashed">
                 <div className="w-full">
                     <div className="flex items-center space-x-2 mb-4">
                         <div className="w-10 h-10 bg-gray-200 rounded-full" ></div>
                         <span className="text-dark font-bold">And a lot more..</span>
                     </div>
-                    <button className="border border-gray-200 bg-orange-600 rounded w-full p-2 mt-4">Add More...</button>
+                    <button className="border border-gray-200 bg-orange-600 rounded-2xl w-full p-2 mt-4">Add More...</button>
                 </div>
             </div>
 

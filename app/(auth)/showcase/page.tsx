@@ -54,7 +54,7 @@ export default async function Template() {
             </p>
 
             <div className="mt-6">
-              <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
+              <div className="relative bg-gray-900 rounded-2xl py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
                 {/* Background illustration */}
                 <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
                   <Image
@@ -100,7 +100,7 @@ export default async function Template() {
               <Link
                 href={"/showcase/" + template.id}
                 key={index}
-                className="relative flex flex-col items-center  bg-white rounded shadow-xl h-full border"
+                className="relative flex flex-col items-center  bg-white rounded-2xl shadow-xl h-full border"
               >
                 <div>
                   <div>
@@ -146,7 +146,7 @@ export default async function Template() {
                         {truncateText(template?.product?.description, 76)}
                         </p>
 
-                        <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded my-2">
+                        <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded-2xl my-2">
                           Helpdesk
                         </span>
                       </div>

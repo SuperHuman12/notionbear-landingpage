@@ -95,7 +95,7 @@ const Page: React.FC = () => {
           <div className="flex mt-4 gap-4">
             <div className="flex mr-1 space-x-2 items-center">
               <Link href={filterBySlug?.product?.callToAction?.link}
-                className="bg-gray-900 hover:bg-gray-700 text-white cursor-pointer font-bold py-2 px-4 rounded inline-flex items-center" rel="noopener noreferrer" target="_blank">
+                className="bg-gray-900 hover:bg-gray-700 text-white cursor-pointer font-bold py-2 px-4 rounded-2xl inline-flex items-center" rel="noopener noreferrer" target="_blank">
                 <span>Install</span>
               </Link>
             </div>

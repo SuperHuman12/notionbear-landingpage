@@ -24,7 +24,7 @@ export default function Newsletter() {
         <div className="pb-12 md:pb-20">
 
           {/* CTA box */}
-          <div className="relative bg-gray-900 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl overflow-hidden" 
+          <div className="relative bg-gray-900 rounded-2xl py-10 px-8 md:py-16 md:px-12 shadow-2xl overflow-hidden rounded-2xl" 
           >
 
             {/* Background illustration */}

@@ -112,7 +112,7 @@ refer to NotionBear, without limits. Join
 
 
           <div className="max-w-6xl  container mx-auto py-8">
-            <div className="flex gap-4 justify-center space-x-4 relative items-center p-6 bg-white rounded shadow-xl text-center h-full border w-fit m-auto">
+            <div className="flex gap-4 justify-center space-x-4 relative items-center p-6 bg-white rounded-2xl shadow-xl text-center h-full border w-fit m-auto">
               {/* Affiliate Detail Item */}
               <Link href="." className="flex flex-col items-center space-y-2 px-8 border p-6 rounded">
                 {/* SVG icon */}
@@ -269,14 +269,14 @@ refer to NotionBear, without limits. Join
 
               <div className="mt-8">
                 <div className="space-y-6">
-                  <div className='p-8 border rounded-md border-gray-600'>
+                  <div className='p-8 border rounded-2xl border-gray-600'>
                     <h3 className="font-bold text-xl">Who is NotionBear for?</h3>
                     <br />
                     <p className="text-md mt-4 mb-4 text-gray-800">NotionBear is a quick business builder for startup founders. Our users can quickly create a beautiful web apps, blogs, and helpdesks for a mobile or desktop, for a SaaS product, for a plugin, an open-source project, a SMM tool etc.</p>
                     <p className="text-md mt-4 mb-4 text-gray-800">If your audience are tech guys, NotionBear is for them. They will be more willing to use a tailored tool for startups rather than generic old-fashioned Webflow or Wordpress.</p>
                   </div>
 
-                  <div className='p-8 border rounded-md border-gray-600'>
+                  <div className='p-8 border rounded-2xl border-gray-600'>
                     <h3 className="font-bold text-xl">Why promote you while I can promote some other website builder?</h3>
                     <br />
                     <p className="text-md mt-4 mb-4 text-gray-800">The key advantage is the approach. We are building a landing page generator for startups only. That means, we pay all the attention to startups-only demands. In particular, we will provide not-so-popular integrations, specific components and templates.</p>
@@ -284,7 +284,7 @@ refer to NotionBear, without limits. Join
                     <p className="text-md mt-4 mb-4 text-gray-800">Why believe me? Just A/B test it yourself. Put a Wix affiliate link for a month, measure your earnings. Then put our link. Compare. Pick the winner.</p>
                   </div>
 
-                  <div className='p-8 border rounded-md border-gray-600'>
+                  <div className='p-8 border rounded-2xl border-gray-600'>
                     <h3 className="font-bold text-xl">What is the minimum payout amount?</h3>
                     <br />
                     <ul>
@@ -299,7 +299,7 @@ refer to NotionBear, without limits. Join
                     </ul>
                   </div>
 
-                  <div className='p-8 border rounded-md border-gray-600'>
+                  <div className='p-8 border rounded-2xl border-gray-600'>
                     <h3 className="font-bold text-xl">Can I have multiple affiliate offers on the same page?</h3>
                     <br />
                     <p className="text-md mt-4 mb-4 text-gray-800">Yes. Nothing stops your from selling let's say an analytics tool or a social media scheduler alongside with a landing page builder. Take the maximum out of your resource!</p>

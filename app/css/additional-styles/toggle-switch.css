@@ -10,7 +10,7 @@
 }
 
 .form-switch label>span:first-child {
-    @apply absolute block rounded shadow;
+    @apply absolute block rounded-2xl shadow;
     width: 30px;
     height: 30px;
     top: 4px;

@@ -160,7 +160,7 @@ export default function Header() {
                     </div>
                     <div className="px-5 py-5 space-y-6 bg-gray-900 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full pb-6">
                       <div className="flow-root font-medium w-full">
-                        <Link href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
+                        <Link href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-2xl hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
                           <Image src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png" 
                           unoptimized className="shadow-md" alt={''}
                           width={30}
@@ -169,7 +169,7 @@ export default function Header() {
                         </Link>
                       </div>
                       <div className="flow-root font-medium w-full">
-                        <Link href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
+                        <Link href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-2xl hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
                           <Image
                            src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png" unoptimized 
                            
@@ -181,7 +181,7 @@ export default function Header() {
                     </div>
                     <div className="px-5 py-5 space-y-6 bg-gray-900 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full pb-8">
                       <div className="flow-root font-medium w-full">
-                        <Link href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
+                        <Link href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-2xl hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
                           <Image
                           
                           src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png" unoptimized
@@ -191,7 +191,7 @@ export default function Header() {
                         </Link>
                       </div>
                       <div className="flow-root font-medium w-full">
-                        <Link href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-md hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
+                        <Link href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-2xl hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
                           <Image
                           
                           width={30}
