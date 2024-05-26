@@ -50,7 +50,7 @@ refer to NotionBear, without limits. Join
 
 
           <div className="m-auto text-center"><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://notionbear.lemonsqueezy.com/affiliates">Sign Up</Link></div>
-          <Link href="https://notionbear.tolt.io/" target="_blank" className="block mt-8 text-sm text-orange-600 sm:mt-4 opacity-40 hover:opacity-100 m-auto w-fit">Already partner? Open the affiliate dashboard →</Link>
+          <Link href="https://notionbear.tolt.io/" target="_blank" className="block mt-8 text-sm text-orange-600 sm:mt-4 m-auto w-fit">Already partner? Open the affiliate dashboard →</Link>
 
 
 

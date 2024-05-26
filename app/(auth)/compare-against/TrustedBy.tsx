@@ -8,13 +8,13 @@ const imageData = [
     height: 42,
   },
   {
-    src: 'https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/1ea0aa17-ae1d-48f6-a613-2b9aa5ad3db3/gumroad-min_(1)/w=736,quality=90',
+    src: 'https://dazzling-cat.netlify.app/tinystartups-gray.png',
     alt: 'Gumroad',
     width: 200,
     height: 34,
   },
   {
-    src: 'https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/8f49a317-faff-4d7b-b378-a151042a1ce3/circle/w=294.4,quality=90',
+    src: 'https://dazzling-cat.netlify.app/remotedesk-gray.png',
     alt: 'Circle',
     width: 120,
     height: 35,
@@ -26,7 +26,7 @@ const imageData = [
     height: 39,
   },
   {
-    src: 'https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/fe61ffd3-2569-4810-b59c-06ff0f58e32f/Clubhouse/w=441.59999999999997,quality=90',
+    src: 'https://dazzling-cat.netlify.app/rightagency-gray.png',
     alt: 'Clubhouse',
     width: 192,
     height: 31,
@@ -75,7 +75,7 @@ export default function TrustedBy() {
                 decoding="async"
                 className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
                 unoptimized
-                src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/1ea0aa17-ae1d-48f6-a613-2b9aa5ad3db3/gumroad-min_(1)/w=736,quality=90"
+                src="https://dazzling-cat.netlify.app/tinystartups-gray.png"
             />
         </div>
         {/* Image 3 */}
@@ -88,7 +88,7 @@ export default function TrustedBy() {
                 decoding="async"
                 className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
                 unoptimized
-                src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/8f49a317-faff-4d7b-b378-a151042a1ce3/circle/w=294.4,quality=90"
+                src="https://dazzling-cat.netlify.app/remotedesk-gray.png"
             />
         </div>
         {/* Image 4 */}
@@ -114,7 +114,7 @@ export default function TrustedBy() {
                 decoding="async"
                 className="flex items-center justify-center py-2 col-span-2 md:col-auto m-auto w-1/2 md:w-full p-4"
                 unoptimized
-                src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/fe61ffd3-2569-4810-b59c-06ff0f58e32f/Clubhouse/w=441.59999999999997,quality=90"
+                src="https://dazzling-cat.netlify.app/rightagency-gray.png"
             />
         </div>
         {/* Image 6 */}
