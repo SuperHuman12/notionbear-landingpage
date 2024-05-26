@@ -2,11 +2,10 @@
 import React, { useEffect, useState } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation'; // Adjusted imports for Next.js 13
 import { _loadFromJson, _transformDataToPostPageView, renderContent } from '../../../utils/helper';
-import Image from 'next/image'
+import Image from 'next/image';
 import Link from 'next/link';
 import MoveBack from '@/components/MoveBack';
 import Loading from '@/components/Loading';
-
 
 interface CallToCopy {
   text: string;
@@ -45,7 +44,6 @@ interface FilterBySlugType {
   proof: Proof;
 }
 
-
 const Page: React.FC = () => {
   const [filterBySlug, setFilterBySlug] = useState<FilterBySlugType | null>(null);
   const [postPageView, setPostPageView] = useState<any[]>([]);
@@ -69,16 +67,14 @@ const Page: React.FC = () => {
     }
   }, [pathname, searchParams]); // Reacting to changes in pathname and searchParams
 
-
   if (!filterBySlug) {
-    return <Loading />;;
+    return <Loading />;
   }
 
   return (
-    <div className="space-y-8 mt-24 mb-16 ml-16 mr-16 p-8">
+    <div className="space-y-8 mt-24 mb-16 mx-4 sm:mx-8 md:mx-16 p-4 sm:p-8">
 
-
-      <div className="grid grid-cols-1 gap-y-8 gap-x-12 lg:grid-cols-2 xl:gap-x-16">
+      <div className="grid grid-cols-1 gap-y-8 gap-x-8 lg:grid-cols-2 xl:gap-x-12">
         <div>
           <MoveBack />
 
@@ -89,8 +85,8 @@ const Page: React.FC = () => {
           <div className="text-gray-800">
             <p>{filterBySlug?.product?.description}</p>
           </div>
-          <div className="flex mt-4 gap-4">
-            <div className="flex mr-1 space-x-2 items-center">
+          <div className="flex flex-col sm:flex-row mt-4 gap-4">
+            <div className="flex space-x-2 items-center">
               <Link href={filterBySlug?.product?.callToCopy?.link} className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-2xl inline-flex items-center" rel="noopener noreferrer" target="_blank">
                 <span>{filterBySlug?.product?.callToCopy?.text}</span>
               </Link>
@@ -107,15 +103,11 @@ const Page: React.FC = () => {
           src={filterBySlug?.proof?.screenshot}
           alt={filterBySlug?.product?.name}
           width={400}
-          className=" w-full rounded-2xl border border-gray-600 object-cover shadow-xl"
           height={450}
+          className="w-full rounded-2xl border border-gray-600 object-cover shadow-xl"
           quality="90"
-
         />
-
-
       </div>
-
 
       <div className="mb-4">
         <h1 className="text-2xl font-bold text-gray-800">Overview</h1>
@@ -131,7 +123,6 @@ const Page: React.FC = () => {
         <h1 className="text-2xl font-bold text-gray-800">Configuration</h1>
         <p className="text-md text-gray-600">{filterBySlug?.configuration?.content}</p>
       </div>
-
 
     </div>
   );

@@ -3,8 +3,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import Image from "next/image";
-import FeaturesBg from "@/public/images/features-bg.png";
-import FeaturesElement from "@/public/images/features-element.png";
 import helpdeskImage from "@/public/images/helpdesk.gif";
 import marketplaceImage from "@/public/images/marketplace.gif";
 import Link from "next/link";
@@ -137,8 +135,7 @@ export default function Features() {
                 <div
                   className="relative flex flex-col text-center lg:text-right"
                   data-aos="zoom-y-out"
-                  ref={tabs}
-                >
+                  ref={tabs}            >
                   {/* Item 1 */}
                   <Transition
                     show={tab === 1}
@@ -274,7 +271,7 @@ export default function Features() {
                       </div>
                     </div>
                   </Transition>
-
+    
                   <Transition
                     show={tab === 4}
                     appear={true}
@@ -324,9 +321,10 @@ export default function Features() {
           </div>
         </div>
       </div>
-
+    
       <br />
       <br />
     </section>
-  );
+
+);
 }

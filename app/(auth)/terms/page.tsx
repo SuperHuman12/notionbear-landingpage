@@ -353,7 +353,7 @@ export default function PageDetail() {
                     <p className="text-gray-600 my-2">
                         <span>
                             <span>
-                                5.&nbsp;&nbsp;Circumvent, disable, or otherwise interfere with security-related features of the Site, including features that prevent or restrict the use or copying of any Content or enforce limitations on the use of the
+                                5.&nbsp;&nbsp;Circumvent, disable, or otherwise interfere with security-related  of the Site, including features that prevent or restrict the use or copying of any Content or enforce limitations on the use of the
                                 Site and/or the Content contained therein.
                             </span>
                         </span>

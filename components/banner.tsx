@@ -9,14 +9,14 @@ export default function Banner() {
   return (
     <>
       {bannerOpen && (
-        <div className="fixed bottom-0 left-0 ml-4 w-fit md:bottom-8 md:left-12 md:w-auto z-50">
-          <div className="bg-slate-800 text-slate-50 text-sm py-2 px-3 md:rounded shadow-lg flex justify-between mb-2">
+        <div className="fixed bottom-0 left-0 ml-4 w-full sm:w-fit md:bottom-8 md:left-12 md:w-auto z-50">
+          <div className="bg-slate-800 text-slate-50 text-sm py-2 px-3 md:rounded shadow-lg flex justify-between items-center mb-2">
 
-          <button 
+            <button 
               type="button" 
-              className="bg-gray-800 text-xs font-bold shadow-lg backdrop-blur-lg rounded-[cta-button-radius-value] flex items-center text-white"
+              className="bg-gray-800 text-xs font-bold shadow-lg backdrop-blur-lg rounded-md flex items-center text-white p-2"
             >
-              <span>Made with</span>
+              <span className="hidden sm:inline">Made with</span>
               <svg 
                 width="38" 
                 height="20" 
@@ -34,11 +34,8 @@ export default function Banner() {
                 <path d="M214.303 37.311C214.303 37.311 230.103 19.1163 244.609 16.3988C259.114 13.6812 264.324 27.7855 264.324 27.7855" stroke="currentColor" strokeWidth="5" strokeLinecap="round"></path>
                 <path d="M85.7621 35.2237C85.7621 35.2237 70.6746 16.4264 56.2848 13.1451C41.895 9.86381 36.1452 23.7542 36.1452 23.7542" stroke="currentColor" strokeWidth="5" strokeLinecap="round"></path>
               </svg>
-              <span>Notion Bear</span>
+              <span className="hidden sm:inline">Notion Bear</span>
             </button>
-
-
-
           </div>
         </div>
       )}
