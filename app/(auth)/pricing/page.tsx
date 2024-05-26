@@ -8,9 +8,6 @@ import Testimonials from "@/components/testimonials";
 import Rating from "../compare-against/Rating";
 import Link from "next/link";
 
-
-
-
 const pricingMap: Record<number, number> = {
   3000: 5,
   10000: 15,
@@ -27,7 +24,6 @@ interface Feature {
     description: string;
   };
 }
-
 
 const features: Feature[] = [
   {
@@ -153,7 +149,130 @@ const features: Feature[] = [
 ];
 
 
+const faqs = {
+  Website: [
+    {
+      question: "What is NotionBear?",
+      answer:
+        "NotionBear is the perfect tool for creating your knowledge base in the shortest possible time. It is powered by the best content management system in the world: Notion. You write your help articles in Notion and NotionBear takes care of the rest. It's as simple as that.",
+    },
+    {
+      question: "Why do I need a knowledge base?",
+      answer:
+        "Unless you have built a flawless product (congratulations 🤩), your customers will always have questions and they demand immediate help. A knowledge base can provide all the information that users need in one place. It can range from FAQs about your product/service, common issues and their solutions, videos with tutorials on how to do things and more.",
+    },
+    {
+      question: "Is my data safe with NotionBear?",
+      answer:
+        "NotionBear takes your privacy seriously and follows best practices to ensure that the confidentiality of personal information and customer data is protected and maintained. We do not disclose or share your data with outside parties. All your knowledge base content is hosted in your own Notion workspace.",
+    },
+  ],
+  "AI Support Bot": [
+    {
+      question: "How does the AI Support Bot work?",
+      answer:
+        "The AI Support Bot integrates seamlessly with NotionBear to provide real-time assistance to your users, leveraging AI to answer common questions and provide guidance based on your knowledge base content.",
+    },
+    {
+      question: "Can I customize the AI Support Bot?",
+      answer:
+        "Yes, you can customize the AI Support Bot to align with your brand's voice and style. Adjust the responses, add personalized greetings, and more to create a cohesive user experience.",
+    },
+    {
+      question: "Does the AI Support Bot support multiple languages?",
+      answer:
+        "The AI Support Bot supports multiple languages, allowing you to cater to a global audience and provide support in the preferred language of your users.",
+    },
+  ],
+  Pricing: [
+    {
+      question: "How does the free 7 day trial work?",
+      answer:
+        "NotionBear offers a 7 day free trial to help you explore. No credit card required. There’s zero cost to get in the product and set things up. Within the trial period you will be able to use all available features. After the trial is over, you can choose to subscribe to one of our offered subscription plans.",
+    },
+    {
+      question: "What are the pricing plans?",
+      answer:
+        "NotionBear offers various pricing plans based on the number of users and features required. Check our pricing page for detailed information on each plan.",
+    },
+    {
+      question: "Are there any additional fees?",
+      answer:
+        "Pricing is exclusive of taxes and additional local tax may be collected depending on your region. Some add-ons and advanced features might incur additional costs.",
+    },
+  ],
+};
 
+const FAQAccordion = ({ question, answer }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="border-b-2">
+      <button
+        className="w-full text-left p-4"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span className="font-semibold text-gray-900">{question}</span>
+      </button>
+      {isOpen && (
+        <div className="px-4 pb-4 text-gray-500">
+          <p>{answer}</p>
+        </div>
+      )}
+    </div>
+  );
+};
+
+const FAQSection = () => {
+  const [activeTab, setActiveTab] = useState("Website");
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
+
+  return (
+    <div className="bg-white w-4/5 mx-auto mt-10">
+      <div className="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
+        <div className="text-center sm:max-w-2xl lg:mx-auto">
+          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            Frequently Asked Questions
+          </h2>
+
+          <p className="text-base font-normal text-gray-600 mt-4 sm:text-lg">
+            Have a different question and can't find the answer you're looking for? Reach out to our support team by
+            <a target="_blank" rel="noopener noreferrer" href="mailto:vaibhav@notionbear.com" className="isomorphic-link isomorphic-link--external text-orange-800 hover:text-blue-500 hover:underline px-4">sending us an email</a>
+            and we'll get back to you as soon as we can.
+          </p>
+
+
+        </div>
+
+        <div className="mt-12">
+          <div className="flex justify-center mb-8">
+            {["Website", "AI Support Bot", "Pricing"].map((tab) => (
+              <button
+                key={tab}
+                className={`px-4 py-2 font-semibold text-lg ${activeTab === tab
+                    ? "text-white bg-orange-600"
+                    : "text-gray-700"
+                  }`}
+                onClick={() => handleTabClick(tab)}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
+
+          <div className="space-y-6">
+            {faqs[activeTab].map((faq, index) => (
+              <FAQAccordion key={index} {...faq} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default function Pricing() {
   const [activeTab, setActiveTab] = useState<"Monthly" | "Yearly">("Yearly");
@@ -176,17 +295,13 @@ export default function Pricing() {
     setSelectedUsers(Number(event.target.value) as keyof typeof pricingMap);
   };
 
-
-
   const handleFeatureClick = (feature: Feature) => {
     setPopupFeature(feature);
   };
-  
+
   const closePopup = () => {
     setPopupFeature(null);
   };
-  
-
 
   return (
     <section className="bg-gradient-to-b from-gray-100 to-white">
@@ -288,16 +403,14 @@ export default function Pricing() {
                   data-orientation="horizontal"
                 >
                   <span
-                    className={`absolute inset-y-0 left-0 -z-10 rounded-full border-2 w-full h-14 transition-transform duration-300 ease-in-out white-space-nowrap ${
-                      activeTab === "Monthly" ? "translate-x-full" : ""
-                    }`}
+                    className={`absolute inset-y-0 left-0 -z-10 rounded-full border-2 w-full h-14 transition-transform duration-300 ease-in-out white-space-nowrap ${activeTab === "Monthly" ? "translate-x-full" : ""
+                      }`}
                   ></span>
                   <button
-                    className={`w-fit text-md h-14 flex items-center justify-center uppercase transition-colors duration-300 ease-in-out px-6 ${
-                      activeTab === "Yearly"
+                    className={`w-fit text-md h-14 flex items-center justify-center uppercase transition-colors duration-300 ease-in-out px-6 ${activeTab === "Yearly"
                         ? "bg-orange-600 rounded-full border-2 border-dark"
                         : "bg-transparent text-gray-900"
-                    }`}
+                      }`}
                     type="button"
                     role="tab"
                     aria-selected={activeTab === "Yearly"}
@@ -306,11 +419,10 @@ export default function Pricing() {
                     ANNUALLY  ♥ 2 MONTHS FREE
                   </button>
                   <button
-                    className={`w-fit text-md h-14 flex items-center justify-center uppercase transition-colors duration-300 ease-in-out px-6 ${
-                      activeTab === "Monthly"
+                    className={`w-fit text-md h-14 flex items-center justify-center uppercase transition-colors duration-300 ease-in-out px-6 ${activeTab === "Monthly"
                         ? "bg-orange-600 rounded-full border-2 border-dark"
                         : "bg-transparent text-gray-900"
-                    }`}
+                      }`}
                     type="button"
                     role="tab"
                     aria-selected={activeTab === "Monthly"}
@@ -323,8 +435,8 @@ export default function Pricing() {
               </div>
 
               <div className="sm:block hidden text-xs opacity-50 font-medium justify-center text-center mb-4">
-         Save 2 months on yearly 🎁
-      </div>
+                Save 2 months on yearly 🎁
+              </div>
 
               <div className="mb-4">
                 <label className="block text-sm font-medium text-gray-700">
@@ -405,8 +517,8 @@ export default function Pricing() {
                           <figure className="border bg-orange-700 p-2 px-4 rounded-full font-bold text-white">
                             ✓
                           </figure>
-                          <span 
-                          className={`p-0 px-1 ml-2 ${feature.popup ? 'border-b-2 border-gray-600 border-dashed pointer hover:text-orange-600' : ''}`}
+                          <span
+                            className={`p-0 px-1 ml-2 ${feature.popup ? 'border-b-2 border-gray-600 border-dashed pointer hover:text-orange-600' : ''}`}
                           >{feature.name}</span>
                         </li>
                       ))}
@@ -416,297 +528,66 @@ export default function Pricing() {
               </div>
             </div>
           </div>
+
+
         </div>
 
         {popupFeature && popupFeature.popup && (
-  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-    <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto relative">
-      <button onClick={closePopup} className="absolute top-2 right-2 bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center">
-        ✕
-      </button>
-      <Image src={popupFeature.popup.image} alt={popupFeature.popup.headline} width={300} height={200} />
-      <h2 className="text-2xl font-bold mt-4">{popupFeature.popup.headline}</h2>
-      <p className="mt-2">{popupFeature.popup.description}</p>
-    </div>
-  </div>
-)}
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+            <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto relative">
+              <button onClick={closePopup} className="absolute top-2 right-2 bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center">
+                ✕
+              </button>
+              <Image src={popupFeature.popup.image} alt={popupFeature.popup.headline} width={300} height={200} />
+              <h2 className="text-2xl font-bold mt-4">{popupFeature.popup.headline}</h2>
+              <p className="mt-2">{popupFeature.popup.description}</p>
+            </div>
+          </div>
+        )}
+
+        <div className="text-center"><p className="text-sm font-medium text-gray-600">Pricing is exclusive of taxes and additional local tax may be collected depending on your region.</p></div>
 
 
-        <div className="max-w-5xl px-4 py-8 mx-auto mt-10">
-          <section className="p-8 rounded-lg bg-gray-100">
-            <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center">
-              <div className="relative">
-                <div className="aspect-w-1 aspect-h-1">
-                  <Image
-                    src="https://helpkit.so/_nuxt/image/bffbe5.webp"
-                    width={400} height={100}
-                    alt=""
-                    loading="lazy"
-                    unoptimized
-                    className="object-cover rounded-lg"
-                  />
+        <div className="mt-12 sm:mt-16">
+          <h4 className="font-display text-4xl font-bold tracking-tight text-gray-900 text-center">Add-ons</h4>
+          <div className="max-w-xl bg-white shadow-sm ring-1 ring-inset ring-gray-200 mx-auto mt-6 rounded-2xl lg:max-w-2xl">
+            <div className="space-y-6 px-8 py-6">
+              <div className="flex items-center justify-between gap-6">
+                <div className="flex items-center gap-3">
+                  <svg aria-hidden="true" className="h-8 w-8 shrink-0 text-orange-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M208,88H152V32Z" opacity="0.2"></path>
+                    <path
+                      d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Zm-42.34-82.34L139.31,152l18.35,18.34a8,8,0,0,1-11.32,11.32L128,163.31l-18.34,18.35a8,8,0,0,1-11.32-11.32L116.69,152,98.34,133.66a8,8,0,0,1,11.32-11.32L128,140.69l18.34-18.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                  <h2 className="text-xl font-semibold tracking-tight text-gray-900">Remove NotionBear Branding (Addon)</h2>
                 </div>
-                <div className="absolute bottom-0 right-0 inline-flex px-4 py-2 -mb-5 -mr-4 bg-white rounded-lg shadow-xl">
-                  <Image
-                    src="https://helpkit.so/_nuxt/image/73bb1e.webp"
-                    width={100} height={100}
-                    alt=""
-                    unoptimized
-                    loading="lazy"
-                    className="w-20 rounded-lg"
-                  />
+                <div className="flex items-end gap-0.5">
+                  <p className="text-3xl font-semibold tracking-tight text-gray-900">+$50</p>
+                  <p className="text-lg font-medium text-gray-500">/mo</p>
                 </div>
               </div>
-              <blockquote className="sm:col-span-2">
-                <p className="font-medium text-lg sm:text-xl">
-                  "With NotionBear we literally went from 0 to fully functional
-                  knowledge-base in 1 hour! The best thing about NotionBear is
-                  it allows my non-technical co-founder to do 95% of the work
-                  and manage our knowledge-base. We signed up because of how
-                  beautiful and well-designed the product is!"
-                </p>
-                <div className="mt-5 flex space-x-0.5 justify-start text-yellow-300">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-4 h-4"
-                  >
+              <hr className="border-gray-200" />
+              <div className="flex items-center justify-between gap-6">
+                <div className="flex items-center gap-3">
+                  <svg aria-hidden="true" className="h-8 w-8 shrink-0 text-orange-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M224,96V224l-39.58-32H88a8,8,0,0,1-8-8V144h88a8,8,0,0,0,8-8V88h40A8,8,0,0,1,224,96Z" opacity="0.2"></path>
                     <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      d="M216,80H184V48a16,16,0,0,0-16-16H40A16,16,0,0,0,24,48V176a8,8,0,0,0,13,6.22L72,154V184a16,16,0,0,0,16,16h93.59L219,230.22a8,8,0,0,0,5,1.78,8,8,0,0,0,8-8V96A16,16,0,0,0,216,80ZM66.55,137.78,40,159.25V48H168v88H71.58A8,8,0,0,0,66.55,137.78ZM216,207.25l-26.55-21.47a8,8,0,0,0-5-1.78H88V152h80a16,16,0,0,0,16-16V96h32Z"
                     ></path>
                   </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-4 h-4"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    ></path>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-4 h-4"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    ></path>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-4 h-4"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    ></path>
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-4 h-4"
-                  >
-                    <path
-                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                    ></path>
-                  </svg>
+                  <h2 className="text-xl font-semibold tracking-tight text-gray-900">Extra 2k Traffic (Addon)</h2>
                 </div>
-                <cite className="inline-flex items-center mt-8 not-italic">
-                  <span className="hidden w-6 h-px bg-gray-400 sm:inline-block"></span>
-                  <h3 className="text-sm text-gray-500 uppercase sm:ml-3">
-                    <span className="sr-only">Testimonial from</span>{" "}
-                    <strong>Dan Kelly</strong>, CEO at Adjust Square.
-                  </h3>
-                </cite>
-              </blockquote>
-            </div>
-          </section>
-        </div>
-
-        <div className="bg-white w-4/5 mx-auto">
-          <div className="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
-            <div className="text-center sm:max-w-2xl lg:mx-auto">
-              <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                Frequently asked questions
-              </h2>
-              <p className="mx-auto mt-4 sm:w-8/12 text-cool-gray-500">
-                You have questions? 🤔 We have the answers. Can’t find the
-                answer you’re looking for? Reach out and ask
-              </p>
-            </div>
-            <div className="mt-10 sm:mt-20">
-              <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-10">
-                <div>
-                  <dt className="inline-flex items-center justify-center font-semibold text-gray-900">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="h-4 w-4 mr-1.5"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    What is NotionBear?
-                  </dt>
-                  <dd className="mt-3 text-gray-500">
-                    NotionBear is the perfect tool for creating your knowledge
-                    base in the shortest possible time. It is powered by the
-                    best content management system in the world: Notion. You
-                    write your help articles in Notion and NotionBear takes care
-                    of the rest. It's as simple as that.
-                  </dd>
+                <div className="flex items-end gap-0.5">
+                  <p className="text-3xl font-semibold tracking-tight text-gray-900">+$7</p>
+                  <p className="text-lg font-medium text-gray-500">/mo</p>
                 </div>
-                <div>
-                  <dt className="inline-flex items-center justify-center font-semibold text-gray-900">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="h-4 w-4 mr-1.5"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    Why do I need a knowledge base?
-                  </dt>
-                  <dd className="mt-3 text-gray-500">
-                    Unless you have built a flawless product (
-                    <i>congratulations</i> 🤩), your customers will always have
-                    questions and they demand immediate help. A knowledge base
-                    can provide all the information that users need in one
-                    place. It can range from FAQs about your product/service,
-                    common issues and their solutions, videos with tutorials on
-                    how to do things and more.
-                  </dd>
-                </div>
-                <div>
-                  <dt className="inline-flex items-center justify-center font-semibold text-gray-900">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="h-4 w-4 mr-1.5"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    How does the free 7 day trial work?
-                  </dt>
-                  <dd className="mt-3 text-gray-500">
-                    NotionBear offers a 7 day free trial to help you explore. No
-                    credit card required. There’s zero cost to get in the
-                    product and set things up. Within the trial period you will
-                    be able to use all available features. After the trial is
-                    over, you can choose to subscribe to one of our offered
-                    subscription plans.
-                  </dd>
-                </div>
-                <div>
-                  <dt className="inline-flex items-center justify-center font-semibold text-gray-900">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="h-4 w-4 mr-1.5"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    Is my data safe with NotionBear?
-                  </dt>
-                  <dd className="mt-3 text-gray-500">
-                    NotionBear takes your privacy seriously and follows best
-                    practices to ensure that the confidentiality of personal
-                    information and customer data is protected and maintained.
-                    We do not disclose or share your data with outside parties.
-                    All your knowledge base content is hosted in your own Notion
-                    workspace.
-                  </dd>
-                </div>
-                <div>
-                  <dt className="inline-flex items-center justify-center font-semibold text-gray-900">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="h-4 w-4 mr-1.5"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    Can I use every block type from Notion?
-                  </dt>
-                  <dd className="mt-3 text-gray-500">
-                    NotionBear supports most blocks from Notion. There are just
-                    a few complex block types such as calendars and databases
-                    that we are working on to get rendered as well. You can see
-                    our
-                    <Link
-                      href="https://support.notionbear.com/Working-with-Notion-Docs/crG31kiLtd678d3PdJXvfj/Which-Notion-block-types-are-supported/2qK2E1KRvDMdsmHYi625Xd"
-                      target="_blank"
-                      className="font-medium underline"
-                    >
-                      {" "}
-                      test suite here
-                    </Link>
-                    .
-                  </dd>
-                </div>
-                <div>
-                  <dt className="inline-flex items-center justify-center font-semibold text-gray-900">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="h-4 w-4 mr-1.5"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                    Who is behind NotionBear?
-                  </dt>
-                  <dd className="mt-3 text-gray-500">
-                    NotionBear is an indie software company run by a human named
-                    <Link
-                      href="https://twitter.com/absurdfounder"
-                      target="_blank"
-                      className="font-medium text-orange-500"
-                    >
-                      {" "}
-                      Vaibhav
-                    </Link>
-                    .
-                  </dd>
-                </div>
-              </dl>
+              </div>
             </div>
           </div>
         </div>
+
+        <FAQSection />
 
         <div className="relative bg-gray-900 rounded py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
           {/* Background illustration */}
@@ -752,3 +633,16 @@ export default function Pricing() {
     </section>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

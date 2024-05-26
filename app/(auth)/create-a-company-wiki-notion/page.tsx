@@ -150,7 +150,7 @@ export default function PageDetail() {
                             alt="Platform migrations"
                             unoptimized
                             src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316fc6b33cce40a33c2b1b_Migration.svg"
-                            className="project_type-image mr-4"
+                            className="project_type-image mr-4 p-2"
                             style={{ filter: "hue-rotate(161deg)" }}
                         />
                         <div>
@@ -175,7 +175,7 @@ export default function PageDetail() {
                             alt="Custom code &amp; integrations"
                             unoptimized
                             src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316fb84aabe974ccc5e90a_Plugins.svg"
-                            className="project_type-image mr-4"
+                            className="project_type-image mr-4 p-2"
                             style={{ filter: "hue-rotate(161deg)" }}
                         />
                         <div>
@@ -200,7 +200,7 @@ export default function PageDetail() {
                             alt="Rebrands &amp; redesigns"
                             unoptimized
                             src="https://assets-global.website-files.com/6320a2f3bd0b234991397e96/65316f5a0c978936919bd6fe_SiteRefresh.svg"
-                            className="project_type-image mr-4"
+                            className="project_type-image mr-4 p-2"
                             style={{ filter: "hue-rotate(161deg)" }}
                         />
                         <div>
