@@ -248,9 +248,9 @@ const FAQSection: React.FC = () => {
           </h2>
 
           <p className="text-base font-normal text-gray-600 mt-4 sm:text-lg">
-              Have a different question and can't find the answer you're looking for? Reach out to our support team by
-              <a target="_blank" rel="noopener noreferrer" href="mailto:vaibhav@notionbear.com" className="isomorphic-link isomorphic-link--external text-orange-800 hover:text-blue-500 hover:underline px-4">sending us an email</a>
-              and we'll get back to you as soon as we can.
+            Have a different question and can't find the answer you're looking for? Reach out to our support team by
+            <a target="_blank" rel="noopener noreferrer" href="mailto:vaibhav@notionbear.com" className="isomorphic-link isomorphic-link--external text-orange-800 hover:text-blue-500 hover:underline px-4">sending us an email</a>
+            and we'll get back to you as soon as we can.
           </p>
         </div>
 
@@ -259,11 +259,10 @@ const FAQSection: React.FC = () => {
             {["Website", "AI Support Bot", "Pricing"].map((tab) => (
               <button
                 key={tab}
-                className={`px-4 py-2 font-semibold text-lg rounded-2xl m-2 ${
-                  activeTab === tab
-                    ? "bg-orange-600 text-white"
-                    : "text-gray-700"
-                }`}
+                className={`px-4 py-2 font-semibold text-lg rounded-2xl m-2 ${activeTab === tab
+                  ? "bg-orange-600 text-white"
+                  : "text-gray-700"
+                  }`}
                 onClick={() => handleTabClick(tab as keyof typeof faqs)}
               >
                 {tab}
@@ -289,11 +288,32 @@ const Pricing: React.FC = () => {
   const [yearlyPrice, setYearlyPrice] = useState(monthlyPrice * 10);
   const [popupFeature, setPopupFeature] = useState<Feature | null>(null);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const [countdown, setCountdown] = useState<number>(86400); // 24 hours in seconds
+
   useEffect(() => {
     const newMonthlyPrice = pricingMap[selectedUsers];
     setMonthlyPrice(newMonthlyPrice);
     setYearlyPrice(newMonthlyPrice * 10);
   }, [selectedUsers]);
+
+
+  useEffect(() => {
+
+    const timer = setInterval(() => {
+
+      setCountdown((prevCountdown) => (prevCountdown > 0 ? prevCountdown - 1 : 0));
+
+    }, 1000);
+
+
+
+    return () => clearInterval(timer);
+
+  }, []);
+
+
 
   const handleTabClick = (tabName: "Monthly" | "Yearly") => {
     setActiveTab(tabName);
@@ -306,10 +326,39 @@ const Pricing: React.FC = () => {
   const handleFeatureClick = (feature: Feature) => {
     setPopupFeature(feature);
   };
-  
+
   const closePopup = () => {
     setPopupFeature(null);
   };
+
+
+
+  const toggleModal = () => {
+
+    setIsModalOpen(!isModalOpen);
+
+  };
+
+
+
+
+
+
+
+
+  const formatTime = (time: number) => {
+
+    const hours = Math.floor(time / 3600);
+
+    const minutes = Math.floor((time % 3600) / 60);
+
+    const seconds = time % 60;
+
+    return `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+
+  };
+
+
 
   return (
     <section className="bg-gradient-to-b from-gray-100 to-white">
@@ -361,7 +410,6 @@ const Pricing: React.FC = () => {
               </div>
 
               <div className="relative bg-gray-900 rounded-2xl py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
-                {/* Background illustration */}
                 <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
                   <Image
                     alt="Logo"
@@ -376,28 +424,65 @@ const Pricing: React.FC = () => {
                   <div className="text-center lg:text-left lg:max-w-xl">
                     <h3 className="h3 text-white mb-2">
                       Get <b className="text-orange-600">Lifetime Deal</b> at
-                      $137
+                      $94
                     </h3>
 
                     {/* CTA form */}
                     <form className="w-full lg:w-auto">
-                      <div>
-                        <Link
-                          className="btn bg-orange-600 hover:bg-orange-700 shadow"
-                          href="https://buy.stripe.com/5kAeV0b6K27w8BG6os"
-                        >
-                          Get this Deal
-                        </Link>
-                      </div>
-                      {/* Success message */}
-                      {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
-                      <p className="text-sm text-gray-400 mt-3">
-                        Offer ends in 2 days, next plan $199.
-                      </p>
+
+                      <button
+
+                        className="btn bg-orange-600 hover:bg-orange-700 shadow"
+
+                        type="button"
+
+                        onClick={toggleModal}
+
+                      >
+
+                        Buy Now
+
+                      </button>
+
+
+                      <p className="text-lg text-white text-gray-400 mt-3">Deal ends in <b className="text-lg text-white text-gray-400 mt-3">{formatTime(countdown)}</b>.</p>
                     </form>
                   </div>
                 </div>
               </div>
+
+
+              {isModalOpen && (
+
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                  <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto relative">
+                    <button onClick="{toggleModal}" className="absolute top-2 right-2 bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center">
+                      ✕
+                    </button>
+
+                    <h2 className="text-2xl font-bold mt-4">Limited Lifetime Deal</h2>
+
+                    <p className="mt-2">
+                      $94 for super early birds. Due to the high demand, the lifetime deal price will be increased to $199 in {formatTime(countdown)}. Timer is real; I'm not kidding :) We will launch our subscription plan soon! Grab our limited
+                      lifetime deal. You pay once, use forever with no limit!
+                    </p>
+
+                    <h3 className="text-xl font-bold mt-4 mb-4">Lifetime deal $94.00</h3>
+
+                    <Link
+                          className="btn bg-orange-600 hover:bg-orange-700 shadow w-full"
+                          href="https://buy.stripe.com/5kAeV0b6K27w8BG6os"
+                        >
+                          Get this Deal
+                        </Link>
+
+                    <div className="mt-4 text-center text-gray-600">
+                      Supported payment methods {/* Add supported payment method icons here */}
+                    </div>
+                  </div>
+                </div>
+              )}
+
 
               <div
                 dir="ltr"
@@ -411,16 +496,14 @@ const Pricing: React.FC = () => {
                   data-orientation="horizontal"
                 >
                   <span
-                    className={`absolute inset-y-0 left-0 -z-10 rounded-full border-2 w-full h-14 transition-transform duration-300 ease-in-out white-space-nowrap ${
-                      activeTab === "Monthly" ? "translate-x-full" : ""
-                    }`}
+                    className={`absolute inset-y-0 left-0 -z-10 rounded-full border-2 w-full h-14 transition-transform duration-300 ease-in-out white-space-nowrap ${activeTab === "Monthly" ? "translate-x-full" : ""
+                      }`}
                   ></span>
                   <button
-                    className={`w-fit text-md h-14 flex items-center justify-center uppercase transition-colors duration-300 ease-in-out px-6 ${
-                      activeTab === "Yearly"
-                        ? "bg-orange-600 rounded-full border-2 border-dark"
-                        : "bg-transparent text-gray-900"
-                    }`}
+                    className={`w-fit text-md h-14 flex items-center justify-center uppercase transition-colors duration-300 ease-in-out px-6 ${activeTab === "Yearly"
+                      ? "bg-orange-600 rounded-full border-2 border-dark"
+                      : "bg-transparent text-gray-900"
+                      }`}
                     type="button"
                     role="tab"
                     aria-selected={activeTab === "Yearly"}
@@ -429,11 +512,10 @@ const Pricing: React.FC = () => {
                     ANNUALLY  ♥ 2 MONTHS FREE
                   </button>
                   <button
-                    className={`w-fit text-md h-14 flex items-center justify-center uppercase transition-colors duration-300 ease-in-out px-6 ${
-                      activeTab === "Monthly"
-                        ? "bg-orange-600 rounded-full border-2 border-dark"
-                        : "bg-transparent text-gray-900"
-                    }`}
+                    className={`w-fit text-md h-14 flex items-center justify-center uppercase transition-colors duration-300 ease-in-out px-6 ${activeTab === "Monthly"
+                      ? "bg-orange-600 rounded-full border-2 border-dark"
+                      : "bg-transparent text-gray-900"
+                      }`}
                     type="button"
                     role="tab"
                     aria-selected={activeTab === "Monthly"}
@@ -527,8 +609,8 @@ const Pricing: React.FC = () => {
                           <figure className="border bg-orange-700 p-2 px-4 rounded-full font-bold text-white">
                             ✓
                           </figure>
-                          <span 
-                          className={`p-0 px-1 ml-2 ${feature.popup ? 'border-b-2 border-gray-600 border-dashed pointer hover:text-orange-600' : ''}`}
+                          <span
+                            className={`p-0 px-1 ml-2 ${feature.popup ? 'border-b-2 border-gray-600 border-dashed pointer hover:text-orange-600' : ''}`}
                           >{feature.name}</span>
                         </li>
                       ))}
