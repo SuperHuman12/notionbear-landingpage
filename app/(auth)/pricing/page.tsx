@@ -741,7 +741,7 @@ const Pricing: React.FC = () => {
                 <div>
                   <Link
                     className="btn bg-orange-600 hover:bg-orange-700 shadow"
-                    href="#"
+                    href="/migrating-to-notionbear"
                   >
                     We can do it for you →
                   </Link>

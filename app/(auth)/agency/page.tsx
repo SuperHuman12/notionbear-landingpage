@@ -42,9 +42,9 @@ export default function PageDetail() {
                                 If your ready to grow from a 100 users to 10,000 , We can customize your notionbear site to match your needs.
                             </p>
                             <div className="flex items-center justify-center mt-10 gap-x-6">
-                                <button className="px-6 py-2 text-lg font-semibold text-white rounded-lg gradient-bg-accent bg-gray-800">
+                                <Link href="/contact-us" className="px-6 py-2 text-lg font-semibold text-white rounded-lg gradient-bg-accent bg-gray-800">
                                     Contact Us →
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

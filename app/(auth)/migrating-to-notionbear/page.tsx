@@ -54,9 +54,9 @@ export default function PageDetail() {
             Planning to move your help content from another provider? We can seamlessly import your existing knowledge base from pretty much any platform into our Notion template.
         </p>
         <div className="flex items-center justify-center mt-10 gap-x-6">
-            <button className="px-6 py-2 text-lg font-semibold text-white rounded-lg gradient-bg-accent bg-gray-800">
+        <Link href="/contact-us" className="px-6 py-2 text-lg font-semibold text-white rounded-lg gradient-bg-accent bg-gray-800">
                 Contact Us →
-            </button>
+            </Link>
         </div>
     </div>
 </div>
@@ -87,9 +87,9 @@ export default function PageDetail() {
             </div>
         </div>
         <div className="flex items-center justify-center w-full pt-12">
-            <button className="px-6 py-2 text-lg font-semibold text-white rounded-lg gradient-bg-accent bg-gray-800">
+        <Link href="/contact-us" className="px-6 py-2 text-lg font-semibold text-white rounded-lg gradient-bg-accent bg-gray-800">
                 Contact Us →
-            </button>
+            </Link>
         </div>
     </div>
 </section>
