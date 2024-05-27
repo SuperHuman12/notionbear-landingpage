@@ -33,6 +33,8 @@ export default function ContactUs() {
   };
 
 
+
+
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     try {
@@ -66,6 +68,8 @@ export default function ContactUs() {
       alert('Failed to send message. Please try again.');
     }
   };
+  
+
   
 
 
