@@ -455,9 +455,9 @@ const Pricing: React.FC = () => {
                           Buy Now
                         </button>
 
-                        <p className="text-lg text-white text-red-400 mt-3">
+                        <p className="text-lg text-red-400 mt-3">
                           Ending in{" "}
-                          <b className="text-lg text-white text-red-400 mt-3">
+                          <b className="text-lg text-red-400 mt-3">
                             {formatTime(countdown)}
                           </b>
                         </p>
