@@ -86,7 +86,7 @@ export default function ContactUs() {
                 <option value="5-25">5-25</option>
                 <option value="25-50">25-50</option>
                 <option value="50-100">50-100</option>
-                <option value="100-500">100-500</option>
+                <option value="100-700">100-700</option>
                 <option value="500-1000">500-1000</option>
                 <option value="1000+">1000+</option>
               </select>
@@ -136,7 +136,7 @@ export default function ContactUs() {
           </div>
           <div className="text-center">
             <h3 className="text-xl font-semibold">VP of Success</h3>
-            <a href="mailto:success@notionbear.com" className="text-orange-500 block">success@notionbear.com</a>
+            <a href="mailto:success@notionbear.com" className="text-orange-700 block">success@notionbear.com</a>
           </div>
           <p className="text-center mt-4 mb-8">Please complete this form, and VP of Success will be in touch with you shortly.</p>
           <div className="awards mt-4 flex justify-around">
@@ -169,11 +169,11 @@ export default function ContactUs() {
               </select>
             </div>
             {renderFormFields()}
-            <button type="submit" className="w-full px-4 py-2 text-white bg-orange-500 rounded-md hover:bg-orange-600">Submit</button>
+            <button type="submit" className="w-full px-4 py-2 text-white bg-orange-700 rounded-md hover:bg-orange-600">Submit</button>
           </form>
           <div className="contact-us mt-4 text-center">
             <span className="block">+1 (833) 387 3877</span>
-            <a href="mailto:support@notionbear.com" className="text-orange-500 block">support@notionbear.com</a>
+            <a href="mailto:support@notionbear.com" className="text-orange-700 block">support@notionbear.com</a>
           </div>
         </div>
       </div>

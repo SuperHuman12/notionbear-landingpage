@@ -186,7 +186,13 @@ export default function Footer() {
 
               <li className="mb-2">
                 <Link href="https://notionbear.com/help" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Helpcenter</Link>
-              </li>                                          
+              </li>   
+
+              <li className="mb-2">
+                <Link href="/contact-us" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Contact Us</Link>
+              </li>   
+
+
             </ul>
           </div>
 
