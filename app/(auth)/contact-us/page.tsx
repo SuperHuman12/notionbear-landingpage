@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -18,12 +18,23 @@ export default function ContactUs() {
     usage: '',
   });
 
-  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+  useEffect(() => {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      setFormData(prevState => ({ ...prevState, querytype: hash }));
+    }
+  }, []);
+
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+
+    if (name === 'querytype') {
+      window.history.pushState(null, '', `#${value}`);
+    }
   };
 
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await fetch('/api/contact', {
@@ -47,6 +58,7 @@ export default function ContactUs() {
           feedback: '',
           usage: '',
         });
+        window.history.pushState(null, '', '#');
       } else {
         alert('Failed to send message. Please try again.');
       }
@@ -98,6 +110,8 @@ export default function ContactUs() {
           </>
         );
       case 'feedbackbugs':
+      case 'migration':
+      case 'technical':
         return (
           <>
             <div className="field mb-4"><input className="block w-full px-4 py-2 border rounded-md" placeholder="First Name" type="text" name="firstName" value={formData.firstName} onChange={handleChange} /></div>
@@ -110,6 +124,7 @@ export default function ContactUs() {
         return null;
     }
   };
+
 
   return (
     <div className="card create-demo mt-24">
@@ -147,8 +162,10 @@ export default function ContactUs() {
               <select className="block w-full px-4 py-2 border rounded-md" name="querytype" value={formData.querytype} onChange={handleChange}>
                 <option value="">Select an option</option>
                 <option value="demo">Demo Walkthrough</option>
-                <option value="freedesign">My Free Design Work</option>
-                <option value="feedbackbugs">Feedback and Bugs</option>
+                <option value="freedesign">Complementary Design Work</option>
+                <option value="feedbackbugs">Feedback & Bugs</option>
+                <option value="migration">Migration Support</option>
+                <option value="technical">Technical Support</option>
               </select>
             </div>
             {renderFormFields()}
