@@ -280,7 +280,6 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-64
 
     </section>
   );

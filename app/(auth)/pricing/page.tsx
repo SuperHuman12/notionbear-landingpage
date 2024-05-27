@@ -457,13 +457,13 @@ const Pricing: React.FC = () => {
 
             <h2 className="text-2xl font-bold mt-4">Limited Lifetime Deal</h2>
             <p className="mt-2">
-            $99 for super early birds. <span className="font-bold text-red-500">Due to the high demand, the lifetime deal price will be increased to $199 in {formatTime(countdown)}.</span> Timer is real; I'm not kidding :) We will launch our subscription plan soon! Grab our limited lifetime deal. You pay once, use forever with no limit!
+            $99 for super early birds. <span className="font-bold text-orange-500">Due to the high demand, the lifetime deal price will be increased to $199 in {formatTime(countdown)}.</span> Timer is real; I'm not kidding :) We will launch our subscription plan soon! Grab our limited lifetime deal. You pay once, use forever with no limit!
             </p>
 
             <div className="text-center mt-4">
               <h3 className="text-3xl font-bold mt-4 mb-4">$99.00</h3>
               <Link
-                className="bg-black text-white text-xl py-2 px-16 rounded-2xl w-full"
+                className="bg-orange-700 text-white text-xl py-2 px-16 rounded-lg w-full"
                 href="https://buy.stripe.com/5kAeV0b6K27w8BG6os"
               >
                 Buy
@@ -563,9 +563,9 @@ const Pricing: React.FC = () => {
                       </span>
                     </h5>
                     <div className="flex grow flex-col gap-2 md:flex-row md:items-end mt-6 mb-4">
-                      <button className="bg-orange-700 text-white w-full p-4 rounded-lg text-center">
+                    <Link href="app.notionbear.com" className="bg-orange-700 text-white w-full p-4 rounded-lg text-center">
                         Get Started
-                      </button>
+                      </Link>
                     </div>
 
                     <div className="relative overflow-hidden rounded-2xl border border-gray-200 bg-white">

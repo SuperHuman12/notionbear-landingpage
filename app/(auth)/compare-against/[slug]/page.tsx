@@ -13,6 +13,7 @@ import { usePathname, useSearchParams } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import MoveBack from '@/components/MoveBack';
 import Loading from '@/components/Loading';
+import App from 'next/app';
 
 interface CallToAction {
   text: string;
@@ -102,9 +103,9 @@ export default function ComparisonAgainst() {
             <p className="text-lg sm:text-xl text-gray-600">
               {filterBySlug?.product?.description}
             </p>
-            <button className="text-white bg-gray-900 rounded-2xl w-fit p-2 mt-4 px-4">
+            <Link href="app.notionbear.com" className="text-white bg-gray-900 rounded-2xl w-fit p-2 mt-4 px-4">
               Get Started
-            </button>
+            </Link>
           </div>
 
           <TrustedBy />
