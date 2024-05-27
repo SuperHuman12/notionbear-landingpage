@@ -130,7 +130,7 @@ export default function ContactUs() {
     <div className="card create-demo mt-24">
       <div className="justify-center mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start max-w-6xl border bg-gray-100 rounded-2xl p-8 mb-12">
         <div className="w-full p-4 h-full px-12">
-          <h3 className="text-center text-2xl font-semibold mt-12 mb-12">Request a Demo</h3>
+          <h3 className="text-center text-sm font-semibold mt-12 mb-12 opacity-75">"Your success is our success. This is why all our services are at cost to cost basis. <u>We only make money when you grow</u> ."</h3>
           <div className="flex justify-center my-4">
             <img alt="VP of Success" className="rounded-full w-48 h-48 object-cover" src="https://dazzling-cat.netlify.app/image 1469.png" />
           </div>
@@ -138,7 +138,7 @@ export default function ContactUs() {
             <h3 className="text-xl font-semibold">VP of Success</h3>
             <a href="mailto:success@notionbear.com" className="text-orange-500 block">success@notionbear.com</a>
           </div>
-          <p className="text-center mt-4">Please complete this form, and VP of Success will be in touch with you shortly.</p>
+          <p className="text-center mt-4 mb-8">Please complete this form, and VP of Success will be in touch with you shortly.</p>
           <div className="awards mt-4 flex justify-around">
             <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
               <img alt="Award" className="w-16 h-16" src="https://static.helpjuice.com/assets/marketing/awards/market-leader-logo-4775cba81746241703878cdbc60141ce04eb129a391a30be47fe5a777ce52075.png" />
@@ -155,7 +155,7 @@ export default function ContactUs() {
           </div>
         </div>
         <div className="w-full border p-4 px-12 rounded-2xl shadow-lg bg-white">
-          <h3 className="text-center text-2xl font-semibold mt-12 mb-12">Tell us a bit about yourself</h3>
+          <h3 className="text-center text-2xl font-semibold mt-12 mb-12">Let us know</h3>
           <form className="new_demo mt-4" onSubmit={handleSubmit}>
             <div className="field mb-4">
               <label className="block mb-2">I am reaching out for..</label>
