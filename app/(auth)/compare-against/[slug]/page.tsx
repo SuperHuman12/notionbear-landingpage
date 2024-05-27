@@ -59,7 +59,7 @@ export default function ComparisonAgainst() {
   const [filterBySlug, setFilterBySlug] = useState<FilterBySlugType | null>(null);
   const [postPageView, setPostPageView] = useState<any[]>([]);
   const pathname = usePathname();
-  const [searchParams]: any = useSearchParams();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
     const slug = pathname.split('/').pop();
@@ -86,7 +86,6 @@ export default function ComparisonAgainst() {
     <section className="bg-gradient-to-b from-gray-100 to-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-24 pb-12 md:pt-20 md:pb-20">
-
           <div className="max-w-xl mx-auto text-center pb-12 md:pb-20 pt-12">
             <Image
               src={filterBySlug?.product?.heroimage}
@@ -96,7 +95,6 @@ export default function ComparisonAgainst() {
               loading="eager"
               className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-2xl p-8 mb-8 m-auto"
             />
-
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Tired of <b>{filterBySlug?.product?.name}</b>? <br /> Say hi to NotionBear
             </h1>
@@ -107,7 +105,6 @@ export default function ComparisonAgainst() {
               Get Started
             </Link>
           </div>
-
           <TrustedBy />
           <ComparisonTable id={filterBySlug?.id} />
           <Rating />

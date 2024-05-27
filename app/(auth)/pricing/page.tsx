@@ -1,14 +1,13 @@
 "use client";
 
-import { useState, useEffect, ChangeEvent } from "react";
+import { useState, useEffect, ChangeEvent, useRef } from "react";
 import Image from "next/image";
-import notionfooterImage from "@/public/images/freedesigner.png";
+import notionfooterImage from "@/public/images/nb-herosec.png";
 import MigrateFrom from "@/public/images/migratefrom.png";
 import Testimonials from "@/components/testimonials";
 import Rating from "../compare-against/Rating";
 import Link from "next/link";
 import confetti from "canvas-confetti"; // Importing the confetti library
-
 
 const pricingMap: Record<number, number> = {
   3000: 5,
@@ -289,9 +288,12 @@ const Pricing: React.FC = () => {
   const [monthlyPrice, setMonthlyPrice] = useState(pricingMap[selectedUsers]);
   const [yearlyPrice, setYearlyPrice] = useState(monthlyPrice * 10);
   const [popupFeature, setPopupFeature] = useState<Feature | null>(null);
+  const [tooltipFeature, setTooltipFeature] = useState<Feature | null>(null); // State for tooltip
+  const [tooltipPosition, setTooltipPosition] = useState<{ top: number, left: number }>({ top: 0, left: 0 }); // State for tooltip position
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [countdown, setCountdown] = useState<number>(86400); // 24 hours in seconds
   const [isLifetimeDealVisible, setIsLifetimeDealVisible] = useState(true);
+  const featureRefs = useRef<(HTMLLIElement | null)[]>([]); // Ref to track feature elements
 
   const startDate = new Date("2023-05-01"); // Replace with your start date
   const endDate = new Date("2024-06-30"); // Replace with your end date
@@ -352,6 +354,22 @@ const Pricing: React.FC = () => {
     return `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
   };
 
+  const handleMouseEnter = (feature: Feature, index: number) => {
+    setTooltipFeature(feature);
+    const element = featureRefs.current[index];
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      setTooltipPosition({
+        top: rect.bottom + window.scrollY,
+        left: rect.left + window.scrollX,
+      });
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setTooltipFeature(null);
+  };
+
   return (
     <section className="bg-gradient-to-b from-gray-100 to-white">
       <div
@@ -402,11 +420,16 @@ const Pricing: React.FC = () => {
               </div>
 
               {isLifetimeDealVisible && (
-                <div className="relative bg-gray-900 rounded-2xl py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden">
-                  <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block">
+                <div className="relative bg-gray-900 rounded-2xl py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden ">
+
+<span className="mt-4 mb-4  inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-gray-100 text-gray-800">
+        Lifetime Deal 🤯
+      </span>
+
+                  <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block ">
                     <Image
                       alt="Logo"
-                      width={220}
+                      width={250}
                       className="block"
                       src={notionfooterImage}
                     />
@@ -414,28 +437,29 @@ const Pricing: React.FC = () => {
 
                   <div className="relative flex flex-col lg:flex-row justify-between items-center">
                     {/* CTA content */}
+                    
                     <div className="text-center lg:text-left lg:max-w-xl">
-                      <h3 className="h3 text-white mb-2">
-                        Get <b className="text-orange-600">Lifetime Deal</b> at
-                        $94
+                    <h3 className="h3 text-white mb-2">
+                        Get <b className="text-orange-600">Unlimited </b> at  
+                        <span className="line-through text-gray-400 ml-2 mr-2 font-normal">$599</span>{" "}
+                        <b className="text-white">$99</b>
                       </h3>
 
                       {/* CTA form */}
                       <form className="w-full lg:w-auto">
                         <button
-                          className="btn bg-orange-600 hover:bg-orange-700 shadow"
+                          className="btn bg-orange-600 hover:bg-orange-700 shadow px-12"
                           type="button"
                           onClick={toggleModal}
                         >
                           Buy Now
                         </button>
 
-                        <p className="text-lg text-white text-gray-400 mt-3">
-                          Deal ends in{" "}
-                          <b className="text-lg text-white text-gray-400 mt-3">
+                        <p className="text-lg text-white text-red-400 mt-3">
+                          Ending in{" "}
+                          <b className="text-lg text-white text-red-400 mt-3">
                             {formatTime(countdown)}
                           </b>
-                          .
                         </p>
                       </form>
                     </div>
@@ -457,21 +481,25 @@ const Pricing: React.FC = () => {
 
             <h2 className="text-2xl font-bold mt-4">Limited Lifetime Deal</h2>
             <p className="mt-2">
-            $99 for super early birds. <span className="font-bold text-orange-500">Due to the high demand, the lifetime deal price will be increased to $199 in {formatTime(countdown)}.</span> Timer is real; I'm not kidding :) We will launch our subscription plan soon! Grab our limited lifetime deal. You pay once, use forever with no limit!
+            $99 for super early birds. <span className="font-bold text-gray-500 border-b-2 border-gray-600">Due to the high demand, the lifetime deal price will be increased to $199 in {formatTime(countdown)}.</span> Timer is real; I'm not kidding :) We will launch our subscription plan soon! Grab our limited lifetime deal. You pay once, use forever with no limit!
             </p>
 
             <div className="text-center mt-4">
               <h3 className="text-3xl font-bold mt-4 mb-4">$99.00</h3>
               <Link
-                className="bg-orange-700 text-white text-xl py-2 px-16 rounded-lg w-full"
+                className="bg-orange-700 text-white text-xl w-full py-4 px-16 rounded-lg block"
                 href="https://buy.stripe.com/5kAeV0b6K27w8BG6os"
               >
                 Buy
               </Link>
             </div>
-            <div className="text-center text-gray-500 mt-4">
+            <div className="text-center text-gray-500 mt-8">
               Supported payment methods
             </div>
+
+    <img alt="Xumm" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_e9xJ7ce6A2N49hHB1Woit1mj6b3o13Lt3Q1NT-tW&s" className=" h-20 w-full object-contain mt-4" />
+
+            
           </div>
         </div>
       )}
@@ -563,8 +591,8 @@ const Pricing: React.FC = () => {
                       </span>
                     </h5>
                     <div className="flex grow flex-col gap-2 md:flex-row md:items-end mt-6 mb-4">
-                    <Link href="app.notionbear.com" className="bg-orange-700 text-white w-full p-4 rounded-lg text-center">
-                        Get Started
+                    <Link href="app.notionbear.com" className="bg-orange-700 font-bold w-full p-4 rounded-lg text-center">
+                        Coming Soon..
                       </Link>
                     </div>
 
@@ -602,7 +630,12 @@ const Pricing: React.FC = () => {
                       {features.map((feature, index) => (
                         <li
                           key={index}
+                          ref={(el) => {
+                            featureRefs.current[index] = el;
+                          }}
                           className={`text-md flex items-start gap-2 leading-[32px] mb-2 items-center `}
+                          onMouseEnter={() => handleMouseEnter(feature, index)}
+                          onMouseLeave={handleMouseLeave}
                           onClick={() =>
                             feature.popup && handleFeatureClick(feature)
                           }
@@ -629,9 +662,19 @@ const Pricing: React.FC = () => {
           </div>
         </div>
 
+        {tooltipFeature && tooltipFeature.popup && (
+          <div
+            className="absolute z-50 p-4 bg-white shadow-md rounded-md"
+            style={{ top: tooltipPosition.top, left: tooltipPosition.left }}
+          >
+            <h3 className="text-lg font-bold">{tooltipFeature.popup.headline}</h3>
+            <p className="text-sm">{tooltipFeature.popup.description}</p>
+          </div>
+        )}
+
         {popupFeature && popupFeature.popup && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-            <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto relative">
+            <div className="bg-white p-8 px-12 rounded-lg shadow-lg max-w-md mx-auto relative">
               <button
                 onClick={closePopup}
                 className="absolute top-2 right-2 bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center"
@@ -740,7 +783,7 @@ const Pricing: React.FC = () => {
               <form className="w-full lg:w-auto">
                 <div>
                   <Link
-                    className="btn bg-orange-600 hover:bg-orange-700 shadow"
+                    className="btn bg-orange-600 hover:bg-orange-700 shadow px-12"
                     href="/migrating-to-notionbear"
                   >
                     We can do it for you →
