@@ -78,7 +78,7 @@ export default async function Template() {
                       <div>
                         <Link
                           className="btn bg-orange-600 hover:bg-orange-700 shadow"
-                          href="https://buy.stripe.com/5kAeV0b6K27w8BG6os"
+                          href="https://app.notionbear.com"
                         >
                           Sign Up
                         </Link>

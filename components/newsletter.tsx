@@ -50,8 +50,8 @@ export default function Newsletter() {
 
                 {/* CTA form */}
                 <form className="w-full lg:w-auto">
-                  <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
-                  <Link href="app.notionbear.com" className="btn text-white bg-orange-600 hover:bg-orange-700 shadow" >Create</Link>
+                  <div className="flex flex-col sm:flex-row max-w-xs mx-auto sm:max-w-md lg:mx-0">
+                  <Link href="app.notionbear.com" className="btn bg-orange-600 hover:bg-orange-700 shadow" >Create</Link>
                   </div>
                   {/* Success message */}
                   {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
