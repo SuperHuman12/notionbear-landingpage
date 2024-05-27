@@ -1,30 +1,45 @@
-import nodemailer from 'nodemailer';
+import sendgrid from '@sendgrid/mail';
+
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    const { name, email, message } = req.body;
+    const {
+      querytype,
+      firstName,
+      lastName,
+      phone,
+      company,
+      jobTitle,
+      email,
+      employeesRange,
+      feedback,
+      usage,
+    } = req.body;
 
-    // Create a transporter object
-    let transporter = nodemailer.createTransport({
-      host: 'smtp.your-email-provider.com', // Replace with your SMTP host
-      port: 587, // Replace with your SMTP port
-      secure: false, // Use true for 465, false for other ports
-      auth: {
-        user: 'your-email@example.com', // Replace with your email
-        pass: 'your-email-password', // Replace with your email password
-      },
-    });
+    // Construct the email body
+    const messageBody = `
+      Query Type: ${querytype}
+      Name: ${firstName} ${lastName}
+      Email: ${email}
+      Phone: ${phone}
+      Company: ${company}
+      Job Title: ${jobTitle}
+      Employees Range: ${employeesRange}
+      Feedback: ${feedback}
+      Usage: ${usage}
+    `;
 
     // Email options
-    let mailOptions = {
-      from: `"${name}" <${email}>`, // Sender address
-      to: 'your-email@example.com', // List of recipients
-      subject: 'Contact Form Message', // Subject line
-      text: message, // Plain text body
+    const msg = {
+      to: 'your-email@example.com', // Change to your recipient
+      from: 'your-email@example.com', // Change to your verified sender
+      subject: 'Contact Form Message',
+      text: messageBody,
     };
 
     try {
-      await transporter.sendMail(mailOptions);
+      await sendgrid.send(msg);
       res.status(200).json({ message: 'Email sent successfully!' });
     } catch (error) {
       console.error('Error sending email:', error);

@@ -1,7 +1,5 @@
 "use client";
 
-import Link from 'next/link';
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 export default function ContactUs() {
@@ -73,12 +71,24 @@ export default function ContactUs() {
       case 'demo':
         return (
           <>
-            <div className="field mb-4"><input className="block w-full px-4 py-2 border rounded-md" placeholder="First Name" type="text" name="firstName" value={formData.firstName} onChange={handleChange} /></div>
-            <div className="field mb-4"><input className="block w-full px-4 py-2 border rounded-md" placeholder="Last Name" type="text" name="lastName" value={formData.lastName} onChange={handleChange} /></div>
-            <div className="field mb-4"><input className="block w-full px-4 py-2 border rounded-md" placeholder="Phone (optional)" type="text" name="phone" value={formData.phone} onChange={handleChange} /></div>
-            <div className="field mb-4"><input className="block w-full px-4 py-2 border rounded-md" placeholder="Company Name" type="text" name="company" value={formData.company} onChange={handleChange} /></div>
-            <div className="field mb-4"><input className="block w-full px-4 py-2 border rounded-md" placeholder="Job Title (optional)" type="text" name="jobTitle" value={formData.jobTitle} onChange={handleChange} /></div>
-            <div className="field mb-4"><input className="block w-full px-4 py-2 border rounded-md" placeholder="E-mail" type="email" name="email" value={formData.email} onChange={handleChange} /></div>
+            <div className="field mb-4">
+              <input className="block w-full px-4 py-2 border rounded-md" placeholder="First Name" type="text" name="firstName" value={formData.firstName} onChange={handleChange} />
+            </div>
+            <div className="field mb-4">
+              <input className="block w-full px-4 py-2 border rounded-md" placeholder="Last Name" type="text" name="lastName" value={formData.lastName} onChange={handleChange} />
+            </div>
+            <div className="field mb-4">
+              <input className="block w-full px-4 py-2 border rounded-md" placeholder="Phone (optional)" type="text" name="phone" value={formData.phone} onChange={handleChange} />
+            </div>
+            <div className="field mb-4">
+              <input className="block w-full px-4 py-2 border rounded-md" placeholder="Company Name" type="text" name="company" value={formData.company} onChange={handleChange} />
+            </div>
+            <div className="field mb-4">
+              <input className="block w-full px-4 py-2 border rounded-md" placeholder="Job Title (optional)" type="text" name="jobTitle" value={formData.jobTitle} onChange={handleChange} />
+            </div>
+            <div className="field mb-4">
+              <input className="block w-full px-4 py-2 border rounded-md" placeholder="E-mail" type="email" name="email" value={formData.email} onChange={handleChange} />
+            </div>
             <div className="field mb-4">
               <select className="block w-full px-4 py-2 border rounded-md" name="employeesRange" value={formData.employeesRange} onChange={handleChange}>
                 <option value="">Number of Employees</option>
@@ -104,9 +114,15 @@ export default function ContactUs() {
       case 'freedesign':
         return (
           <>
-            <div className="field mb-4"><input className="block w-full px-4 py-2 border rounded-md" placeholder="First Name" type="text" name="firstName" value={formData.firstName} onChange={handleChange} /></div>
-            <div className="field mb-4"><input className="block w-full px-4 py-2 border rounded-md" placeholder="Last Name" type="text" name="lastName" value={formData.lastName} onChange={handleChange} /></div>
-            <div className="field mb-4"><input className="block w-full px-4 py-2 border rounded-md" placeholder="E-mail" type="email" name="email" value={formData.email} onChange={handleChange} /></div>
+            <div className="field mb-4">
+              <input className="block w-full px-4 py-2 border rounded-md" placeholder="First Name" type="text" name="firstName" value={formData.firstName} onChange={handleChange} />
+            </div>
+            <div className="field mb-4">
+              <input className="block w-full px-4 py-2 border rounded-md" placeholder="Last Name" type="text" name="lastName" value={formData.lastName} onChange={handleChange} />
+            </div>
+            <div className="field mb-4">
+              <input className="block w-full px-4 py-2 border rounded-md" placeholder="E-mail" type="email" name="email" value={formData.email} onChange={handleChange} />
+            </div>
           </>
         );
       case 'feedbackbugs':
@@ -114,17 +130,24 @@ export default function ContactUs() {
       case 'technical':
         return (
           <>
-            <div className="field mb-4"><input className="block w-full px-4 py-2 border rounded-md" placeholder="First Name" type="text" name="firstName" value={formData.firstName} onChange={handleChange} /></div>
-            <div className="field mb-4"><input className="block w-full px-4 py-2 border rounded-md" placeholder="Last Name" type="text" name="lastName" value={formData.lastName} onChange={handleChange} /></div>
-            <div className="field mb-4"><input className="block w-full px-4 py-2 border rounded-md" placeholder="E-mail" type="email" name="email" value={formData.email} onChange={handleChange} /></div>
-            <div className="field mb-4"><textarea className="block w-full px-4 py-2 border rounded-md" placeholder="Describe the issue or feedback" name="feedback" value={formData.feedback} onChange={handleChange}></textarea></div>
+            <div className="field mb-4">
+              <input className="block w-full px-4 py-2 border rounded-md" placeholder="First Name" type="text" name="firstName" value={formData.firstName} onChange={handleChange} />
+            </div>
+            <div className="field mb-4">
+              <input className="block w-full px-4 py-2 border rounded-md" placeholder="Last Name" type="text" name="lastName" value={formData.lastName} onChange={handleChange} />
+            </div>
+            <div className="field mb-4">
+              <input className="block w-full px-4 py-2 border rounded-md" placeholder="E-mail" type="email" name="email" value={formData.email} onChange={handleChange} />
+            </div>
+            <div className="field mb-4">
+              <textarea className="block w-full px-4 py-2 border rounded-md" placeholder="Describe the issue or feedback" name="feedback" value={formData.feedback} onChange={handleChange}></textarea>
+            </div>
           </>
         );
       default:
         return null;
     }
   };
-
 
   return (
     <div className="card create-demo mt-24">
