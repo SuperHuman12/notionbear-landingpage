@@ -242,11 +242,11 @@ export default function Hero() {
               className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-2xl cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
               <Image
-                src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
+                src="https://dazzling-cat.netlify.app/helpdesk.png"
                 unoptimized
                 width={30}
                 height={30}
-                className="shadow-md"
+                className="shadow-md border border-gray-600"
                 alt={""}
               />{" "}
               <span className="ml-3 text-sm">
@@ -259,11 +259,11 @@ export default function Hero() {
               className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-2xl cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
               <Image
-                src="https://helpkit.so/_nuxt/img/helpsite_layout.99f86ce.png"
+                src="https://dazzling-cat.netlify.app/catalogue.png"
                 unoptimized
                 width={30}
                 height={30}
-                className="shadow-md"
+                className="shadow-md border border-gray-600"
                 alt={""}
               />{" "}
               <span className="ml-3 text-sm">
@@ -276,11 +276,11 @@ export default function Hero() {
               className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-2xl cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
               <Image
-                src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
+                src="https://dazzling-cat.netlify.app/blog.png"
                 unoptimized
                 width={30}
                 height={30}
-                className="shadow-md"
+                className="shadow-md border border-gray-600"
                 alt={""}
               />{" "}
               <span className="ml-3 text-sm">
@@ -293,11 +293,11 @@ export default function Hero() {
               className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-2xl cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
               <Image
-                src="https://helpkit.so/_nuxt/img/docsite_layout.e98f21d.png"
+                src="https://dazzling-cat.netlify.app/documentation.png"
                 unoptimized
                 width={30}
                 height={30}
-                className="shadow-md"
+                className="shadow-md border border-gray-600"
                 alt={""}
               />{" "}
               <span className="ml-3 text-sm">
