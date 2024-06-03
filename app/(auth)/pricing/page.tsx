@@ -420,7 +420,7 @@ const Pricing: React.FC = () => {
               </div>
 
               {isLifetimeDealVisible && (
-                <div className="relative bg-gray-900 rounded-2xl py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden ">
+                <div className="relative bg-gray-900 rounded-2xl py-6 px-4 md:py-8 md:px-12 shadow-2xl overflow-hidden hidden">
 
 <span className="mt-4 mb-4  inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-gray-100 text-gray-800">
         Lifetime Deal 🤯
