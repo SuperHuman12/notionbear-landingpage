@@ -104,7 +104,7 @@ const Page: React.FC = () => {
           alt={filterBySlug?.product?.name}
           width={400}
           height={450}
-          className="w-full rounded-full border border-gray-600 object-cover shadow-xl"
+          className="w-full rounded-2xl object-cover shadow-xl"
           quality="90"
         />
       </div>

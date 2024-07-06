@@ -47,7 +47,15 @@ const Integration = async () => {
                 <div className="cursor-pointer relative flex flex-col items-center p-6 bg-white rounded-2xl shadow-xl text-center h-full border">
                   <div className='w-full'>
                     <div className="flex items-center space-x-2 mb-4">
-                      <Image className="w-10 h-10" src={integration?.product?.logo} alt={integration?.product?.name} />
+
+                    <Image 
+  className="w-10 h-10" 
+  src={integration?.product?.logo} 
+  alt={integration?.product?.name} 
+  width={100}  // Larger size
+  height={100} // Larger size
+/>
+
                       <span className="text-dark font-bold">{integration?.product?.name}  </span>
                     </div>
                     <button className="text-white bg-gray-900 rounded-full w-full p-2 mt-4">
