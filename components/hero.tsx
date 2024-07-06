@@ -99,7 +99,7 @@ export default function Hero() {
               <div>
                 <Link
                   className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0"
-                  href="https://app.notionbear.com"
+                  href="https://app.BoringSites.com"
                 >
                   Get free lifetime plan
                 </Link>
@@ -177,7 +177,7 @@ export default function Hero() {
                   <span className="mr-1 text-xl italic opacity-60 font-medium">
                     "
                   </span>
-                  With NotionBear we literally went
+                  With BoringSites we literally went
                   <span className="bg-[#ffecd7] text-[##ce6a01] font-medium px-0.5 py-0.5 mx-1 px-2">
                     from 0 to fully functional knowledge-base in 1 hour.
                   </span>{" "}

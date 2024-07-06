@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 
 export const metadata = {
-    title: 'Hire a NotionBear Expert',
-    description: 'Hire NotionBear Agency when your ready to grow beyond we can help setup, design and manage your helpdesk, blog, or even marketplace. Also add custom code to your website deployment to make sure your needs are always met.',
+    title: 'Hire a BoringSites Expert',
+    description: 'Hire BoringSites Agency when your ready to grow beyond we can help setup, design and manage your helpdesk, blog, or even marketplace. Also add custom code to your website deployment to make sure your needs are always met.',
     openGraph: {
         images: [
             {
-                url: "https://dazzling-cat.netlify.app/notionbearmigration_socialshare.png",
+                url: "https://dazzling-cat.netlify.app/BoringSitesmigration_socialshare.png",
                 width: 1200,
                 height: 630,
                 alt: "Create a Marketplace with Notion",
@@ -19,7 +19,7 @@ export const metadata = {
         card: "summary_large_image",
         images: [
             {
-                url: "https://dazzling-cat.netlify.app/notionbearmigration_socialshare.png",
+                url: "https://dazzling-cat.netlify.app/BoringSitesmigration_socialshare.png",
                 alt: "Create a Marketplace with Notion",
             },
         ],
@@ -37,9 +37,9 @@ export default function PageDetail() {
                     <div className="max-w-4xl py-10 mx-auto lg:py-12">
 
                         <div className="text-center">
-                            <h1 className="md:text-5xl font-bold tracking-tight text-gray-900 sm:text-4xl font-extrabold leading-tighter tracking-tighter mb-4 aos-init aos-animate"><span className="gradient-text-accent">Hire a NotionBear Expert</span> to help you grow beyond the limitations.</h1>
+                            <h1 className="md:text-5xl font-bold tracking-tight text-gray-900 sm:text-4xl font-extrabold leading-tighter tracking-tighter mb-4 aos-init aos-animate"><span className="gradient-text-accent">Hire a BoringSites Expert</span> to help you grow beyond the limitations.</h1>
                             <p className="mt-6 leading-7 text-gray-600 sm:text-lg sm:leading-8">
-                                If your ready to grow from a 100 users to 10,000 , We can customize your notionbear site to match your needs.
+                                If your ready to grow from a 100 users to 10,000 , We can customize your BoringSites site to match your needs.
                             </p>
                             <div className="flex items-center justify-center mt-10 gap-x-6">
                                 <Link href="/contact-us" className="px-6 py-2 text-lg font-semibold text-white rounded-lg gradient-bg-accent bg-gray-800">
@@ -56,7 +56,7 @@ export default function PageDetail() {
                                     EXPERTS CAN HELP
                                 </p>
                                 <h2 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                                    What can NotionBear Experts do for you?
+                                    What can BoringSites Experts do for you?
                                 </h2>
                                 <p className="mt-6 text-gray-600 sm:text-lg sm:leading-8">
                                     Experts can help with a wide range of design, development, and marketing projects. Helping you reach your business goals as a solo founder or small team.

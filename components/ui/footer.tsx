@@ -18,9 +18,9 @@ export default function Footer() {
           <div className="sm:col-span-12 lg:col-span-3">
             <Link href={"0"}  className="mb-2">
             <Image src={Logo} loading='eager'  alt="Logo" width={200} height={200} />
-              <p className="text-sm text-gray-600 mt-4 mb-4">Notion Bear is an easy-to-use website builder for busy founders. Lead by <Link href="https://twitter.com/absurdfounder">@absurdfounder</Link>.</p>
+              <p className="text-sm text-gray-600 mt-4 mb-4">Boring Sites is an easy-to-use website builder for busy founders. Lead by <Link href="https://twitter.com/absurdfounder">@absurdfounder</Link>.</p>
 
-              <p className='mb-2 text-sm text-gray-400'>NotionBear is not related with Notion™ the company in any way.</p>
+              <p className='mb-2 text-sm text-gray-400'>BoringSites is not related with Notion™ the company in any way.</p>
 
             </Link>
             <div className="text-sm text-gray-600">
@@ -33,16 +33,16 @@ export default function Footer() {
             <h6 className="text-gray-800 font-medium mb-2">Product</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <Link href="https://app.notionbear.com" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">NotionBear Builder</Link>
+                <Link href="https://app.BoringSites.com" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">BoringSites Builder</Link>
               </li>
               <li className="mb-2">
                 <Link href="/showcase" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Showcase</Link>
               </li>
               <li className="mb-2">
-                <Link href="https://notionbear.com/blog" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</Link>
+                <Link href="https://BoringSites.com/blog" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</Link>
               </li>
               <li className="mb-2">
-                <Link href="https://notionbear.com/changelog" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Changelog</Link>
+                <Link href="https://BoringSites.com/changelog" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Changelog</Link>
               </li>
               <li className="mb-2">
                 <Link href="/integration" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Integrations</Link>
@@ -51,7 +51,7 @@ export default function Footer() {
                 <Link href="/pricing" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Pricing</Link>
               </li>
               <li className="mb-2">
-                <Link href="/migrating-to-notionbear" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Migrate to NotionBear</Link>
+                <Link href="/migrating-to-BoringSites" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Migrate to BoringSites</Link>
               </li>
               <li className="mb-2">
                 <Link href="/agency" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Hire Experts</Link>
@@ -101,61 +101,61 @@ export default function Footer() {
 
               
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-wix" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Wix</Link>
+                <Link href="/compare-against/BoringSites-vs-wix" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Wix</Link>
               </li>
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-webflow" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Webflow</Link>
+                <Link href="/compare-against/BoringSites-vs-webflow" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Webflow</Link>
               </li>
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-wordpress" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with WordPress</Link>
+                <Link href="/compare-against/BoringSites-vs-wordpress" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with WordPress</Link>
               </li>
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-squarespace" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Squarespace</Link>
+                <Link href="/compare-against/BoringSites-vs-squarespace" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Squarespace</Link>
               </li>
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-zendesk" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Zendesk</Link>
+                <Link href="/compare-against/BoringSites-vs-zendesk" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Zendesk</Link>
               </li>
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-intercom" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Intercom</Link>
+                <Link href="/compare-against/BoringSites-vs-intercom" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Intercom</Link>
               </li>
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-ghost" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Ghost</Link>
+                <Link href="/compare-against/BoringSites-vs-ghost" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Ghost</Link>
               </li>
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-framer" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Framer</Link>
+                <Link href="/compare-against/BoringSites-vs-framer" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Framer</Link>
               </li>  
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-gitbook" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Gitbook</Link>
+                <Link href="/compare-against/BoringSites-vs-gitbook" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Gitbook</Link>
               </li>                
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-shopify" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Shopify</Link>
+                <Link href="/compare-against/BoringSites-vs-shopify" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Compare with Shopify</Link>
               </li>                                 
 
 
 
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-wix" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a peer-to-peer marketplace</Link>
+                <Link href="/compare-against/BoringSites-vs-wix" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a peer-to-peer marketplace</Link>
               </li>
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-webflow" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a B2B marketplace</Link>
+                <Link href="/compare-against/BoringSites-vs-webflow" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a B2B marketplace</Link>
               </li>
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-wordpress" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Airbnb</Link>
+                <Link href="/compare-against/BoringSites-vs-wordpress" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Airbnb</Link>
               </li>
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-squarespace" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Etsy</Link>
+                <Link href="/compare-against/BoringSites-vs-squarespace" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Etsy</Link>
               </li>
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-zendesk" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Fiverr</Link>
+                <Link href="/compare-against/BoringSites-vs-zendesk" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a website like Fiverr</Link>
               </li>
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-intercom" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a rental marketplace?</Link>
+                <Link href="/compare-against/BoringSites-vs-intercom" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a rental marketplace?</Link>
               </li>
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-ghost" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a service marketplace</Link>
+                <Link href="/compare-against/BoringSites-vs-ghost" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a service marketplace</Link>
               </li>
               <li className="mb-2">
-                <Link href="/compare-against/notionbear-vs-framer" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a two-sided marketplace</Link>
+                <Link href="/compare-against/BoringSites-vs-framer" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">How to build a two-sided marketplace</Link>
               </li>  
                             
 
@@ -177,7 +177,7 @@ export default function Footer() {
                 <Link href="https://drive.google.com/drive/u/2/folders/13TfS2QV-VHg5Snw6rVbgmoVVRXTeiDHA" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Media Kit</Link>
               </li>
               <li className="mb-2">
-                <Link href="mailto:hey@vaibhavkalra.com?subject=Hi%2C%20I%20have%20a%20query%20regarding%20NotionBear" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Email Us</Link>
+                <Link href="mailto:hey@vaibhavkalra.com?subject=Hi%2C%20I%20have%20a%20query%20regarding%20BoringSites" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Email Us</Link>
               </li>
               <li className="mb-2">
                 <Link href="/affiliate" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Affiliate Program</Link>
@@ -185,7 +185,7 @@ export default function Footer() {
 
 
               <li className="mb-2">
-                <Link href="https://notionbear.com/help" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Helpcenter</Link>
+                <Link href="https://BoringSites.com/help" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Helpcenter</Link>
               </li>   
 
               <li className="mb-2">
@@ -249,7 +249,7 @@ export default function Footer() {
           </ul>
 
           {/* Copyrights note */}
-          <div className="text-sm text-gray-600 mr-4">&copy; NotionBear.com. All rights reserved.</div>
+          <div className="text-sm text-gray-600 mr-4">&copy; BoringSites.com. All rights reserved.</div>
 
         </div>
 

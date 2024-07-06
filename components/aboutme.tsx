@@ -7,7 +7,7 @@ export default function aboutme() {
 
       <div className="px-6 pt-16 mb-10 md:pt-20 max-w-6xl mx-auto px-4 sm:px-6 pb-12">
         <h2 className="mb-1 font-semibold leading-6 tracking-wide text-center text-orange-600 uppercase">
-          About NotionBear
+          About BoringSites
         </h2>
         <h3 className="pb-8 text-2xl font-black text-center text-gray-900 sm:text-4xl tracking-snug sm:leading-15 md:leading-20">
           Launch businesses in minutes, then grow to millions without leaving
@@ -28,7 +28,7 @@ export default function aboutme() {
           <div className="prose-sm text-gray-600 sm:prose sm:w-2/3 prose-indigo">
             <p className="my-2">
               Hey 👋 <br className="block sm:hidden" />
-              I’m Vaibhav, the founder of NotionBear.
+              I’m Vaibhav, the founder of BoringSites.
             </p>
             <p className="my-2">
               There are already a couple of website builders and knowledge base
@@ -49,7 +49,7 @@ export default function aboutme() {
               <br />
               <br />
               Since I couldn't find the right solution –{" "}
-              <strong className="text-gray-900">I built NotionBear</strong>.
+              <strong className="text-gray-900">I built BoringSites</strong>.
               Sure, you can publish your Notion page on its own but it might
               come across as unprofessional. The messy Notion url, distracting
               links pointing to Notion and the lack of customizability are just
@@ -57,7 +57,7 @@ export default function aboutme() {
             </p>
             <p className="my-2">
               <strong className="text-gray-900">
-                NotionBear is solving all of this. It is for businesses who need
+                BoringSites is solving all of this. It is for businesses who need
                 an easy way to create a reliable knowledge site powered by
                 Notion.{" "}
               </strong>

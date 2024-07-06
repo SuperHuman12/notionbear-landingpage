@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 
 export const metadata = {
-  title: 'Migrate to NotionBear',
-  description: 'Migrate your helpdesk, blog, or even marketplace to notionbear. Start living a hassle free life just SET and FORGET.',
+  title: 'Migrate to BoringSites',
+  description: 'Migrate your helpdesk, blog, or even marketplace to BoringSites. Start living a hassle free life just SET and FORGET.',
   openGraph: {
     images: [
         {
-            url: "https://dazzling-cat.netlify.app/notionbear_socialshare.png",
+            url: "https://dazzling-cat.netlify.app/BoringSites_socialshare.png",
             width: 1200,
             height: 630,
             alt: "Create a Marketplace with Notion",
@@ -19,7 +19,7 @@ twitter: {
     card: "summary_large_image",
     images: [
         {
-            url: "https://dazzling-cat.netlify.app/notionbear_socialshare.png",
+            url: "https://dazzling-cat.netlify.app/BoringSites_socialshare.png",
             alt: "Create a Marketplace with Notion",
         },
     ],

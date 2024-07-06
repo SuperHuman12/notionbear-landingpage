@@ -84,7 +84,7 @@ export default function MobileMenu() {
                         <Link href="/create-a-helpdesk-servicedesk-notion">
                           <Link href="#" className="text-base font-medium text-gray-900">Help Center</Link>
                         </Link>
-                        <p className="mt-1 text-sm text-gray-500">Create your professional self-service help center with Notion and NotionBear.</p>
+                        <p className="mt-1 text-sm text-gray-500">Create your professional self-service help center with Notion and BoringSites.</p>
                       </div>
                     </li>
                     <li className="flex items-start p-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-100">
@@ -95,7 +95,7 @@ export default function MobileMenu() {
                         <Link href="/create-a-documentation-notion">
                           <Link href="#" className="text-base font-medium text-gray-900">Documentation</Link>
                         </Link>
-                        <p className="mt-1 text-sm text-gray-500">Create your world-class product documentation with Notion and NotionBear.</p>
+                        <p className="mt-1 text-sm text-gray-500">Create your world-class product documentation with Notion and BoringSites.</p>
                       </div>
                     </li>
                     <li className="flex items-start p-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-100">
@@ -140,7 +140,7 @@ export default function MobileMenu() {
                         <Link href="/create-a-blog-notion">
                           <Link href="#" className="text-base font-medium text-gray-900">Blog</Link>
                         </Link>
-                        <p className="mt-1 text-sm text-gray-500">Create a beautiful blog for your startup or company with Notion and NotionBear.</p>
+                        <p className="mt-1 text-sm text-gray-500">Create a beautiful blog for your startup or company with Notion and BoringSites.</p>
                       </div>
                     </li>
                   </ul>
@@ -160,10 +160,10 @@ export default function MobileMenu() {
               <Link href="/showcase" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out w-full justify-between border-b-2">Showcase</Link>
             </li>
             <li>
-              <Link href="https://app.notionbear.com" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out w-full justify-between">Login</Link>
+              <Link href="https://app.BoringSites.com" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out w-full justify-between">Login</Link>
             </li>
             <li>
-              <Link href="https://app.notionbear.com" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3 w-full justify-between">
+              <Link href="https://app.BoringSites.com" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3 w-full justify-between">
                 <span>Create a Site</span>
                 <svg className="w-3 h-3 fill-current text-gray-400 shrink-0 ml-2 -mr-1" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fillRule="nonzero" />

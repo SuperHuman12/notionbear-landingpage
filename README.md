@@ -4,17 +4,17 @@
 
 **Simple Light** is a free landing page template built on top of **TailwindCSS** and fully coded in **React** / **Next.js**. Simple light is designed to provide all the basic components a developer need to create a landing page for SaaS products, online services, and more. 
 Use it for whatever you want, and be sure to reach us out on Twitter if you build anything cool/useful with it.
-Created and maintained with ❤️ by [NotionBear.com](https://NotionBear.com/).
+Created and maintained with ❤️ by [BoringSites.com](https://BoringSites.com/).
 
-*Version 1.3.3 built with Tailwind CSS and React + Vite is available [here](https://github.com/NotionBear/tailwind-landing-page-template/releases/tag/1.3.3).*
+*Version 1.3.3 built with Tailwind CSS and React + Vite is available [here](https://github.com/BoringSites/tailwind-landing-page-template/releases/tag/1.3.3).*
 
 ## Live demo
 
-Check the live demo here 👉️ [https://simple.NotionBear.com/](https://simple.NotionBear.com/)
+Check the live demo here 👉️ [https://simple.BoringSites.com/](https://simple.BoringSites.com/)
 
 ## Simple Pro
 
-[![Simple Pro](https://user-images.githubusercontent.com/2683512/151178282-fd81b300-349a-42c3-a30a-f70f6e711e74.png)](https://NotionBear.com/)
+[![Simple Pro](https://user-images.githubusercontent.com/2683512/151178282-fd81b300-349a-42c3-a30a-f70f6e711e74.png)](https://BoringSites.com/)
 
 ## Design files
 
@@ -65,7 +65,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### Support notes
 This template has been developed with the App Router (`app`) and React Server Components. If you’re unfamiliar with these beta features, you can find more information about them on the Next.js beta documentation page. So, please note that any request dealing with React (e.g. extra features, customisations, et cetera) is to be considered out of the support scope.
 
-For more information about what support covers, please see our (FAQs)[https://NotionBear.com/faq/].
+For more information about what support covers, please see our (FAQs)[https://BoringSites.com/faq/].
 
 ## Credits
 
@@ -74,7 +74,7 @@ For more information about what support covers, please see our (FAQs)[https://No
 ## Terms and License
 
 - Released under the [GPL](https://www.gnu.org/licenses/gpl-3.0.html).
-- Copyright 2020 [NotionBear](https://NotionBear.com/).
+- Copyright 2020 [BoringSites](https://BoringSites.com/).
 - Use it for personal and commercial projects, but please don’t republish, redistribute, or resell the template.
 - Attribution is not required, although it is really appreciated.
 
@@ -84,4 +84,4 @@ We're an Italian developer/designer duo creating high-quality design/code resour
 
 ## Stay in the loop
 
-If you would like to know when we release new resources, you can follow us on [Twitter](https://twitter.com/absurdfounder), or you can subscribe to our monthly [newsletter](https://NotionBear.com/#subscribe).
+If you would like to know when we release new resources, you can follow us on [Twitter](https://twitter.com/absurdfounder), or you can subscribe to our monthly [newsletter](https://BoringSites.com/#subscribe).

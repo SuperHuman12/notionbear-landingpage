@@ -10,7 +10,7 @@
         "description": "Secure funding for your blockchain projects through targeted grants.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -40,7 +40,7 @@
         "description": "Create a website for listing remote jobs for job applicants.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -48,17 +48,17 @@
         }
       },
       "overview": {
-        "content": "Arcade lets you create interactive product demos in minutes and turn all users into power users. Let users experience your product through interactive, guided demos. No more pausing and rewinding, users can progress at their own pace. This integration allows you to embed Arcade interactive demos into your notionbear documentation."
+        "content": "Arcade lets you create interactive product demos in minutes and turn all users into power users. Let users experience your product through interactive, guided demos. No more pausing and rewinding, users can progress at their own pace. This integration allows you to embed Arcade interactive demos into your BoringSites documentation."
       },
       "howItWorks": {
-        "content": "Embedding an Arcade flow in your documentation is simple - just paste an Arcade flow link into the notionbear editor. The app will turn the link into an Arcade embed showing your recorded demo."
+        "content": "Embedding an Arcade flow in your documentation is simple - just paste an Arcade flow link into the BoringSites editor. The app will turn the link into an Arcade embed showing your recorded demo."
       },
       "configuration": {
         "content": "To install on a single space, navigate to integrations in sub-navigation. If you prefer to install the Arcade integration on multiple or all spaces, navigate to your organization settings and enable it from the integrations panel. This will give you access to the custom arcade block."
       },
       "proof": {
         "screenshot": "https://dazzling-cat.netlify.app/jobwebsite.png",
-        "youtubevideo": "https://youtube.com/watch?v=example-arcade-notionbear"
+        "youtubevideo": "https://youtube.com/watch?v=example-arcade-BoringSites"
       }
     },
     {
@@ -67,11 +67,11 @@
         "logo": "https://dazzling-cat.netlify.app/vettedtalent.png",
         "name": "Vetted Talent",
         "type": "Heeelpdesk",
-        "provider": "NotionBear",
+        "provider": "BoringSites",
         "description": "Website for showing vetted talent for companies to hire.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -95,14 +95,14 @@
     {
       "id": "notion-helpdesk",
       "product": {
-        "logo": "https://dazzling-cat.netlify.app/notionbearhelpdesk-template.png",
-        "name": "Notion Bear Helpdesk",
+        "logo": "https://dazzling-cat.netlify.app/BoringSiteshelpdesk-template.png",
+        "name": "Boring Sites Helpdesk",
         "type": "Heeelpdesk",
-        "provider": "NotionBear",
+        "provider": "BoringSites",
         "description": "Website for showing vetted talent for companies to hire.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -119,7 +119,7 @@
         "content": "To get started, navigate to the Slack App marketplace and search for the Slack app. Once found, add it to your workspace. You can then share Slack demos in any channel by pasting the demo link, enhancing your team's collaboration and product knowledge."
       },
       "proof": {
-        "screenshot": "https://dazzling-cat.netlify.app/notionbearhelpdesk-template.png",
+        "screenshot": "https://dazzling-cat.netlify.app/BoringSiteshelpdesk-template.png",
         "youtubevideo": "https://youtube.com/watch?v=example-slack"
       }
     },
@@ -129,11 +129,11 @@
         "logo": "https://dazzling-cat.netlify.app/Screenshot%202024-02-09%203.38.42%20AM.png",
         "name": "Blockchain Grants ",
         "type": "Heeelpdesk",
-        "provider": "NotionBear",
+        "provider": "BoringSites",
         "description": "Website for showing vetted talent for companies to hire.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -164,7 +164,7 @@
         "description": "A classifieds platform to connect businesses with the best agencies and for agencies to receive offers from potential clients.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -195,7 +195,7 @@
         "description": "Find and organize support group meetings for mental health, addiction recovery, and more.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -226,7 +226,7 @@
         "description": "Connect with top professionals and industry leaders to grow your career.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -257,7 +257,7 @@
         "description": "A dynamic platform for hosting and managing all types of events online.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -288,7 +288,7 @@
         "description": "Learn from successful entrepreneurs and launch your startup using proven strategies.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -319,7 +319,7 @@
         "description": "A trusted platform for downloading Android apps and games.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -350,7 +350,7 @@
         "description": "A trusted platform for downloading Android apps and games.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -381,7 +381,7 @@
         "description": "Streamline your investment tracking and analysis with VCSheet.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -412,7 +412,7 @@
         "description": "Buy, sell, or rent properties with ease using our comprehensive real estate platform.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -443,7 +443,7 @@
         "description": "Create and manage your own private servers on Discord, Telegram, and WhatsApp for business or personal use.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -474,7 +474,7 @@
         "description": "Jumpstart your SaaS application development with our ready-to-use code boilerplates.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -505,7 +505,7 @@
         "description": "Explore and contribute to our collection of blogs focusing on mental health awareness and well-being.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",
@@ -536,7 +536,7 @@
         "description": "Discover new products, upvote your favorites, and engage with creators and other enthusiasts.",
         "callToCopy": {
           "text": "Deploy Template",
-          "link": "https://example.com/install-arcade-notionbear"
+          "link": "https://example.com/install-arcade-BoringSites"
         },
         "ViewDemo": {
           "text": "View Demo",

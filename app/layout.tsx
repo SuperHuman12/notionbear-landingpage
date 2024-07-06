@@ -12,12 +12,12 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'NotionBear vs {children}',
-  description: 'Compare notionbear to {children}',
+  title: 'BoringSites vs {children}',
+  description: 'Compare BoringSites to {children}',
   openGraph: {
     images: [
         {
-            url: "https://dazzling-cat.netlify.app/notionbear_socialshare.png",
+            url: "https://dazzling-cat.netlify.app/BoringSites_socialshare.png",
             width: 1200,
             height: 630,
             alt: "Create a Marketplace with Notion",
@@ -28,7 +28,7 @@ twitter: {
     card: "summary_large_image",
     images: [
         {
-            url: "https://dazzling-cat.netlify.app/notionbear_socialshare.png",
+            url: "https://dazzling-cat.netlify.app/BoringSites_socialshare.png",
             alt: "Create a Marketplace with Notion",
         },
     ],

@@ -166,7 +166,7 @@ export default function ContactUs() {
           </div>
           <div className="text-center">
             <h3 className="text-xl font-semibold">VP of Success</h3>
-            <a href="mailto:success@notionbear.com" className="text-orange-700 block">success@notionbear.com</a>
+            <a href="mailto:success@BoringSites.com" className="text-orange-700 block">success@BoringSites.com</a>
           </div>
           <p className="text-center mt-4 mb-8">Please complete this form, and VP of Success will be in touch with you shortly.</p>
           <div className="awards mt-4 flex justify-around">
@@ -203,7 +203,7 @@ export default function ContactUs() {
           </form>
           <div className="contact-us mt-4 text-center">
             <span className="block">+1 (833) 387 3877</span>
-            <a href="mailto:support@notionbear.com" className="text-orange-700 block">support@notionbear.com</a>
+            <a href="mailto:support@BoringSites.com" className="text-orange-700 block">support@BoringSites.com</a>
           </div>
         </div>
       </div>

@@ -34,7 +34,7 @@ export default function Banner() {
                 <path d="M214.303 37.311C214.303 37.311 230.103 19.1163 244.609 16.3988C259.114 13.6812 264.324 27.7855 264.324 27.7855" stroke="currentColor" strokeWidth="5" strokeLinecap="round"></path>
                 <path d="M85.7621 35.2237C85.7621 35.2237 70.6746 16.4264 56.2848 13.1451C41.895 9.86381 36.1452 23.7542 36.1452 23.7542" stroke="currentColor" strokeWidth="5" strokeLinecap="round"></path>
               </svg>
-              <span className="hidden sm:inline">Notion Bear</span>
+              <span className="hidden sm:inline">Boring Sites</span>
             </button>
           </div>
         </div>

@@ -7,8 +7,8 @@ const AggregateStats: React.FC = () => {
         <section>
 
         <div className='max-w-3xl mx-auto text-center py-20 pb-12 md:pb-20'>
-          <h1 className="h1 mb-4">More work gets done with NotionBear.</h1>
-          <p className="text-xl text-gray-600">Jumpstart your SaaS business with pre-built solutions from NotionBear and our community.</p>
+          <h1 className="h1 mb-4">More work gets done with BoringSites.</h1>
+          <p className="text-xl text-gray-600">Jumpstart your SaaS business with pre-built solutions from BoringSites and our community.</p>
 
 
           {/* Items */}
@@ -18,7 +18,7 @@ const AggregateStats: React.FC = () => {
               <div>
                 <div >
                   <h1 className="h1 mb-4 text-gray-500">86%</h1>
-                  <span className="text-dark font-bold">of users save time with NotionBear</span>
+                  <span className="text-dark font-bold">of users save time with BoringSites</span>
                 </div>
               </div>
             </Link>

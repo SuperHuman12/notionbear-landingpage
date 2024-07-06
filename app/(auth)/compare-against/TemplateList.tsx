@@ -44,12 +44,12 @@ const TemplateLibrary = () => {
 
   return (
     <section className='max-w-6xl m-auto text-center' id="template-section">
-      <h1 className="h2 mb-4 p-2">Incredible sites built with NotionBear</h1>
-      <p className="text-xl text-gray-600 mb-8">Browse through examples of live Notion websites, built with NotionBear.</p>
+      <h1 className="h2 mb-4 p-2">Incredible sites built with BoringSites</h1>
+      <p className="text-xl text-gray-600 mb-8">Browse through examples of live Notion websites, built with BoringSites.</p>
 
       <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center aos-init aos-animate mt-6" data-aos="zoom-y-out" data-aos-delay="300">
         <div>
-          <Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.notionbear.com">Ask our Designer for Help</Link>
+          <Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.BoringSites.com">Ask our Designer for Help</Link>
         </div>
         <div>
           <Link className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-2 m-auto" href="/showcase">View all</Link>

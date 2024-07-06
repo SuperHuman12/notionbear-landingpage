@@ -16,8 +16,8 @@ const ComparisonTable = ({ id }: { id: any }) => {
 
   return (
     <div className='max-w-xl mx-auto text-center py-20 pb-12 md:pb-20'>
-      <h1 className="h1 mb-4">Get so much more than website builder with NotionBear.</h1>
-      <p className="text-xl text-gray-600">NotionBear has everything you need, from task tracking to templates to documentation. Get comfortable — you won’t be leaving all that often.</p>
+      <h1 className="h1 mb-4">Get so much more than website builder with BoringSites.</h1>
+      <p className="text-xl text-gray-600">BoringSites has everything you need, from task tracking to templates to documentation. Get comfortable — you won’t be leaving all that often.</p>
 
       <div className="max-w-xl mx-auto p-4">
         <div className="overflow-x-auto p-4 bg-gray-200 rounded">
@@ -26,7 +26,7 @@ const ComparisonTable = ({ id }: { id: any }) => {
               <tr>
                 <th className="px-4 py-2">Features</th>
                 <th className="px-4 py-2 text-center ">{libraryItem?.product?.name}</th>
-                <th className="px-4 py-2 text-center">NotionBear</th>
+                <th className="px-4 py-2 text-center">BoringSites</th>
               </tr>
             </thead>
             <tbody>

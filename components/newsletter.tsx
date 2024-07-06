@@ -46,12 +46,12 @@ export default function Newsletter() {
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
                 <h3 className="h3 text-white mb-2">Ready to turn your Notion pages into <span className=" -translate-y-full slideUp h-full w-full bg-clip-text text-transparent text-orange-600">{words[index]}</span> ?</h3>
-                <p className="text-xl text-gray-600 mb-4">Join the NotionBear AI and discover the easiest way to manage your website.</p>
+                <p className="text-xl text-gray-600 mb-4">Join the BoringSites AI and discover the easiest way to manage your website.</p>
 
                 {/* CTA form */}
                 <form className="w-full lg:w-auto">
                   <div className="flex flex-col sm:flex-row max-w-xs mx-auto sm:max-w-md lg:mx-0">
-                  <Link href="app.notionbear.com" className="btn bg-orange-600 hover:bg-orange-700 shadow" >Create</Link>
+                  <Link href="app.BoringSites.com" className="btn bg-orange-600 hover:bg-orange-700 shadow" >Create</Link>
                   </div>
                   {/* Success message */}
                   {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}

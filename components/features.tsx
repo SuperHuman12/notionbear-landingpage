@@ -41,11 +41,11 @@ export default function Features() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">
-              No matter how unique your website concept is, NotionBear can support it.
+              No matter how unique your website concept is, BoringSites can support it.
               over.
             </h1>
             <p className="text-xl text-gray-600">
-              Notionbear is designed for all types from content curation to
+              BoringSites is designed for all types from content curation to
               content creation. Build company blogs, helpdesks, company wiki,
               documentations, and marketplaces.
             </p>

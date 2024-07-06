@@ -95,7 +95,7 @@ export default function Testimonials() {
                   <b className="text-orange-600">
                     {" "}
                     Now, I just write to @NotionHQ, with my website deployed on
-                    @NotionBear showing always pin and proper
+                    @BoringSites showing always pin and proper
                   </b>
                   .
                 </blockquote>
@@ -163,7 +163,7 @@ export default function Testimonials() {
                   <b className="text-orange-600">
                     easy to work with but also is SEO ready
                   </b>
-                  , notionbear is worth every penny.“
+                  , BoringSites is worth every penny.“
                 </blockquote>
                 <cite className="block font-bold text-lg not-italic mb-1">
                   Tom
@@ -191,7 +191,7 @@ export default function Testimonials() {
                   />
                 </div>
                 <blockquote className="text-xl font-medium mb-4">
-                  “ Since migrating to NotionBear, our recruitment marketing
+                  “ Since migrating to BoringSites, our recruitment marketing
                   agency has bypassed the need to outsource web development,{" "}
                   <b className="text-orange-600">
                     attracted bigger clients, and introduced a new revenue
@@ -264,7 +264,7 @@ export default function Testimonials() {
                     a place for quick documentation and AI support that can help
                     people who come looking for support{" "}
                   </b>{" "}
-                  , NotionBear solved that for me.
+                  , BoringSites solved that for me.
                 </blockquote>
                 <cite className="block font-bold text-lg not-italic mb-1">
                   Darya Finger

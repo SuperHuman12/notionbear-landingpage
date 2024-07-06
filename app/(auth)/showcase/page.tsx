@@ -6,12 +6,12 @@ import notionfooterImage from "@/public/images/freedesigner.png";
 
 
 export const metadata = {
-  title: 'Beautiful websites built on notion using notionbear',
-  description: 'Jumpstart your SaaS business with pre-built solutions from NotionBear and our community.',
+  title: 'Beautiful websites built on notion using BoringSites',
+  description: 'Jumpstart your SaaS business with pre-built solutions from BoringSites and our community.',
   openGraph: {
     images: [
         {
-            url: "https://dazzling-cat.netlify.app/notionbearshowcase_socialshare.png",
+            url: "https://dazzling-cat.netlify.app/BoringSitesshowcase_socialshare.png",
             width: 1200,
             height: 630,
             alt: "Create a Marketplace with Notion",
@@ -22,7 +22,7 @@ twitter: {
     card: "summary_large_image",
     images: [
         {
-            url: "https://dazzling-cat.netlify.app/notionbearshowcase_socialshare.png",
+            url: "https://dazzling-cat.netlify.app/BoringSitesshowcase_socialshare.png",
             alt: "Create a Marketplace with Notion",
         },
     ],
@@ -50,7 +50,7 @@ export default async function Template() {
             <h1 className="h2 mb-4">Find your Template</h1>
             <p className="text-xl text-gray-600">
               Jumpstart your SaaS business with pre-built solutions from
-              NotionBear and our community.
+              BoringSites and our community.
             </p>
 
             <div className="mt-6">
@@ -78,7 +78,7 @@ export default async function Template() {
                       <div>
                         <Link
                           className="btn bg-orange-600 hover:bg-orange-700 shadow"
-                          href="https://app.notionbear.com"
+                          href="https://app.BoringSites.com"
                         >
                           Sign Up
                         </Link>

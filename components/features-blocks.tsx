@@ -12,13 +12,13 @@ export default function FeaturesBlocks() {
           <section className="mt-2">
             {/* Section header */}
             <div className="max-w-3xl mx-auto text-center pt-12 ">
-              <h2 className="h2 mb-4">Notionbear packs everything your startup needs.</h2>
-              <p className="text-xl text-gray-600">Notion Bear is a powerful website builder for startups, solo-entrepreneurs and hackers. Try it for free.</p>
+              <h2 className="h2 mb-4">BoringSites packs everything your startup needs.</h2>
+              <p className="text-xl text-gray-600">Boring Sites is a powerful website builder for startups, solo-entrepreneurs and hackers. Try it for free.</p>
             </div>
 
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex aos-init aos-animate mt-6 justify-center py-12" data-aos="zoom-y-out" data-aos-delay="300">
-              <div><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.notionbear.com">Get free lifetime plan</Link></div>
-              <div><Link href="#template-section" className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4">Sites built on NotionBear</Link></div>
+              <div><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.BoringSites.com">Get free lifetime plan</Link></div>
+              <div><Link href="#template-section" className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4">Sites built on BoringSites</Link></div>
             </div>
 
             {/* Items */}
@@ -143,11 +143,11 @@ export default function FeaturesBlocks() {
               <div className="text-start mt-6 w-full p-4">
                 <h2 className="h2 font-bold mb-4">Your content lives in Notion</h2>
                 <p className="text-gray-700">
-                  Your work stays in a place you control and love, while NotionBear handles the technical parts of publishing it to your website. This means you can focus what’s actually important to you: creating content and building
+                  Your work stays in a place you control and love, while BoringSites handles the technical parts of publishing it to your website. This means you can focus what’s actually important to you: creating content and building
                   your brand without worrying about configurations, plugins, downtime, performance, or security.
                 </p>
                 <div className="max-w-xs mx-auto sm:max-w-none sm:flex aos-init aos-animate mt-6" data-aos="zoom-y-out" data-aos-delay="300">
-                  <div><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.notionbear.com">Get free lifetime plan</Link></div>
+                  <div><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.BoringSites.com">Get free lifetime plan</Link></div>
                 </div>
               </div>
             </div>
@@ -174,11 +174,11 @@ export default function FeaturesBlocks() {
               <div className="text-start mt-6 w-full p-4">
                 <h2 className="h2 font-bold mb-4">Customize to your brand</h2>
                 <p className="text-gray-700">
-                  Style the look and feel of your site with no-code themes and designer templates. Everything can be customized inside NotionBear without code to make you proud of the unique site you share with the world. Add
+                  Style the look and feel of your site with no-code themes and designer templates. Everything can be customized inside BoringSites without code to make you proud of the unique site you share with the world. Add
                   custom-code only if you want to.
                 </p>
                 <div className="max-w-xs mx-auto sm:max-w-none sm:flex aos-init aos-animate mt-6" data-aos="zoom-y-out" data-aos-delay="300">
-                  <div><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.notionbear.com">Get free lifetime plan</Link></div>
+                  <div><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.BoringSites.com">Get free lifetime plan</Link></div>
                 </div>
               </div>
             </div>
@@ -204,11 +204,11 @@ export default function FeaturesBlocks() {
               <div className="text-start mt-6 w-full p-4">
                 <h2 className="h2 font-bold mb-4">World-class Performance</h2>
                 <p className="text-gray-700">
-                  Pages load instantly anywhere in the world giving your site visitors a pleasant and snappy experience—they’ll never close the page for taking too long to load. On average NotionBear sites perform better than any
+                  Pages load instantly anywhere in the world giving your site visitors a pleasant and snappy experience—they’ll never close the page for taking too long to load. On average BoringSites sites perform better than any
                   industry leading website builder.
                 </p>
                 <div className="max-w-xs mx-auto sm:max-w-none sm:flex aos-init aos-animate mt-6" data-aos="zoom-y-out" data-aos-delay="300">
-                  <div><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.notionbear.com">Get free lifetime plan</Link></div>
+                  <div><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.BoringSites.com">Get free lifetime plan</Link></div>
                 </div>
               </div>
             </div>
@@ -234,10 +234,10 @@ export default function FeaturesBlocks() {
               <div className="text-start mt-6 w-full p-4">
                 <h2 className="h2 font-bold mb-4">In-built Analytics</h2>
                 <p className="text-gray-700">
-                  See your page views, visitors, referrers, clicks, and much more for all of your websites. Notionbear provides Inbuilt analytics for all your sites tp help ou find out where people are finding your blog, which links people are clicking the most, which of your posts are popular.
+                  See your page views, visitors, referrers, clicks, and much more for all of your websites. BoringSites provides Inbuilt analytics for all your sites tp help ou find out where people are finding your blog, which links people are clicking the most, which of your posts are popular.
                 </p>
                 <div className="max-w-xs mx-auto sm:max-w-none sm:flex aos-init aos-animate mt-6" data-aos="zoom-y-out" data-aos-delay="300">
-                  <div><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.notionbear.com">Get free lifetime plan</Link></div>
+                  <div><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.BoringSites.com">Get free lifetime plan</Link></div>
                 </div>
               </div>
             </div>
@@ -268,7 +268,7 @@ export default function FeaturesBlocks() {
 
                 </p>
                 <div className="max-w-xs mx-auto sm:max-w-none sm:flex aos-init aos-animate mt-6" data-aos="zoom-y-out" data-aos-delay="300">
-                  <div><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.notionbear.com">Get free lifetime plan</Link></div>
+                  <div><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.BoringSites.com">Get free lifetime plan</Link></div>
                 </div>
               </div>
             </div>
@@ -292,10 +292,10 @@ export default function FeaturesBlocks() {
               <div className="text-start mt-6 w-full p-4">
                 <h2 className="h2 font-bold mb-4">Integrates with your existing apps</h2>
                 <p className="text-gray-700">
-                  NotionBear integrates with the tools you already use. Connect to Slack for notifications, embed your live chat widget from Intercom, Hubspot, Crisp and more. Need your app connected to NotionBear? We got you covered.
+                  BoringSites integrates with the tools you already use. Connect to Slack for notifications, embed your live chat widget from Intercom, Hubspot, Crisp and more. Need your app connected to BoringSites? We got you covered.
                 </p>
                 <div className="max-w-xs mx-auto sm:max-w-none sm:flex aos-init aos-animate mt-6" data-aos="zoom-y-out" data-aos-delay="300">
-                  <div><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.notionbear.com">Get free lifetime plan</Link></div>
+                  <div><Link className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://app.BoringSites.com">Get free lifetime plan</Link></div>
                 </div>
               </div>
             </div>

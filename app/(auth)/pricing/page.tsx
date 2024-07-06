@@ -44,11 +44,11 @@ const features: Feature[] = [
     },
   },
   {
-    name: "5 NotionBear Sites",
+    name: "5 BoringSites Sites",
     popup: {
       image: "/path/to/image2.png",
       headline: "Multiple Sites",
-      description: "Manage up to 5 different NotionBear sites.",
+      description: "Manage up to 5 different BoringSites sites.",
     },
   },
   {
@@ -136,7 +136,7 @@ const features: Feature[] = [
     popup: {
       image: "/path/to/image_remove_badge.png",
       headline: "Remove Branding",
-      description: "Remove the 'Powered by NotionBear' badge from your site.",
+      description: "Remove the 'Powered by BoringSites' badge from your site.",
     },
   },
   {
@@ -157,9 +157,9 @@ interface FAQ {
 const faqs: Record<string, FAQ[]> = {
   Website: [
     {
-      question: "What is NotionBear?",
+      question: "What is BoringSites?",
       answer:
-        "NotionBear is the perfect tool for creating your knowledge base in the shortest possible time. It is powered by the best content management system in the world: Notion. You write your help articles in Notion and NotionBear takes care of the rest. It's as simple as that.",
+        "BoringSites is the perfect tool for creating your knowledge base in the shortest possible time. It is powered by the best content management system in the world: Notion. You write your help articles in Notion and BoringSites takes care of the rest. It's as simple as that.",
     },
     {
       question: "Why do I need a knowledge base?",
@@ -167,16 +167,16 @@ const faqs: Record<string, FAQ[]> = {
         "Unless you have built a flawless product (congratulations 🤩), your customers will always have questions and they demand immediate help. A knowledge base can provide all the information that users need in one place. It can range from FAQs about your product/service, common issues and their solutions, videos with tutorials on how to do things and more.",
     },
     {
-      question: "Is my data safe with NotionBear?",
+      question: "Is my data safe with BoringSites?",
       answer:
-        "NotionBear takes your privacy seriously and follows best practices to ensure that the confidentiality of personal information and customer data is protected and maintained. We do not disclose or share your data with outside parties. All your knowledge base content is hosted in your own Notion workspace.",
+        "BoringSites takes your privacy seriously and follows best practices to ensure that the confidentiality of personal information and customer data is protected and maintained. We do not disclose or share your data with outside parties. All your knowledge base content is hosted in your own Notion workspace.",
     },
   ],
   "AI Support Bot": [
     {
       question: "How does the AI Support Bot work?",
       answer:
-        "The AI Support Bot integrates seamlessly with NotionBear to provide real-time assistance to your users, leveraging AI to answer common questions and provide guidance based on your knowledge base content.",
+        "The AI Support Bot integrates seamlessly with BoringSites to provide real-time assistance to your users, leveraging AI to answer common questions and provide guidance based on your knowledge base content.",
     },
     {
       question: "Can I customize the AI Support Bot?",
@@ -193,12 +193,12 @@ const faqs: Record<string, FAQ[]> = {
     {
       question: "How does the free 7 day trial work?",
       answer:
-        "NotionBear offers a 7 day free trial to help you explore. No credit card required. There’s zero cost to get in the product and set things up. Within the trial period you will be able to use all available features. After the trial is over, you can choose to subscribe to one of our offered subscription plans.",
+        "BoringSites offers a 7 day free trial to help you explore. No credit card required. There’s zero cost to get in the product and set things up. Within the trial period you will be able to use all available features. After the trial is over, you can choose to subscribe to one of our offered subscription plans.",
     },
     {
       question: "What are the pricing plans?",
       answer:
-        "NotionBear offers various pricing plans based on the number of users and features required. Check our pricing page for detailed information on each plan.",
+        "BoringSites offers various pricing plans based on the number of users and features required. Check our pricing page for detailed information on each plan.",
     },
     {
       question: "Are there any additional fees?",
@@ -250,7 +250,7 @@ const FAQSection: React.FC = () => {
 
           <p className="text-base font-normal text-gray-600 mt-4 sm:text-lg">
             Have a different question and can't find the answer you're looking for? Reach out to our support team by
-            <a target="_blank" rel="noopener noreferrer" href="mailto:vaibhav@notionbear.com" className="isomorphic-link isomorphic-link--external text-orange-800 hover:text-blue-500 hover:underline px-4">sending us an email</a>
+            <a target="_blank" rel="noopener noreferrer" href="mailto:vaibhav@BoringSites.com" className="isomorphic-link isomorphic-link--external text-orange-800 hover:text-blue-500 hover:underline px-4">sending us an email</a>
             and we'll get back to you as soon as we can.
           </p>
         </div>
@@ -400,7 +400,7 @@ const Pricing: React.FC = () => {
           {/* Page header */}
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-4xl font-extrabold leading-tighter tracking-tighter mb-4 aos-init aos-animate">
-              Try NotionBear free for{" "}
+              Try BoringSites free for{" "}
               <span className="gradient-border-accent"> 7 days</span>
             </h1>
           </div>
@@ -591,7 +591,7 @@ const Pricing: React.FC = () => {
                       </span>
                     </h5>
                     <div className="flex grow flex-col gap-2 md:flex-row md:items-end mt-6 mb-4">
-                    <Link href="app.notionbear.com" className="bg-orange-700 font-bold w-full p-4 rounded-lg text-center">
+                    <Link href="app.BoringSites.com" className="bg-orange-700 font-bold w-full p-4 rounded-lg text-center">
                         Coming Soon..
                       </Link>
                     </div>
@@ -723,7 +723,7 @@ const Pricing: React.FC = () => {
                     ></path>
                   </svg>
                   <h2 className="text-xl font-semibold tracking-tight text-gray-900">
-                    Remove NotionBear Branding (Addon)
+                    Remove BoringSites Branding (Addon)
                   </h2>
                 </div>
                 <div className="flex items-center gap-0.5">
@@ -776,7 +776,7 @@ const Pricing: React.FC = () => {
             <div className="text-center lg:text-left lg:max-w-xl">
               <h3 className="h3 text-white mb-2">
                 Planning to <b className="text-orange-600">migrate</b> to
-                NotionBear from another platform?
+                BoringSites from another platform?
               </h3>
 
               {/* CTA form */}
@@ -784,7 +784,7 @@ const Pricing: React.FC = () => {
                 <div>
                   <Link
                     className="btn bg-orange-600 hover:bg-orange-700 shadow px-12"
-                    href="/migrating-to-notionbear"
+                    href="/migrating-to-BoringSites"
                   >
                     We can do it for you →
                   </Link>
