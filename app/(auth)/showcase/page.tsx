@@ -146,7 +146,7 @@ export default async function Template() {
                         {truncateText(template?.product?.description, 76)}
                         </p>
 
-                        <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded-2xl my-2">
+                        <span className="bg-gray-100 border-gray-200 border-dashed border-2 p-1 px-4 rounded-full my-2">
                           Helpdesk
                         </span>
                       </div>

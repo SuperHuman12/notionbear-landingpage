@@ -87,12 +87,12 @@ const Page: React.FC = () => {
           </div>
           <div className="flex flex-col sm:flex-row mt-4 gap-4">
             <div className="flex space-x-2 items-center">
-              <Link href={filterBySlug?.product?.callToCopy?.link} className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-2xl inline-flex items-center" rel="noopener noreferrer" target="_blank">
+              <Link href={filterBySlug?.product?.callToCopy?.link} className="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full inline-flex items-center" rel="noopener noreferrer" target="_blank">
                 <span>{filterBySlug?.product?.callToCopy?.text}</span>
               </Link>
             </div>
             <div className="flex space-x-2 items-center">
-              <Link href={filterBySlug?.product?.ViewDemo?.link} className="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-2xl inline-flex items-center" rel="noopener noreferrer" target="_blank">
+              <Link href={filterBySlug?.product?.ViewDemo?.link} className="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full inline-flex items-center" rel="noopener noreferrer" target="_blank">
                 <span>{filterBySlug?.product?.ViewDemo?.text}</span>
               </Link>
             </div>
@@ -104,7 +104,7 @@ const Page: React.FC = () => {
           alt={filterBySlug?.product?.name}
           width={400}
           height={450}
-          className="w-full rounded-2xl border border-gray-600 object-cover shadow-xl"
+          className="w-full rounded-full border border-gray-600 object-cover shadow-xl"
           quality="90"
         />
       </div>

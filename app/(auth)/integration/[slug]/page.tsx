@@ -75,7 +75,7 @@ const Page: React.FC = () => {
               alt="Logo"
               height={100}
               width={100}
-              className="rounded-2xl object-cover w-20 h-20 mt-6 p-2"
+              className="rounded-full object-cover w-20 h-20 mt-6 p-2"
               src={filterBySlug?.product?.logo}
             />
             <div>
@@ -90,7 +90,7 @@ const Page: React.FC = () => {
             <div className="flex space-x-2 items-center">
               <Link
                 href={filterBySlug?.product?.callToAction?.link}
-                className="bg-gray-900 hover:bg-gray-700 text-white cursor-pointer font-bold py-2 px-4 rounded-2xl inline-flex items-center"
+                className="bg-gray-900 hover:bg-gray-700 text-white cursor-pointer font-bold py-2 px-4 rounded-full inline-flex items-center"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -105,7 +105,7 @@ const Page: React.FC = () => {
           alt={filterBySlug?.product?.name}
           width={400}
           height={450}
-          className="w-full rounded-2xl border border-gray-600 object-cover shadow-xl"
+          className="w-full rounded-full border border-gray-600 object-cover shadow-xl"
           quality="90"
         />
       </div>

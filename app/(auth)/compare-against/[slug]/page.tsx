@@ -93,7 +93,7 @@ export default function ComparisonAgainst() {
               width={150}
               height={300}
               loading="eager"
-              className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-2xl p-8 mb-8 m-auto"
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-full p-8 mb-8 m-auto"
             />
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Tired of <b>{filterBySlug?.product?.name}</b>? <br /> Say hi to BoringSites
@@ -101,7 +101,7 @@ export default function ComparisonAgainst() {
             <p className="text-lg sm:text-xl text-gray-600">
               {filterBySlug?.product?.description}
             </p>
-            <Link href="app.BoringSites.com" className="text-white bg-gray-900 rounded-2xl w-fit p-2 mt-4 px-4">
+            <Link href="app.BoringSites.com" className="text-white bg-gray-900 rounded-full w-fit p-2 mt-4 px-4">
               Get Started
             </Link>
           </div>

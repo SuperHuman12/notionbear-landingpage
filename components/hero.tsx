@@ -55,7 +55,7 @@ export default function Hero() {
               className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight tracking-loose mb-4 aos-init aos-animate"
               data-aos="zoom-y-out"
             >
-              Easily build your <br />
+              <span className="font-normal">Easily build your</span> <br />
               <span className=" -translate-y-full slideUp h-full w-full bg-clip-text text-transparent gradient-text-accent">
                 {words[index]}
               </span>{" "}
@@ -239,7 +239,7 @@ export default function Hero() {
             <Link
               href="#"
               target="_blank"
-              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-2xl cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
+              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-full cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
               <Image
                 src="https://dazzling-cat.netlify.app/helpdesk.png"
@@ -256,7 +256,7 @@ export default function Hero() {
             <Link
               href="#"
               target="_blank"
-              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-2xl cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
+              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-full cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
               <Image
                 src="https://dazzling-cat.netlify.app/catalogue.png"
@@ -273,7 +273,7 @@ export default function Hero() {
             <Link
               href="#"
               target="_blank"
-              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-2xl cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
+              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-full cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
               <Image
                 src="https://dazzling-cat.netlify.app/blog.png"
@@ -290,7 +290,7 @@ export default function Hero() {
             <Link
               href="#"
               target="_blank"
-              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-2xl cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
+              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-full cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
             >
               <Image
                 src="https://dazzling-cat.netlify.app/documentation.png"

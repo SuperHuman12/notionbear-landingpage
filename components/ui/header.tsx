@@ -51,7 +51,7 @@ export default function Header() {
 
           {/* Site branding */}
           <Link href="/" className="shrink-0 mr-4">
-            <Image src={Logo} unoptimized alt="Logo" width={200} height={200} />
+            <Image src={Logo} unoptimized alt="Logo" width={250} height={200} />
           </Link>
 
           {/* Desktop navigation */}
@@ -60,7 +60,7 @@ export default function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li className="relative" ref={dropdownRef}>
                 <button
-                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex gap-2 items-center transition duration-150 ease-in-out"
+                  className="font-bold text-gray-900 hover:text-gray-900 px-5 py-3 flex gap-2 items-center transition duration-150 ease-in-out"
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                 >
                   Create a..
@@ -160,7 +160,7 @@ export default function Header() {
                     </div>
                     <div className="px-5 py-5 space-y-6 bg-gray-900 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full pb-6">
                       <div className="flow-root font-medium w-full">
-                        <Link href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-2xl hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
+                        <Link href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-full hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
                           <Image src="https://dazzling-cat.netlify.app/helpdesk.png"
                             unoptimized className="shadow-md" alt={''}
                             width={30}
@@ -169,7 +169,7 @@ export default function Header() {
                         </Link>
                       </div>
                       <div className="flow-root font-medium w-full">
-                        <Link href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-2xl hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
+                        <Link href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-full hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
                           <Image
                             src="https://dazzling-cat.netlify.app/documentation.png" unoptimized
 
@@ -181,7 +181,7 @@ export default function Header() {
                     </div>
                     <div className="px-5 py-5 space-y-6 bg-gray-900 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full pb-8">
                       <div className="flow-root font-medium w-full">
-                        <Link href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-2xl hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
+                        <Link href="https://support.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-full hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
                           <Image
 
                             src="https://dazzling-cat.netlify.app/blog.png" unoptimized
@@ -191,7 +191,7 @@ export default function Header() {
                         </Link>
                       </div>
                       <div className="flow-root font-medium w-full">
-                        <Link href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-2xl hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
+                        <Link href="https://docs.helpkit.so/" target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-full hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={handleDropdownLinkClick}>
                           <Image
 
                             width={30}

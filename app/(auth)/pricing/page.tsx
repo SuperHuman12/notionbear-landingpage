@@ -260,7 +260,7 @@ const FAQSection: React.FC = () => {
             {["Website", "AI Support Bot", "Pricing"].map((tab) => (
               <button
                 key={tab}
-                className={`px-4 py-2 font-semibold text-lg rounded-2xl m-2 ${activeTab === tab
+                className={`px-4 py-2 font-semibold text-lg rounded-full m-2 ${activeTab === tab
                   ? "bg-orange-600 text-white"
                   : "text-gray-700"
                   }`}
@@ -560,7 +560,7 @@ const Pricing: React.FC = () => {
                   Number of Users Every Month
                 </label>
                 <select
-                  className="relative bg-white border-1 rounded-2xl mt-2 w-full p-4 font-bold h3"
+                  className="relative bg-white border-1 rounded-full mt-2 w-full p-4 font-bold h3"
                   id="num-of-views"
                   value={selectedUsers}
                   onChange={handleUserChange}
@@ -596,7 +596,7 @@ const Pricing: React.FC = () => {
                       </Link>
                     </div>
 
-                    <div className="relative overflow-hidden rounded-2xl border border-gray-200 bg-white">
+                    <div className="relative overflow-hidden rounded-full border border-gray-200 bg-white">
                       <div className="p-6 md:px-10 md:py-4 justify-center bg-gray-200">
                         <div className="relative flex items-center">
                           <div className="flex h-5 items-center">
@@ -605,14 +605,14 @@ const Pricing: React.FC = () => {
                               id="addon"
                               checked
                               name="addon"
-                              className="h-5 w-5 rounded-2xl border-gray-300 text-gray-900 focus:ring-gray-900"
+                              className="h-5 w-5 rounded-full border-gray-300 text-gray-900 focus:ring-gray-900"
                               aria-label="Sub-marketplace blogs addon"
                             />
                           </div>
                           <div className="ml-3 text-base">
                             <label className="font-normal text-gray-900">
                               <span>Including </span>
-                              <span className="mr-3 inline-flex items-center rounded-2xl bg-gray-900 px-2.5 py-0.5 text-sm font-medium uppercase text-white">
+                              <span className="mr-3 inline-flex items-center rounded-full bg-gray-900 px-2.5 py-0.5 text-sm font-medium uppercase text-white">
                                 Free Design Services
                               </span>
                               <span>limited time only.</span>
