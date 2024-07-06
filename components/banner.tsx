@@ -18,7 +18,7 @@ export default function Banner() {
             >
               <span className="hidden sm:inline">Made with</span>
 
-              <span className="hidden sm:inline ml-2">Boring </span>
+              <span className="hidden sm:inline ml-1">Boring </span>
                 
               <svg 
                 width="38" 
@@ -38,7 +38,7 @@ export default function Banner() {
                 <path d="M85.7621 35.2237C85.7621 35.2237 70.6746 16.4264 56.2848 13.1451C41.895 9.86381 36.1452 23.7542 36.1452 23.7542" stroke="currentColor" strokeWidth="5" strokeLinecap="round"></path>
               </svg>                
                 
-              <span className="hidden sm:inline">Sites</span>
+              <span className="hidden sm:inline ml-1">Sites</span>
             </button>
           </div>
         </div>

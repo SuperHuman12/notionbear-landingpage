@@ -12,8 +12,8 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'BoringSites vs {children}',
-  description: 'Compare BoringSites to {children}',
+  title: 'BoringSites',
+  description: 'Turn your Notion docs quickly into a beautiful SaaS, Apps, Marketplaces, Blogs, Helpdesks – no code required.',
   openGraph: {
     images: [
         {
