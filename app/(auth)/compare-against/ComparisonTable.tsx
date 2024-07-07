@@ -16,7 +16,7 @@ const ComparisonTable = ({ id }: { id: any }) => {
 
   return (
     <div className='max-w-xl mx-auto text-center py-20 pb-12 md:pb-20'>
-      <h1 className="h1 mb-4">Get so much more than website builder with BoringSites.</h1>
+      <h1 className="h3 mb-4">Get so much more than website builder with BoringSites.</h1>
       <p className="text-xl text-gray-600">BoringSites has everything you need, from task tracking to templates to documentation. Get comfortable — you won’t be leaving all that often.</p>
 
       <div className="max-w-xl mx-auto p-4">

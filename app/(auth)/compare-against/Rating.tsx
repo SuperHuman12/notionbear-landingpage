@@ -16,7 +16,7 @@ const Rating = () => {
           <Link  href={"0"}  className="relative flex flex-col items-center p-6 bg-white rounded-full h-full">
             <div>
               <div >
-                <h1 className="h1 mb-4 text-gray-500">86%</h1>
+                <h1 className="h3 mb-4 text-gray-500">86%</h1>
                 <span className="text-dark font-bold">Ease of Use</span>
               </div>
             </div>
@@ -26,7 +26,7 @@ const Rating = () => {
           <Link href={"0"}  className="relative flex flex-col items-center p-6 bg-white rounded-full h-full">
             <div>
               <div>
-                <h1 className="h1 mb-4 text-gray-500">90%</h1>
+                <h1 className="h3 mb-4 text-gray-500">90%</h1>
                 <span className="text-dark font-bold">Ease of Admin</span>
               </div>
             </div>
@@ -35,7 +35,7 @@ const Rating = () => {
           <Link  href={"0"} className="relative flex flex-col items-center p-6 bg-white rounded-full h-full">
             <div>
               <div>
-                <h1 className="h1 mb-4 text-gray-500">91%</h1>
+                <h1 className="h3 mb-4 text-gray-500">91%</h1>
                 <span className="text-dark font-bold">Meets requirements</span>
               </div>
             </div>
@@ -44,7 +44,7 @@ const Rating = () => {
           <Link  href={"0"} className="relative flex flex-col items-center p-6 bg-white rounded-full h-full">
             <div>
               <div>
-                <h1 className="h1 mb-4 text-gray-500">86%</h1>
+                <h1 className="h3 mb-4 text-gray-500">86%</h1>
                 <span className="text-dark font-bold">Ease of Setup</span>
               </div>
             </div>
