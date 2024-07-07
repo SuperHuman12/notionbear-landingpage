@@ -47,14 +47,14 @@ export async function generateMetadata(
 
   if (!filteredContent) {
     return {
-      title: 'BoringSites vs Unknown Integration',
-      description: 'Compare BoringSites to an unknown integration',
+      title: 'Integrate Integration with Boring Sites',
+      description: 'Connect BoringSites to an integration',
     };
   }
 
   return {
-    title: `BoringSites vs ${filteredContent.product.name}`,
-    description: `Compare BoringSites to ${filteredContent.product.name}: ${filteredContent.product.description}`,
+    title: `Integrate ${filteredContent.product.name} with BoringSites`,
+    description: `Connect BoringSites to ${filteredContent.product.name}: ${filteredContent.product.description}`,
     openGraph: {
       images: [{ url: filteredContent.proof.screenshot }],
     },

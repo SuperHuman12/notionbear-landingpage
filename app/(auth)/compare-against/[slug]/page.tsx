@@ -1,4 +1,4 @@
-"use client";
+import { Metadata, ResolvingMetadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Rating from '../Rating';
@@ -7,13 +7,9 @@ import TrustedBy from '../TrustedBy';
 import ComparisonTable from '../ComparisonTable';
 import TemplateDesign from '../TemplateDesign';
 import TemplateLibrary from '../TemplateList';
-
 import { _loadFromJsonComparison, _transformDataToPostPageView } from '../../../utils/helper';
-import { usePathname, useSearchParams } from 'next/navigation';
-import { useState, useEffect } from 'react';
 import MoveBack from '@/components/MoveBack';
 import Loading from '@/components/Loading';
-import App from 'next/app';
 
 interface CallToAction {
   text: string;
@@ -25,7 +21,7 @@ interface Product {
   name: string;
   provider: string;
   description: string;
-  heroimage: string; // Added to match the provided object structure
+  heroimage: string;
 }
 
 interface ContentSection {
@@ -48,39 +44,47 @@ interface ComparisonFeature {
 interface FilterBySlugType {
   id: string;
   product: Product;
-  overview?: ContentSection; // Made optional in case not all entries have this
-  howItWorks?: ContentSection; // Made optional in case not all entries have this
-  configuration?: ContentSection; // Made optional in case not all entries have this
-  proof?: Proof; // Made optional in case not all entries have this
-  comparison_table: ComparisonFeature[]; // Added to match the provided object structure
+  overview?: ContentSection;
+  howItWorks?: ContentSection;
+  configuration?: ContentSection;
+  proof?: Proof;
+  comparison_table: ComparisonFeature[];
 }
 
-export default function ComparisonAgainst() {
-  const [filterBySlug, setFilterBySlug] = useState<FilterBySlugType | null>(null);
-  const [postPageView, setPostPageView] = useState<any[]>([]);
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
+export async function generateMetadata(
+  { params }: { params: { slug: string } },
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const slug = params.slug;
+  const content = await _loadFromJsonComparison();
+  const filteredContent = content.find((item: { id: string }) => item.id === slug) as FilterBySlugType;
 
-  useEffect(() => {
-    const slug = pathname.split('/').pop();
+  if (!filteredContent) {
+    return {
+      title: 'BoringSites vs Unknown Template',
+      description: 'Compare BoringSites to an unknown template',
+    };
+  }
 
-    if (slug) {
-      const fetchData = async () => {
-        const content = await _loadFromJsonComparison();
-        const filteredContent = content.find((item: { id: string }) => item.id === slug) as FilterBySlugType;
-        if (filteredContent) {
-          setFilterBySlug(filteredContent);
-          const transformedData = _transformDataToPostPageView(filteredContent);
-          setPostPageView(transformedData);
-        }
-      };
-      fetchData();
-    }
-  }, [pathname, searchParams]);
+  return {
+    title: `BoringSites vs ${filteredContent.product.name}`,
+    description: `Compare BoringSites to ${filteredContent.product.name}: ${filteredContent.product.description}`,
+    openGraph: {
+      images: [{ url: filteredContent.product.heroimage }],
+    },
+  };
+}
 
-  if (!filterBySlug) {
+export default async function ComparisonAgainst({ params }: { params: { slug: string } }) {
+  const slug = params.slug;
+  const content = await _loadFromJsonComparison();
+  const filteredContent = content.find((item: { id: string }) => item.id === slug) as FilterBySlugType;
+  
+  if (!filteredContent) {
     return <Loading />;
   }
+
+  const transformedData = _transformDataToPostPageView(filteredContent);
 
   return (
     <section className="bg-gradient-to-b from-gray-100 to-white">
@@ -88,25 +92,25 @@ export default function ComparisonAgainst() {
         <div className="pt-24 pb-12 md:pt-20 md:pb-20">
           <div className="max-w-xl mx-auto text-center pb-12 md:pb-20 pt-12">
             <Image
-              src={filterBySlug?.product?.heroimage}
-              alt={filterBySlug?.product?.name}
+              src={filteredContent.product.heroimage}
+              alt={filteredContent.product.name}
               width={150}
               height={300}
               loading="eager"
               className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-full p-8 mb-8 m-auto"
             />
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              Tired of <b>{filterBySlug?.product?.name}</b>? <br /> Say hi to BoringSites
+              Tired of <b>{filteredContent.product.name}</b>? <br /> Say hi to BoringSites
             </h1>
             <p className="text-lg sm:text-xl text-gray-600">
-              {filterBySlug?.product?.description}
+              {filteredContent.product.description}
             </p>
             <Link href="app.BoringSites.com" className="text-white bg-gray-900 rounded-full w-fit p-2 mt-4 px-4">
               Get Started
             </Link>
           </div>
           <TrustedBy />
-          <ComparisonTable id={filterBySlug?.id} />
+          <ComparisonTable id={filteredContent.id} />
           <Rating />
           <TemplateDesign />
           <AggregateStats />

@@ -6,7 +6,7 @@ const MoveBack: React.FC = () => {
 
     return (
         <div onClick={goBack} className='mb-4 cursor-pointer'>
-            ← Back to Integrations
+            ← Take me back
         </div>
     );
 };
