@@ -69,7 +69,7 @@ export default function Header() {
                 </button>
                 {dropdownOpen && (
                   <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white absolute z-10 w-screen max-w-lg px-2 transform -translate-x-1/2 left-1/2 sm:px-0">
-                    <div className="relative grid gap-6 px-5 py-6 bg-gray-900 text-white sm:gap-8 sm:p-8">
+                    <div className="relative grid gap-6 px-5 py-6 sm:gap-8 sm:p-8">
                       <DropdownLink
                         href="/create-a-helpdesk-servicedesk-notion"
                         icon={<HelpCircle className="flex-shrink-0 w-6 h-6 stroke-orange-600" />}
@@ -106,7 +106,7 @@ export default function Header() {
                         onClick={handleDropdownLinkClick}
                       />
                     </div>
-                    <div className="px-5 py-5 space-y-6 bg-gray-900 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full pb-6">
+                    <div className="px-5 py-5 space-y-6 bg-gray-600 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full pb-6">
                       <DemoLink
                         href="https://support.helpkit.so/"
                         imageSrc="https://dazzling-cat.netlify.app/helpdesk.png"
@@ -120,7 +120,7 @@ export default function Header() {
                         onClick={handleDropdownLinkClick}
                       />
                     </div>
-                    <div className="px-5 py-5 space-y-6 bg-gray-900 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full pb-8">
+                    <div className="px-5 py-5 space-y-6 bg-gray-600 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full pb-8">
                       <DemoLink
                         href="https://support.helpkit.so/"
                         imageSrc="https://dazzling-cat.netlify.app/blog.png"
@@ -159,22 +159,37 @@ export default function Header() {
   );
 }
 
-function DropdownLink({ href, icon, title, description, onClick }) {
+interface DropdownLinkProps {
+  href: string;
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  onClick: () => void;
+}
+
+function DropdownLink({ href, icon, title, description, onClick }: DropdownLinkProps) {
   return (
-    <Link href={href} className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-800" onClick={onClick}>
+    <Link href={href} className="flex items-start p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-200" onClick={onClick}>
       {icon}
       <div className="ml-4 -mt-0.5">
-        <p className="text-base font-medium text-gray-50">{title}</p>
+        <p className="text-base font-medium text-gray-700">{title}</p>
         <p className="mt-1 text-sm text-gray-400">{description}</p>
       </div>
     </Link>
   );
 }
 
-function DemoLink({ href, imageSrc, text, onClick }) {
+interface DemoLinkProps {
+  href: string;
+  imageSrc: string;
+  text: string;
+  onClick: () => void;
+}
+
+function DemoLink({ href, imageSrc, text, onClick }: DemoLinkProps) {
   return (
     <div className="flow-root font-medium w-full">
-      <Link href={href} target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-full hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-800 text-white" onClick={onClick}>
+      <Link href={href} target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-full hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-500 text-white" onClick={onClick}>
         <Image src={imageSrc} unoptimized className="shadow-md" alt="" width={30} height={30} />
         <span className="ml-3 text-sm">{text}</span>
       </Link>
@@ -182,7 +197,12 @@ function DemoLink({ href, imageSrc, text, onClick }) {
   );
 }
 
-function NavLink({ href, text }) {
+interface NavLinkProps {
+  href: string;
+  text: string;
+}
+
+function NavLink({ href, text }: NavLinkProps) {
   return (
     <li>
       <Link href={href} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">{text}</Link>
