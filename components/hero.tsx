@@ -1,11 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { StarIcon, ArrowUpRight, Check, ShoppingBag, BookOpen, FileText , FileQuestionIcon } from "lucide-react";
 
 import VideoThumb from "@/public/images/hero-image.png";
 import ModalVideo from "@/components/modal-video";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Hero() {
   const words = [
@@ -31,7 +32,7 @@ export default function Hero() {
         aria-hidden="true"
         style={{ width: "-webkit-fill-available", opacity: 0.1 }}
       >
-        <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+        <svg className=" w-full h-full opacity-50" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern
               id="grid-pattern"
@@ -55,13 +56,13 @@ export default function Hero() {
               className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight tracking-loose mb-4 aos-init aos-animate"
               data-aos="zoom-y-out"
             >
-              <span className="font-normal">Effortlessly publishing</span> <br />
+              <span className="font-normal">Effortlessly publish</span> <br />
               <span className=" -translate-y-full slideUp h-full w-full bg-clip-text text-transparent gradient-text-accent">
                 {words[index]}
               </span>{" "}
               <br />
               <span className="flex gap-4 justify-center items-center mt-2">
-                on
+                from 
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="12 0.19 487.619 510.941"
@@ -77,7 +78,6 @@ export default function Hero() {
             </h1>
           </div>
 
-          {/* Additional JSX content */}
           <div className="max-w-3xl mx-auto text-center">
             <p
               className="text-lg text-gray-600 mb-8"
@@ -87,7 +87,7 @@ export default function Hero() {
               <b className="text-gray-900">Turn your Notion docs</b> quickly
               into a beautiful{" "}
               <b className="text-gray-900">
-                SaaS, Apps, Marketplaces, Blogs, Helpdesks
+                SaaS, Apps, Directories, Marketplaces, Blogs, Helpdesks
               </b>{" "}
               – no code required.
             </p>
@@ -101,7 +101,7 @@ export default function Hero() {
                   className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0"
                   href="https://app.BoringSites.com"
                 >
-                  Lifetime plans soon
+                  Get Started
                 </Link>
               </div>
               <div>
@@ -117,50 +117,20 @@ export default function Hero() {
 
           <div className="flex flex-col items-center justify-center space-x-2 space-y-1 text-sm opacity-60 sm:flex-row sm:space-y-0 mt-6">
             <div className="flex items-center justify-start">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="8"
-                className="mr-2 text-orange-600"
-              >
-                <path
-                  d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z"
-                  fill="currentColor"
-                ></path>
-              </svg>
+              <Check className="w-4 h-4 mr-2 text-orange-600" />
               Free 7-day trial
             </div>{" "}
             <div className="flex items-center justify-start">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="8"
-                className="mr-2 text-orange-600"
-              >
-                <path
-                  d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z"
-                  fill="currentColor"
-                ></path>
-              </svg>
+              <Check className="w-4 h-4 mr-2 text-orange-600" />
               No credit card required
             </div>{" "}
             <div className="flex items-center justify-start">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="11"
-                height="8"
-                className="mr-2 text-orange-600"
-              >
-                <path
-                  d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z"
-                  fill="currentColor"
-                ></path>
-              </svg>
+              <Check className="w-4 h-4 mr-2 text-orange-600" />
               24/7 support
             </div>
           </div>
 
-          <div className="hidden sm:flex justify-center items-center mt-4 sm:mb-0 mb-3 bg-white w-fit mx-auto mx-4 p-4 rounded-md">
+          <div className="hidden sm:flex justify-center items-center pt-12 sm:mb-0 mb-3 bg-white w-fit mx-auto mx-4 p-4 rounded-md">
             <div className="flex-shrink-0 sm:block hidden">
               <Image
                 src="https://www.helpkit.so/imgs/testimonials/adjust_square_portrait.jpg"
@@ -188,46 +158,9 @@ export default function Hero() {
                 </p>
                 <div className="mt-2 text-sm opacity-100 text-gray-400 inline-flex justify-start items-center">
                   <div className="inline-flex mr-2 space-x-0.5 justify-start text-yellow-300">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="w-4 h-4"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="w-4 h-4"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="w-4 h-4"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="w-4 h-4"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="w-4 h-4"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
+                    {[...Array(5)].map((_, i) => (
+                      <StarIcon key={i} className="w-4 h-4" />
+                    ))}
                   </div>
                   Dan Kelly, CEO at Adjust Square
                 </div>
@@ -236,74 +169,30 @@ export default function Hero() {
           </div>
 
           <div className="sm:flex justify-center items-center mt-8 flex-col sm:flex-row hidden">
-            <Link
+            <DemoLink
               href="#"
-              target="_blank"
-              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-full cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
-            >
-              <Image
-                src="https://dazzling-cat.netlify.app/helpdesk.png"
-                unoptimized
-                width={30}
-                height={30}
-                className="shadow-md border border-gray-600"
-                alt={""}
-              />{" "}
-              <span className="ml-3 text-sm">
-                View Helpdesk Demo <span className="opacity-90">↗️</span>
-              </span>
-            </Link>
-            <Link
+              imageSrc="https://dazzling-cat.netlify.app/helpdesk.png"
+              text="View Helpdesk Demo"
+              Icon={FileQuestionIcon}
+            />
+            <DemoLink
               href="#"
-              target="_blank"
-              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-full cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
-            >
-              <Image
-                src="https://dazzling-cat.netlify.app/catalogue.png"
-                unoptimized
-                width={30}
-                height={30}
-                className="shadow-md border border-gray-600"
-                alt={""}
-              />{" "}
-              <span className="ml-3 text-sm">
-                View Marketplace Demo <span className="opacity-90">↗️</span>
-              </span>
-            </Link>
-            <Link
+              imageSrc="https://dazzling-cat.netlify.app/catalogue.png"
+              text="View Marketplace Demo"
+              Icon={ShoppingBag}
+            />
+            <DemoLink
               href="#"
-              target="_blank"
-              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-full cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
-            >
-              <Image
-                src="https://dazzling-cat.netlify.app/blog.png"
-                unoptimized
-                width={30}
-                height={30}
-                className="shadow-md border border-gray-600"
-                alt={""}
-              />{" "}
-              <span className="ml-3 text-sm">
-                View Blog Demo <span className="opacity-90">↗️</span>
-              </span>
-            </Link>
-            <Link
+              imageSrc="https://dazzling-cat.netlify.app/blog.png"
+              text="View Blog Demo"
+              Icon={BookOpen}
+            />
+            <DemoLink
               href="#"
-              target="_blank"
-              className="flex items-center text-base font-medium text-gray-900 bg-gray-200 transition duration-150 ease-in-out rounded-full cursor-pointer hover:bg-gray-100 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-600 px-3 py-2 opacity-80 hover:opacity-100"
-            >
-              <Image
-                src="https://dazzling-cat.netlify.app/documentation.png"
-                unoptimized
-                width={30}
-                height={30}
-                className="shadow-md border border-gray-600"
-                alt={""}
-              />{" "}
-              <span className="ml-3 text-sm">
-                View Company Wiki Demo <span className="opacity-90">↗️</span>
-              </span>
-            </Link>
+              imageSrc="https://dazzling-cat.netlify.app/documentation.png"
+              text="View Company Wiki Demo"
+              Icon={FileText}
+            />
           </div>
 
           <ModalVideo
@@ -318,5 +207,21 @@ export default function Hero() {
         </div>
       </div>
     </section>
+  );
+}
+
+function DemoLink({ href, imageSrc, text, Icon }) {
+  return (
+    <Link
+      href={href}
+      target="_blank"
+      className="flex whitespace-nowrap items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-full cursor-pointer hover:border-gray-600 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-200 px-6 py-4 opacity-80 hover:opacity-100"
+    >
+      <Icon className="ml-2 w-5 h-5" />
+
+      <span className="ml-3 text-sm">
+        {text} <ArrowUpRight className="inline w-4 h-4 opacity-90" />
+      </span>
+    </Link>
   );
 }
