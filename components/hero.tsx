@@ -55,7 +55,7 @@ export default function Hero() {
               className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight tracking-loose mb-4 aos-init aos-animate"
               data-aos="zoom-y-out"
             >
-              <span className="font-normal">Easily build your</span> <br />
+              <span className="font-normal">Effortlessly publishing</span> <br />
               <span className=" -translate-y-full slideUp h-full w-full bg-clip-text text-transparent gradient-text-accent">
                 {words[index]}
               </span>{" "}
@@ -101,7 +101,7 @@ export default function Hero() {
                   className="btn text-dark bg-orange-600 hover:bg-orange-700 w-full mb-4 sm:w-auto sm:mb-0"
                   href="https://app.BoringSites.com"
                 >
-                  Get free lifetime plan
+                  Lifetime plans soon
                 </Link>
               </div>
               <div>
@@ -178,7 +178,7 @@ export default function Hero() {
                     "
                   </span>
                   With BoringSites we literally went
-                  <span className="bg-[#ffecd7] text-[##ce6a01] font-medium px-0.5 py-0.5 mx-1 px-2">
+                  <span className="bg-[#ffecd7] text-[#ce6a01] font-medium px-0.5 py-0.5 mx-1 px-2">
                     from 0 to fully functional knowledge-base in 1 hour.
                   </span>{" "}
                   I highly recommend it!
