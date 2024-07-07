@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { StarIcon, ArrowUpRight, Check, ShoppingBag, BookOpen, FileText , FileQuestionIcon } from "lucide-react";
+import { StarIcon, ArrowUpRight, Check, ShoppingBag, BookOpen, FileText, FileQuestionIcon } from "lucide-react";
 
 import VideoThumb from "@/public/images/hero-image.png";
 import ModalVideo from "@/components/modal-video";
@@ -24,7 +24,7 @@ export default function Hero() {
     }, 1000);
     return () => clearInterval(interval);
   }, []);
-
+  
   return (
     <section>
       <div
@@ -168,31 +168,46 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="sm:flex justify-center items-center mt-8 flex-col sm:flex-row hidden">
-            <DemoLink
+          <div className="sm:flex gap-4 justify-center items-center mt-8 flex-col sm:flex-row hidden">
+            <Link
               href="#"
-              imageSrc="https://dazzling-cat.netlify.app/helpdesk.png"
-              text="Helpdesk Site Demo"
-              Icon={FileQuestionIcon}
-            />
-            <DemoLink
+              className="flex items-center p-2 transition duration-150 ease-in-out border border-gray-600 text-gray-600 rounded-lg hover:bg-gray-900 hover:text-white"
+            >
+              <FileQuestionIcon className="w-5 h-5 ml-2 text-gray-400" />
+              <div className="ml-4">
+                <p className="text-sm font-medium">Helpdesk Site Demo</p>
+              </div>
+            </Link>
+
+            <Link
               href="#"
-              imageSrc="https://dazzling-cat.netlify.app/catalogue.png"
-              text="Marketplace Site Demo"
-              Icon={ShoppingBag}
-            />
-            <DemoLink
+              className="flex items-center p-2 transition duration-150 ease-in-out border border-gray-600 text-gray-600 rounded-lg hover:bg-gray-900 hover:text-white"
+            >
+              <ShoppingBag className="w-5 h-5 ml-2 text-gray-400" />
+              <div className="ml-4">
+                <p className="text-sm font-medium">Marketplace Site Demo</p>
+              </div>
+            </Link>
+
+            <Link
               href="#"
-              imageSrc="https://dazzling-cat.netlify.app/blog.png"
-              text="Blog Site Demo"
-              Icon={BookOpen}
-            />
-            <DemoLink
+              className="flex items-center p-2 transition duration-150 ease-in-out border border-gray-600 text-gray-600 rounded-lg hover:bg-gray-900 hover:text-white"
+            >
+              <BookOpen className="w-5 h-5 ml-2 text-gray-400" />
+              <div className="ml-4">
+                <p className="text-sm font-medium">Blog Site Demo</p>
+              </div>
+            </Link>
+
+            <Link
               href="#"
-              imageSrc="https://dazzling-cat.netlify.app/documentation.png"
-              text="Directory Site Demo"
-              Icon={FileText}
-            />
+              className="flex items-center p-2 transition duration-150 ease-in-out border border-gray-600 text-gray-600 rounded-lg hover:bg-gray-900 hover:text-white"
+            >
+              <FileText className="w-5 h-5 ml-2 text-gray-400" />
+              <div className="ml-4">
+                <p className="text-sm font-medium">Directory Site Demo</p>
+              </div>
+            </Link>
           </div>
 
           <ModalVideo
@@ -207,21 +222,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  );
-}
-
-function DemoLink({ href, imageSrc, text, Icon }) {
-  return (
-    <Link
-      href={href}
-      target="_blank"
-      className="flex whitespace-nowrap items-center text-base font-medium text-gray-900 transition duration-150 ease-in-out rounded-full cursor-pointer hover:border-gray-600 sm:ml-6 mt-2 sm:mt-0 bg-gray-100 border border-gray-200 px-6 py-4 opacity-80 hover:opacity-100"
-    >
-      <Icon className="ml-2 w-5 h-5" />
-
-      <span className="ml-3 text-sm">
-        {text} <ArrowUpRight className="inline w-4 h-4 opacity-90" />
-      </span>
-    </Link>
   );
 }
