@@ -172,25 +172,25 @@ export default function Hero() {
             <DemoLink
               href="#"
               imageSrc="https://dazzling-cat.netlify.app/helpdesk.png"
-              text="View Helpdesk Demo"
+              text="Helpdesk Site Demo"
               Icon={FileQuestionIcon}
             />
             <DemoLink
               href="#"
               imageSrc="https://dazzling-cat.netlify.app/catalogue.png"
-              text="View Marketplace Demo"
+              text="Marketplace Site Demo"
               Icon={ShoppingBag}
             />
             <DemoLink
               href="#"
               imageSrc="https://dazzling-cat.netlify.app/blog.png"
-              text="View Blog Demo"
+              text="Blog Site Demo"
               Icon={BookOpen}
             />
             <DemoLink
               href="#"
               imageSrc="https://dazzling-cat.netlify.app/documentation.png"
-              text="View Company Wiki Demo"
+              text="Directory Site Demo"
               Icon={FileText}
             />
           </div>

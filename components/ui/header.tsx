@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronDown, HelpCircle, BookOpen, ShoppingBag, Lock, ArrowRight } from 'lucide-react';
+import { ChevronDown, HelpCircle, BookOpen, ShoppingBag, Lock, ArrowRight, LucideIcon } from 'lucide-react';
 import Logo from '@/public/images/logonew-black.png';
 import MobileMenu from './mobile-menu';
 
@@ -78,13 +78,6 @@ export default function Header() {
                         onClick={handleDropdownLinkClick}
                       />
                       <DropdownLink
-                        href="/create-a-documentation-notion"
-                        icon={<BookOpen className="flex-shrink-0 w-6 h-6 stroke-orange-600" />}
-                        title="Documentation"
-                        description="Create your world-class product documentation with Notion and BoringSites"
-                        onClick={handleDropdownLinkClick}
-                      />
-                      <DropdownLink
                         href="/create-a-marketplace-notion"
                         icon={<ShoppingBag className="flex-shrink-0 w-6 h-6 stroke-orange-600" />}
                         title="Marketplace / Directories"
@@ -100,35 +93,35 @@ export default function Header() {
                       />
                       <DropdownLink
                         href="/create-a-blog-notion"
-                        icon={<Lock className="flex-shrink-0 w-6 h-6 stroke-orange-600" />}
+                        icon={<BookOpen className="flex-shrink-0 w-6 h-6 stroke-orange-600" />}
                         title="Blog"
                         description="Create a beautiful blog for your startup or company with Notion and BoringSites."
                         onClick={handleDropdownLinkClick}
                       />
                     </div>
-                    <div className="px-5 py-5 space-y-6 bg-gray-600 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full pb-6">
+                    <div className="px-5 py-5 space-y-6 bg-gray-200 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full pb-6">
                       <DemoLink
-                        href="https://support.helpkit.so/"
+                        href="https://support.boringsites.com/"
                         imageSrc="https://dazzling-cat.netlify.app/helpdesk.png"
                         text="Help Center Demo"
                         onClick={handleDropdownLinkClick}
                       />
                       <DemoLink
-                        href="https://docs.helpkit.so/"
+                        href="https://docs.boringsites.com/"
                         imageSrc="https://dazzling-cat.netlify.app/documentation.png"
-                        text="Company Wiki Demo"
+                        text="Directory Demo"
                         onClick={handleDropdownLinkClick}
                       />
                     </div>
-                    <div className="px-5 py-5 space-y-6 bg-gray-600 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full pb-8">
+                    <div className="px-5 py-5 space-y-6 bg-gray-200 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 justify-between w-full pb-8">
                       <DemoLink
-                        href="https://support.helpkit.so/"
+                        href="https://support.boringsites.com/"
                         imageSrc="https://dazzling-cat.netlify.app/blog.png"
                         text="Blog Site Demo"
                         onClick={handleDropdownLinkClick}
                       />
                       <DemoLink
-                        href="https://docs.helpkit.so/"
+                        href="https://docs.boringsites.com/"
                         imageSrc="https://dazzling-cat.netlify.app/catalogue.png"
                         text="Marketplace Demo"
                         onClick={handleDropdownLinkClick}
@@ -184,14 +177,16 @@ interface DemoLinkProps {
   imageSrc: string;
   text: string;
   onClick: () => void;
+  Icon?: LucideIcon;
 }
 
-function DemoLink({ href, imageSrc, text, onClick }: DemoLinkProps) {
+function DemoLink({ href, imageSrc, text, onClick, Icon }: DemoLinkProps) {
   return (
     <div className="flow-root font-medium w-full">
-      <Link href={href} target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-full hover:bg-gray-600 p-2 px-4 -m-3 bg-gray-500 text-white" onClick={onClick}>
+      <Link href={href} target="_blank" className="flex items-center text-base font-medium transition duration-150 ease-in-out rounded-full hover:shadow-xl p-2 px-4 -m-3 bg-gray-100 text-black" onClick={onClick}>
         <Image src={imageSrc} unoptimized className="shadow-md" alt="" width={30} height={30} />
         <span className="ml-3 text-sm">{text}</span>
+        {Icon && <Icon className="w-5 h-5 ml-2 text-gray-400" />}
       </Link>
     </div>
   );

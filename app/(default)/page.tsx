@@ -35,10 +35,10 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Testimonials />
       <Features />
       <FeaturesBlocks />
       <Showcases />
-      <Testimonials />
       <AboutMe />
       <Newsletter />
     </>

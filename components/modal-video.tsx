@@ -79,7 +79,7 @@ export default function ModalVideo({
 
 
 
-        <div className="mt-8 text-center">
+        <div className="mt-8 text-center hidden">
     <p className="text-lg font-semibold text-gray-700">Trusted by 100+ startups</p>
     <div className="mt-5 flex flex-wrap items-center justify-center gap-x-10 gap-y-6 lg:mt-10 lg:gap-x-16 lg:gap-y-8">
     <img alt="Xumm" src="https://dazzling-cat.netlify.app/remotedesk-gray.png" className="h-10 w-auto object-contain" />
